@@ -2,6 +2,8 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import Fitness from '../Pages/Fitness';
+import { Route, Router } from 'react-router-dom';
 
 function NavBar() {
   return (
@@ -10,26 +12,16 @@ function NavBar() {
         <Container>
           <Navbar.Brand href="#home">Home</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#features">Esports</Nav.Link>
-            <Nav.Link href="#Dev">Dev</Nav.Link>
-            <Nav.Link href="#pricing">Fitness</Nav.Link>
+            <Nav.Link href="/esports">Esports</Nav.Link>
+            <Nav.Link href="/dev">Dev</Nav.Link>
+            <Nav.Link href="/fitness">Fitness</Nav.Link>
           </Nav>
-          <Nav>
-            <Nav.Link href="#deets">Socials</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
-              Links
-            </Nav.Link>
-          </Nav>
-          <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
+          <NavDropdown title="Socials" id="basic-nav-dropdown">
+              <NavDropdown.Item href="https://x.com/SKIPAHH" target='_blank'>Twitter</NavDropdown.Item>
+              <NavDropdown.Item href="https://www.youtube.com/@SKIPAH" target='_blank'>Youtube</NavDropdown.Item>
+              <NavDropdown.Item href="https://www.linkedin.com/in/jussi-mehtala/" target='_blank'>Linkedin</NavDropdown.Item>
+              <NavDropdown.Item href="https://www.twitch.tv/skipah" target='_blank'>Twitch</NavDropdown.Item>
+              <NavDropdown.Item href="https://github.com/SKIPAH" target='_blank'>GitHub</NavDropdown.Item>
             </NavDropdown>
         </Container>
       </Navbar>

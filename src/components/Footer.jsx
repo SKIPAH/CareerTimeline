@@ -7,37 +7,73 @@ export default function Footer() {
       <Container>
         <Row>
           <Col md={4}>
-            <h5>About Us</h5>
+            <h5>About me</h5>
             <p>
-              We are a company dedicated to providing the best services for our customers. Our team is always here to help you.
+              My name is Jussi Mehtälä and I'm from Finland. With this website
+              I'm planning to showcase my programming cababilities and also show
+              other things like my hobbies and things like my esports career.
             </p>
           </Col>
           <Col md={4}>
-            <h5>Quick Links</h5>
+            <h5>Socials</h5>
             <ul className="list-unstyled">
-              <li><a href="#" className="text-white">Home</a></li>
-              <li><a href="#" className="text-white">Services</a></li>
-              <li><a href="#" className="text-white">Contact</a></li>
-              <li><a href="#" className="text-white">About</a></li>
+              <li>
+                <a href="#" className="text-white">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="https://x.com/SKIPAHH" className="text-white">
+                  Twitter
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/@SKIPAH"
+                  className="text-white"
+                >
+                  Youtube
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/jussi-mehtala/"
+                  className="text-white"
+                >
+                  Linkedin
+                </a>
+              </li>
+              <li>
+                <a href="https://www.twitch.tv/skipah" className="text-white">
+                  Twitch
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/SKIPAH" className="text-white">
+                  GitHub
+                </a>
+              </li>
             </ul>
+            <ul className="list-unstyled"></ul>
           </Col>
           <Col md={4}>
-            <h5>Contact Us</h5>
+            <h5>Contact me</h5>
             <address>
-              1234 Street Name<br />
-              City, State 56789<br />
-              Email: <a href="mailto:info@company.com" className="text-white">info@company.com</a><br />
-              Phone: <a href="tel:+1234567890" className="text-white">+1 234 567 890</a>
+              Email:{" "}
+              <a href="juzzii.mehta@gmail.com" className="text-white">
+                juzzii.mehta@gmail.com
+              </a>
+              <br />
+              Phone: <a className="text-white">+358 44 3377 389</a>
             </address>
           </Col>
-        </Row>
-        <Row className="mt-3">
-          <Col md={12} className="text-center">
-            <p>&copy; 2024 Your Company. All Rights Reserved.</p>
-          </Col>
+          <Row className="mt-3">
+            <Col md={12} className="text-center">
+              <p>&copy; 2024 Your Company. All Rights Reserved.</p>
+            </Col>
+          </Row>
         </Row>
       </Container>
     </footer>
   );
-};
-
+}
