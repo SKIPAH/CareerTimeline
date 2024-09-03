@@ -1,11 +1,33 @@
 
+#profilepic{
+  height: 25%;
+  width: 15%;
+  position: absolute;
+  left: 30px
+
+  
+}
+
+body{
+  background-color: #f9f9f9;
+}
+
+
+h1:hover{
+  box-shadow: 12px 12px 12px rgba(0,0,0,0.1),
+  -10px -10px 10px white;
+
+}
+
 #basic-nav-dropdown{
-    color: aliceblue;
+  color: rgb(255, 255, 255);
 }
 .maincontainer {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  max-width: 90%;
+  align-items: center;
 }
 
 footer{
