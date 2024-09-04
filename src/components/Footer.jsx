@@ -18,11 +18,6 @@ export default function Footer() {
             <h5>Socials</h5>
             <ul className="list-unstyled">
               <li>
-                <a href="#" className="text-white">
-                  Home
-                </a>
-              </li>
-              <li>
                 <a href="https://x.com/SKIPAHH" className="text-white">
                   Twitter
                 </a>
@@ -36,16 +31,16 @@ export default function Footer() {
                 </a>
               </li>
               <li>
+                <a href="https://www.twitch.tv/skipah" className="text-white">
+                  Twitch
+                </a>
+              </li>
+              <li>
                 <a
                   href="https://www.linkedin.com/in/jussi-mehtala/"
                   className="text-white"
                 >
                   Linkedin
-                </a>
-              </li>
-              <li>
-                <a href="https://www.twitch.tv/skipah" className="text-white">
-                  Twitch
                 </a>
               </li>
               <li>
@@ -69,7 +64,7 @@ export default function Footer() {
           </Col>
           <Row className="mt-3">
             <Col md={12} className="text-center">
-              <p>&copy; 2024 Your Company. All Rights Reserved.</p>
+              <p>&copy; 2024 Skipaduveinau. All Rights Reserved.</p>
             </Col>
           </Row>
         </Row>
