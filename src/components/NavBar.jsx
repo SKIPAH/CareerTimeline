@@ -2,6 +2,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import { NavLink } from "react-router-dom";
 
 function NavBar() {
   return (
@@ -20,10 +21,18 @@ function NavBar() {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/esports">Esports</Nav.Link>
-              <Nav.Link href="/dev">Dev</Nav.Link>
-              <Nav.Link href="/fitness">Fitness</Nav.Link>
+              <Nav.Link as={NavLink} to={"/"}>
+                Home
+              </Nav.Link>
+              <Nav.Link as={NavLink} to={"/esports"}>
+                Esports
+              </Nav.Link>
+              <Nav.Link as={NavLink} to={"/dev"}>
+                Dev
+              </Nav.Link>
+              <Nav.Link as={NavLink} to={"/fitness"}>
+                Fitness
+              </Nav.Link>
             </Nav>
 
             <NavDropdown title="Socials" id="basic-nav-dropdown">
@@ -41,6 +50,12 @@ function NavBar() {
                 target="_blank"
               >
                 Twitch
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                href="https://www.instagram.com/skipaah/"
+                target="_blank"
+              >
+                Instagram
               </NavDropdown.Item>
               <NavDropdown.Item
                 href="https://github.com/SKIPAH"

@@ -37,6 +37,14 @@ export default function Footer() {
               </li>
               <li>
                 <a
+                  href="https://www.instagram.com/skipaah/"
+                  className="text-white"
+                >
+                  Instagram
+                </a>
+              </li>
+              <li>
+                <a
                   href="https://www.linkedin.com/in/jussi-mehtala/"
                   className="text-white"
                 >
