@@ -33,6 +33,9 @@ function NavBar() {
               <Nav.Link as={NavLink} to={"/fitness"}>
                 Fitness
               </Nav.Link>
+              <Nav.Link as={NavLink} to={"/dbz"}>
+                DragonBall Z
+              </Nav.Link>
             </Nav>
 
             <NavDropdown title="Socials" id="basic-nav-dropdown">
@@ -69,6 +72,10 @@ function NavBar() {
               >
                 Linkedin
               </NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown title="Language" id="language-nav-dropdown">
+              <NavDropdown.Item>Suomeksi</NavDropdown.Item>
+              <NavDropdown.Item>English</NavDropdown.Item>
             </NavDropdown>
           </Navbar.Collapse>
         </Container>

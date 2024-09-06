@@ -10,8 +10,8 @@ export default function Footer() {
             <h5>About me</h5>
             <p>
               My name is Jussi Mehtälä and I'm from Finland. With this website
-              I'm planning to showcase my programming cababilities and also show
-              other things like my hobbies and things like my esports career.
+              I'm planning to learn more and show my programming cababilities by
+              creating this project showcasing my interests and hobbies.
             </p>
           </Col>
           <Col md={4}>

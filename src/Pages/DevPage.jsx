@@ -1,10 +1,8 @@
-import { Container } from "react-bootstrap";
-
 export default function DevPage() {
   return (
     <>
-      <Container className="dev-container">
-        <h1>My development journey</h1>
+      <section className="dev-container">
+        <h1 className="title-text">My development journey</h1>
 
         <p>
           I have recently graduated as a Bachelor of Engineering specialized in
@@ -35,7 +33,7 @@ export default function DevPage() {
             Portfolio PDF
           </a>
         </p>
-      </Container>
+      </section>
     </>
   );
 }
