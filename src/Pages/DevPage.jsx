@@ -1,10 +1,10 @@
 export default function DevPage() {
   return (
     <>
-      <section className="dev-container">
+      <section className="dev-section">
         <h1 className="title-text">My development journey</h1>
 
-        <p>
+        <p className="dev-text">
           I have recently graduated as a Bachelor of Engineering specialized in
           software development and I am currently looking for a job to start my
           career in tech industry.

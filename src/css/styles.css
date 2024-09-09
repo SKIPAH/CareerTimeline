@@ -15,22 +15,61 @@
   text-align: center;
 }
 
+.fitness-section .fitness-text {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.esports-section {
+  display: flex;
+  flex-direction: column;
+  min-height: 40vh;
+  max-width: 100%;
+  align-items: center;
+}
+.esports-section .esports-text {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+}
+.esports-section a {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+  text-decoration: none;
+}
+
 #profilepic {
   padding: 0;
   margin: 0;
-  height: 20%;
-  width: 12%;
+  width: 10em;
   position: absolute;
   left: 30px;
   border-radius: 8em;
 }
 
-#basic-nav-dropdown {
-  color: white;
+.navbar-logos {
+  width: 5%;
+  margin: 0.2em;
+  cursor: pointer;
 }
 
-#language-nav-dropdown {
-  color: white;
+.navbar-right {
+  margin-left: 10em;
+}
+
+a.nav-link {
+  margin: 0.5em;
+  padding: 0.5em;
+  white-space: nowrap;
+  width: auto;
+  display: inline-block;
+}
+
+.navbar .nav-link.active {
+  color: black;
+  font-weight: bold;
 }
 
 .maincontainer {
@@ -41,12 +80,23 @@
   align-items: center;
 }
 
-.dev-container {
+.dev-section {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   max-width: 100%;
   align-items: center;
+}
+.dev-section p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+}
+.dev-section a {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+  text-decoration: none;
 }
 
 footer {
@@ -76,4 +126,13 @@ footer {
   height: 100%;
   width: 100%;
   position: absolute;
+}
+
+@media only screen and (min-width: 768px) {
+  #basic-nav-dropdown {
+    display: none;
+  }
+  #language-nav-dropdown {
+    display: none;
+  }
 }/*# sourceMappingURL=styles.css.map */

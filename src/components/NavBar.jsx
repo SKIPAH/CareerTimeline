@@ -7,14 +7,8 @@ import { NavLink } from "react-router-dom";
 function NavBar() {
   return (
     <>
-      <Navbar
-        collapseOnSelect
-        expand="lg"
-        className="bg-body-tertiary"
-        bg="dark"
-        data-bs-theme="dark"
-      >
-        <Container>
+      <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+        <Container className="navbar-container">
           <Navbar.Brand>
             <img src="src/images/dbzskipah.png" />
           </Navbar.Brand>
@@ -77,6 +71,59 @@ function NavBar() {
               <NavDropdown.Item>Suomeksi</NavDropdown.Item>
               <NavDropdown.Item>English</NavDropdown.Item>
             </NavDropdown>
+            <ul className="navbar-right">
+              <a
+                href="https://www.linkedin.com/in/jussi-mehtala/"
+                target="_blank"
+              >
+                {" "}
+                <img
+                  src="src/images/linkedin.png"
+                  className="navbar-logos"
+                  alt="linkedin logo"
+                />
+              </a>
+              <a href="https://github.com/SKIPAH" target="_blank">
+                {" "}
+                <img
+                  src="src/images/github.png"
+                  className="navbar-logos"
+                  alt="github logo"
+                />
+              </a>
+              <a href="https://x.com/SKIPAHH" target="_blank">
+                {" "}
+                <img
+                  src="src/images/twitter.png"
+                  className="navbar-logos"
+                  alt="twitter logo"
+                />
+              </a>
+              <a href="https://www.instagram.com/skipaah/" target="_blank">
+                {" "}
+                <img
+                  src="src/images/instagram.png"
+                  className="navbar-logos"
+                  alt="instagram logo"
+                />
+              </a>
+              <a href="https://www.youtube.com/@SKIPAH" target="_blank">
+                {" "}
+                <img
+                  src="src/images/youtube.png"
+                  className="navbar-logos"
+                  alt="youtube logo"
+                />
+              </a>
+              <a href="https://www.twitch.tv/skipah" target="_blank">
+                {" "}
+                <img
+                  src="src/images/twitch.png"
+                  className="navbar-logos"
+                  alt="twitch logo"
+                />
+              </a>
+            </ul>
           </Navbar.Collapse>
         </Container>
       </Navbar>

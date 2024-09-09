@@ -3,7 +3,6 @@
 
 
 .introduction{
-
   .container{
     background-color: #95b1ff;
   }
@@ -19,22 +18,70 @@
     text-align: center;
   }
 
+  .fitness-section{
+
+    .fitness-text{
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 1.5em;
+      text-align: center;
+    }
+  }
+
+  .esports-section{
+    display: flex;
+    flex-direction: column;
+    min-height: 40vh;
+    max-width: 100%;
+    align-items: center;
+
+    .esports-text{
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 1.5em;
+      text-align: center;
+    }
+    a{
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 1.5em;
+      text-align: center;
+      text-decoration: none;
+    }
+  }
+
   #profilepic{
     padding: 0;
     margin: 0;
-    height: 20%;
-    width: 12%;
+    width: 10em;
     position: absolute;
     left: 30px;
     border-radius: 8em;
   }
+
+  .navbar-logos {
+    width: 5%;
+    margin: 0.2em;
+    cursor: pointer;
+  }
+
+  .navbar-right{
+    margin-left: 10em;
+  }
   
-  #basic-nav-dropdown{
-    color: white
+
+
+  a.nav-link{
+    margin: 0.5em;
+    padding: 0.5em;
+    white-space: nowrap;
+    width: auto;
+    display: inline-block;
+
   }
-  #language-nav-dropdown{
-    color: white;
+
+  .navbar .nav-link.active {
+    color: black;
+    font-weight: bold;
   }
+
   .maincontainer {
     display: flex;
     flex-direction: column;
@@ -43,14 +90,28 @@
     align-items: center;
   }
   
-  .dev-container{
+  .dev-section{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     max-width: 100%;
     align-items: center;
+
+    p {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 1.5em;
+      text-align: center;
+    }
+
+    a{
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 1.5em;
+      text-align: center;
+      text-decoration: none;
+    }
   }
-  
+
+
   footer{
     position: relative;
     margin-top: auto;
@@ -80,3 +141,17 @@
     position: absolute;
   }
   
+
+
+  @media only screen and (min-width: 768px) {
+
+
+    #basic-nav-dropdown{
+      display: none;
+    }
+
+    #language-nav-dropdown{
+      display: none;
+    }
+    
+  }
