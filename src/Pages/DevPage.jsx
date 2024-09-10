@@ -33,6 +33,15 @@ export default function DevPage() {
             Portfolio PDF
           </a>
         </p>
+
+        <p>
+          <a
+            href="https://jussiprojects.itch.io/webglnucutest?secret=BtYgvJZZzU2b0GynO4y9q7XY5WU"
+            target="_blank"
+          >
+            Itch IO project of my thesis
+          </a>
+        </p>
       </section>
     </>
   );

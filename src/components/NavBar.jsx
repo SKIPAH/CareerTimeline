@@ -10,7 +10,9 @@ function NavBar() {
       <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
         <Container className="navbar-container">
           <Navbar.Brand>
-            <img src="src/images/dbzskipah.png" />
+            <Nav.Link as={NavLink} to={"/"}>
+              <img src="src/files/images/dbzskipah.png" />
+            </Nav.Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
@@ -78,7 +80,7 @@ function NavBar() {
               >
                 {" "}
                 <img
-                  src="src/images/linkedin.png"
+                  src="src/files/images/linkedin.png"
                   className="navbar-logos"
                   alt="linkedin logo"
                 />
@@ -86,7 +88,7 @@ function NavBar() {
               <a href="https://github.com/SKIPAH" target="_blank">
                 {" "}
                 <img
-                  src="src/images/github.png"
+                  src="src/files/images/github.png"
                   className="navbar-logos"
                   alt="github logo"
                 />
@@ -94,7 +96,7 @@ function NavBar() {
               <a href="https://x.com/SKIPAHH" target="_blank">
                 {" "}
                 <img
-                  src="src/images/twitter.png"
+                  src="src/files/images/twitter.png"
                   className="navbar-logos"
                   alt="twitter logo"
                 />
@@ -102,7 +104,7 @@ function NavBar() {
               <a href="https://www.instagram.com/skipaah/" target="_blank">
                 {" "}
                 <img
-                  src="src/images/instagram.png"
+                  src="src/files/images/instagram.png"
                   className="navbar-logos"
                   alt="instagram logo"
                 />
@@ -110,7 +112,7 @@ function NavBar() {
               <a href="https://www.youtube.com/@SKIPAH" target="_blank">
                 {" "}
                 <img
-                  src="src/images/youtube.png"
+                  src="src/files/images/youtube.png"
                   className="navbar-logos"
                   alt="youtube logo"
                 />
@@ -118,7 +120,7 @@ function NavBar() {
               <a href="https://www.twitch.tv/skipah" target="_blank">
                 {" "}
                 <img
-                  src="src/images/twitch.png"
+                  src="src/files/images/twitch.png"
                   className="navbar-logos"
                   alt="twitch logo"
                 />
