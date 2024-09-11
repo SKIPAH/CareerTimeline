@@ -32,6 +32,9 @@ function NavBar() {
               <Nav.Link as={NavLink} to={"/dbz"}>
                 DragonBall Z
               </Nav.Link>
+              <Nav.Link as={NavLink} to={"/timeline"}>
+                TimelineTEST
+              </Nav.Link>
             </Nav>
 
             <NavDropdown title="Socials" id="basic-nav-dropdown">
