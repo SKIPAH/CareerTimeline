@@ -11,8 +11,8 @@ export default function TimelinePage() {
   let schoolIconStyles = { background: "#F3D6A0" };
 
   return (
-    <>
-      <h1>Timeline</h1>
+    <div className="timeline-div">
+      <h1 className="timeline-title">Timeline</h1>
       <VerticalTimeline>
         {TimelineElements.map((element) => {
           let isWorkIcon = element.icon === "work"; //CHANGE THIS TO SOMETHING ELSE LATER
@@ -36,11 +36,20 @@ export default function TimelinePage() {
                 {element.location}
               </h5>
               <p id="description">{element.description}</p>
-              {showButton && <a href="/">{element.buttonText}</a>}
+              {showButton && (
+                <a
+                  className={`button ${
+                    isWorkIcon ? "workButton" : "schoolButton"
+                  }`}
+                  href="/"
+                >
+                  {element.buttonText}
+                </a>
+              )}
             </VerticalTimelineElement>
           );
         })}
       </VerticalTimeline>
-    </>
+    </div>
   );
 }
