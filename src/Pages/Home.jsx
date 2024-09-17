@@ -1,3 +1,5 @@
+import Timeline from "../components/Timeline";
+
 export default function Home() {
   return (
     <>
@@ -35,6 +37,7 @@ export default function Home() {
           </p>
         </div>
       </section>
+      <Timeline></Timeline>
     </>
   );
 }

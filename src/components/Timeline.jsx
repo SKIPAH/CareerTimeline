@@ -5,10 +5,8 @@ import {
 import TimelineElements from "../timelineElements";
 
 import "react-vertical-timeline-component/style.min.css";
-import WorkIcon from "../files/images/work.png";
-import SchoolIcon from "../files/images/school.png";
 
-export default function TimelinePage() {
+export default function Timeline() {
   let workIconStyles = { background: "#06D6A0" };
   let schoolIconStyles = { background: "#F3D6A0" };
 
@@ -29,14 +27,7 @@ export default function TimelinePage() {
               date={element.date}
               dateClassName="date"
               iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles} //CHANGE LATER
-              // icon={isWorkIcon ? <WorkIcon /> : <SchoolIcon />}
-              icon={
-                <img
-                  src={isWorkIcon ? WorkIcon : SchoolIcon}
-                  alt="icon"
-                  style={{ width: "100%", height: "100%" }}
-                />
-              }
+              // icon={isWorkIcon ? { WorkIcon } : { SchoolIcon }}
             >
               <h3 className="vertical-timeline-element-title">
                 {element.title}
