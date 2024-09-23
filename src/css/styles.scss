@@ -3,6 +3,7 @@
 
 
 .introduction{
+  
   .container{
     background-color: #95b1ff;
   }
@@ -19,7 +20,9 @@
   }
 
   .fitness-section{
-
+    .container{
+      background-color: #95b1ff;
+    }
     .fitness-text{
       font-family: "Josefin Sans", sans-serif;
       font-size: 1.5em;
@@ -33,6 +36,9 @@
     min-height: 40vh;
     max-width: 100%;
     align-items: center;
+    .container{
+      background-color: #95b1ff;
+    }
 
     .esports-text{
       font-family: "Josefin Sans", sans-serif;
@@ -85,7 +91,7 @@
   .maincontainer {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 60vh;
     max-width: 100%;
     align-items: center;
   }
@@ -93,9 +99,13 @@
   .dev-section{
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 60vh;
     max-width: 100%;
     align-items: center;
+
+    .container{
+      background-color: #95b1ff;
+    }
 
     p {
       font-family: "Josefin Sans", sans-serif;
@@ -108,6 +118,12 @@
       font-size: 1.5em;
       text-align: center;
       text-decoration: none;
+    }
+  }
+
+  .dbz-section{
+    .container{
+      background-color: #95b1ff;
     }
   }
 

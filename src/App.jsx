@@ -8,7 +8,7 @@ import Home from "./Pages/Home";
 
 import "/src/css/styles.css";
 import { Route, Routes } from "react-router-dom";
-import TimelinePage from "./Pages/TimelinePage";
+import ExperiencePage from "./Pages/ExperiencePage";
 
 export default function App() {
   return (
@@ -17,11 +17,11 @@ export default function App() {
       <div className="maincontainer">
         <Routes>
           <Route path="/" element={<Home />}></Route>
+          <Route path="/experience" element={<ExperiencePage />}></Route>
           <Route path="/esports" element={<EsportsPage />}></Route>
           <Route path="/dev" element={<DevPage />}></Route>
           <Route path="/fitness" element={<FitnessPage />}></Route>
           <Route path="/dbz" element={<DbzPage />}></Route>
-          <Route path="/timeline" element={<TimelinePage />}></Route>
         </Routes>
       </div>
       <Footer></Footer>

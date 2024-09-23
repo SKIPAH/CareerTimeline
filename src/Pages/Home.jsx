@@ -25,7 +25,7 @@ export default function Home() {
             project to show in CV when applying for job opportunities in the
             tech industry or possibly something else. I currently have most
             experience related to programming with the Unity game engine and C#
-            language. I consider myself still a newbie in development, so this
+            language. I consider myself still a newbie with dev skills, so this
             website will definitely have lots of errors.
           </p>
 
@@ -33,11 +33,10 @@ export default function Home() {
             This is the homepage of my website with some introduction and
             information about the project. On top you can find different
             categories of my hobbies/interests/job related stuff and social
-            media links. Also planning to add different languages.
+            media links.
           </p>
         </div>
       </section>
-      <Timeline></Timeline>
     </>
   );
 }

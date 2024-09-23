@@ -4,6 +4,7 @@ export default function EsportsPage() {
   return (
     <>
       <section className="esports-section">
+        <div className="container">
         <h1 className="title-text">Esports Page</h1>
         <p className="esports-text">
           During 2019-2022 I was a competitive esports athlete representing
@@ -57,6 +58,7 @@ export default function EsportsPage() {
           to do.
         </p>
         <a href="https://liquipedia.net/overwatch/SKIPAH">Liquidpedia</a>
+        </div>
       </section>
       <YoutubeEmbed embedId="uY3LpNTSYqg"></YoutubeEmbed>
     </>

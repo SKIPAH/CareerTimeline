@@ -20,6 +20,9 @@ function NavBar() {
               <Nav.Link as={NavLink} to={"/"}>
                 Home
               </Nav.Link>
+              <Nav.Link as={NavLink} to={"/experience"}>
+                Work/Education
+              </Nav.Link>
               <Nav.Link as={NavLink} to={"/esports"}>
                 Esports
               </Nav.Link>
@@ -31,9 +34,6 @@ function NavBar() {
               </Nav.Link>
               <Nav.Link as={NavLink} to={"/dbz"}>
                 DragonBall Z
-              </Nav.Link>
-              <Nav.Link as={NavLink} to={"/timeline"}>
-                TimelineTEST
               </Nav.Link>
             </Nav>
 
