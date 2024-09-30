@@ -3,10 +3,7 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import TimelineElements from "../timelineElements";
-
 import "react-vertical-timeline-component/style.min.css";
-import WorkIcon from "../files/images/work.png";
-import SchoolIcon from "../files/images/school.png";
 
 export default function Timeline() {
   let workIconStyles = { background: "#06D6A0" };
@@ -15,6 +12,9 @@ export default function Timeline() {
   return (
     <div className="timeline-div">
       <h1 className="timeline-title">Education and work experience</h1>
+      <h2 className="timeline-secondary-title">
+        Timeline made with React vertical timeline component
+      </h2>
       <VerticalTimeline>
         {TimelineElements.map((element) => {
           let isWorkIcon = element.icon === "work"; //CHANGE THIS TO SOMETHING ELSE LATER
@@ -31,7 +31,7 @@ export default function Timeline() {
               iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles} //CHANGE LATER
               icon={
                 <img
-                  src={isWorkIcon ? WorkIcon : SchoolIcon}
+                  src={element.icon}
                   alt="icon"
                   style={{ width: "100%", height: "100%" }}
                 />
