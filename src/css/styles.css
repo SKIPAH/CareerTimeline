@@ -1,22 +1,53 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+:root {
+  --primary-color1: #fffc31;
+  --primary-color2: #ff3131;
+}
+
+.introduction #profilepic {
+  padding: 0;
+  margin: 0;
+  width: 25em;
+  position: absolute;
+  left: 6em;
+  top: 15em;
+  border-radius: 8em;
+}
+.introduction .intro {
+  background-color: var(--primary-color2);
+}
+.introduction .intro .introduction-text {
+  text-align: center;
+  word-wrap: break-word;
+  font-size: 4em;
+}
+.introduction .intro .title-text {
+  padding-bottom: 0.5em;
+  padding-left: 4em;
+  padding-top: 1em;
+}
 .introduction .container {
-  background-color: #95b1ff;
+  background-color: var(--primary-color1);
+  max-width: 100%;
 }
 .introduction .introduction-text {
+  margin: 0;
+  padding: 4em;
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.5em;
   text-align: center;
 }
 
 .title-text {
-  font-size: 4em;
+  font-size: 8em;
   font-family: "Bebas Neue", sans-serif;
   text-align: center;
 }
 
 .fitness-section .container {
-  background-color: #95b1ff;
+  background-color: var(--primary-color1);
+  max-width: 100%;
 }
 .fitness-section .fitness-text {
   font-family: "Josefin Sans", sans-serif;
@@ -25,14 +56,15 @@
 }
 
 .esports-section {
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   min-height: 40vh;
-  max-width: 100%;
   align-items: center;
 }
 .esports-section .container {
-  background-color: #95b1ff;
+  background-color: var(--primary-color1);
+  max-width: 100%;
 }
 .esports-section .esports-text {
   font-family: "Josefin Sans", sans-serif;
@@ -44,15 +76,6 @@
   font-size: 1.5em;
   text-align: center;
   text-decoration: none;
-}
-
-#profilepic {
-  padding: 0;
-  margin: 0;
-  width: 10em;
-  position: absolute;
-  left: 30px;
-  border-radius: 8em;
 }
 
 .navbar-logos {
@@ -94,7 +117,8 @@ a.nav-link {
   align-items: center;
 }
 .dev-section .container {
-  background-color: #95b1ff;
+  background-color: var(--primary-color1);
+  max-width: 100%;
 }
 .dev-section p {
   font-family: "Josefin Sans", sans-serif;
@@ -108,8 +132,9 @@ a.nav-link {
   text-decoration: none;
 }
 
-.dbz-section .container {
-  background-color: #95b1ff;
+.dbz-section .dbz-container {
+  background-color: var(--primary-color1);
+  max-width: 100%;
 }
 
 footer {
@@ -207,7 +232,7 @@ footer {
 }
 
 .schoolButton {
-  background-color: #f9c74f;
+  background-color: #ffb300;
 }
 
 .schoolButton:hover {

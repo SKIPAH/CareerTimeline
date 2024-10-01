@@ -6,8 +6,7 @@ import TimelineElements from "../timelineElements";
 import "react-vertical-timeline-component/style.min.css";
 
 export default function Timeline() {
-  let workIconStyles = { background: "#06D6A0" };
-  let schoolIconStyles = { background: "#F3D6A0" };
+  let IconStyles = { background: "#ffb300" };
 
   return (
     <div className="timeline-div">
@@ -28,7 +27,7 @@ export default function Timeline() {
               key={element.key}
               date={element.date}
               dateClassName="date"
-              iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles} //CHANGE LATER
+              iconStyle={IconStyles} //CHANGE LATER
               icon={
                 <img
                   src={element.icon}
