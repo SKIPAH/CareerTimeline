@@ -62,6 +62,10 @@
   min-height: 40vh;
   align-items: center;
 }
+.esports-section .title-text {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
 .esports-section .container {
   background-color: var(--primary-color1);
   max-width: 100%;
@@ -71,11 +75,14 @@
   font-size: 1.3em;
   text-align: center;
 }
-.esports-section a {
+.esports-section .esports-link {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 1.5em;
+  font-size: 1.1em;
   text-align: center;
   text-decoration: none;
+}
+.esports-section .esports-link:hover {
+  font-size: 1.3em;
 }
 
 .navbar-logos {
@@ -135,6 +142,32 @@ a.nav-link {
 .dbz-section .dbz-container {
   background-color: var(--primary-color1);
   max-width: 100%;
+}
+.dbz-section .background-video {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.dbz-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.dbz-section .content-overvideo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 6em;
 }
 
 footer {
