@@ -6,12 +6,24 @@ export default function EsportsPage() {
       <section className="esports-section">
         <div className="container">
           <h1 className="title-text">My journey as a esports athlete!</h1>
-          <p className="esports-text">
-            During 2019-2022 I was a competitive esports athlete representing
-            multiple Finnish and European teams and organizations in Overwatch
-            and Valorant. Here is my <a className="esports-link" href="https://liquipedia.net/overwatch/SKIPAH">Liquidpedia</a> page showing all the achievements and teams.
-          </p>
-
+          <div className="esports-introduction">
+            <p className="esports-text">
+              During 2019-2022 I was a competitive esports athlete representing
+              multiple Finnish and European teams and organizations in Overwatch
+              and Valorant. Here is my{" "}
+              <a
+                className="esports-link"
+                href="https://liquipedia.net/overwatch/SKIPAH"
+              >
+                Liquidpedia
+              </a>{" "}
+              page showing all the achievements and teams.
+            </p>
+            <img
+              src="src/files/images/nyyrikkiskipah.png"
+              className="esports-picture"
+            ></img>
+          </div>
           <p className="esports-text">
             My love for gaming started when I played Donkey Kong Country on
             Super Nintendo as a little kid. I have 4 brothers and I've usually
@@ -61,6 +73,7 @@ export default function EsportsPage() {
         </div>
         <div className="container">
           <YoutubeEmbed embedId="uY3LpNTSYqg"></YoutubeEmbed>
+          <YoutubeEmbed embedId="4MIz6BQikh4"></YoutubeEmbed>
         </div>
       </section>
     </>
