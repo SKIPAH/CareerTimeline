@@ -1,4 +1,5 @@
 import YoutubeEmbed from "../components/YoutubeEmbed";
+import HorizontalPictures from "../components/HorizontalPictures";
 
 export default function EsportsPage() {
   return (
@@ -19,10 +20,6 @@ export default function EsportsPage() {
               </a>{" "}
               page showing all the achievements and teams.
             </p>
-            <img
-              src="src/files/images/nyyrikkiskipah.png"
-              className="esports-picture"
-            ></img>
           </div>
           <p className="esports-text">
             My love for gaming started when I played Donkey Kong Country on

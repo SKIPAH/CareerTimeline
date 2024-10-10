@@ -1,9 +1,12 @@
+import { testFunction } from "../components/TestFunction";
+
 export default function Home() {
   return (
     <>
       <section className="introduction">
         <div className="intro">
           <img
+            onClick={testFunction}
             id="profilepic"
             src="src/files/images/profiilikuva.png"
             alt="profile picture"

@@ -1,4 +1,5 @@
 import BackgroundVideo from "../components/BackgroundVideo";
+import HorizontalPictures from "../components/HorizontalPictures";
 
 export default function DbzPage() {
   return (
@@ -10,6 +11,8 @@ export default function DbzPage() {
         </div>
         <BackgroundVideo></BackgroundVideo>
       </section>
+
+      <HorizontalPictures></HorizontalPictures>
     </>
   );
 }

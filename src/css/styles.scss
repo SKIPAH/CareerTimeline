@@ -199,6 +199,35 @@
     }
   }
 
+  .gallery{
+    width: 1000px;
+    display: flex;
+    overflow-x: scroll;
+
+    div{
+      width: 100%;
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-gap: 40px;
+      padding: 10px;
+      flex: none;
+    }
+    
+    img{
+      width: 300px;
+      height: 300px;
+    }
+    .widerpic{
+      width: 400px;
+    }
+    ::-webkit-scrollbar{
+      display: none;
+    }
+  }
+
+  
+ 
+
 
   footer{
     position: relative;

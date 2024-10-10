@@ -173,6 +173,30 @@ a.nav-link {
   font-size: 6em;
 }
 
+.gallery {
+  width: 1000px;
+  display: flex;
+  overflow-x: scroll;
+}
+.gallery div {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 40px;
+  padding: 10px;
+  flex: none;
+}
+.gallery img {
+  width: 300px;
+  height: 300px;
+}
+.gallery .widerpic {
+  width: 400px;
+}
+.gallery ::-webkit-scrollbar {
+  display: none;
+}
+
 footer {
   position: relative;
   margin-top: auto;
