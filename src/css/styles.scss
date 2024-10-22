@@ -23,11 +23,11 @@
       text-align: center;
       word-wrap: break-word;
       font-size: 4em;
+      
     } 
     .title-text{
-      padding-bottom: 0.5em;
       padding-left: 4em;
-      padding-top: 1em;
+      padding-top: 1.5em;
     }
   }
   .container{
@@ -38,6 +38,8 @@
     .introduction-text{
       margin: 0;
       padding: 4em;
+      padding-top: 2.2em;
+      padding-bottom: 0.5em;
       font-family: "Josefin Sans", sans-serif;
       font-size: 1.5em;
       text-align: center;
@@ -71,15 +73,20 @@
     
     .esports-introduction{
       display: flex;
+      align-items: center;
     }
-
-    .esports-picture{
+   
+    .image{
+      width: 550px;
+      height: 400px;
       
     }
 
     .title-text{
       padding-top: 2em;
-      padding-bottom: 2em;
+      padding-bottom: 0.5em;
+      font-size: 6em;
+     
     }
     .container{
       background-color: var(--primary-color1);
@@ -87,8 +94,9 @@
     }
 
     .esports-text{
+      
       font-family: "Josefin Sans", sans-serif;
-      font-size: 1.3em;
+      font-size: 1.6em;
       text-align: center;
     }
     .esports-link{
@@ -162,6 +170,9 @@
       text-decoration: none;
     }
   }
+  .webgl-section{
+    color: red;
+  }
 
   .dbz-section{
     .dbz-container{
@@ -225,10 +236,6 @@
     }
   }
 
-  
- 
-
-
   footer{
     position: relative;
     margin-top: auto;
@@ -247,14 +254,14 @@
     overflow: hidden;
     padding-bottom: 56.25%;
     position: relative;
-    height: 0;
+
     
   }
   .video-responsive iframe {
     left: 0;
     top: 0;
-    height: 50%;
-    width: 50%;
+    height: 100%;
+    width: 100%;
     position: absolute;
   }
   

@@ -1,3 +1,5 @@
+import UnityWebGL from "../components/UnityWebGL";
+
 export default function DevPage() {
   return (
     <>
@@ -46,6 +48,12 @@ export default function DevPage() {
               Itch IO project of my thesis
             </a>
           </p>
+        </div>
+      </section>
+      <section className="webgl-section">
+        <div>
+          <p>TESTINGS</p>
+          <UnityWebGL></UnityWebGL>
         </div>
       </section>
     </>

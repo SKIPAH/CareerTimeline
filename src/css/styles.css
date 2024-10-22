@@ -23,9 +23,8 @@
   font-size: 4em;
 }
 .introduction .intro .title-text {
-  padding-bottom: 0.5em;
   padding-left: 4em;
-  padding-top: 1em;
+  padding-top: 1.5em;
 }
 .introduction .container {
   background-color: var(--primary-color1);
@@ -34,6 +33,8 @@
 .introduction .introduction-text {
   margin: 0;
   padding: 4em;
+  padding-top: 2.2em;
+  padding-bottom: 0.5em;
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.5em;
   text-align: center;
@@ -64,10 +65,16 @@
 }
 .esports-section .esports-introduction {
   display: flex;
+  align-items: center;
+}
+.esports-section .image {
+  width: 550px;
+  height: 400px;
 }
 .esports-section .title-text {
   padding-top: 2em;
-  padding-bottom: 2em;
+  padding-bottom: 0.5em;
+  font-size: 6em;
 }
 .esports-section .container {
   background-color: var(--primary-color1);
@@ -75,7 +82,7 @@
 }
 .esports-section .esports-text {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 1.3em;
+  font-size: 1.6em;
   text-align: center;
 }
 .esports-section .esports-link {
@@ -140,6 +147,10 @@ a.nav-link {
   font-size: 1.5em;
   text-align: center;
   text-decoration: none;
+}
+
+.webgl-section {
+  color: red;
 }
 
 .dbz-section .dbz-container {
@@ -215,14 +226,13 @@ footer {
   overflow: hidden;
   padding-bottom: 56.25%;
   position: relative;
-  height: 0;
 }
 
 .video-responsive iframe {
   left: 0;
   top: 0;
-  height: 50%;
-  width: 50%;
+  height: 100%;
+  width: 100%;
   position: absolute;
 }
 

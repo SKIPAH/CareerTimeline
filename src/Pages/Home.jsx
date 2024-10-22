@@ -13,7 +13,7 @@ export default function Home() {
           ></img>
           <h1 className="title-text">Website of Jussi Mehtälä</h1>
           <p className="introduction-text">
-            Hi. My name is Jussi Mehtälä, also known as SKIPAH in the gaming
+            Yo! My name is Jussi Mehtälä, also known as SKIPAH in the gaming
             community and I am 28-year old fella from Finland.
           </p>
         </div>

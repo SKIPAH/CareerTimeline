@@ -1,4 +1,4 @@
-import videoBg from "../files/videos/stickyricky.mp4";
+import videoBg from "../files/videos/bugati.mp4";
 
 export default function BackgroundVideo() {
   return (

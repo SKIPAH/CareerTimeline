@@ -33,7 +33,7 @@ function NavBar() {
                 Fitness
               </Nav.Link>
               <Nav.Link as={NavLink} to={"/dbz"}>
-                DragonBall Z
+                TEST PAGE
               </Nav.Link>
             </Nav>
 
