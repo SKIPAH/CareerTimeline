@@ -11,12 +11,14 @@ export default function EsportsPage() {
             <img
               className="image"
               src="src/files/images/nyyrikkipictures/assembly.jpg"
+              alt="Assembly Summer 2018 stage picture of SKIPAH"
             ></img>
           </h1>
           <div className="esports-introduction">
             <img
               className="image"
               src="src/files/images/nyyrikkipictures/skipah4.JPG"
+              alt="Lantrek BYOC picture. First lan event"
             ></img>
             <p className="esports-text">
               During 2019-2022 I was a competitive esports athlete representing
@@ -46,12 +48,14 @@ export default function EsportsPage() {
             <img
               className="image"
               src="src/files/images/nyyrikkipictures/nyyrikkiskipah2.png"
+              alt="Lantrek BYOC Picture with Nyyrikki Beanie on"
             ></img>
           </div>
           <div className="esports-introduction">
             <img
               className="image"
               src="src/files/images/nyyrikkipictures/skipah3.JPG"
+              alt="SKIPAH and Jönssöni watching Battalion showmatch at Lantrek"
             ></img>
             <p className="esports-text">
               During high school when I stopped competing in track and field and
@@ -83,6 +87,7 @@ export default function EsportsPage() {
             <img
               className="image"
               src="src/files/images/nyyrikkipictures/skipahuusi.jpeg"
+              alt="Newest playerpicture"
             ></img>
           </div>
           <div className="esports-introduction">
