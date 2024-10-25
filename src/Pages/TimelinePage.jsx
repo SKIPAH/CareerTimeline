@@ -2,7 +2,7 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-import TimelineElements from "../timelineElements";
+import TimelineElements from "../components/TimelineElements";
 
 import "react-vertical-timeline-component/style.min.css";
 import WorkIcon from "../files/images/work.png";

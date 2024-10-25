@@ -3,6 +3,8 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { NavLink } from "react-router-dom";
+import Translations from "./Translations";
+import { Button } from "react-bootstrap";
 
 function NavBar() {
   return (
@@ -17,23 +19,35 @@ function NavBar() {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link as={NavLink} to={"/"}>
-                Home
+              <Nav.Link as={NavLink} to={"/"} data-i18n-key="navbar-home">
+                Asd
               </Nav.Link>
-              <Nav.Link as={NavLink} to={"/experience"}>
-                Work/Education
+              <Nav.Link
+                as={NavLink}
+                to={"/experience"}
+                data-i18n-key="navbar-work"
+              >
+                Asd
               </Nav.Link>
-              <Nav.Link as={NavLink} to={"/esports"}>
-                Esports
+              <Nav.Link
+                as={NavLink}
+                to={"/esports"}
+                data-i18n-key="navbar-esports"
+              >
+                Asd
               </Nav.Link>
-              <Nav.Link as={NavLink} to={"/dev"}>
-                Dev
+              <Nav.Link as={NavLink} to={"/dev"} data-i18n-key="navbar-dev">
+                Asd
               </Nav.Link>
-              <Nav.Link as={NavLink} to={"/fitness"}>
-                Fitness
+              <Nav.Link
+                as={NavLink}
+                to={"/fitness"}
+                data-i18n-key="navbar-fitness"
+              >
+                Asd
               </Nav.Link>
-              <Nav.Link as={NavLink} to={"/dbz"}>
-                TEST PAGE
+              <Nav.Link as={NavLink} to={"/dbz"} data-i18n-key="navbar-test">
+                Asd
               </Nav.Link>
             </Nav>
 
@@ -130,6 +144,7 @@ function NavBar() {
               </a>
             </ul>
           </Navbar.Collapse>
+          <Button id="languageToggleBtn"></Button>
         </Container>
       </Navbar>
       <br />
