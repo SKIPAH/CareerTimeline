@@ -5,16 +5,9 @@
   --primary-color2: #ff3131;
 }
 
-.introduction #profilepic {
-  padding: 0;
-  margin: 0;
-  width: 15em;
-  position: absolute;
-  left: 6em;
-  top: 20em;
-  border-radius: 8em;
-}
 .introduction .intro {
+  display: grid;
+  grid-template-columns: 5fr 5fr;
   background-color: var(--primary-color2);
 }
 .introduction .intro .introduction-text {
@@ -22,9 +15,17 @@
   word-wrap: break-word;
   font-size: 4em;
 }
+.introduction .intro #profilepic {
+  width: 35%;
+  border-radius: 25em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1em;
+}
 .introduction .intro .title-text {
-  padding-left: 4em;
-  padding-top: 1.5em;
+  padding-right: 2em;
+  padding-top: 0.5em;
 }
 .introduction .container {
   background-color: var(--primary-color1);
@@ -38,6 +39,15 @@
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.5em;
   text-align: center;
+}
+.introduction .introduction-text-short {
+  text-align: center;
+  word-wrap: break-word;
+  font-size: 4em;
+  margin: 0;
+  padding: 4em;
+  padding-top: 2.2em;
+  padding-bottom: 2.2em;
 }
 
 .title-text {
@@ -99,10 +109,6 @@
   width: 10%;
   margin: 0.2em;
   cursor: pointer;
-}
-
-.navbar-right {
-  margin-left: 10em;
 }
 
 a.nav-link {
@@ -315,5 +321,21 @@ footer {
     float: none !important;
     color: rgb(53, 53, 53);
     margin-top: 1.5em;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .introduction .intro {
+    display: inline-block;
+  }
+  .introduction .intro #profilepic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+  }
+  .introduction .intro .title-text {
+    font-size: 2em;
+    padding-left: 0;
+    margin-left: 0;
   }
 }/*# sourceMappingURL=styles.css.map */

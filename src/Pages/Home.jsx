@@ -12,7 +12,9 @@ export default function Home() {
             alt="profile picture"
           ></img>
           <h1 className="title-text">Website of Jussi Mehtälä</h1>
-          <p className="introduction-text">
+        </div>
+        <div className="container">
+          <p className="introduction-text-short">
             Yo! My name is Jussi Mehtälä, also known as SKIPAH in the gaming
             community and I am 28-year old fella from Finland.
           </p>
@@ -31,7 +33,6 @@ export default function Home() {
             language. I consider myself still a newbie with dev skills, so this
             website will definitely have lots of errors.
           </p>
-
           <p className="introduction-text">
             This is the homepage of my website with some introduction and
             information about the project. On top you can find different

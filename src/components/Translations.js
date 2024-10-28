@@ -2,20 +2,20 @@ let locale = "en"; // Changed from const to let
 
 const Translations = {
   en: {
-    "navbar-home": "Home",
-    "navbar-work": "Work and Education",
-    "navbar-esports": "Esports",
-    "navbar-dev": "Dev",
-    "navbar-fitness": "Fitness",
+    "navbar-home": "HOME",
+    "navbar-work": "WORK AND EDUCATION",
+    "navbar-esports": "ESPORTS",
+    "navbar-dev": "DEV",
+    "navbar-fitness": "FITNESS",
     "navbar-test": "TEST PAGE",
   },
   fi: {
-    "navbar-home": "Etusivu",
-    "navbar-work": "Työ ja koulutus",
-    "navbar-esports": "E-urheilu",
-    "navbar-dev": "Sovelluskehitys",
-    "navbar-fitness": "Fitness",
-    "navbar-test": "Testi sivu",
+    "navbar-home": "ETUSIVU",
+    "navbar-work": "TYÖ JA KOULUTUS",
+    "navbar-esports": "E-URHEILU",
+    "navbar-dev": "OHJELMOINTI",
+    "navbar-fitness": "FITNESS",
+    "navbar-test": "TESTI",
   },
 };
 
