@@ -11,10 +11,12 @@ export default function Home() {
             src="src/files/images/profiilikuva.png"
             alt="profile picture"
           ></img>
-          <h1 className="title-text">Website of Jussi Mehtälä</h1>
+          <h1 className="title-text" data-i18n-key="homepage-title">
+            Website of Jussi Mehtälä
+          </h1>
         </div>
         <div className="container">
-          <p className="introduction-text-short">
+          <p className="introduction-text-short" data-i18n-key="homepage-introduction-text-short">
             Yo! My name is Jussi Mehtälä, also known as SKIPAH in the gaming
             community and I am 28-year old fella from Finland.
           </p>

@@ -21,11 +21,10 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 1em;
 }
 .introduction .intro .title-text {
   padding-right: 2em;
-  padding-top: 0.5em;
+  padding-top: 0.2em;
 }
 .introduction .container {
   background-color: var(--primary-color1);
@@ -37,10 +36,11 @@
   padding-top: 2.2em;
   padding-bottom: 2.2em;
   font-family: "Josefin Sans", sans-serif;
-  font-size: 1.5em;
+  font-size: 1.8em;
   text-align: center;
 }
 .introduction .introduction-text-short {
+  font-family: "Josefin Sans", sans-serif;
   text-align: center;
   word-wrap: break-word;
   font-size: 4em;
@@ -106,9 +106,14 @@
 }
 
 .navbar-logos {
-  width: 10%;
+  width: 2.2em;
   margin: 0.2em;
+  padding-top: 1em;
   cursor: pointer;
+}
+
+#languageToggleBtn {
+  margin-right: 2em;
 }
 
 a.nav-link {
@@ -246,9 +251,6 @@ footer {
   #basic-nav-dropdown {
     display: none;
   }
-  #language-nav-dropdown {
-    display: none;
-  }
 }
 .timeline-div {
   background: var(--primary-color1);
@@ -326,6 +328,7 @@ footer {
 @media only screen and (max-width: 500px) {
   .introduction .intro {
     display: inline-block;
+    width: 100%;
   }
   .introduction .intro #profilepic {
     display: block;
@@ -335,7 +338,26 @@ footer {
   }
   .introduction .intro .title-text {
     font-size: 2em;
-    padding-left: 0;
+    padding-left: 1.7em;
+    text-align: center;
     margin-left: 0;
+  }
+  .container .introduction-text-short {
+    font-size: 1.5em;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  .container .introduction-text {
+    line-height: 1.2;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  .navbar-logos {
+    display: none;
+  }
+  #languageToggleBtn {
+    margin-left: 1em;
   }
 }/*# sourceMappingURL=styles.css.map */

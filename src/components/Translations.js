@@ -8,6 +8,8 @@ const Translations = {
     "navbar-dev": "DEV",
     "navbar-fitness": "FITNESS",
     "navbar-test": "TEST PAGE",
+    "homepage-title": "WEBSITE OF JUSSI MEHTÄLÄ",
+    "homepage-introduction-text-short": "Yo! My name is Jussi Mehtälä, also known as SKIPAH in the gaming community and I am 28-year old fella from Finland.",
   },
   fi: {
     "navbar-home": "ETUSIVU",
@@ -16,6 +18,8 @@ const Translations = {
     "navbar-dev": "OHJELMOINTI",
     "navbar-fitness": "FITNESS",
     "navbar-test": "TESTI",
+    "homepage-title": "JUSSI MEHTÄLÄN KOTISIVU",
+    "homepage-introduction-text-short": "Moro! Mun nimi on Jussi Mehtälä, myös tunnettu nimellä SKIPAH kilpapelaamis yhteisössä ja olen 28 vuotias jätkä suomesta.",
   },
 };
 
@@ -32,9 +36,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function translateElement(element) {
   const key = element.getAttribute("data-i18n-key");
-  const translation = Translations[locale][key];
-  element.innerText = translation;
+  const Translation = Translations[locale][key];
+  element.innerText = Translation;
 }
+
 
 function toggleLanguage() {
   // Toggle the locale
@@ -42,6 +47,9 @@ function toggleLanguage() {
 
   // Update all elements with new translations
   document.querySelectorAll("[data-i18n-key]").forEach(translateElement);
+  
+  const toggleButton = document.getElementById("languageToggleBtn");
+  toggleButton.innerHTML = locale === "en" ? "SUOMEKSI" : "ENGLISH";
 }
 
 export default Translations;

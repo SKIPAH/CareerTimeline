@@ -1,389 +1,378 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 
 :root {
   --primary-color1: #fffc31;
   --primary-color2: #ff3131;
 }
-.introduction{
-  .intro{
+.introduction {
+  .intro {
     display: grid;
     grid-template-columns: 5fr 5fr;
     background-color: var(--primary-color2);
-    .introduction-text{
+    .introduction-text {
       text-align: center;
       word-wrap: break-word;
       font-size: 4em;
-    } 
-    
-    
-    #profilepic{
+    }
+
+    #profilepic {
       width: 35%;
       border-radius: 25em;
       display: block;
       margin-left: auto;
       margin-right: auto;
-      padding-top: 1em;
     }
-    .title-text{
+    .title-text {
       padding-right: 2em;
-      padding-top: 0.5em;
-
+      padding-top: 0.2em;
     }
   }
-  .container{
+  .container {
     background-color: var(--primary-color1);
     max-width: 100%;
   }
-    .introduction-text{
-      margin: 0;
-      padding: 4em;   
-      padding-top: 2.2em;
-      padding-bottom: 2.2em;
-      font-family: "Josefin Sans", sans-serif;
-      font-size: 1.5em;
-      text-align: center;
-    }
-    .introduction-text-short{
-      text-align: center;
-      word-wrap: break-word;
-      font-size: 4em;
-      margin: 0;
-      padding: 4em;   
-      padding-top: 2.2em;
-      padding-bottom: 2.2em;
-    }
-  }
-  .title-text {
-    font-size: 8em;
-    font-family: "Bebas Neue", sans-serif;
-    text-align: center;
-  }
-
-
-  .fitness-section{
-    .container{
-      background-color: var(--primary-color1);
-      max-width: 100%;
-    }
-    .fitness-text{
-      font-family: "Josefin Sans", sans-serif;
-      font-size: 1.5em;
-      text-align: center;
-    }
-  }
-
-  .esports-section{
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    min-height: 40vh;
-    align-items: center;
-    
-    .esports-introduction{
-      display: flex;
-      align-items: center;
-    }
-   
-    .image{
-      width: 550px;
-      height: 400px;
-      
-    }
-
-    .title-text{
-      padding-top: 2em;
-      padding-bottom: 0.5em;
-      font-size: 6em;
-     
-    }
-    .container{
-      background-color: var(--primary-color1);
-      max-width: 100%;
-    }
-
-    .esports-text{
-      
-      font-family: "Josefin Sans", sans-serif;
-      font-size: 1.6em;
-      text-align: center;
-    }
-    .esports-link{
-      font-family: "Josefin Sans", sans-serif;
-      font-size: 1.1em;
-      text-align: center;
-      text-decoration: none;
-    }
-    .esports-link:hover{
-      font-size: 1.3em;
-    }
-  }
-
-
-  .navbar-logos {
-    width: 10%;
-    margin: 0.2em;
-    cursor: pointer;
-  }
-
-
-  a.nav-link{
-    margin: 0.5em;
-    padding: 0.5em;
-    white-space: nowrap;
-    width: auto;
-    display: inline-block;
-   
-
-  }
-
-  .navbar .nav-link.active {
-    color: black;
-    font-weight: bold;
-  }
-  
-
-
-  .maincontainer {
-    display: flex;
-    flex-direction: column;
-    min-height: 60vh;
-    max-width: 100%;
-    align-items: center;
-    
-  }
-  
-  .dev-section{
-    display: flex;
-    flex-direction: column;
-    min-height: 60vh;
-    max-width: 100%;
-    align-items: center;
-
-    .container{
-      background-color: var(--primary-color1);
-      max-width: 100%;
-    }
-
-    p {
-      font-family: "Josefin Sans", sans-serif;
-      font-size: 1.5em;
-      text-align: center;
-    }
-
-    a{
-      font-family: "Josefin Sans", sans-serif;
-      font-size: 1.5em;
-      text-align: center;
-      text-decoration: none;
-    }
-  }
-  .webgl-section{
-    color: red;
-  }
-
-  .dbz-section{
-    .dbz-container{
-      background-color: var(--primary-color1);
-      max-width: 100%;
-    }
-
-    .background-video{
-      object-fit: cover;
-      width: 100%;
-      height: 100%;
-      
-    }
-    .overlay{
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0,0,0,.5);
-
-    }
-    .content-overvideo{
-      position: absolute;
-      padding-top: 5em;
-      padding-left: 5em;
-      top: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      font-size: 6em;
-      
-    }
-  }
-
-  .gallery{
-    width: 1000px;
-    display: flex;
-    overflow-x: scroll;
-
-    div{
-      width: 100%;
-      display: grid;
-      grid-template-columns: auto auto auto;
-      grid-gap: 40px;
-      padding: 10px;
-      flex: none;
-    }
-    
-    img{
-      width: 300px;
-      height: 300px;
-    }
-    .widerpic{
-      width: 400px;
-    }
-    ::-webkit-scrollbar{
-      display: none;
-    }
-  }
-
-  footer{
-    position: relative;
-    margin-top: auto;
-    bottom: 0;
-    padding-top: 10px;
-    border-top: 2px solid #f5f5f5;
-    background-size: cover;
-    text-align: center;
-    background-color: #333;
-    color: #fff;
-    left: 0;
-    bottom: 0;
-  }
-  
-  .video-responsive {
-    overflow: hidden;
-    padding-bottom: 56.25%;
-    position: relative;
-
-    
-  }
-  .video-responsive iframe {
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-  }
-  
-
-
-  @media only screen and (min-width: 768px) {
-
-
-    #basic-nav-dropdown{
-      display: none;
-    }
-
-    #language-nav-dropdown{
-      display: none;
-    }
- 
-    
-  }
-
-  .timeline-div{
-    background: var(--primary-color1);
+  .introduction-text {
+    margin: 0;
+    padding: 4em;
+    padding-top: 2.2em;
+    padding-bottom: 2.2em;
     font-family: "Josefin Sans", sans-serif;
-    font-size: 16px;
-    color: rgb(53, 53, 53);
-    width: 100%;
-
-
-    
-  }
-  .timeline-title{
-    font-size: 8em;
+    font-size: 1.8em;
     text-align: center;
-    font-family: "Bebas Neue", sans-serif;
   }
-  .timeline-secondary-title{
+  .introduction-text-short {
+    font-family: "Josefin Sans", sans-serif;
+    text-align: center;
+    word-wrap: break-word;
     font-size: 4em;
+    margin: 0;
+    padding: 4em;
+    padding-top: 2.2em;
+    padding-bottom: 2.2em;
+  }
+}
+.title-text {
+  font-size: 8em;
+  font-family: "Bebas Neue", sans-serif;
+  text-align: center;
+}
+
+.fitness-section {
+  .container {
+    background-color: var(--primary-color1);
+    max-width: 100%;
+  }
+  .fitness-text {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.5em;
     text-align: center;
-    font-family: "Bebas Neue", sans-serif;
-
   }
-  .vertical-timeline-element-title{
-    padding-top: 0.25em;
-  }
- 
+}
 
-  .vertical-timeline-element-content{
-    box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25), 0 0.4em 1.25em 0 rgba(0,0,0,0.15) !important;
-    padding: 2em 3em !important;
-  }
+.esports-section {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 40vh;
+  align-items: center;
 
-  .date.vertical-timeline-element-date{
-    color: rgb(2, 1, 1) !important;
-    font-size: 1.5em !important;
+  .esports-introduction {
+    display: flex;
+    align-items: center;
   }
 
-
-  .date {
-    color: rgb(201, 251, 255);
+  .image {
+    width: 550px;
+    height: 400px;
   }
 
-  #description{
-    margin: 1.5em 0 2em 0;
+  .title-text {
+    padding-top: 2em;
+    padding-bottom: 0.5em;
+    font-size: 6em;
+  }
+  .container {
+    background-color: var(--primary-color1);
+    max-width: 100%;
   }
 
-  .button{
+  .esports-text {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.6em;
+    text-align: center;
+  }
+  .esports-link {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.1em;
+    text-align: center;
     text-decoration: none;
-    padding: 0.5em 1em;
-    border-radius: 5px;
+  }
+  .esports-link:hover {
+    font-size: 1.3em;
+  }
+}
+
+.navbar-logos {
+  width: 2.2em;
+  margin: 0.2em;
+  padding-top: 1em;
+  cursor: pointer;
+}
+
+#languageToggleBtn {
+  margin-right: 2em;
+}
+
+a.nav-link {
+  margin: 0.5em;
+  padding: 0.5em;
+  white-space: nowrap;
+  width: auto;
+  display: inline-block;
+}
+
+.navbar .nav-link.active {
+  color: black;
+  font-weight: bold;
+}
+
+.maincontainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 60vh;
+  max-width: 100%;
+  align-items: center;
+}
+
+.dev-section {
+  display: flex;
+  flex-direction: column;
+  min-height: 60vh;
+  max-width: 100%;
+  align-items: center;
+
+  .container {
+    background-color: var(--primary-color1);
+    max-width: 100%;
+  }
+
+  p {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  a {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    text-decoration: none;
+  }
+}
+.webgl-section {
+  color: red;
+}
+
+.dbz-section {
+  .dbz-container {
+    background-color: var(--primary-color1);
+    max-width: 100%;
+  }
+
+  .background-video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .content-overvideo {
+    position: absolute;
+    padding-top: 5em;
+    padding-left: 5em;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: white;
+    font-size: 6em;
+  }
+}
+
+.gallery {
+  width: 1000px;
+  display: flex;
+  overflow-x: scroll;
+
+  div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 40px;
+    padding: 10px;
+    flex: none;
   }
 
-  .workButton{
-    background-color: #06d6a0;
+  img {
+    width: 300px;
+    height: 300px;
   }
-  .workButton:hover{
-    background-color: #0ac593;
+  .widerpic {
+    width: 400px;
   }
-  .schoolButton{
-    background-color: #ffb300;
+  ::-webkit-scrollbar {
+    display: none;
   }
-  .schoolButton:hover{
-    background-color: #f3bc3c;
+}
+
+footer {
+  position: relative;
+  margin-top: auto;
+  bottom: 0;
+  padding-top: 10px;
+  border-top: 2px solid #f5f5f5;
+  background-size: cover;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  left: 0;
+  bottom: 0;
+}
+
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+@media only screen and (min-width: 768px) {
+  #basic-nav-dropdown {
+    display: none;
   }
+}
 
+.timeline-div {
+  background: var(--primary-color1);
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  color: rgb(53, 53, 53);
+  width: 100%;
+}
+.timeline-title {
+  font-size: 8em;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+}
+.timeline-secondary-title {
+  font-size: 4em;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+}
+.vertical-timeline-element-title {
+  padding-top: 0.25em;
+}
 
-  @media only screen and (max-width: 1700px){
-    .vertical-timeline-element-date{
-      display: block !important;
-      float: none !important;
-      color: rgb(53, 53, 53);
-      margin-top: 1.5em;
-    }
+.vertical-timeline-element-content {
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25),
+    0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
+  padding: 2em 3em !important;
+}
+
+.date.vertical-timeline-element-date {
+  color: rgb(2, 1, 1) !important;
+  font-size: 1.5em !important;
+}
+
+.date {
+  color: rgb(201, 251, 255);
+}
+
+#description {
+  margin: 1.5em 0 2em 0;
+}
+
+.button {
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  color: white;
+}
+
+.workButton {
+  background-color: #06d6a0;
+}
+.workButton:hover {
+  background-color: #0ac593;
+}
+.schoolButton {
+  background-color: #ffb300;
+}
+.schoolButton:hover {
+  background-color: #f3bc3c;
+}
+
+@media only screen and (max-width: 1700px) {
+  .vertical-timeline-element-date {
+    display: block !important;
+    float: none !important;
+    color: rgb(53, 53, 53);
+    margin-top: 1.5em;
   }
+}
 
-
-  @media only screen and (max-width: 500px){
-
-    .introduction{
-      .intro{
-        display: inline-block;
-         #profilepic{
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-          width: 35%;
-         }
-         .title-text{
-          font-size: 2em;
-          padding-left: 0;
-          margin-left: 0;
-        }
+@media only screen and (max-width: 500px) {
+  .introduction {
+    .intro {
+      display: inline-block;
+      width: 100%;
+      #profilepic {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 35%;
+      }
+      .title-text {
+        font-size: 2em;
+        padding-left: 1.7em;
+        text-align: center;
+        margin-left: 0;
       }
     }
   }
+  .container {
+    .introduction-text-short {
+      font-size: 1.5em;
+      padding: 10px;
+      width: 100%;
+      text-align: center;
+    }
+    .introduction-text {
+      line-height: 1.2;
+      padding: 10px;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  .navbar-logos {
+    display: none;
+  }
 
-
-
+  #languageToggleBtn {
+    margin-left: 1em;
+  }
+}

@@ -15,7 +15,7 @@ export default function Footer() {
             </p>
           </Col>
           <Col md={4}>
-            <h5>Socials</h5>
+            <h5>Follow me on social media</h5>
             <ul className="list-unstyled">
               <li>
                 <a href="https://x.com/SKIPAHH" className="text-white">
