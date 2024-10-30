@@ -116,6 +116,10 @@
   margin-right: 2em;
 }
 
+#languageToggleBtnNavbar {
+  display: none;
+}
+
 a.nav-link {
   margin: 0.5em;
   padding: 0.5em;
@@ -358,6 +362,9 @@ footer {
     display: none;
   }
   #languageToggleBtn {
-    margin-left: 1em;
+    display: none;
+  }
+  #languageToggleBtnNavbar {
+    display: block;
   }
 }/*# sourceMappingURL=styles.css.map */

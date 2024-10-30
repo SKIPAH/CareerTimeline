@@ -16,13 +16,24 @@ export default function Home() {
           </h1>
         </div>
         <div className="container">
-          <p className="introduction-text-short" data-i18n-key="homepage-introduction-text-short">
+          <p
+            className="introduction-text-short"
+            data-i18n-key="homepage-introduction-text-short"
+          >
             Yo! My name is Jussi Mehtälä, also known as SKIPAH in the gaming
-            community and I am 28-year old fella from Finland.
+            community, and I am a 28-year-old fella from Finland.
+          </p>
+          <p
+            className="introduction-text-short"
+            data-i18n-key="homepage-introduction-text-short-note"
+          >
+            Note!! This website is still under construction! Texts, colors,
+            layouts etc etc are no final and I am still a beginner in Web
+            development.
           </p>
         </div>
         <div className="container">
-          <p className="introduction-text">
+          <p className="introduction-text" data-i18n-key="homepage-introduction-text">
             I have recently graduated as a Bachelor of Engineering specialized
             in software development. I wanted to learn more about Web
             Development and decided to create my own website to showcase all
@@ -35,7 +46,7 @@ export default function Home() {
             language. I consider myself still a newbie with dev skills, so this
             website will definitely have lots of errors.
           </p>
-          <p className="introduction-text">
+          <p className="introduction-text" data-i18n-key="homepage-introduction-text-2">
             This is the homepage of my website with some introduction and
             information about the project. On top you can find different
             categories of my hobbies/interests/job related stuff and social

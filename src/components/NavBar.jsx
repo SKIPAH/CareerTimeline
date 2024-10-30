@@ -49,6 +49,8 @@ function NavBar() {
                 to={"/dbz"}
                 data-i18n-key="navbar-test"
               ></Nav.Link>
+              <Button id="languageToggleBtnNavbar">SUOMEKSI</Button>
+              
             </Nav>
 
             <NavDropdown title="Socials" id="basic-nav-dropdown">

@@ -52,7 +52,7 @@ export default function DevPage() {
       </section>
       <section className="webgl-section">
         <div>
-          <p>TESTINGS</p>
+          <p>My WebGL project, which I made for my thesis.</p>
           <UnityWebGL></UnityWebGL>
         </div>
       </section>

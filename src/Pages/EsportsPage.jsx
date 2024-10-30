@@ -99,14 +99,26 @@ export default function EsportsPage() {
               it might be my chance to start my professional career what I've
               planned to do.
             </p>
+          </div>
+          <div className="esports-introduction">
+            <p className="esports-text">
+              Best fragmovie that amazing fella named{" "}
+              <a href="https://x.com/mauserzjeh">Mauser</a> made for me
+            </p>
             <YoutubeEmbed
               className="esports-youtube-embed"
               embedId="4MIz6BQikh4"
             ></YoutubeEmbed>
           </div>
-        </div>
-        <div className="container">
-          <YoutubeEmbed embedId="uY3LpNTSYqg"></YoutubeEmbed>
+          <div className="esports-introduction">
+            <YoutubeEmbed
+              className="esports-youtube-embed"
+              embedId="uY3LpNTSYqg"
+            ></YoutubeEmbed>
+            <p className="esports-text">
+              One of my favorite fragmovie that I've personally made.
+            </p>
+          </div>
         </div>
       </section>
     </>
