@@ -28,8 +28,7 @@ export default function Fitness() {
             great joy from it. I haven't tried wrestling or track and field
             again though, but I'm very interested in strength related sports
             like powerlifting, bodybuilding, strongman and calisthenics. My goal
-            currently is to just be overall athletic and not just focusing on
-            for example doing only powerlifting.
+            currently is to just be overall athletic and getting stronger.
           </p>
         </div>
       </section>

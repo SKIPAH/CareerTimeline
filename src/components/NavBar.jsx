@@ -3,54 +3,62 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { NavLink } from "react-router-dom";
-import Translations from "./Translations";
+import Translations, { getTranslation, getCurrentLocale, setLocale } from "./Translations";
 import { Button } from "react-bootstrap";
+import linkedin from "../files/images/linkedin.png";
+import github from "../files/images/github.png";
+import twitter from "../files/images/twitter.png";
+import instagram from "../files/images/instagram.png";
+import youtube from "../files/images/youtube.png";
+import twitch from "../files/images/twitch.png";
+import dbzskipah from "../files/images/dbzskipah.png";
+import { useState } from 'react';
 
 function NavBar() {
+  const [currentLocale, setCurrentLocale] = useState(getCurrentLocale());
+
+  const handleLanguageToggle = () => {
+    const newLocale = currentLocale === "en" ? "fi" : "en";
+    setLocale(newLocale);
+    setCurrentLocale(newLocale);
+  };
+
   return (
     <>
       <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
         <Container className="navbar-container">
           <Navbar.Brand>
             <Nav.Link as={NavLink} to={"/"}>
-              <img src="src/files/images/dbzskipah.png" />
+              <img src={dbzskipah} />
             </Nav.Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link
-                as={NavLink}
-                to={"/"}
-                data-i18n-key="navbar-home"
-              ></Nav.Link>
-              <Nav.Link
-                as={NavLink}
-                to={"/experience"}
-                data-i18n-key="navbar-work"
-              ></Nav.Link>
-              <Nav.Link
-                as={NavLink}
-                to={"/esports"}
-                data-i18n-key="navbar-esports"
-              ></Nav.Link>
-              <Nav.Link
-                as={NavLink}
-                to={"/dev"}
-                data-i18n-key="navbar-dev"
-              ></Nav.Link>
-              <Nav.Link
-                as={NavLink}
-                to={"/fitness"}
-                data-i18n-key="navbar-fitness"
-              ></Nav.Link>
-              <Nav.Link
-                as={NavLink}
-                to={"/dbz"}
-                data-i18n-key="navbar-test"
-              ></Nav.Link>
-              <Button id="languageToggleBtnNavbar">SUOMEKSI</Button>
-              
+              <Nav.Link as={NavLink} to={"/"}>
+                {getTranslation("navbar-home", currentLocale)}
+              </Nav.Link>
+              <Nav.Link as={NavLink} to={"/experience"}>
+                {getTranslation("navbar-work", currentLocale)}
+              </Nav.Link>
+              <Nav.Link as={NavLink} to={"/esports"}>
+                {getTranslation("navbar-esports", currentLocale)}
+              </Nav.Link>
+              <Nav.Link as={NavLink} to={"/dev"}>
+                {getTranslation("navbar-dev", currentLocale)}
+              </Nav.Link>
+              <Nav.Link as={NavLink} to={"/fitness"}>
+                {getTranslation("navbar-fitness", currentLocale)}
+              </Nav.Link>
+              <Nav.Link as={NavLink} to={"/dbz"}>
+                {getTranslation("navbar-test", currentLocale)}
+              </Nav.Link>
+              <Button 
+                id="languageToggleBtnNavbar" 
+                onClick={handleLanguageToggle}
+              >
+                {currentLocale === "en" ? "SUOMEKSI" : "ENGLISH"}
+              </Button>
             </Nav>
 
             <NavDropdown title="Socials" id="basic-nav-dropdown">
@@ -96,23 +104,19 @@ function NavBar() {
               >
                 {" "}
                 <img
-                  src="src/files/images/linkedin.png"
+                  src={linkedin}
                   className="navbar-logos"
                   alt="linkedin logo"
                 />
               </a>
               <a href="https://github.com/SKIPAH" target="_blank">
                 {" "}
-                <img
-                  src="src/files/images/github.png"
-                  className="navbar-logos"
-                  alt="github logo"
-                />
+                <img src={github} className="navbar-logos" alt="github logo" />
               </a>
               <a href="https://x.com/SKIPAHH" target="_blank">
                 {" "}
                 <img
-                  src="src/files/images/twitter.png"
+                  src={twitter}
                   className="navbar-logos"
                   alt="twitter logo"
                 />
@@ -120,7 +124,7 @@ function NavBar() {
               <a href="https://www.instagram.com/skipaah/" target="_blank">
                 {" "}
                 <img
-                  src="src/files/images/instagram.png"
+                  src={instagram}
                   className="navbar-logos"
                   alt="instagram logo"
                 />
@@ -128,23 +132,25 @@ function NavBar() {
               <a href="https://www.youtube.com/@SKIPAH" target="_blank">
                 {" "}
                 <img
-                  src="src/files/images/youtube.png"
+                  src={youtube}
                   className="navbar-logos"
                   alt="youtube logo"
                 />
               </a>
               <a href="https://www.twitch.tv/skipah" target="_blank">
                 {" "}
-                <img
-                  src="src/files/images/twitch.png"
-                  className="navbar-logos"
-                  alt="twitch logo"
-                />
+                <img src={twitch} className="navbar-logos" alt="twitch logo" />
               </a>
             </ul>
           </Navbar.Collapse>
         </Container>
-        <Button id="languageToggleBtn">SUOMEKSI</Button>
+        <Button 
+          id="languageToggleBtn" 
+          onClick={handleLanguageToggle}
+          className="d-none d-lg-block"
+        >
+          {currentLocale === "en" ? "SUOMEKSI" : "ENGLISH"}
+        </Button>
       </Navbar>
     </>
   );

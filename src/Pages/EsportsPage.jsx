@@ -1,5 +1,10 @@
 import YoutubeEmbed from "../components/YoutubeEmbed";
 import HorizontalPictures from "../components/HorizontalPictures";
+import assembly from "../files/images/nyyrikkipictures/assembly.jpg";
+import skipah4 from "../files/images/nyyrikkipictures/skipah4.JPG";
+import skipahuusi from "../files/images/nyyrikkipictures/skipahuusi.jpeg";
+import nyyrikkiskipah2 from "../files/images/nyyrikkipictures/nyyrikkiskipah2.png";
+import skipah3 from "../files/images/nyyrikkipictures/skipah3.JPG";
 
 export default function EsportsPage() {
   return (
@@ -10,14 +15,14 @@ export default function EsportsPage() {
             My journey as a esports athlete!{" "}
             <img
               className="image"
-              src="src/files/images/nyyrikkipictures/assembly.jpg"
+              src={assembly}
               alt="Assembly Summer 2018 stage picture of SKIPAH"
             ></img>
           </h1>
           <div className="esports-introduction">
             <img
               className="image"
-              src="src/files/images/nyyrikkipictures/skipah4.JPG"
+              src={skipah4}
               alt="Lantrek BYOC picture. First lan event"
             ></img>
             <p className="esports-text">
@@ -41,20 +46,20 @@ export default function EsportsPage() {
               couldn't. My friend groups in elementary school basically formed
               around other kids that liked games like Runescape and all the
               DragonBall Z games. Once I moved to another city for 7th grade, I
-              ended up finding group of friends that played Call Of Duty 4 on
-              pc, where I got my first introduction to esports side of gaming,
-              which wasn't really a thing back then yet during 2010-2012.
+              ended up finding group of friends that played Call Of Duty 2 and 4
+              on pc, where I got my first introduction to esports side of
+              gaming, which wasn't really a thing back then during 2010-2012.
             </p>
             <img
               className="image"
-              src="src/files/images/nyyrikkipictures/nyyrikkiskipah2.png"
+              src={nyyrikkiskipah2}
               alt="Lantrek BYOC Picture with Nyyrikki Beanie on"
             ></img>
           </div>
           <div className="esports-introduction">
             <img
               className="image"
-              src="src/files/images/nyyrikkipictures/skipah3.JPG"
+              src={skipah3}
               alt="SKIPAH and Jönssöni watching Battalion showmatch at Lantrek"
             ></img>
             <p className="esports-text">
@@ -63,10 +68,10 @@ export default function EsportsPage() {
               esports title. I got my first real experiences what playing in a
               team environment competitively meant. After high school I was
               doing the mandatory finnish military service and while I had few
-              months left, I found out about Overwatch videogame that going to
-              be released just after my service ends. I said to my military
+              months left, I found out about Overwatch videogame that was going
+              to be released just after my service ends. I said to my military
               friends that I'm going to become a professional Overwatch player
-              and started instantly grinding hard.
+              and started instantly practicing hard.
             </p>
           </div>
           <div className="esports-introduction">
@@ -74,11 +79,11 @@ export default function EsportsPage() {
               During the first season of ranked I managed to get my peak rank to
               top500, but ended up falling outside once the season ended. I
               realized that I might have the potential, because I got contacted
-              often to join different teams. After the first season I worked as
-              security guard and my shifts were mostly during the nights, which
-              made me unable to even play for any teams and long working hours
-              made my practicing even harder. I still slightly regret that I
-              didn't pursue Overwatch fully during that time, as I might have
+              few times to join different teams. After the first season I worked
+              as a security guard and my shifts were mostly during the nights,
+              which made me unable to even play for any teams and long working
+              hours made my practicing even harder. I still slightly regret that
+              I didn't pursue Overwatch fully during that time, as I might have
               ended up gaining different opportunities in the scene but it is
               what it is. Once I quit my security guard job and started studying
               in Oulu University of Applied Sciences, I could put more time into
@@ -86,7 +91,7 @@ export default function EsportsPage() {
             </p>
             <img
               className="image"
-              src="src/files/images/nyyrikkipictures/skipahuusi.jpeg"
+              src={skipahuusi}
               alt="Newest playerpicture"
             ></img>
           </div>
@@ -94,10 +99,10 @@ export default function EsportsPage() {
             <p className="esports-text">
               I played in some finnish teams here and there and competed in few
               small online tournaments. One day I noticed a post about a finnish
-              organization called "Nyyrikki Esports" searching for players to
+              organization called Nyyrikki Esports searching for players to
               represent them in Overwatch. This of course sparked my interest as
-              it might be my chance to start my professional career what I've
-              planned to do.
+              it might be my chance to start a professional career what I've
+              planned to do. ILL CONTINUE THIS LATER..
             </p>
           </div>
           <div className="esports-introduction">

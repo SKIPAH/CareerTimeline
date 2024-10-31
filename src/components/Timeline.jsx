@@ -16,18 +16,22 @@ export default function Timeline() {
       </h2>
       <VerticalTimeline>
         {TimelineElements.map((element) => {
-          let isWorkIcon = element.icon === "work"; //CHANGE THIS TO SOMETHING ELSE LATER
+          let isWorkIcon = element.icon === "work";
           let showButton =
             element.buttonText !== undefined &&
             element.buttonText !== null &&
             element.buttonText !== "";
+          let showButton2 =
+            element.buttonText2 !== undefined &&
+            element.buttonText2 !== null &&
+            element.buttonText2 !== "";
 
           return (
             <VerticalTimelineElement
               key={element.key}
               date={element.date}
               dateClassName="date"
-              iconStyle={IconStyles} //CHANGE LATER
+              iconStyle={IconStyles}
               icon={
                 <img
                   src={element.icon}
@@ -45,12 +49,24 @@ export default function Timeline() {
               <p id="description">{element.description}</p>
               {showButton && (
                 <a
+                  target="_blank"
                   className={`button ${
                     isWorkIcon ? "workButton" : "schoolButton"
                   }`}
                   href={element.buttonLink}
                 >
                   {element.buttonText}
+                </a>
+              )}
+              {showButton2 && (
+                <a
+                  target="_blank"
+                  className={`button ${
+                    isWorkIcon ? "workButton" : "schoolButton"
+                  }`}
+                  href={element.buttonLink2}
+                >
+                  {element.buttonText2}
                 </a>
               )}
             </VerticalTimelineElement>

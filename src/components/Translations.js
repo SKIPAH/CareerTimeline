@@ -1,4 +1,4 @@
-let locale = "en"; // Changed from const to let
+let locale = "en";
 
 const Translations = {
   en: {
@@ -23,46 +23,21 @@ const Translations = {
     "navbar-test": "TESTI",
     "homepage-title": "JUSSI MEHTÄLÄN KOTISIVU",
     "homepage-introduction-text-short": "Moro! Mun nimi on Jussi Mehtälä, myös tunnettu nimellä SKIPAH kilpapelaamis yhteisössä ja olen 28 vuotias jätkä suomesta.",
-    "homepage-introduction-text-short-note": "Huom! Tämä sivusto on vielä kesken! Tekstit, värit, layoutit jne jne. eivät ole vielä lopullisia ja olen vielä alkeellinen Web-kehittäjä. Päivitän sivua aina kun lisään/korjaan/opin otain uutta.",
+    "homepage-introduction-text-short-note": "Huom! Tämä sivusto on vielä kesken! Tekstit, värit, layoutit jne jne. eivät ole vielä lopullisia ja olen vielä aloittelija. Päivitän sivua aina kun lisään/korjaan/opin otain uutta.",
     "homepage-introduction-text": "Olen vasta valmistunut tieto ja viestintätekniikan insinööri suuntautumisena ohjelmistokehitys. Halusin opetella Web-kehitystä, joten päätin luoda oman kotisivun jossa voin näyttää kaikenlaisia omaan elämään liittyviä asioita! Ajatuksena on päivittää tätä sivua aina kun keksin jotain uutta lisättävää. Ajatuksena myös käyttää tätä projektia CV:ssä, jotta voin helposti näyttää taitojani ja mitä olen kykenyt saamaan aikaan, kun haen töitä tietetekniikan alalta. Tällä hetkellä minulla kuitenkin on eniten kokemusta Unity pelimoottorin ja C# kielen kanssa. Mielestäni olen vielä aloittelija, joten tällä sivustolla tulee olemaan virheitä.",
     "homepage-introduction-text-2": "Sivun yläosasta löydät lisää harrastuksiin ja työhön liittyviä asioita sekä sosiaalisen median linkit.",
   },
 };
 
-document.addEventListener("DOMContentLoaded", () => {
-  // Translate elements when the page loads
-  document.querySelectorAll("[data-i18n-key]").forEach(translateElement);
-  
-  // Add event listener for the toggle buttons after the DOM is fully loaded
-  const languageButtons = [
-    document.getElementById("languageToggleBtn"),
-    document.getElementById("languageToggleBtnNavbar")
-  ];
 
-  languageButtons.forEach(button => {
-    if (button) {
-      button.addEventListener("click", toggleLanguage);
-    }
-  });
-});
+export const getTranslation = (key, currentLocale = locale) => {
+  return Translations[currentLocale][key];
+};
 
-function translateElement(element) {
-  const key = element.getAttribute("data-i18n-key");
-  const Translation = Translations[locale][key];
-  element.innerText = Translation;
-}
+export const getCurrentLocale = () => locale;
 
-function toggleLanguage() {
-  // Toggle the locale
-  locale = locale === "en" ? "fi" : "en";
-
-  // Update all elements with new translations
-  document.querySelectorAll("[data-i18n-key]").forEach(translateElement);
-  
-  // Update button text
-  const buttonText = locale === "en" ? "SUOMEKSI" : "ENGLISH";
-  document.querySelectorAll("#languageToggleBtn, #languageToggleBtnNavbar")
-    .forEach(button => button.innerHTML = buttonText);
-}
+export const setLocale = (newLocale) => {
+  locale = newLocale;
+};
 
 export default Translations;
