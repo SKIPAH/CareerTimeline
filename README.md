@@ -1,6 +1,6 @@
-<h2>Personal website project to learn more about Web Development. Plan is to show hobbies, achievements, social media material, development skills and other stuff what I figure out while creating and planning. Plan is to host website in future when actually
-polished more. </h2>
+<h2>Personal website project to learn more about Web Development. Plan is to show hobbies, achievements, social media material, development skills and other stuff what I figure out while creating and planning. Updating the website slowly always when I add new stuff and learn more. </h2>
 
+<h2><a href="https://jussimehtala.com/">LINK TO WEBSITE</a></h2>
 
 <h3>Very early version with no special planning or designing just after trying out React/Bootstrap components.</h3>
 
