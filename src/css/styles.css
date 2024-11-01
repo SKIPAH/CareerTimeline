@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 :root {
-  --primary-color1: #fffc31;
-  --primary-color2: #ff3131;
+  --primary-color1: #fbbc42;
+  --primary-color2: #fed7ae;
 }
 
 .introduction .intro {
   display: grid;
   grid-template-columns: 5fr 5fr;
-  background-color: var(--primary-color2);
+  background-color: var(--primary-color1);
 }
 .introduction .intro .introduction-text {
   text-align: center;
@@ -133,6 +133,10 @@ a.nav-link {
   font-weight: bold;
 }
 
+.navbar {
+  background-color: var(--primary-color1);
+}
+
 .maincontainer {
   display: flex;
   flex-direction: column;
@@ -163,9 +167,10 @@ a.nav-link {
   text-align: center;
   text-decoration: none;
 }
-
-.webgl-section {
-  color: red;
+.dev-section .webgl-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .dbz-section .dbz-container {

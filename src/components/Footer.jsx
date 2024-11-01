@@ -57,7 +57,6 @@ export default function Footer() {
                 </a>
               </li>
             </ul>
-            <ul className="list-unstyled"></ul>
           </Col>
           <Col md={4}>
             <h5>Contact me</h5>

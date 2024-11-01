@@ -2,14 +2,61 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 
 :root {
-  --primary-color1: #fffc31;
-  --primary-color2: #ff3131;
+  --primary-color1: #fbbc42;
+  --primary-color2: #fed7ae;
 }
+
+.title-text {
+  font-size: 8em;
+  font-family: "Bebas Neue", sans-serif;
+  text-align: center;
+}
+
+.maincontainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 60vh;
+  max-width: 100%;
+  align-items: center;
+}
+
+.navbar {
+  background-color: var(--primary-color1);
+  
+  .nav-link.active {
+    color: black;
+    font-weight: bold;
+  }
+}
+
+.navbar-logos {
+  width: 2.2em;
+  margin: 0.2em;
+  padding-top: 1em;
+  cursor: pointer;
+}
+
+a.nav-link {
+  margin: 0.5em;
+  padding: 0.5em;
+  white-space: nowrap;
+  width: auto;
+  display: inline-block;
+}
+
+#languageToggleBtn {
+  margin-right: 2em;
+}
+
+#languageToggleBtnNavbar {
+  display: none;
+}
+
 .introduction {
   .intro {
     display: grid;
     grid-template-columns: 5fr 5fr;
-    background-color: var(--primary-color2);
+    background-color: var(--primary-color1);
     .introduction-text {
       text-align: center;
       word-wrap: break-word;
@@ -51,11 +98,6 @@
     padding-top: 2.2em;
     padding-bottom: 2.2em;
   }
-}
-.title-text {
-  font-size: 8em;
-  font-family: "Bebas Neue", sans-serif;
-  text-align: center;
 }
 
 .fitness-section {
@@ -113,41 +155,6 @@
   }
 }
 
-.navbar-logos {
-  width: 2.2em;
-  margin: 0.2em;
-  padding-top: 1em;
-  cursor: pointer;
-}
-
-#languageToggleBtn {
-  margin-right: 2em;
-}
-#languageToggleBtnNavbar {
-  display: none;
-}
-
-a.nav-link {
-  margin: 0.5em;
-  padding: 0.5em;
-  white-space: nowrap;
-  width: auto;
-  display: inline-block;
-}
-
-.navbar .nav-link.active {
-  color: black;
-  font-weight: bold;
-}
-
-.maincontainer {
-  display: flex;
-  flex-direction: column;
-  min-height: 60vh;
-  max-width: 100%;
-  align-items: center;
-}
-
 .dev-section {
   display: flex;
   flex-direction: column;
@@ -172,9 +179,6 @@ a.nav-link {
     text-align: center;
     text-decoration: none;
   }
-}
-.webgl-section {
-  color: red;
 }
 
 .dbz-section {
@@ -247,7 +251,6 @@ footer {
   background-color: #333;
   color: #fff;
   left: 0;
-  bottom: 0;
 }
 
 .video-responsive {

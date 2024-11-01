@@ -28,19 +28,29 @@ export default function DevPage() {
           </p>
           <p>
             My{" "}
-            <a href="src/files/jussi_mehtälä_CV_english.pdf" target="_blank">
+            <a
+              href="/jussi_mehtälä_CV_english.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               CV PDF
             </a>{" "}
             and{" "}
             <a
-              href="src/files/jussi_mehtälä_PORTFOLIO_english.pdf"
+              href="/jussi_mehtälä_PORTFOLIO_english.pdf"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Portfolio PDF
             </a>
           </p>
-
           <p>
+            <a
+              href="https://www.theseus.fi/handle/10024/856201"
+              target="_blank"
+            >
+              Link to whole thesis
+            </a>
             <a
               href="https://jussiprojects.itch.io/webglnucutest?secret=BtYgvJZZzU2b0GynO4y9q7XY5WU"
               target="_blank"
@@ -49,11 +59,14 @@ export default function DevPage() {
             </a>
           </p>
         </div>
-      </section>
-      <section className="webgl-section">
-        <div>
+        <div className="container">
           <p>My WebGL project, which I made for my thesis.</p>
-          <UnityWebGL></UnityWebGL>
+          <p>
+            NOTE!! Project will not work on mobile devices most likely, as Unity
+            WebGL does not support mobile properly yet. Enable hardware
+            acceleration, if you are using Google Chrome
+          </p>
+          <UnityWebGL className="unity-webgl"></UnityWebGL>
         </div>
       </section>
     </>

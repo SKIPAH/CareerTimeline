@@ -17,7 +17,7 @@ export default function TimelinePage() {
       <h1 className="timeline-title">Education and work experience</h1>
       <VerticalTimeline>
         {TimelineElements.map((element) => {
-          let isWorkIcon = element.icon === "work"; //CHANGE THIS TO SOMETHING ELSE LATER
+          let isWorkIcon = element.icon === "work";
           let showButton =
             element.buttonText !== undefined &&
             element.buttonText !== null &&
@@ -28,8 +28,7 @@ export default function TimelinePage() {
               key={element.key}
               date={element.date}
               dateClassName="date"
-              iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles} //CHANGE LATER
-              // icon={isWorkIcon ? <WorkIcon /> : <SchoolIcon />}
+              iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles} 
               icon={
                 <img
                   src={isWorkIcon ? WorkIcon : SchoolIcon}
