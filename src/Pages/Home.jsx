@@ -1,51 +1,39 @@
-import { useState, useEffect } from "react";
-import { getTranslation, getCurrentLocale } from "../components/Translations";
+import { useLanguage } from "../hooks/useLanguage";
+import { getTranslation } from "../components/Translations";
 import profilepic from "../files/images/profiilikuva.png";
 
 export default function Home() {
-  const [currentLocale, setCurrentLocale] = useState(getCurrentLocale());
-
-  // Update translations when locale changes
-  useEffect(() => {
-    const checkLocale = () => {
-      const newLocale = getCurrentLocale();
-      if (newLocale !== currentLocale) {
-        setCurrentLocale(newLocale);
-      }
-    };
-    
-    // Check for locale changes
-    const interval = setInterval(checkLocale, 100);
-    return () => clearInterval(interval);
-  }, [currentLocale]);
+  const currentLanguage = useLanguage();
 
   return (
     <>
       <section className="introduction">
         <div className="intro">
-          <img
-            id="profilepic"
-            src={profilepic}
-            alt="profile picture"
-          ></img>
+          <img id="profilepic" src={profilepic} alt="profile picture"></img>
           <h1 className="title-text">
-            {getTranslation("homepage-title", currentLocale)}
+            {getTranslation("homepage-title", currentLanguage)}
           </h1>
         </div>
         <div className="container">
           <p className="introduction-text-short">
-            {getTranslation("homepage-introduction-text-short", currentLocale)}
+            {getTranslation(
+              "homepage-introduction-text-short-note",
+              currentLanguage
+            )}
           </p>
           <p className="introduction-text-short">
-            {getTranslation("homepage-introduction-text-short-note", currentLocale)}
+            {getTranslation(
+              "homepage-introduction-text-short",
+              currentLanguage
+            )}
           </p>
         </div>
         <div className="container">
           <p className="introduction-text">
-            {getTranslation("homepage-introduction-text", currentLocale)}
+            {getTranslation("homepage-introduction-text", currentLanguage)}
           </p>
           <p className="introduction-text">
-            {getTranslation("homepage-introduction-text-2", currentLocale)}
+            {getTranslation("homepage-introduction-text-2", currentLanguage)}
           </p>
         </div>
       </section>

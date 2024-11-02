@@ -27,6 +27,12 @@
     color: black;
     font-weight: bold;
   }
+
+  #languageToggleBtn{
+    color: black;
+    font-weight: bold;
+
+  }
 }
 
 .navbar-logos {
@@ -64,7 +70,7 @@ a.nav-link {
     }
 
     #profilepic {
-      width: 35%;
+      width: 29%;
       border-radius: 25em;
       display: block;
       margin-left: auto;
@@ -384,4 +390,56 @@ footer {
   #languageToggleBtnNavbar {
     display: block;
 }
+
+  .timeline-title {
+    font-size: 3em;
+    padding-left: 0em;
+    text-align: center;
+    margin-left: 0;
 }
+
+
+
+  .esports-section {
+    .title-text {
+      font-size: 3em;
+      padding-left: 0em;
+    }
+    
+  }
+
+  .dev-section {
+    .title-text {
+      font-size: 3em;
+      padding-left: 0em;
+    }
+    p {
+      font-size: 1.5em;
+    }
+    a {
+      font-size: 1.2em;
+    }
+  }
+
+  .fitness-section{
+    .title-text{
+      font-size: 3em;
+    }
+    .fitness-text {
+      font-size: 1.5em;
+    }
+  }
+
+  .dbz-section {
+    .title-text {
+      font-size: 3em;
+    }
+    
+  }
+
+  .background-video {
+    width: 25%;
+    height: 25%;
+  }
+}
+

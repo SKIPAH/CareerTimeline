@@ -4,16 +4,18 @@ import {
 } from "react-vertical-timeline-component";
 import TimelineElements from "./TimelineElements";
 import "react-vertical-timeline-component/style.min.css";
+import { getTranslation } from "./Translations";
+import { useLanguage } from "../hooks/useLanguage";
 
 export default function Timeline() {
   let IconStyles = { background: "#ffb300" };
+  const currentLanguage = useLanguage();
 
   return (
     <div className="timeline-div">
-      <h1 className="timeline-title">Education and work experience</h1>
-      <h2 className="timeline-secondary-title">
-        Timeline made with React vertical timeline component
-      </h2>
+      <h1 className="timeline-title">
+        {getTranslation("timeline-title-text", currentLanguage)}
+      </h1>
       <VerticalTimeline>
         {TimelineElements.map((element) => {
           let isWorkIcon = element.icon === "work";

@@ -5,6 +5,55 @@
   --primary-color2: #fed7ae;
 }
 
+.title-text {
+  font-size: 8em;
+  font-family: "Bebas Neue", sans-serif;
+  text-align: center;
+}
+
+.maincontainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 60vh;
+  max-width: 100%;
+  align-items: center;
+}
+
+.navbar {
+  background-color: var(--primary-color1);
+}
+.navbar .nav-link.active {
+  color: black;
+  font-weight: bold;
+}
+.navbar #languageToggleBtn {
+  color: black;
+  font-weight: bold;
+}
+
+.navbar-logos {
+  width: 2.2em;
+  margin: 0.2em;
+  padding-top: 1em;
+  cursor: pointer;
+}
+
+a.nav-link {
+  margin: 0.5em;
+  padding: 0.5em;
+  white-space: nowrap;
+  width: auto;
+  display: inline-block;
+}
+
+#languageToggleBtn {
+  margin-right: 2em;
+}
+
+#languageToggleBtnNavbar {
+  display: none;
+}
+
 .introduction .intro {
   display: grid;
   grid-template-columns: 5fr 5fr;
@@ -16,7 +65,7 @@
   font-size: 4em;
 }
 .introduction .intro #profilepic {
-  width: 35%;
+  width: 29%;
   border-radius: 25em;
   display: block;
   margin-left: auto;
@@ -48,12 +97,6 @@
   padding: 4em;
   padding-top: 2.2em;
   padding-bottom: 2.2em;
-}
-
-.title-text {
-  font-size: 8em;
-  font-family: "Bebas Neue", sans-serif;
-  text-align: center;
 }
 
 .fitness-section .container {
@@ -105,46 +148,6 @@
   font-size: 1.3em;
 }
 
-.navbar-logos {
-  width: 2.2em;
-  margin: 0.2em;
-  padding-top: 1em;
-  cursor: pointer;
-}
-
-#languageToggleBtn {
-  margin-right: 2em;
-}
-
-#languageToggleBtnNavbar {
-  display: none;
-}
-
-a.nav-link {
-  margin: 0.5em;
-  padding: 0.5em;
-  white-space: nowrap;
-  width: auto;
-  display: inline-block;
-}
-
-.navbar .nav-link.active {
-  color: black;
-  font-weight: bold;
-}
-
-.navbar {
-  background-color: var(--primary-color1);
-}
-
-.maincontainer {
-  display: flex;
-  flex-direction: column;
-  min-height: 60vh;
-  max-width: 100%;
-  align-items: center;
-}
-
 .dev-section {
   display: flex;
   flex-direction: column;
@@ -166,11 +169,6 @@ a.nav-link {
   font-size: 1.5em;
   text-align: center;
   text-decoration: none;
-}
-.dev-section .webgl-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .dbz-section .dbz-container {
@@ -239,7 +237,6 @@ footer {
   background-color: #333;
   color: #fff;
   left: 0;
-  bottom: 0;
 }
 
 .video-responsive {
@@ -371,5 +368,38 @@ footer {
   }
   #languageToggleBtnNavbar {
     display: block;
+  }
+  .timeline-title {
+    font-size: 3em;
+    padding-left: 0em;
+    text-align: center;
+    margin-left: 0;
+  }
+  .esports-section .title-text {
+    font-size: 3em;
+    padding-left: 0em;
+  }
+  .dev-section .title-text {
+    font-size: 3em;
+    padding-left: 0em;
+  }
+  .dev-section p {
+    font-size: 1.5em;
+  }
+  .dev-section a {
+    font-size: 1.2em;
+  }
+  .fitness-section .title-text {
+    font-size: 3em;
+  }
+  .fitness-section .fitness-text {
+    font-size: 1.5em;
+  }
+  .dbz-section .title-text {
+    font-size: 3em;
+  }
+  .background-video {
+    width: 25%;
+    height: 25%;
   }
 }/*# sourceMappingURL=styles.css.map */

@@ -5,8 +5,8 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import { NavLink } from "react-router-dom";
 import Translations, {
   getTranslation,
-  getCurrentLocale,
-  setLocale,
+  getCurrentLanguage,
+  setLanguage,
 } from "./Translations";
 import { Button } from "react-bootstrap";
 import linkedin from "../files/images/linkedin.png";
@@ -19,12 +19,12 @@ import dbzskipah from "../files/images/dbzskipah.png";
 import { useState } from "react";
 
 function NavBar() {
-  const [currentLocale, setCurrentLocale] = useState(getCurrentLocale());
+  const [currentLanguage, setCurrentLanguage] = useState(getCurrentLanguage());
 
   const handleLanguageToggle = () => {
-    const newLocale = currentLocale === "en" ? "fi" : "en";
-    setLocale(newLocale);
-    setCurrentLocale(newLocale);
+    const newLanguage = currentLanguage === "en" ? "fi" : "en";
+    setLanguage(newLanguage);
+    setCurrentLanguage(newLanguage);
   };
 
   return (
@@ -40,31 +40,24 @@ function NavBar() {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link as={NavLink} to={"/"}>
-                {getTranslation("navbar-home", currentLocale)}
+                {getTranslation("navbar-home", currentLanguage)}
               </Nav.Link>
               <Nav.Link as={NavLink} to={"/experience"}>
-                {getTranslation("navbar-work", currentLocale)}
+                {getTranslation("navbar-work", currentLanguage)}
               </Nav.Link>
               <Nav.Link as={NavLink} to={"/esports"}>
-                {getTranslation("navbar-esports", currentLocale)}
+                {getTranslation("navbar-esports", currentLanguage)}
               </Nav.Link>
               <Nav.Link as={NavLink} to={"/dev"}>
-                {getTranslation("navbar-dev", currentLocale)}
+                {getTranslation("navbar-dev", currentLanguage)}
               </Nav.Link>
               <Nav.Link as={NavLink} to={"/fitness"}>
-                {getTranslation("navbar-fitness", currentLocale)}
+                {getTranslation("navbar-fitness", currentLanguage)}
               </Nav.Link>
               <Nav.Link as={NavLink} to={"/dbz"}>
-                {getTranslation("navbar-test", currentLocale)}
+                {getTranslation("navbar-test", currentLanguage)}
               </Nav.Link>
-              <Button
-                id="languageToggleBtnNavbar"
-                onClick={handleLanguageToggle}
-              >
-                {currentLocale === "en" ? "SUOMEKSI" : "ENGLISH"}
-              </Button>
             </Nav>
-
             <NavDropdown title="Socials" id="basic-nav-dropdown">
               <NavDropdown.Item href="https://x.com/SKIPAHH" target="_blank">
                 Twitter
@@ -100,6 +93,9 @@ function NavBar() {
                 Linkedin
               </NavDropdown.Item>
             </NavDropdown>
+            <button id="languageToggleBtnNavbar" onClick={handleLanguageToggle}>
+              {currentLanguage === "en" ? "SUOMEKSI" : "ENGLISH"}
+            </button>
 
             <ul className="navbar-right">
               <a
@@ -142,13 +138,13 @@ function NavBar() {
             </ul>
           </Navbar.Collapse>
         </Container>
-        <Button
+        <button
           id="languageToggleBtn"
           onClick={handleLanguageToggle}
           className="d-none d-lg-block"
         >
-          {currentLocale === "en" ? "SUOMEKSI" : "ENGLISH"}
-        </Button>
+          {currentLanguage === "en" ? "SUOMEKSI" : "ENGLISH"}
+        </button>
       </Navbar>
     </>
   );
