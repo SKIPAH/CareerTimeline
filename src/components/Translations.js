@@ -14,6 +14,7 @@ const Translations = {
     "homepage-introduction-text": "I have recently graduated as a Bachelor of Engineering specialized in software development. I wanted to learn more about Web Development and decided to create my own website to showcase all kinds of stuff what I like to do and have accomplished in my life! Plan is to update this website always when I feel like adding information in it. Also idea is to have this as a cool personal project to show in CV when applying for job opportunities in the tech industry or possibly something else. I currently have most experience related to programming with the Unity game engine and C# language. I consider myself still a newbie with dev skills, so this website will definitely have lots of errors.",
     "homepage-introduction-text-2": "On top you can find different categories of my hobbies/interests/job related stuff and social media links.",
     "timeline-title-text": "Education and work experience",
+    "dev-title": "My development journey",
 
   },
   fi: {
@@ -26,9 +27,10 @@ const Translations = {
     "homepage-title": "JUSSI MEHTÄLÄN KOTISIVU",
     "homepage-introduction-text-short": "Moro! Mun nimi on Jussi Mehtälä, myös tunnettu nimellä SKIPAH kilpapelaamis yhteisössä ja olen 28 vuotias jätkä suomesta.",
     "homepage-introduction-text-short-note": "HUOM! Tämä sivu on vielä kesken! Tekstit, värit, layoutit jne eivät ole vielä lopullisia. Päivitän sivua aina kun lisään/korjaan/opin otain uutta.",
-    "homepage-introduction-text": "Olen vasta valmistunut tieto ja viestintätekniikan insinööri suuntautumisena ohjelmistokehitys. Halusin opetella Web-kehitystä, joten päätin luoda oman kotisivun jossa voin näyttää kaikenlaisia omaan elämään liittyviä asioita! Ajatuksena on päivittää tätä sivua aina kun keksin jotain uutta lisättävää. Ajatuksena myös käyttää tätä projektia CV:ssä, jotta voin helposti näyttää taitojani ja mitä olen kykenyt saamaan aikaan, kun haen töitä tietetekniikan alalta. Tällä hetkellä minulla kuitenkin on eniten kokemusta Unity pelimoottorin ja C# kielen kanssa. Mielestäni olen vielä aloittelija, joten tällä sivustolla tulee olemaan virheitä.",
+    "homepage-introduction-text": "Olen vasta valmistunut tieto ja viestintätekniikan insinööri suuntautumisena ohjelmistokehitys. Halusin opetella Web-kehitystä, joten päätin luoda oman kotisivun jossa voin näyttää kaikenlaisia omaan elämään liittyviä asioita! Ajatuksena on päivittää tätä sivua aina kun keksin jotain uutta lisättävää. Ajatuksena myös käyttää tätä projektia CV:ssä, jotta voin helposti näyttää taitojani ja mitä olen kykenyt saamaan aikaan, kun haen töitä tietetekniikan alalta. Tällä hetkellä minulla kuitenkin on eniten kokemusta Unity pelimoottorin ja C# kielen kanssa.",
     "homepage-introduction-text-2": "Sivun yläosasta löydät lisää harrastuksiin ja työhön liittyviä asioita sekä sosiaalisen median linkit.",
     "timeline-title-text": "Koulutus ja työkokemus",
+    "dev-title": "Ohjelmointiin liittyvät asiat",
   },
 };
 

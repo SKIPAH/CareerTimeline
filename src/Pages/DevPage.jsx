@@ -1,11 +1,17 @@
 import UnityWebGL from "../components/UnityWebGL";
+import { useLanguage } from "../hooks/useLanguage";
+import { getTranslation } from "../components/Translations";
 
 export default function DevPage() {
+  const currentLanguage = useLanguage();
+
   return (
     <>
       <section className="dev-section">
         <div className="container">
-          <h1 className="title-text">My development journey</h1>
+          <h1 className="title-text">
+            {getTranslation("dev-title", currentLanguage)}
+          </h1>
 
           <p className="dev-text">
             I have recently graduated as a Bachelor of Engineering specialized
