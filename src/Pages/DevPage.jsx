@@ -14,26 +14,24 @@ export default function DevPage() {
           </h1>
 
           <p className="dev-text">
-            I have recently graduated as a Bachelor of Engineering specialized
-            in software development and I am currently looking for a job to
-            start my career in tech industry.
+            {getTranslation("dev-text", currentLanguage)}
           </p>
           <p>
-            My{" "}
+            {getTranslation("dev-linkedin", currentLanguage)}{" "}
             <a
               href="https://www.linkedin.com/in/jussi-mehtala/"
               target="_blank"
             >
               Linkedin
             </a>{" "}
-            and{" "}
+            {getTranslation("dev-linkedin-2", currentLanguage)}{" "}
             <a href="https://github.com/SKIPAH" target="_blank">
               GitHub
             </a>{" "}
-            profiles.
+            {getTranslation("dev-github-3", currentLanguage)}.
           </p>
           <p>
-            My{" "}
+            {getTranslation("dev-cv", currentLanguage)}{" "}
             <a
               href="/jussi_mehtälä_CV_english.pdf"
               target="_blank"
@@ -41,7 +39,7 @@ export default function DevPage() {
             >
               CV PDF
             </a>{" "}
-            and{" "}
+            {getTranslation("dev-cv-2", currentLanguage)}{" "}
             <a
               href="/jussi_mehtälä_PORTFOLIO_english.pdf"
               target="_blank"
@@ -57,6 +55,7 @@ export default function DevPage() {
             >
               Link to whole thesis
             </a>
+            <br></br>
             <a
               href="https://jussiprojects.itch.io/webglnucutest?secret=BtYgvJZZzU2b0GynO4y9q7XY5WU"
               target="_blank"
@@ -66,11 +65,9 @@ export default function DevPage() {
           </p>
         </div>
         <div className="container">
-          <p>My WebGL project, which I made for my thesis.</p>
+          <p>{getTranslation("dev-webgl", currentLanguage)}</p>
           <p>
-            NOTE!! Project will not work on mobile devices most likely, as Unity
-            WebGL does not support mobile properly yet. Enable hardware
-            acceleration, if you are using Google Chrome
+            {getTranslation("dev-webgl-note", currentLanguage)}
           </p>
           <UnityWebGL className="unity-webgl"></UnityWebGL>
         </div>

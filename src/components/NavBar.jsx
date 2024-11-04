@@ -45,11 +45,11 @@ function NavBar() {
               <Nav.Link as={NavLink} to={"/experience"}>
                 {getTranslation("navbar-work", currentLanguage)}
               </Nav.Link>
-              <Nav.Link as={NavLink} to={"/esports"}>
-                {getTranslation("navbar-esports", currentLanguage)}
-              </Nav.Link>
               <Nav.Link as={NavLink} to={"/dev"}>
                 {getTranslation("navbar-dev", currentLanguage)}
+              </Nav.Link>
+              <Nav.Link as={NavLink} to={"/esports"}>
+                {getTranslation("navbar-esports", currentLanguage)}
               </Nav.Link>
               <Nav.Link as={NavLink} to={"/fitness"}>
                 {getTranslation("navbar-fitness", currentLanguage)}
