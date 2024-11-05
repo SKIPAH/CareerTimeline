@@ -23,6 +23,9 @@ const Translations = {
     "dev-cv-2": "and",
     "dev-webgl": "My WebGL project, which I made for my thesis.",
     "dev-webgl-note": "NOTE!! WebGL does not support mobile properly yet. Enable hardware acceleration, if you are using Google Chrome",
+    "fitness-title": "Sports and Fitness",
+    "dev-thesis": "Link to whole thesis",
+    "dev-itch": "Itch IO project of my thesis",
   },
   fi: {
     "navbar-home": "ETUSIVU",
@@ -32,7 +35,7 @@ const Translations = {
     "navbar-fitness": "FITNESS",
     "navbar-test": "TESTI",
     "homepage-title": "JUSSI MEHTÄLÄN KOTISIVU",
-    "homepage-introduction-text-short": "Moro! Mun nimi on Jussi Mehtälä, myös tunnettu nimellä SKIPAH kilpapelaamis yhteisössä ja olen 28 vuotias jätkä suomesta.",
+    "homepage-introduction-text-short": "Moro! Mun nimi on Jussi Mehtälä, myös tunnettu nimellä SKIPAH kilpapelaamis yhteisössä ja olen 28-vuotias jätkä suomesta.",
     "homepage-introduction-text-short-note": "HUOM! Tämä sivu on vielä kesken! Tekstit, värit, layoutit jne eivät ole vielä lopullisia. Päivitän sivua aina kun lisään/korjaan/opin otain uutta.",
     "homepage-introduction-text": "Olen vasta valmistunut tieto ja viestintätekniikan insinööri suuntautumisena ohjelmistokehitys. Halusin opetella Web-kehitystä, joten päätin luoda oman kotisivun jossa voin näyttää kaikenlaisia omaan elämään liittyviä asioita! Ajatuksena on päivittää tätä sivua aina kun keksin jotain uutta lisättävää. Ajatuksena myös käyttää tätä projektia CV:ssä, jotta voin helposti näyttää taitojani ja mitä olen kykenyt saamaan aikaan, kun haen töitä tietetekniikan alalta. Tällä hetkellä minulla kuitenkin on eniten kokemusta Unity pelimoottorin ja C# kielen kanssa.",
     "homepage-introduction-text-2": "Sivun yläosasta löydät lisää harrastuksiin ja työhön liittyviä asioita sekä sosiaalisen median linkit.",
@@ -44,9 +47,11 @@ const Translations = {
     "dev-github-3": "profiilit",
     "dev-cv": "Minun",
     "dev-cv-2": "ja",
-    "dev-webgl": "Minun WebGL projekti, joka teki minulle diplomityönä.",
+    "dev-webgl": "Minun WebGL projekti, jonka tein opinnäytetyönä.",
     "dev-webgl-note": "HUOM!! WebGL Unity projektit eivät välttämättä toimi mobiililaitteilla. Aktivoi laitteistokiihdytys, jos käytät Google Chromea.",
-
+    "fitness-title": "Urheilu ja fitness",
+    "dev-thesis": "Linkki opinnäytetyöhön",
+    "dev-itch": "Itch IO linkki projektiini",
   },
 };
 

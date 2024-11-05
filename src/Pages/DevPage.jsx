@@ -53,14 +53,14 @@ export default function DevPage() {
               href="https://www.theseus.fi/handle/10024/856201"
               target="_blank"
             >
-              Link to whole thesis
+              {getTranslation("dev-thesis", currentLanguage)}
             </a>
             <br></br>
             <a
               href="https://jussiprojects.itch.io/webglnucutest?secret=BtYgvJZZzU2b0GynO4y9q7XY5WU"
               target="_blank"
             >
-              Itch IO project of my thesis
+              {getTranslation("dev-itch", currentLanguage)}
             </a>
           </p>
         </div>

@@ -6,6 +6,7 @@ function InstagramEmbedVideo({ embedURL }) {
     <>
       <InstagramEmbed
         url={`https://www.instagram.com/p/${embedURL}/`}
+        className="fitness-embed"
       ></InstagramEmbed>
     </>
   );

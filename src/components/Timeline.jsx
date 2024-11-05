@@ -17,7 +17,7 @@ export default function Timeline() {
         {getTranslation("timeline-title-text", currentLanguage)}
       </h1>
       <VerticalTimeline>
-        {TimelineElements.map((element) => {
+        {TimelineElements[currentLanguage].map((element) => {
           let isWorkIcon = element.icon === "work";
           let showButton =
             element.buttonText !== undefined &&
@@ -30,7 +30,7 @@ export default function Timeline() {
 
           return (
             <VerticalTimelineElement
-              key={element.key}
+              key={element.id}
               date={element.date}
               dateClassName="date"
               iconStyle={IconStyles}

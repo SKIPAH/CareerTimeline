@@ -116,6 +116,18 @@ a.nav-link {
     font-size: 1.5em;
     text-align: center;
   }
+  .fitness-embed{
+    width: 500px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .video-responsive{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 50%;
+  }
 }
 
 .esports-section {
@@ -191,13 +203,22 @@ a.nav-link {
   .dbz-container {
     background-color: var(--primary-color1);
     max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
   }
-
   .background-video {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
   }
+  
   .overlay {
     position: absolute;
     top: 0;
@@ -434,12 +455,13 @@ footer {
     .title-text {
       font-size: 3em;
     }
+    .background-video {
+      width: 25%;
+      height: 25%;
+    }
     
   }
 
-  .background-video {
-    width: 25%;
-    height: 25%;
-  }
+  
 }
 

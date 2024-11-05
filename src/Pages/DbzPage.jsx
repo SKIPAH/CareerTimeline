@@ -8,11 +8,10 @@ export default function DbzPage() {
         <div className="dbz-container">
           <h1 className="title-text">TEST PAGE FOR NOW &#128511; &#128018;</h1>
           <p className="dbz-text"></p>
+          <BackgroundVideo className="background-video"></BackgroundVideo>
+          <HorizontalPictures></HorizontalPictures>
         </div>
-        <BackgroundVideo className="background-video"></BackgroundVideo>
       </section>
-
-      <HorizontalPictures></HorizontalPictures>
     </>
   );
 }

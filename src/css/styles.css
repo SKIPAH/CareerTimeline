@@ -108,6 +108,18 @@ a.nav-link {
   font-size: 1.5em;
   text-align: center;
 }
+.fitness-section .fitness-embed {
+  width: 500px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.fitness-section .video-responsive {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 50%;
+}
 
 .esports-section {
   max-width: 100%;
@@ -174,12 +186,18 @@ a.nav-link {
 .dbz-section .dbz-container {
   background-color: var(--primary-color1);
   max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .dbz-section .background-video {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .dbz-section .overlay {
   position: absolute;
@@ -398,7 +416,7 @@ footer {
   .dbz-section .title-text {
     font-size: 3em;
   }
-  .background-video {
+  .dbz-section .background-video {
     width: 25%;
     height: 25%;
   }

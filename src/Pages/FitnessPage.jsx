@@ -1,12 +1,17 @@
 import YoutubeEmbed from "../components/YoutubeEmbed";
 import InstagramEmbedVideo from "../components/InstagramEmbedVideo";
+import { useLanguage } from "../hooks/useLanguage";
+import { getTranslation } from "../components/Translations";
 
 export default function Fitness() {
+  const currentLanguage = useLanguage();
   return (
     <>
       <section className="fitness-section">
         <div className="container">
-          <h1 className="title-text">My Sports and Fitness journey</h1>
+          <h1 className="title-text">
+            {getTranslation("fitness-title", currentLanguage)}
+          </h1>
           <p className="fitness-text">
             I have been quite active my whole life in different sports.
             Currently though I'm not competing in any sport, but active in gym
@@ -30,13 +35,13 @@ export default function Fitness() {
             like powerlifting, bodybuilding, strongman and calisthenics. My goal
             currently is to just be overall athletic and getting stronger.
           </p>
+          <InstagramEmbedVideo embedURL="C1XDVxIMNAX"></InstagramEmbedVideo>
+          <YoutubeEmbed
+            embedId="8t4Bgw02xTI"
+            className="fitness-embed"
+          ></YoutubeEmbed>
         </div>
       </section>
-      <InstagramEmbedVideo embedURL="C1XDVxIMNAX"></InstagramEmbedVideo>
-      <YoutubeEmbed
-        embedId="8t4Bgw02xTI"
-        className="fitness-embed"
-      ></YoutubeEmbed>
     </>
   );
 }
