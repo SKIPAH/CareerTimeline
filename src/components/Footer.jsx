@@ -1,21 +1,24 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { getTranslation } from "./Translations";
+import { useLanguage } from "../hooks/useLanguage";
+
 
 export default function Footer() {
+
+  const currentLanguage = useLanguage();
   return (
     <footer className="bg-dark text-white py-4">
       <Container>
         <Row>
           <Col md={4}>
-            <h5>About me</h5>
+            <h5>{getTranslation("aboutMe", currentLanguage)}</h5>
             <p>
-              My name is Jussi Mehtälä and I'm from Finland. With this website
-              I'm planning to learn more and show my programming cababilities by
-              creating this project showcasing my interests and hobbies.
+              {getTranslation("aboutMe-text", currentLanguage)}
             </p>
           </Col>
           <Col md={4}>
-            <h5>Follow me on social media</h5>
+            <h5>{getTranslation("followMe", currentLanguage)}</h5>
             <ul className="list-unstyled">
               <li>
                 <a href="https://x.com/SKIPAHH" className="text-white">
@@ -59,7 +62,7 @@ export default function Footer() {
             </ul>
           </Col>
           <Col md={4}>
-            <h5>Contact me</h5>
+            <h5>{getTranslation("contactMe", currentLanguage)}</h5>
             <address>
               Email:{" "}
               <a href="juzzii.mehta@gmail.com" className="text-white">
