@@ -6,6 +6,7 @@
   --primary-color2: #fed7ae;
 }
 
+
 .title-text {
   font-size: 8em;
   font-family: "Bebas Neue", sans-serif;
@@ -58,16 +59,35 @@ a.nav-link {
   display: none;
 }
 
+
+.background-video{
+  background-color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
 .introduction {
+
+  .background-video-container{
+    width: 100%;
+
+    object-fit: cover;  
+  }
+ 
+  
   .intro {
+    position: absolute;
+    top: 50%;
     display: grid;
     grid-template-columns: 5fr 5fr;
-    background-color: var(--primary-color1);
+    
+
+
     .introduction-text {
       text-align: center;
       word-wrap: break-word;
       font-size: 4em;
     }
+   
 
     #profilepic {
       width: 29%;
@@ -77,13 +97,18 @@ a.nav-link {
       margin-right: auto;
     }
     .title-text {
-      padding-right: 2em;
-      padding-top: 0.2em;
+      color: white;
+      font-size: 8em;
+      outline: 2px solid white;
+      background-color: rgba(0, 0, 0, 0.5);
+      margin: 0;
+      padding: 0;
     }
   }
   .container {
     background-color: var(--primary-color1);
     max-width: 100%;
+    
   }
   .introduction-text {
     margin: 0;
@@ -91,7 +116,7 @@ a.nav-link {
     padding-top: 2.2em;
     padding-bottom: 2.2em;
     font-family: "Josefin Sans", sans-serif;
-    font-size: 1.8em;
+    font-size: 3em;
     text-align: center;
   }
   .introduction-text-short {
@@ -368,17 +393,27 @@ footer {
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 768px) {
   .introduction {
+    .background-video-container{
+     display: none;
+    }
+    .background-video{
+      display: none;
+    }
     .intro {
+      position: relative;
       display: inline-block;
       width: 100%;
+      background-color: var(--primary-color1);
       #profilepic {
         display: block;
         margin-left: auto;
         margin-right: auto;
         width: 35%;
+        top: 0%;
       }
+      
       .title-text {
         font-size: 2em;
         padding-left: 1.7em;
@@ -422,9 +457,23 @@ footer {
 
 
   .esports-section {
+    .esports-introduction{
+      display: inline-block;
+      width: 100%;
+    }
     .title-text {
       font-size: 3em;
       padding-left: 0em;
+    }
+    .image{
+      width: 75%;
+      height: 55%;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+    .esports-text{
+      font-size: 1.5em;
     }
     
   }
@@ -443,11 +492,20 @@ footer {
   }
 
   .fitness-section{
+    display: inline-block;
+    width: 100%;
     .title-text{
       font-size: 3em;
     }
     .fitness-text {
-      font-size: 1.5em;
+      font-size: 1.2em;
+    }
+    .fitness-embed{
+      width: 80%;
+    }
+    .video-responsive{
+      width: 80%;
+      height: 80%;
     }
   }
 
@@ -462,6 +520,10 @@ footer {
     
   }
 
+
+
+  @media only screen and (min-width: 768px) and (max-width: 979px)  {
+
   
 }
-
+}

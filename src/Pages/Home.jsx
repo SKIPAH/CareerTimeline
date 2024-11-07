@@ -1,6 +1,8 @@
 import { useLanguage } from "../hooks/useLanguage";
 import { getTranslation } from "../components/Translations";
 import profilepic from "../files/images/profiilikuva.png";
+import BackgroundVideo from "../components/BackgroundVideo";
+import WebsiteVideo from "../files/videos/websitevideo.mp4";
 
 export default function Home() {
   const currentLanguage = useLanguage();
@@ -8,6 +10,10 @@ export default function Home() {
   return (
     <>
       <section className="introduction">
+        <div className="background-video-container">
+          <BackgroundVideo id="home-background-video" src={WebsiteVideo} />
+        </div>
+
         <div className="intro">
           <img id="profilepic" src={profilepic} alt="profile picture"></img>
           <h1 className="title-text">

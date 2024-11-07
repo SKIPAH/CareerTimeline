@@ -42,13 +42,13 @@ export default function EsportsPage() {
             <p className="esports-text">
               My love for gaming started when I played Donkey Kong Country on
               Super Nintendo as a little kid. I have 4 brothers and I've usually
-              been the one doing the hard parts of levels if my brothers
+              been the one doing the hard parts of different levels, if my brothers
               couldn't. My friend groups in elementary school basically formed
-              around other kids that liked games like Runescape and all the
+              around other kids, that liked games like Runescape and all the
               DragonBall Z games. Once I moved to another city for 7th grade, I
               ended up finding group of friends that played Call Of Duty 2 and 4
               on pc, where I got my first introduction to esports side of
-              gaming, which wasn't really a thing back then during 2010-2012.
+              gaming.
             </p>
             <img
               className="image"

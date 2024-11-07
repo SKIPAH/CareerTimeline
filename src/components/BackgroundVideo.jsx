@@ -1,15 +1,7 @@
-import videoBg from "../files/videos/bugati.mp4";
-
-export default function BackgroundVideo() {
+export default function BackgroundVideo({ src }) {
   return (
     <div>
-      <video
-        className="background-video"
-        src={videoBg}
-        autoPlay
-        loop
-        muted
-      ></video>
+      <video src={src} className="background-video" autoPlay loop muted></video>
     </div>
   );
 }
