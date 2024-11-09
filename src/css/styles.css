@@ -198,6 +198,14 @@ a.nav-link {
   text-align: center;
   text-decoration: none;
 }
+.dev-section .unity-webgl {
+  width: 960px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
 
 .dbz-section .dbz-container {
   background-color: var(--primary-color1);
@@ -387,21 +395,20 @@ footer {
   }
   .introduction .intro .title-text {
     font-size: 2em;
-    padding-left: 1.7em;
     text-align: center;
-    margin-left: 0;
   }
-  .container .introduction-text-short {
+  .introduction .container .introduction-text-short {
     font-size: 1.5em;
     padding: 10px;
     width: 100%;
     text-align: center;
   }
-  .container .introduction-text {
+  .introduction .container .introduction-text {
     line-height: 1.2;
     padding: 10px;
     width: 100%;
     text-align: center;
+    font-size: 1.5em;
   }
   .navbar-logos {
     display: none;
@@ -445,6 +452,10 @@ footer {
   }
   .dev-section a {
     font-size: 1.2em;
+  }
+  .dev-section .container .unity-webgl {
+    width: 100%;
+    height: auto;
   }
   .fitness-section {
     display: inline-block;

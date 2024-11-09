@@ -222,6 +222,17 @@ a.nav-link {
     text-align: center;
     text-decoration: none;
   }
+
+  .unity-webgl{
+    width: 960px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+    
+  }
 }
 
 .dbz-section {
@@ -416,26 +427,26 @@ footer {
       
       .title-text {
         font-size: 2em;
-        padding-left: 1.7em;
         text-align: center;
-        margin-left: 0;
+      }
+    }
+    .container {
+      .introduction-text-short {
+        font-size: 1.5em;
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+      }
+      .introduction-text {
+        line-height: 1.2;
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+        font-size: 1.5em;
       }
     }
   }
-  .container {
-    .introduction-text-short {
-      font-size: 1.5em;
-      padding: 10px;
-      width: 100%;
-      text-align: center;
-    }
-    .introduction-text {
-      line-height: 1.2;
-      padding: 10px;
-      width: 100%;
-      text-align: center;
-    }
-  }
+  
   .navbar-logos {
     display: none;
   }
@@ -489,6 +500,13 @@ footer {
     a {
       font-size: 1.2em;
     }
+    .container{
+      .unity-webgl{
+        width: 100%;
+        height: auto;
+      }
+    }
+    
   }
 
   .fitness-section{

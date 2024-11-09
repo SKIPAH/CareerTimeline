@@ -5,8 +5,12 @@ import skipah4 from "../files/images/nyyrikkipictures/skipah4.JPG";
 import skipahuusi from "../files/images/nyyrikkipictures/skipahuusi.jpeg";
 import nyyrikkiskipah2 from "../files/images/nyyrikkipictures/nyyrikkiskipah2.png";
 import skipah3 from "../files/images/nyyrikkipictures/skipah3.JPG";
+import { useLanguage } from "../hooks/useLanguage";
+import { getTranslation } from "../components/Translations";
+
 
 export default function EsportsPage() {
+  const currentLanguage = useLanguage();
   return (
     <>
       <section className="esports-section">
@@ -26,29 +30,19 @@ export default function EsportsPage() {
               alt="Lantrek BYOC picture. First lan event"
             ></img>
             <p className="esports-text">
-              During 2019-2022 I was a competitive esports athlete representing
-              multiple Finnish and European teams and organizations in Overwatch
-              and Valorant. Here is my{" "}
+              {getTranslation("esports-text", currentLanguage)}
               <a
                 className="esports-link"
                 href="https://liquipedia.net/overwatch/SKIPAH"
               >
                 Liquidpedia
               </a>{" "}
-              page showing all the achievements and teams.
+              {getTranslation("esports-text-2", currentLanguage)}
             </p>
           </div>
           <div className="esports-introduction">
             <p className="esports-text">
-              My love for gaming started when I played Donkey Kong Country on
-              Super Nintendo as a little kid. I have 4 brothers and I've usually
-              been the one doing the hard parts of different levels, if my brothers
-              couldn't. My friend groups in elementary school basically formed
-              around other kids, that liked games like Runescape and all the
-              DragonBall Z games. Once I moved to another city for 7th grade, I
-              ended up finding group of friends that played Call Of Duty 2 and 4
-              on pc, where I got my first introduction to esports side of
-              gaming.
+              {getTranslation("esports-text-3", currentLanguage)}
             </p>
             <img
               className="image"

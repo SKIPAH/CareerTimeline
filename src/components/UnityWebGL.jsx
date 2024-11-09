@@ -14,17 +14,7 @@ function UnityWebGL() {
       {loadingProgression !== 1 && (
         <h1>Loading... {Math.round(loadingProgression * 100)}%</h1>
       )}
-      <Unity
-        unityProvider={unityProvider}
-        style={{
-          width: "960px",
-          height: "600px",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          margin: "0 auto",
-        }}
-      />
+      <Unity unityProvider={unityProvider} className="unity-webgl" />
     </>
   );
 }
