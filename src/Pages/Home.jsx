@@ -13,7 +13,6 @@ export default function Home() {
         <div className="background-video-container">
           <BackgroundVideo id="home-background-video" src={WebsiteVideo} />
         </div>
-
         <div className="intro">
           <img id="profilepic" src={profilepic} alt="profile picture"></img>
           <h1 className="title-text">

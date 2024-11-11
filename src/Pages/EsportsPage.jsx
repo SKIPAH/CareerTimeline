@@ -8,7 +8,6 @@ import skipah3 from "../files/images/nyyrikkipictures/skipah3.JPG";
 import { useLanguage } from "../hooks/useLanguage";
 import { getTranslation } from "../components/Translations";
 
-
 export default function EsportsPage() {
   const currentLanguage = useLanguage();
   return (
@@ -16,7 +15,7 @@ export default function EsportsPage() {
       <section className="esports-section">
         <div className="container">
           <h1 className="title-text">
-            My journey as a esports athlete!{" "}
+            {getTranslation("esports-title-text", currentLanguage)}
             <img
               className="image"
               src={assembly}
@@ -57,31 +56,12 @@ export default function EsportsPage() {
               alt="SKIPAH and Jönssöni watching Battalion showmatch at Lantrek"
             ></img>
             <p className="esports-text">
-              During high school when I stopped competing in track and field and
-              wrestling, I put crazy hours in Dota 2 which grew rapidly as a
-              esports title. I got my first real experiences what playing in a
-              team environment competitively meant. After high school I was
-              doing the mandatory finnish military service and while I had few
-              months left, I found out about Overwatch videogame that was going
-              to be released just after my service ends. I said to my military
-              friends that I'm going to become a professional Overwatch player
-              and started instantly practicing hard.
+              {getTranslation("esports-text-4", currentLanguage)}
             </p>
           </div>
           <div className="esports-introduction">
             <p className="esports-text">
-              During the first season of ranked I managed to get my peak rank to
-              top500, but ended up falling outside once the season ended. I
-              realized that I might have the potential, because I got contacted
-              few times to join different teams. After the first season I worked
-              as a security guard and my shifts were mostly during the nights,
-              which made me unable to even play for any teams and long working
-              hours made my practicing even harder. I still slightly regret that
-              I didn't pursue Overwatch fully during that time, as I might have
-              ended up gaining different opportunities in the scene but it is
-              what it is. Once I quit my security guard job and started studying
-              in Oulu University of Applied Sciences, I could put more time into
-              Overwatch.
+              {getTranslation("esports-text-5", currentLanguage)}
             </p>
             <img
               className="image"
@@ -91,18 +71,13 @@ export default function EsportsPage() {
           </div>
           <div className="esports-introduction">
             <p className="esports-text">
-              I played in some finnish teams here and there and competed in few
-              small online tournaments. One day I noticed a post about a finnish
-              organization called Nyyrikki Esports searching for players to
-              represent them in Overwatch. This of course sparked my interest as
-              it might be my chance to start a professional career what I've
-              planned to do. ILL CONTINUE THIS LATER..
+              {getTranslation("esports-text-6", currentLanguage)}
             </p>
           </div>
           <div className="esports-introduction">
             <p className="esports-text">
-              Best fragmovie that amazing fella named{" "}
-              <a href="https://x.com/mauserzjeh">Mauser</a> made for me
+              {getTranslation("esports-text-movie-1", currentLanguage)}
+              <a href="https://x.com/mauserzjeh">Mauser.</a>
             </p>
             <YoutubeEmbed
               className="esports-youtube-embed"
@@ -115,7 +90,7 @@ export default function EsportsPage() {
               embedId="uY3LpNTSYqg"
             ></YoutubeEmbed>
             <p className="esports-text">
-              One of my favorite fragmovie that I've personally made.
+              {getTranslation("esports-text-movie-2", currentLanguage)}
             </p>
           </div>
         </div>
