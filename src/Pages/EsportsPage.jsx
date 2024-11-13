@@ -7,9 +7,11 @@ import nyyrikkiskipah2 from "../files/images/nyyrikkipictures/nyyrikkiskipah2.pn
 import skipah3 from "../files/images/nyyrikkipictures/skipah3.JPG";
 import { useLanguage } from "../hooks/useLanguage";
 import { getTranslation } from "../components/Translations";
+import { Button } from "react-bootstrap";
 
 export default function EsportsPage() {
   const currentLanguage = useLanguage();
+  const toTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
   return (
     <>
       <section className="esports-section">
@@ -93,7 +95,9 @@ export default function EsportsPage() {
               {getTranslation("esports-text-movie-2", currentLanguage)}
             </p>
           </div>
+          <Button id="to-top-button-esports" onClick={toTop}>Back to top</Button>
         </div>
+        
       </section>
     </>
   );

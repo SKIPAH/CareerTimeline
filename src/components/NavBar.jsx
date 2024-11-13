@@ -60,7 +60,7 @@ function NavBar() {
               </Nav.Link>
               */}
             </Nav>
-            <NavDropdown title="Socials" id="basic-nav-dropdown">
+            <NavDropdown title="SOCIALS" id="basic-nav-dropdown">
               <NavDropdown.Item href="https://x.com/SKIPAHH" target="_blank">
                 Twitter
               </NavDropdown.Item>
@@ -95,9 +95,9 @@ function NavBar() {
                 Linkedin
               </NavDropdown.Item>
             </NavDropdown>
-            <button id="languageToggleBtnNavbar" onClick={handleLanguageToggle}>
+            <Button id="languageToggleBtnNavbar" onClick={handleLanguageToggle}>
               {currentLanguage === "en" ? "SUOMEKSI" : "ENGLISH"}
-            </button>
+            </Button>
 
             <ul className="navbar-right">
               <a
@@ -140,13 +140,13 @@ function NavBar() {
             </ul>
           </Navbar.Collapse>
         </Container>
-        <button
+        <Button
           id="languageToggleBtn"
           onClick={handleLanguageToggle}
           className="d-none d-lg-block"
         >
           {currentLanguage === "en" ? "SUOMEKSI" : "ENGLISH"}
-        </button>
+        </Button>
       </Navbar>
     </>
   );

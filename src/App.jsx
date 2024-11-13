@@ -14,16 +14,14 @@ export default function App() {
   return (
     <>
       <NavBar />
-      <div className="maincontainer">
-        <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/experience" element={<ExperiencePage />}></Route>
-          <Route path="/esports" element={<EsportsPage />}></Route>
-          <Route path="/dev" element={<DevPage />}></Route>
-          <Route path="/fitness" element={<FitnessPage />}></Route>
-          <Route path="/dbz" element={<DbzPage />}></Route>
-        </Routes>
-      </div>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/experience" element={<ExperiencePage />}></Route>
+        <Route path="/esports" element={<EsportsPage />}></Route>
+        <Route path="/dev" element={<DevPage />}></Route>
+        <Route path="/fitness" element={<FitnessPage />}></Route>
+        <Route path="/dbz" element={<DbzPage />}></Route>
+      </Routes>
       <Footer></Footer>
     </>
   );

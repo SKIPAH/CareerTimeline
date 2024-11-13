@@ -6,10 +6,13 @@ import TimelineElements from "./TimelineElements";
 import "react-vertical-timeline-component/style.min.css";
 import { getTranslation } from "./Translations";
 import { useLanguage } from "../hooks/useLanguage";
+import { Button } from "react-bootstrap";
 
 export default function Timeline() {
   let IconStyles = { background: "#ffb300" };
   const currentLanguage = useLanguage();
+
+  const toTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
   return (
     <div className="timeline-div">
@@ -75,6 +78,7 @@ export default function Timeline() {
           );
         })}
       </VerticalTimeline>
+      <Button id="to-top-button-timeline" onClick={toTop}>Back to top</Button>
     </div>
   );
 }

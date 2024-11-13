@@ -4,6 +4,7 @@ import { getTranslation } from "../components/Translations";
 
 export default function DevPage() {
   const currentLanguage = useLanguage();
+  
 
   return (
     <>

@@ -3,12 +3,10 @@ import React from "react";
 
 function InstagramEmbedVideo({ embedURL }) {
   return (
-    <>
-      <InstagramEmbed
-        url={`https://www.instagram.com/p/${embedURL}/`}
-        className="fitness-embed"
-      ></InstagramEmbed>
-    </>
+    <InstagramEmbed
+      url={`https://www.instagram.com/p/${embedURL}/`}
+      className="fitness-embed"
+    ></InstagramEmbed>
   );
 }
 

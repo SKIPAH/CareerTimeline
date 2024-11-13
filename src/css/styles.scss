@@ -13,14 +13,6 @@
   text-align: center;
 }
 
-.maincontainer {
-  display: flex;
-  flex-direction: column;
-  min-height: 60vh;
-  max-width: 100%;
-  align-items: center;
-}
-
 .navbar {
   background-color: var(--primary-color1);
   
@@ -32,7 +24,14 @@
   #languageToggleBtn{
     color: black;
     font-weight: bold;
-
+    background-color: var(--primary-color1);
+    border-color: white;
+  }
+  #languageToggleBtnNavbar{
+    color: black;
+    font-weight: bold;
+    background-color: var(--primary-color1);
+    border-color: white;
   }
 }
 
@@ -60,17 +59,19 @@ a.nav-link {
 }
 
 
-.background-video{
-  background-color: rgba(0, 0, 0, 0.8);
-  color: rgba(0, 0, 0, 0.5);
-  width: 100%;
-}
+
 .introduction {
 
   .background-video-container{
     width: 100%;
-
     object-fit: cover;  
+  }
+  .background-video{
+    height: auto;
+    width: 100%;
+    float:left;
+    clear:none;  
+    padding-bottom: 4em;
   }
  
   
@@ -126,7 +127,7 @@ a.nav-link {
     font-size: 4em;
     margin: 0;
     padding: 4em;
-    padding-top: 2.2em;
+    padding-top: 6em;
     padding-bottom: 2.2em;
   }
 }
@@ -162,6 +163,8 @@ a.nav-link {
   min-height: 40vh;
   align-items: center;
 
+
+
   .esports-introduction {
     display: flex;
     align-items: center;
@@ -180,6 +183,19 @@ a.nav-link {
   .container {
     background-color: var(--primary-color1);
     max-width: 100%;
+    align-items: center;
+
+    #to-top-button-esports{
+      color: black;
+      margin-top: 5em;
+      margin-bottom: 2em;
+      background-color: var(--primary-color1);
+      border-color: black;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
   }
 
   .esports-text {
@@ -341,6 +357,16 @@ footer {
   font-size: 16px;
   color: rgb(53, 53, 53);
   width: 100%;
+
+  #to-top-button-timeline{
+    color: black;
+      margin-top: 5em;
+      background-color: var(--primary-color1);
+      border-color: black;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+  }
 }
 .timeline-title {
   font-size: 8em;
