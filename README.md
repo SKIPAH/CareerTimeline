@@ -1,14 +1,15 @@
-<h2>Personal website project to learn more about Web Development. Plan is to show hobbies, achievements, social media material, development skills and other stuff what I figure out while creating and planning. Updating the website slowly always when I add new stuff and learn more. </h2>
+<h2>Personal website project to learn more about Web Development. Plan is to show hobbies, achievements, social media material, development skills etc. Updating the website each time I fix, add or learn something new. </h2>
 
 <h2><a href="https://jussimehtala.com/">LINK TO WEBSITE</a></h2>
 
-<h3>Very early version with no special planning or designing just after trying out React/Bootstrap components.</h3>
+<h3>Early version with some design in mind.</h3>
 
 
-![earlyversionn](https://github.com/user-attachments/assets/dda000e5-1c4c-44a0-80e2-c55f9ec5b8fa)
+![websitepic](https://github.com/user-attachments/assets/3793daba-f72b-4db3-ba7b-a8e3f002c2f4)
 
-![earlyversion](https://github.com/user-attachments/assets/4150c7db-165f-474e-8a86-38bbd49a3431)
+<h3>Dev page with important files and my WebGL 3D product configurator that you can try on desktop.</h3>
 
+![asdasdsa](https://github.com/user-attachments/assets/95e3a719-f042-42f1-9e03-45d68eedcd79)
 
 
 # React + Vite
