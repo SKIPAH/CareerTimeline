@@ -78,7 +78,9 @@ export default function Timeline() {
           );
         })}
       </VerticalTimeline>
-      <Button id="to-top-button-timeline" onClick={toTop}>Back to top</Button>
+      <Button id="to-top-button-timeline" onClick={toTop}>
+        {getTranslation("back-to-top-text", currentLanguage)}
+      </Button>
     </div>
   );
 }

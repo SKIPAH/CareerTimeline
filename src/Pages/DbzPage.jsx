@@ -1,6 +1,8 @@
 import BackgroundVideo from "../components/BackgroundVideo";
 import HorizontalPictures from "../components/HorizontalPictures";
 import bugati from "../files/videos/bugati.mp4";
+import cv from "/jussi_mehtälä_CV_english.pdf";
+import { Document, Page } from 'react-pdf';
 
 export default function DbzPage() {
   return (
@@ -15,6 +17,9 @@ export default function DbzPage() {
           ></BackgroundVideo>
           <HorizontalPictures></HorizontalPictures>
         </div>
+        <Document file={cv}>
+          <Page></Page>
+        </Document>
       </section>
     </>
   );

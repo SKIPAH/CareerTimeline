@@ -95,9 +95,10 @@ export default function EsportsPage() {
               {getTranslation("esports-text-movie-2", currentLanguage)}
             </p>
           </div>
-          <Button id="to-top-button-esports" onClick={toTop}>Back to top</Button>
+          <Button id="to-top-button-esports" onClick={toTop}>
+            {getTranslation("back-to-top-text", currentLanguage)}
+          </Button>
         </div>
-        
       </section>
     </>
   );

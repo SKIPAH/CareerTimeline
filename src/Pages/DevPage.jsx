@@ -1,6 +1,7 @@
 import UnityWebGL from "../components/UnityWebGL";
 import { useLanguage } from "../hooks/useLanguage";
 import { getTranslation } from "../components/Translations";
+import { Document } from "react-pdf";
 
 export default function DevPage() {
   const currentLanguage = useLanguage();

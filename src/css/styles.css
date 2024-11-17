@@ -137,6 +137,10 @@ a.nav-link {
   width: 50%;
   height: 50%;
 }
+.fitness-section .embeds {
+  display: flex;
+  align-items: center;
+}
 
 .esports-section {
   max-width: 100%;

@@ -18,11 +18,13 @@ export default function Fitness() {
           <p className="fitness-text">
             {getTranslation("fitness-text-2", currentLanguage)}
           </p>
+          <div className="embeds">
           <InstagramEmbedVideo embedURL="C1XDVxIMNAX"></InstagramEmbedVideo>
           <YoutubeEmbed
             embedId="8t4Bgw02xTI"
             className="fitness-embed"
           ></YoutubeEmbed>
+          </div>
         </div>
       </section>
     </>

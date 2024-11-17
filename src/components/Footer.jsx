@@ -22,7 +22,7 @@ export default function Footer() {
             <ul className="list-unstyled">
               <li>
                 <a href="https://x.com/SKIPAHH" className="text-white">
-                  Twitter
+                  Twitter/X
                 </a>
               </li>
               <li>
