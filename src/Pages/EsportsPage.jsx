@@ -1,5 +1,4 @@
 import YoutubeEmbed from "../components/YoutubeEmbed";
-import HorizontalPictures from "../components/HorizontalPictures";
 import assembly from "../files/images/nyyrikkipictures/assembly.jpg";
 import skipah4 from "../files/images/nyyrikkipictures/skipah4.JPG";
 import skipahuusi from "../files/images/nyyrikkipictures/skipahuusi.jpeg";

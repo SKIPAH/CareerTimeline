@@ -3,9 +3,11 @@ import { Container, Row, Col } from "react-bootstrap";
 import { getTranslation } from "./Translations";
 import { useLanguage } from "../hooks/useLanguage";
 
+import twoStarDragonBall from "../files/images/dbz/2star.png";
+
+import DragonBall from "./DragonBall";
 
 export default function Footer() {
-
   const currentLanguage = useLanguage();
   return (
     <footer className="bg-dark text-white py-4">
@@ -13,9 +15,7 @@ export default function Footer() {
         <Row>
           <Col md={4}>
             <h5>{getTranslation("aboutMe", currentLanguage)}</h5>
-            <p>
-              {getTranslation("aboutMe-text", currentLanguage)}
-            </p>
+            <p>{getTranslation("aboutMe-text", currentLanguage)}</p>
           </Col>
           <Col md={4}>
             <h5>{getTranslation("followMe", currentLanguage)}</h5>
@@ -79,6 +79,7 @@ export default function Footer() {
           </Row>
         </Row>
       </Container>
+      <DragonBall src={twoStarDragonBall} />
     </footer>
   );
 }
