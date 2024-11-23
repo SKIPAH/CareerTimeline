@@ -79,7 +79,6 @@ export default function Footer() {
           </Row>
         </Row>
       </Container>
-      <DragonBall src={twoStarDragonBall} />
     </footer>
   );
 }

@@ -5,6 +5,7 @@ import FitnessPage from "./Pages/FitnessPage";
 import EsportsPage from "./Pages/EsportsPage";
 import TestPage from "./Pages/TestPage";
 import Home from "./Pages/Home";
+import TestPage2 from "./Pages/TestPage2";
 
 import "/src/css/styles.css";
 import { Route, Routes } from "react-router-dom";
@@ -20,7 +21,8 @@ export default function App() {
         <Route path="/esports" element={<EsportsPage />}></Route>
         <Route path="/dev" element={<DevPage />}></Route>
         <Route path="/fitness" element={<FitnessPage />}></Route>
-        <Route path="/dbz" element={<TestPage />}></Route>
+        <Route path="/test" element={<TestPage />}></Route>
+        <Route path="/test2" element={<TestPage2 />}></Route>
       </Routes>
       <Footer></Footer>
     </>

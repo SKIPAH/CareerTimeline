@@ -1,17 +1,36 @@
 import monkeAudio from "../files/audio/monke.mp3";
 import React, { useState, useEffect } from "react";
 
-function DragonBall({ src }) {
-  const [value, setValue] = useState(0);
+const ballCount = () => Number(localStorage.getItem("collectedAmount")) || 0;
+function DragonBall({ id, src }) {
+  const [collectedAmount, setCollectedAmount] = useState(ballCount());
 
   useEffect(() => {
-    playAudio();
-  }, [value]);
+    //collectDragonBall();
+    localStorage.setItem("collectedAmount", collectedAmount);
+  }, [collectedAmount]);
 
-  function playAudio() {
+  /*
+  function collectDragonBall() {
+
     new Audio(monkeAudio).play();
+
+    console.log(collectedAmount);
+    
   }
-  return <img src={src} onClick={() => setValue(value + 1)}></img>;
+    */
+
+  return (
+    <>
+      <img
+        className={`dragon-ball ${collectedAmount > 0 ? "collected" : ""}`}
+        src={src}
+        onClick={() => setCollectedAmount(collectedAmount + 1)}
+      ></img>
+      <p>{collectedAmount}</p>
+      <button onClick={() => localStorage.clear()}>asd</button>
+    </>
+  );
 }
 
 export default DragonBall;

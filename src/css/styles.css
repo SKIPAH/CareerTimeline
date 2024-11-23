@@ -54,6 +54,45 @@ a.nav-link {
   display: none;
 }
 
+.dragon-ball {
+  cursor: pointer;
+  filter: grayscale(0%);
+  transition: filter 0.3s;
+  width: 5em;
+}
+
+.dragon-ball.collected {
+  filter: grayscale(100%);
+}
+
+#dragon-ball-1 {
+  filter: grayscale(0%);
+}
+
+#dragon-ball-2 {
+  filter: grayscale(0%);
+}
+
+#dragon-ball-3 {
+  filter: grayscale(0%);
+}
+
+#dragon-ball-4 {
+  filter: grayscale(0%);
+}
+
+#dragon-ball-5 {
+  filter: grayscale(0%);
+}
+
+#dragon-ball-6 {
+  filter: grayscale(0%);
+}
+
+#dragon-ball-7 {
+  filter: grayscale(0%);
+}
+
 .introduction .background-video-container {
   width: 100%;
   -o-object-fit: cover;
@@ -99,7 +138,7 @@ a.nav-link {
 .introduction .introduction-text {
   margin: 0;
   padding: 4em;
-  padding-top: 2.2em;
+  padding-top: 0em;
   padding-bottom: 2.2em;
   font-family: "Josefin Sans", sans-serif;
   font-size: 3em;
@@ -112,7 +151,7 @@ a.nav-link {
   font-size: 4em;
   margin: 0;
   padding: 4em;
-  padding-top: 6em;
+  padding-top: 0em;
   padding-bottom: 2.2em;
 }
 
@@ -134,11 +173,10 @@ a.nav-link {
 .fitness-section .video-responsive {
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 100%;
   height: 50%;
 }
 .fitness-section .embeds {
-  display: flex;
   align-items: center;
 }
 
