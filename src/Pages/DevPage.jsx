@@ -4,7 +4,6 @@ import { getTranslation } from "../components/Translations";
 
 export default function DevPage() {
   const currentLanguage = useLanguage();
-  
 
   return (
     <>
@@ -14,36 +13,35 @@ export default function DevPage() {
             {getTranslation("dev-title", currentLanguage)}
           </h1>
           <p>
-            {getTranslation("dev-linkedin", currentLanguage)}{" "}
             <a
               href="https://www.linkedin.com/in/jussi-mehtala/"
               target="_blank"
             >
               Linkedin
             </a>{" "}
-            {getTranslation("dev-linkedin-2", currentLanguage)}{" "}
             <a href="https://github.com/SKIPAH" target="_blank">
               GitHub
             </a>{" "}
-            {getTranslation("dev-github-3", currentLanguage)}.
-          </p>
-          <p>
-            {getTranslation("dev-cv", currentLanguage)}{" "}
-            <a
-              href="/jussi_mehtälä_CV_english.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              CV PDF
-            </a>{" "}
-            {getTranslation("dev-cv-2", currentLanguage)}{" "}
-            <a
-              href="/jussi_mehtälä_PORTFOLIO_english.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Portfolio PDF
-            </a>
+            <p>
+            {getTranslation("dev-download", currentLanguage)}{" "}
+              <a
+                href="/jussi_mehtälä_CV_english.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                CV
+              </a>{" "}
+            </p>
+            <p>
+            {getTranslation("dev-download", currentLanguage)}{" "}
+              <a
+                href="/jussi_mehtälä_PORTFOLIO_english.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Portfolio
+              </a>
+            </p>
           </p>
           <p>
             <a
@@ -63,9 +61,7 @@ export default function DevPage() {
         </div>
         <div className="container">
           <p>{getTranslation("dev-webgl", currentLanguage)}</p>
-          <p>
-            {getTranslation("dev-webgl-note", currentLanguage)}
-          </p>
+          <p>{getTranslation("dev-webgl-note", currentLanguage)}</p>
           <UnityWebGL className="unity-webgl"></UnityWebGL>
         </div>
       </section>

@@ -69,7 +69,6 @@ export default function Footer() {
                 juzzii.mehta@gmail.com
               </a>
               <br />
-              Phone: <a className="text-white">+358 44 3377 389</a>
             </address>
           </Col>
           <Row className="mt-3">

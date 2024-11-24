@@ -64,7 +64,7 @@ let TimelineElements = {
       id: 1,
       title: "Nucu Oy. Ohjelmistokehittäjä. Harjoittelija/Opinnäytetyö",
       location: "Oulu",
-      description: "Suunnittelin 3D-tuotekonfiguraattoria ja simulaattoria Nucun tuotteille, jotta asiakkaat voivat nähdä selaimessa, kuinka tuotteet toimivat ilman fyysistä versiota.",
+      description: "Suunnittelin 3D-tuotekonfiguraattoria ja simulaattoria Unity-pelimoottorilla Nucun tuotteille, jotta asiakkaat voivat nähdä selaimessa, kuinka tuotteet toimivat ilman fyysistä versiota.",
       buttonText: "Projekti linkki",
       buttonText2: "Nucu Oy",
       date: "Toukokuu 2023-Toukokuu 2024",
