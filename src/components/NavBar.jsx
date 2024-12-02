@@ -29,7 +29,7 @@ function NavBar() {
 
   return (
     <>
-      <Navbar collapseOnSelect expand="lg">
+      <Navbar className="navbar-full" collapseOnSelect expand="lg">
         <Container className="navbar-container">
           <Navbar.Brand>
             <Nav.Link as={NavLink} to={"/"}>
@@ -54,11 +54,6 @@ function NavBar() {
               <Nav.Link as={NavLink} to={"/fitness"}>
                 {getTranslation("navbar-fitness", currentLanguage)}
               </Nav.Link>
-              {/*
-              <Nav.Link as={NavLink} to={"/dbz"}>
-                {getTranslation("navbar-test", currentLanguage)}
-              </Nav.Link>
-              */}
             </Nav>
             <NavDropdown title="SOCIALS" id="basic-nav-dropdown">
               <NavDropdown.Item href="https://x.com/SKIPAHH" target="_blank">

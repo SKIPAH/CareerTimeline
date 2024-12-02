@@ -18,6 +18,25 @@
   color: black;
   font-weight: bold;
 }
+.navbar .navbar-logos {
+  width: 2.2em;
+  margin: 0.2em;
+  padding-top: 1em;
+  cursor: pointer;
+}
+.navbar a.nav-link {
+  margin: 0.5em;
+  padding: 0.5em;
+  white-space: nowrap;
+  width: auto;
+  display: inline-block;
+}
+.navbar #languageToggleBtn {
+  margin-right: 2em;
+}
+.navbar #languageToggleBtnNavbar {
+  display: none;
+}
 .navbar #languageToggleBtn {
   color: black;
   font-weight: bold;
@@ -31,92 +50,30 @@
   border-color: white;
 }
 
-.navbar-logos {
-  width: 2.2em;
-  margin: 0.2em;
-  padding-top: 1em;
-  cursor: pointer;
-}
-
-a.nav-link {
-  margin: 0.5em;
-  padding: 0.5em;
-  white-space: nowrap;
-  width: auto;
-  display: inline-block;
-}
-
-#languageToggleBtn {
-  margin-right: 2em;
-}
-
-#languageToggleBtnNavbar {
-  display: none;
-}
-
-.dragon-ball {
-  cursor: pointer;
-  filter: grayscale(0%);
-  transition: filter 0.3s;
-  width: 5em;
-}
-
-.dragon-ball.collected {
-  filter: grayscale(100%);
-}
-
-#dragon-ball-1 {
-  filter: grayscale(0%);
-}
-
-#dragon-ball-2 {
-  filter: grayscale(0%);
-}
-
-#dragon-ball-3 {
-  filter: grayscale(0%);
-}
-
-#dragon-ball-4 {
-  filter: grayscale(0%);
-}
-
-#dragon-ball-5 {
-  filter: grayscale(0%);
-}
-
-#dragon-ball-6 {
-  filter: grayscale(0%);
-}
-
-#dragon-ball-7 {
-  filter: grayscale(0%);
-}
-
-.introduction .background-video-container {
+.homepage-introduction .background-video-container {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.introduction .background-video {
+.homepage-introduction .background-video {
   height: auto;
   width: 100%;
   float: left;
   clear: none;
   padding-bottom: 4em;
 }
-.introduction .intro {
+.homepage-introduction .intro {
   position: absolute;
   top: 50%;
   display: grid;
   grid-template-columns: 5fr 5fr;
 }
-.introduction .intro .introduction-text {
+.homepage-introduction .intro .introduction-text {
   text-align: center;
   word-wrap: break-word;
   font-size: 4em;
 }
-.introduction .intro #profilepic {
+.homepage-introduction .intro #profilepic {
   width: 29%;
   border-radius: 25em;
   display: block;
@@ -124,7 +81,7 @@ a.nav-link {
   margin-right: auto;
   outline: 2px solid white;
 }
-.introduction .intro .title-text {
+.homepage-introduction .intro .title-text {
   color: white;
   font-size: 8em;
   background-color: rgba(0, 0, 0, 0.5);
@@ -132,11 +89,11 @@ a.nav-link {
   padding: 0;
   outline: 2px solid white;
 }
-.introduction .container {
+.homepage-introduction .container {
   background-color: var(--primary-color1);
   max-width: 100%;
 }
-.introduction .introduction-text {
+.homepage-introduction .introduction-text {
   margin: 0;
   padding: 4em;
   padding-top: 0em;
@@ -145,7 +102,7 @@ a.nav-link {
   font-size: 3em;
   text-align: center;
 }
-.introduction .introduction-text-short {
+.homepage-introduction .introduction-text-short {
   font-family: "Josefin Sans", sans-serif;
   text-align: center;
   word-wrap: break-word;
@@ -441,6 +398,116 @@ footer {
   background-color: #f3bc3c;
 }
 
+.dragon-ball {
+  cursor: pointer;
+  filter: grayscale(0%);
+  transition: filter 0.3s;
+  width: 5em;
+}
+
+.dragon-ball.collected {
+  filter: grayscale(100%);
+}
+
+#dragon-ball-1 {
+  filter: grayscale(0%);
+}
+
+#dragon-ball-2 {
+  filter: grayscale(0%);
+}
+
+#dragon-ball-3 {
+  filter: grayscale(0%);
+}
+
+#dragon-ball-4 {
+  filter: grayscale(0%);
+}
+
+#dragon-ball-5 {
+  filter: grayscale(0%);
+}
+
+#dragon-ball-6 {
+  filter: grayscale(0%);
+}
+
+#dragon-ball-7 {
+  filter: grayscale(0%);
+}
+
+.test1 .label {
+  border: 2px solid black;
+  width: 270px;
+  margin: 20px auto;
+  padding: 0 7px;
+}
+.test1 header h1 {
+  text-align: center;
+  margin: -4px 0;
+  letter-spacing: 0.15px;
+}
+.test1 p {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.test1 .divider {
+  border-bottom: 1px solid #888989;
+  margin: 2px 0;
+}
+.test1 .bold {
+  font-weight: 800;
+}
+.test1 .large {
+  height: 10px;
+}
+.test1 .large, .test1 .medium {
+  background-color: black;
+  border: 0;
+}
+.test1 .medium {
+  height: 5px;
+}
+.test1 .small-text {
+  font-size: 0.85rem;
+}
+.test1 .calories-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.test1 .calories-info h2 {
+  margin: 0;
+}
+.test1 .left-container p {
+  margin: -5px -2px;
+  font-size: 2em;
+  font-weight: 700;
+}
+.test1 .calories-info span {
+  margin: -7px -2px;
+  font-size: 2.4em;
+  font-weight: 700;
+}
+.test1 .right {
+  justify-content: flex-end;
+}
+.test1 .indent {
+  margin-left: 1em;
+}
+.test1 .double-indent {
+  margin-left: 2em;
+}
+.test1 .daily-value p:not(.no-divider) {
+  border-bottom: 1px solid #888989;
+}
+.test1 .note {
+  font-size: 0.6rem;
+  margin: 5px 0;
+}
+
 @media only screen and (max-width: 1700px) {
   .vertical-timeline-element-date {
     display: block !important;
@@ -450,49 +517,49 @@ footer {
   }
 }
 @media only screen and (max-width: 768px) {
-  .introduction .background-video-container {
+  .homepage-introduction .background-video-container {
     display: none;
   }
-  .introduction .background-video {
+  .homepage-introduction .background-video {
     display: none;
   }
-  .introduction .intro {
+  .homepage-introduction .intro {
     position: relative;
     display: inline-block;
     width: 100%;
     background-color: var(--primary-color1);
   }
-  .introduction .intro #profilepic {
+  .homepage-introduction .intro #profilepic {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 35%;
     top: 0%;
   }
-  .introduction .intro .title-text {
+  .homepage-introduction .intro .title-text {
     font-size: 2em;
     text-align: center;
   }
-  .introduction .container .introduction-text-short {
+  .homepage-introduction .container .introduction-text-short {
     font-size: 1.5em;
     padding: 10px;
     width: 100%;
     text-align: center;
   }
-  .introduction .container .introduction-text {
+  .homepage-introduction .container .introduction-text {
     line-height: 1.2;
     padding: 10px;
     width: 100%;
     text-align: center;
     font-size: 1.5em;
   }
-  .navbar-logos {
+  .navbar .navbar-logos {
     display: none;
   }
-  #languageToggleBtn {
+  .navbar #languageToggleBtn {
     display: none;
   }
-  #languageToggleBtnNavbar {
+  .navbar #languageToggleBtnNavbar {
     display: block;
   }
   .timeline-title {

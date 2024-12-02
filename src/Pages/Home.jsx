@@ -9,7 +9,7 @@ export default function Home() {
 
   return (
     <>
-      <section className="introduction">
+      <section className="homepage-introduction">
         <BackgroundVideo src={WebsiteVideo} />
         <div className="intro">
           <img id="profilepic" src={profilepic} alt="profile picture"></img>

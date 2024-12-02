@@ -21,6 +21,29 @@
     font-weight: bold;
   }
 
+
+  .navbar-logos {
+    width: 2.2em;
+    margin: 0.2em;
+    padding-top: 1em;
+    cursor: pointer;
+  }
+  
+  a.nav-link {
+    margin: 0.5em;
+    padding: 0.5em;
+    white-space: nowrap;
+    width: auto;
+    display: inline-block;
+  }
+  
+  #languageToggleBtn {
+    margin-right: 2em;
+  }
+  
+  #languageToggleBtnNavbar {
+    display: none;
+  }
   #languageToggleBtn{
     color: black;
     font-weight: bold;
@@ -35,66 +58,9 @@
   }
 }
 
-.navbar-logos {
-  width: 2.2em;
-  margin: 0.2em;
-  padding-top: 1em;
-  cursor: pointer;
-}
-
-a.nav-link {
-  margin: 0.5em;
-  padding: 0.5em;
-  white-space: nowrap;
-  width: auto;
-  display: inline-block;
-}
-
-#languageToggleBtn {
-  margin-right: 2em;
-}
-
-#languageToggleBtnNavbar {
-  display: none;
-}
 
 
-.dragon-ball {
-  cursor: pointer;
-  filter: grayscale(0%);
-  transition: filter 0.3s;
-  width: 5em;
-}
-
-.dragon-ball.collected {
-  filter: grayscale(100%);
-}
-
-#dragon-ball-1 {
-  filter: grayscale(0%);
-}
-#dragon-ball-2 {
-  filter: grayscale(0%);
-}
-#dragon-ball-3 {
-  filter: grayscale(0%);
-}
-#dragon-ball-4 {
-  filter: grayscale(0%);
-}
-#dragon-ball-5 {
-  filter: grayscale(0%);
-}
-#dragon-ball-6 {
- filter: grayscale(0%);
-}
-#dragon-ball-7 {
-  filter: grayscale(0%);
-}
-
-
-
-.introduction {
+.homepage-introduction {
 
   .background-video-container{
     width: 100%;
@@ -107,8 +73,6 @@ a.nav-link {
     clear:none;  
     padding-bottom: 4em;
   }
- 
-  
   .intro {
     position: absolute;
     top: 50%;
@@ -483,6 +447,131 @@ footer {
   background-color: #f3bc3c;
 }
 
+.dragon-ball {
+  cursor: pointer;
+  filter: grayscale(0%);
+  transition: filter 0.3s;
+  width: 5em;
+}
+
+.dragon-ball.collected {
+  filter: grayscale(100%);
+}
+
+#dragon-ball-1 {
+  filter: grayscale(0%);
+}
+#dragon-ball-2 {
+  filter: grayscale(0%);
+}
+#dragon-ball-3 {
+  filter: grayscale(0%);
+}
+#dragon-ball-4 {
+  filter: grayscale(0%);
+}
+#dragon-ball-5 {
+  filter: grayscale(0%);
+}
+#dragon-ball-6 {
+ filter: grayscale(0%);
+}
+#dragon-ball-7 {
+  filter: grayscale(0%);
+}
+
+
+.test1{
+  .label {
+    border: 2px solid black;
+    width: 270px;
+    margin: 20px auto;
+    padding: 0 7px;
+  }
+  
+  header h1 {
+    text-align: center;
+    margin: -4px 0;
+    letter-spacing: 0.15px
+  }
+  
+  p {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .divider {
+    border-bottom: 1px solid #888989;
+    margin: 2px 0;
+  }
+  
+  .bold {
+    font-weight: 800;
+  }
+  
+  .large {
+    height: 10px;
+  }
+  
+  .large, .medium {
+    background-color: black;
+    border: 0;
+  }
+  
+  .medium {
+    height: 5px;
+  }
+  
+  .small-text {
+    font-size: 0.85rem;
+  }
+  
+  
+  .calories-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  
+  .calories-info h2 {
+    margin: 0;
+  }
+  
+  .left-container p {
+    margin: -5px -2px;
+    font-size: 2em;
+    font-weight: 700;
+  }
+  
+  .calories-info span {
+    margin: -7px -2px;
+    font-size: 2.4em;
+    font-weight: 700;
+  }
+  
+  .right {
+    justify-content: flex-end;
+  }
+  
+  .indent {
+    margin-left: 1em;
+  }
+  
+  .double-indent {
+    margin-left: 2em;
+  }
+  
+  .daily-value p:not(.no-divider) {
+    border-bottom: 1px solid #888989;
+  }
+  
+  .note {
+    font-size: 0.6rem;
+    margin: 5px 0;
+  }
+}
+
 @media only screen and (max-width: 1700px) {
   .vertical-timeline-element-date {
     display: block !important;
@@ -493,7 +582,7 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
-  .introduction {
+  .homepage-introduction {
     .background-video-container{
      display: none;
     }
@@ -534,17 +623,19 @@ footer {
       }
     }
   }
+  .navbar{
+    .navbar-logos {
+      display: none;
+    }
   
-  .navbar-logos {
-    display: none;
+    #languageToggleBtn {
+      display: none;
+    }
+    #languageToggleBtnNavbar {
+      display: block;
   }
-
-  #languageToggleBtn {
-    display: none;
   }
-  #languageToggleBtnNavbar {
-    display: block;
-}
+  
 
   .timeline-title {
     font-size: 3em;
