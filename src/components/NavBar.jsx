@@ -15,8 +15,9 @@ import twitter from "../files/images/twitter.png";
 import instagram from "../files/images/instagram.png";
 import youtube from "../files/images/youtube.png";
 import twitch from "../files/images/twitch.png";
-import dbzskipah from "../files/images/dbzskipah.png";
+import dbzskipah from "../files/images/dbzskipahtransparent.png";
 import { useState } from "react";
+import skipahlogo from "../files/images/SKIPAHlogo.png";
 
 function NavBar() {
   const [currentLanguage, setCurrentLanguage] = useState(getCurrentLanguage());
@@ -33,7 +34,7 @@ function NavBar() {
         <Container className="navbar-container">
           <Navbar.Brand>
             <Nav.Link as={NavLink} to={"/"}>
-              <img src={dbzskipah} />
+              <img className="navbar-home-logo" src={skipahlogo} />
             </Nav.Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />

@@ -1,9 +1,9 @@
 import assembly from "../files/images/nyyrikkipictures/assembly.jpg";
 import skipah4 from "../files/images/nyyrikkipictures/skipah4.JPG";
-import skipahuusi from "../files/images/nyyrikkipictures/skipahuusi.jpeg";
+import skipahuusi from "../files/images/nyyrikkipictures/skipahuusi.jpg";
 import nyyrikkiskipah2 from "../files/images/nyyrikkipictures/nyyrikkiskipah2.png";
 import skipah3 from "../files/images/nyyrikkipictures/skipah3.JPG";
-import ebinsda from "../files/images/nyyrikkipictures/ebinsda.jpg";
+import ebinsda from "../files/images/nyyrikkipictures/ebinsda.png";
 import nyyrikkiskipah from "../files/images/nyyrikkipictures/nyyrikkiskipah.jpg";
 export default function HorizontalPictures() {
   return (

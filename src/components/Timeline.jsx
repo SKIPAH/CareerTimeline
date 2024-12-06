@@ -9,7 +9,7 @@ import { useLanguage } from "../hooks/useLanguage";
 import { Button } from "react-bootstrap";
 
 export default function Timeline() {
-  let IconStyles = { background: "#ffb300" };
+  let IconStyles = { background: "#FFD22B" };
   const currentLanguage = useLanguage();
 
   const toTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
