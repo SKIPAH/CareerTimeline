@@ -7,29 +7,31 @@ import skipah3 from "../files/images/nyyrikkipictures/skipah3.JPG";
 import { useLanguage } from "../hooks/useLanguage";
 import { getTranslation } from "../components/Translations";
 import { Button } from "react-bootstrap";
+import { useScrollAnimation } from "../components/ScrollAnimation";
 
 export default function EsportsPage() {
   const currentLanguage = useLanguage();
   const toTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
+  useScrollAnimation();
   return (
     <>
       <section className="esports-section">
         <div className="container">
-          <h1 className="title-text">
+          <h1 className="title-text hidden">
             {getTranslation("esports-title-text", currentLanguage)}
             <img
-              className="image"
+              className="image hidden"
               src={assembly}
               alt="Assembly Summer 2018 stage picture of SKIPAH"
             ></img>
           </h1>
-          <div className="esports-introduction">
+          <div className="esports-introduction hidden">
             <img
-              className="image"
+              className="image hidden"
               src={skipah4}
               alt="Lantrek BYOC picture. First lan event"
             ></img>
-            <p className="esports-text">
+            <p className="esports-text hidden">
               {getTranslation("esports-text", currentLanguage)}
               <a
                 className="esports-link"
@@ -41,42 +43,42 @@ export default function EsportsPage() {
             </p>
           </div>
           <div className="esports-introduction">
-            <p className="esports-text">
+            <p className="esports-text hidden">
               {getTranslation("esports-text-3", currentLanguage)}
             </p>
             <img
-              className="image"
+              className="image hidden"
               src={nyyrikkiskipah2}
               alt="Lantrek BYOC Picture with Nyyrikki Beanie on"
             ></img>
           </div>
           <div className="esports-introduction">
             <img
-              className="image"
+              className="image hidden"
               src={skipah3}
               alt="SKIPAH and Jönssöni watching Battalion showmatch at Lantrek"
             ></img>
-            <p className="esports-text">
+            <p className="esports-text hidden">
               {getTranslation("esports-text-4", currentLanguage)}
             </p>
           </div>
           <div className="esports-introduction">
-            <p className="esports-text">
+            <p className="esports-text hidden">
               {getTranslation("esports-text-5", currentLanguage)}
             </p>
             <img
-              className="image"
+              className="image hidden"
               src={skipahuusi}
               alt="Newest playerpicture"
             ></img>
           </div>
           <div className="esports-introduction">
-            <p className="esports-text">
+            <p className="esports-text hidden">
               {getTranslation("esports-text-6", currentLanguage)}
             </p>
           </div>
-          <div className="esports-introduction">
-            <p className="esports-text">
+          <div className="esports-introduction-embed hidden">
+            <p className="esports-text hidden">
               {getTranslation("esports-text-movie-1", currentLanguage)}
               <a href="https://x.com/mauserzjeh">Mauser.</a>
             </p>
@@ -85,12 +87,12 @@ export default function EsportsPage() {
               embedId="4MIz6BQikh4"
             ></YoutubeEmbed>
           </div>
-          <div className="esports-introduction">
+          <div className="esports-introduction-embed hidden">
             <YoutubeEmbed
               className="esports-youtube-embed"
               embedId="uY3LpNTSYqg"
             ></YoutubeEmbed>
-            <p className="esports-text">
+            <p className="esports-text hidden">
               {getTranslation("esports-text-movie-2", currentLanguage)}
             </p>
           </div>

@@ -8,6 +8,19 @@
   --border-color: #ffffff;
 }
 
+.hidden{
+  opacity: 0;
+  transition: all 1s;
+  filter: blur(5px);
+  transform: translateX(-100%);
+}
+
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
 
 .title-text {
   font-size: 8em;
@@ -35,14 +48,17 @@
     
   }
   
-  .navbar-brand{
-    display: block;
-    align-self: auto;
-    width: 35%;
-    height: auto;
+  span.navbar-brand{
+    margin: 0;
+    padding: 0;
+    margin-right: 5em;
   }
+ 
   .navbar-home-logo{
-    width: 50%;
+    height: auto;
+    width: auto;
+    max-height: 72px;
+    max-width: 250px;
   }
 
   a.nav-link {
@@ -197,9 +213,15 @@
 
   .esports-introduction {
     display: flex;
-    align-items: center;
+    place-content: center;
   }
 
+  .esports-introduction-embed{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 50% 50%;
+
+  }
   .image {
     width: 550px;
     height: 400px;
@@ -602,6 +624,10 @@ footer {
     .navbar-brand{
       width: 75%;
     }
+
+    span.navbar-brand{
+      margin-right: 0em;
+    }
   }
   .homepage-introduction {
     .background-video-container{
@@ -668,10 +694,17 @@ footer {
 
 
   .esports-section {
+
     .esports-introduction{
       display: inline-block;
       width: 100%;
     }
+    .esports-introduction-embed{
+      display: inline-block;
+      
+      width: 100%;
+    }
+  
     .title-text {
       font-size: 3em;
       padding-left: 0em;
@@ -684,14 +717,11 @@ footer {
       border: 5px solid #fff;
       display: block;
       object-fit: cover;
-    border-radius: 20px;
-
-
+      border-radius: 20px;
     }
     .esports-text{
       font-size: 1.5em;
     }
-    
   }
 
   .dev-section {

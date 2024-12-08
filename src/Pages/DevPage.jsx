@@ -1,18 +1,20 @@
 import UnityWebGL from "../components/UnityWebGL";
 import { useLanguage } from "../hooks/useLanguage";
 import { getTranslation } from "../components/Translations";
+import { useScrollAnimation } from "../components/ScrollAnimation";
 
 export default function DevPage() {
   const currentLanguage = useLanguage();
+  useScrollAnimation();
 
   return (
     <>
       <section className="dev-section">
         <div className="container">
-          <h1 className="title-text">
+          <h1 className="title-text hidden">
             {getTranslation("dev-title", currentLanguage)}
           </h1>
-          <p>
+          <p className="hidden">
             <a
               href="https://www.linkedin.com/in/jussi-mehtala/"
               target="_blank"
@@ -23,7 +25,7 @@ export default function DevPage() {
               GitHub
             </a>{" "}
             <p>
-            {getTranslation("dev-download", currentLanguage)}{" "}
+              {getTranslation("dev-download", currentLanguage)}{" "}
               <a
                 href="/jussi_mehtälä_CV_english.pdf"
                 target="_blank"
@@ -33,7 +35,7 @@ export default function DevPage() {
               </a>{" "}
             </p>
             <p>
-            {getTranslation("dev-download", currentLanguage)}{" "}
+              {getTranslation("dev-download", currentLanguage)}{" "}
               <a
                 href="/jussi_mehtälä_PORTFOLIO_english.pdf"
                 target="_blank"
@@ -43,7 +45,7 @@ export default function DevPage() {
               </a>
             </p>
           </p>
-          <p>
+          <p className="hidden">
             <a
               href="https://www.theseus.fi/handle/10024/856201"
               target="_blank"
@@ -60,8 +62,12 @@ export default function DevPage() {
           </p>
         </div>
         <div className="container">
-          <p>{getTranslation("dev-webgl", currentLanguage)}</p>
-          <p>{getTranslation("dev-webgl-note", currentLanguage)}</p>
+          <p className="hidden">
+            {getTranslation("dev-webgl", currentLanguage)}
+          </p>
+          <p className="hidden">
+            {getTranslation("dev-webgl-note", currentLanguage)}
+          </p>
           <UnityWebGL className="unity-webgl"></UnityWebGL>
         </div>
       </section>
