@@ -1,6 +1,7 @@
 import { useLanguage } from "../hooks/useLanguage";
 import { getTranslation } from "../components/Translations";
-import profilepic from "../files/images/profiilikuva.png";
+import profilepic from "../files/images/profiilikuva2.jpg";
+
 import BackgroundVideo from "../components/BackgroundVideo";
 import WebsiteVideo from "../files/videos/websitevideo.mp4";
 import { useScrollAnimation } from "../components/ScrollAnimation";

@@ -20,6 +20,11 @@
   filter: blur(0);
   transform: translateX(0);
 }
+@media (prefers-reduced-motion: no-preference){
+  .hidden{
+    transition: all 1s;
+  }
+}
 
 
 .title-text {
@@ -101,6 +106,7 @@
   .background-video-container{
     width: 100%;
     object-fit: cover;  
+    
   }
   .background-video{
     height: auto;
@@ -108,6 +114,7 @@
     float:left;
     clear:none;  
     padding-bottom: 4em;
+    
   }
   .intro {
     position: absolute;
