@@ -15,7 +15,6 @@ import twitter from "../files/images/twitter.png";
 import instagram from "../files/images/instagram.png";
 import youtube from "../files/images/youtube.png";
 import twitch from "../files/images/twitch.png";
-import dbzskipah from "../files/images/dbzskipahtransparent.png";
 import { useState } from "react";
 import skipahlogo from "../files/images/SKIPAHlogo.png";
 
@@ -56,6 +55,7 @@ function NavBar() {
                 {getTranslation("navbar-fitness", currentLanguage)}
               </Nav.Link>
             </Nav>
+            {/*
             <NavDropdown title="SOCIALS" id="basic-nav-dropdown">
               <NavDropdown.Item href="https://x.com/SKIPAHH" target="_blank">
                 Twitter
@@ -91,6 +91,7 @@ function NavBar() {
                 Linkedin
               </NavDropdown.Item>
             </NavDropdown>
+            */}
             <Button id="languageToggleBtnNavbar" onClick={handleLanguageToggle}>
               {currentLanguage === "en" ? "SUOMEKSI" : "ENGLISH"}
             </Button>

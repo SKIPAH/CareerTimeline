@@ -1,9 +1,9 @@
 import YoutubeEmbed from "../components/YoutubeEmbed";
-import assembly from "../files/images/nyyrikkipictures/assembly.jpg";
-import skipah4 from "../files/images/nyyrikkipictures/skipah4.JPG";
+import assembly from "../files/images/nyyrikkipictures/assembly.webp";
+import skipah4 from "../files/images/nyyrikkipictures/skipah4.webp";
 import skipahuusi from "../files/images/nyyrikkipictures/skipahuusi.jpg";
 import nyyrikkiskipah2 from "../files/images/nyyrikkipictures/nyyrikkiskipah2.png";
-import skipah3 from "../files/images/nyyrikkipictures/skipah3.JPG";
+import skipah3 from "../files/images/nyyrikkipictures/skipah3.webp";
 import { useLanguage } from "../hooks/useLanguage";
 import { getTranslation } from "../components/Translations";
 import { Button } from "react-bootstrap";

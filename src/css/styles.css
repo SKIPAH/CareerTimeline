@@ -88,6 +88,11 @@
   border-color: white;
 }
 
+.homepage-introduction .video-section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
 .homepage-introduction .background-video-container {
   width: 100%;
   -o-object-fit: cover;
@@ -150,6 +155,25 @@
   font-family: "Josefin Sans", sans-serif;
   font-size: 2em;
   text-align: center;
+}
+.homepage-introduction .introduction-text-tech {
+  margin: 0;
+  padding: 4em;
+  padding-top: 0em;
+  padding-bottom: 1.2em;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2em;
+  text-align: center;
+}
+.homepage-introduction .tech-used-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 1.8em;
+}
+.homepage-introduction .tech-used-container img {
+  width: 5%;
 }
 
 .fitness-section .container {
@@ -424,6 +448,7 @@ footer {
   color: white;
   border: 2px solid black;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  font-size: 0.9em;
 }
 
 .schoolButton {
@@ -559,6 +584,9 @@ footer {
   .navbar span.navbar-brand {
     margin-right: 0em;
   }
+  .homepage-introduction .video-section {
+    display: none;
+  }
   .homepage-introduction .background-video-container {
     display: none;
   }
@@ -575,18 +603,22 @@ footer {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
     width: 35%;
     top: 0%;
   }
   .homepage-introduction .intro .title-text {
     font-size: 2em;
     text-align: center;
+    padding: 0.5em;
   }
   .homepage-introduction .container .introduction-text-short {
-    font-size: 1.5em;
+    line-height: 1.2;
     padding: 10px;
     width: 100%;
     text-align: center;
+    font-size: 1.5em;
   }
   .homepage-introduction .container .introduction-text {
     line-height: 1.2;
@@ -595,14 +627,26 @@ footer {
     text-align: center;
     font-size: 1.5em;
   }
-  .navbar .navbar-logos {
-    display: none;
+  .homepage-introduction .container .introduction-text-tech {
+    line-height: 1.2;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+  }
+  .homepage-introduction .container .tech-used-container img {
+    width: 15%;
   }
   .navbar #languageToggleBtn {
     display: none;
   }
   .navbar #languageToggleBtnNavbar {
     display: block;
+    margin: 1em;
+  }
+  .navbar .navbar-logos {
+    width: 2.5em;
+    margin: 0.3em;
   }
   .timeline-title {
     font-size: 3em;
