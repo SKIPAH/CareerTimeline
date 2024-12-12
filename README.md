@@ -1,15 +1,18 @@
-<h2>Personal website project to learn more about Web Development. Plan is to show hobbies, achievements, social media material, development skills etc. Updating the website each time I fix, add or learn something new. </h2>
+<h2>Personal website project to learn more about Web Development. Plan is to show hobbies, achievements, social media material, development skills etc. </h2>
+<h2>Currently planning on adding material using Twitter API</h2>
 
 <h2><a href="https://jussimehtala.com/">LINK TO WEBSITE</a></h2>
 
-<h3>Early version with some design in mind.</h3>
+<h3>Homepage.</h3>
 
 
-![websitepic](https://github.com/user-attachments/assets/3793daba-f72b-4db3-ba7b-a8e3f002c2f4)
+![websitepic1](https://github.com/user-attachments/assets/bd9cdefe-2be8-410d-9490-3d8e79e42e6f)
 
-<h3>Dev page with important files and my WebGL 3D product configurator that you can try on desktop.</h3>
 
-![asdasdsa](https://github.com/user-attachments/assets/95e3a719-f042-42f1-9e03-45d68eedcd79)
+<h3> Career timeline with react-vertical-timeline-component</h3>
+
+
+![websitepic2](https://github.com/user-attachments/assets/b10e2206-c3da-4a95-8499-1d693ac399bd)
 
 
 # React + Vite
