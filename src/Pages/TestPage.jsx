@@ -8,6 +8,7 @@ import CollectionDragonBalls from "../components/CollectionDragonBalls";
 import DragonBall from "../components/DragonBall";
 import twoStarDragonBall from "../files/images/dbz/2star.png";
 
+
 export default function TestPage() {
   const [count, setCount] = useState(0);
   const [text, setText] = useState("LOL");
@@ -56,6 +57,8 @@ export default function TestPage() {
       <p>
         Hello, {name}. You are {age}.
       </p>
+
+
     </main>
   );
 }

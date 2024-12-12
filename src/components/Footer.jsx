@@ -65,7 +65,7 @@ export default function Footer() {
             <h5>{getTranslation("contactMe", currentLanguage)}</h5>
             <address>
               Email:{" "}
-              <a href="juzzii.mehta@gmail.com" className="text-white">
+              <a href="mailto:juzzii.mehta@gmail.com" className="text-white">
                 juzzii.mehta@gmail.com
               </a>
               <br />
@@ -73,7 +73,7 @@ export default function Footer() {
           </Col>
           <Row className="mt-3">
             <Col md={12} className="text-center">
-              <p>&copy; 2024 Skipaduveinau. All Rights Reserved.</p>
+              <p>&copy; 2024</p>
             </Col>
           </Row>
         </Row>

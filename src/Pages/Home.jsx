@@ -20,13 +20,14 @@ export default function Home() {
         <div className="video-section">
           <BackgroundVideo src={WebsiteVideo} />
         </div>
-        <div className="intro hidden">
+        <div className="intro">
           <img
+          className="hidden"
             id="profilepic"
             src={profilepic}
             alt="picture of Jussi Mehtälä"
           ></img>
-          <h1 className="title-text">
+          <h1 className="title-text hidden">
             {getTranslation("homepage-title", currentLanguage)}
           </h1>
         </div>
@@ -42,7 +43,7 @@ export default function Home() {
           <p className="introduction-text-tech hidden">
             {getTranslation("homepage-introduction-text-tech", currentLanguage)}
           </p>
-          <div className="tech-used-container hidden">
+          <div className="tech-used-container hidden-icons">
             <img id="html-logo" src={htmllogo}></img>
             <img id="css-logo" src={csslogo}></img>
             <img id="js-logo" src={jslogo}></img>
