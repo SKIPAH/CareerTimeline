@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import NutritionLabel from "../components/NutritionLabel";
+import ServerTest from "../components/ServerTest";
 
 export default function TestPage() {
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -34,6 +35,7 @@ export default function TestPage() {
       ></div>
       <div className="test1">
         <NutritionLabel></NutritionLabel>
+        <ServerTest></ServerTest>
       </div>
     </div>
   );
