@@ -2,6 +2,7 @@ import YoutubeEmbed from "../components/YoutubeEmbed";
 import InstagramEmbedVideo from "../components/InstagramEmbedVideo";
 import { useLanguage } from "../hooks/useLanguage";
 import { getTranslation } from "../components/Translations";
+import TweetEmbed from "../components/TweetEmbed";
 
 export default function Fitness() {
   const currentLanguage = useLanguage();
@@ -19,11 +20,12 @@ export default function Fitness() {
             {getTranslation("fitness-text-2", currentLanguage)}
           </p>
           <div className="embeds">
-          <InstagramEmbedVideo embedURL="C1XDVxIMNAX"></InstagramEmbedVideo>
-          <YoutubeEmbed
-            embedId="8t4Bgw02xTI"
-            className="fitness-embed"
-          ></YoutubeEmbed>
+            <InstagramEmbedVideo embedURL="C1XDVxIMNAX"></InstagramEmbedVideo>
+            <YoutubeEmbed
+              embedId="8t4Bgw02xTI"
+              className="fitness-embed"
+            ></YoutubeEmbed>
+            <TweetEmbed tweetId="1688619094377930752"></TweetEmbed>
           </div>
         </div>
       </section>

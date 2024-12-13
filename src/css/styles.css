@@ -202,12 +202,14 @@
 .fitness-section .video-responsive {
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
-  height: 50%;
+  width: 853px;
+  height: 480px;
   border: 5px solid #fff;
 }
 .fitness-section .embeds {
+  display: grid;
   align-items: center;
+  grid-template-columns: 33% 33% 33%;
 }
 
 .esports-section {
