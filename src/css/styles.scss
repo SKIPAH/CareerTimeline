@@ -222,25 +222,35 @@
     text-align: center;
   }
   .fitness-embed{
-    width: 500px;
+    width: 15%;
     height: 500px;
     margin-left: auto;
     margin-right: auto;
     border: 5px solid #fff;
 
   }
-  .video-responsive{
-    margin-left: auto;
-    margin-right: auto;
-    width: 853px;
-    height: 480px;
-    border: 5px solid #fff;
-
-  }
+  
   .embeds{
-    display: grid;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    grid-template-columns: 33% 33% 33%;
+    flex-wrap: wrap;
+
+    .video-responsive{
+
+      border: 5px solid #db2e2e;
+    }
+    .tweet-embed{
+      border: 5px solid #db2e2e;
+      margin: 0;
+      padding: 0;
+
+    }
+    .instagram-embed{
+      width: 25%;
+      height: auto;
+      border: 5px solid #db2e2e;
+    }
   }
 }
 
@@ -250,8 +260,6 @@
   flex-direction: column;
   min-height: 40vh;
   align-items: center;
-
-
 
   .esports-introduction {
     display: flex;

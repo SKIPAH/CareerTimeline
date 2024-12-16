@@ -1,9 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Container } from "react-bootstrap";
 
 const YoutubeEmbed = ({ embedId }) => (
-  <Container>
     <div className="video-responsive">
       <iframe
         width="853"
@@ -15,7 +13,6 @@ const YoutubeEmbed = ({ embedId }) => (
         title="Embedded youtube"
       ></iframe>
     </div>
-  </Container>
 );
 
 YoutubeEmbed.propTypes = {

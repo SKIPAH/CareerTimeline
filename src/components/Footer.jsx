@@ -3,10 +3,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import { getTranslation } from "./Translations";
 import { useLanguage } from "../hooks/useLanguage";
 
-import twoStarDragonBall from "../files/images/dbz/2star.png";
-
-import DragonBall from "./DragonBall";
-
 export default function Footer() {
   const currentLanguage = useLanguage();
   return (

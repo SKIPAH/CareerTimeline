@@ -193,23 +193,30 @@
   text-align: center;
 }
 .fitness-section .fitness-embed {
-  width: 500px;
+  width: 15%;
   height: 500px;
   margin-left: auto;
   margin-right: auto;
   border: 5px solid #fff;
 }
-.fitness-section .video-responsive {
-  margin-left: auto;
-  margin-right: auto;
-  width: 853px;
-  height: 480px;
-  border: 5px solid #fff;
-}
 .fitness-section .embeds {
-  display: grid;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  grid-template-columns: 33% 33% 33%;
+  flex-wrap: wrap;
+}
+.fitness-section .embeds .video-responsive {
+  border: 5px solid #db2e2e;
+}
+.fitness-section .embeds .tweet-embed {
+  border: 5px solid #db2e2e;
+  margin: 0;
+  padding: 0;
+}
+.fitness-section .embeds .instagram-embed {
+  width: 25%;
+  height: auto;
+  border: 5px solid #db2e2e;
 }
 
 .esports-section {

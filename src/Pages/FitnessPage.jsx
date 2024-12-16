@@ -21,11 +21,13 @@ export default function Fitness() {
           </p>
           <div className="embeds">
             <InstagramEmbedVideo embedURL="C1XDVxIMNAX"></InstagramEmbedVideo>
-            <YoutubeEmbed
-              embedId="8t4Bgw02xTI"
-              className="fitness-embed"
-            ></YoutubeEmbed>
             <TweetEmbed tweetId="1688619094377930752"></TweetEmbed>
+          </div>
+          <div className="embeds">
+          <YoutubeEmbed
+              embedId="8t4Bgw02xTI"
+              className="fitness-youtube-embed"
+            ></YoutubeEmbed>
           </div>
         </div>
       </section>
