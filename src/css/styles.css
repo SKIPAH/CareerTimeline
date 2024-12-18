@@ -203,20 +203,89 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-}
-.fitness-section .embeds .video-responsive {
-  border: 5px solid #db2e2e;
+  flex-wrap: nowrap;
+  gap: 100px;
+  padding: 20px;
 }
 .fitness-section .embeds .tweet-embed {
-  border: 5px solid #db2e2e;
+  width: 400px;
+  height: auto;
   margin: 0;
   padding: 0;
 }
 .fitness-section .embeds .instagram-embed {
-  width: 25%;
+  width: 400px;
   height: auto;
-  border: 5px solid #db2e2e;
+}
+.fitness-section .embeds .nutrition-label .label {
+  border: 2px solid black;
+  width: 270px;
+  margin: 20px auto;
+  padding: 0 7px;
+}
+.fitness-section .embeds .nutrition-label header h1 {
+  text-align: center;
+  margin: -4px 0;
+  letter-spacing: 0.15px;
+}
+.fitness-section .embeds .nutrition-label p {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.fitness-section .embeds .nutrition-label .divider {
+  border-bottom: 1px solid #888989;
+  margin: 2px 0;
+}
+.fitness-section .embeds .nutrition-label .bold {
+  font-weight: 800;
+}
+.fitness-section .embeds .nutrition-label .large {
+  height: 10px;
+}
+.fitness-section .embeds .nutrition-label .large, .fitness-section .embeds .nutrition-label .medium {
+  background-color: black;
+  border: 0;
+}
+.fitness-section .embeds .nutrition-label .medium {
+  height: 5px;
+}
+.fitness-section .embeds .nutrition-label .small-text {
+  font-size: 0.85rem;
+}
+.fitness-section .embeds .nutrition-label .calories-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.fitness-section .embeds .nutrition-label .calories-info p {
+  font-size: 0.5em;
+}
+.fitness-section .embeds .nutrition-label .left-container p {
+  margin: -5px -2px;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+.fitness-section .embeds .nutrition-label .calories-info span {
+  margin: -7px -2px;
+  font-size: 2em;
+  font-weight: 700;
+}
+.fitness-section .embeds .nutrition-label .right {
+  justify-content: flex-end;
+}
+.fitness-section .embeds .nutrition-label .indent {
+  margin-left: 1em;
+}
+.fitness-section .embeds .nutrition-label .double-indent {
+  margin-left: 2em;
+}
+.fitness-section .embeds .nutrition-label .daily-value p:not(.no-divider) {
+  border-bottom: 1px solid #888989;
+}
+.fitness-section .embeds .nutrition-label .note {
+  font-size: 0.6rem;
+  margin: 5px 0;
 }
 
 .esports-section {
@@ -726,6 +795,9 @@ footer {
   .fitness-section .video-responsive {
     width: 80%;
     height: 80%;
+  }
+  .fitness-section .embeds {
+    flex-wrap: wrap;
   }
   .dbz-section .title-text {
     font-size: 3em;

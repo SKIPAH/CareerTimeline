@@ -3,6 +3,7 @@ import InstagramEmbedVideo from "../components/InstagramEmbedVideo";
 import { useLanguage } from "../hooks/useLanguage";
 import { getTranslation } from "../components/Translations";
 import TweetEmbed from "../components/TweetEmbed";
+import NutritionLabel from "../components/NutritionLabel";
 
 export default function Fitness() {
   const currentLanguage = useLanguage();
@@ -22,9 +23,12 @@ export default function Fitness() {
           <div className="embeds">
             <InstagramEmbedVideo embedURL="C1XDVxIMNAX"></InstagramEmbedVideo>
             <TweetEmbed tweetId="1688619094377930752"></TweetEmbed>
+            <div className="nutrition-label">
+              <NutritionLabel></NutritionLabel>
+            </div>
           </div>
-          <div className="embeds">
-          <YoutubeEmbed
+          <div classname="embed-youtube">
+            <YoutubeEmbed
               embedId="8t4Bgw02xTI"
               className="fitness-youtube-embed"
             ></YoutubeEmbed>
