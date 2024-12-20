@@ -69,7 +69,7 @@ export default function Footer() {
           </Col>
           <Row className="mt-3">
             <Col md={12} className="text-center">
-              <p>&copy; 2024</p>
+              <p>&copy; Jussi Mehtälä 2024</p>
             </Col>
           </Row>
         </Row>
