@@ -5,10 +5,26 @@ import { getTranslation } from "../components/Translations";
 import TweetEmbed from "../components/TweetEmbed";
 import NutritionLabel from "../components/NutritionLabel";
 import { useScrollAnimation } from "../components/ScrollAnimation";
+import axios from "axios";
+import { useEffect, useState } from "react";
 
 export default function Fitness() {
   const currentLanguage = useLanguage();
   useScrollAnimation();
+
+  const [personalBestLifts, setPersonalBestLifts] = useState({
+    squat: 0,
+    bench: 0,
+    deadlift: 0,
+  });
+
+  useEffect(() => {
+    axios
+      .get("http://localhost:3001/api/lifts")
+      .then((response) => setPersonalBestLifts(response.data))
+      .catch((error) => console.error("Error fetching lifts", error));
+  }, []);
+
   return (
     <>
       <section className="fitness-section">
@@ -35,6 +51,12 @@ export default function Fitness() {
               className="fitness-youtube-embed"
             ></YoutubeEmbed>
           </div>
+        </div>
+        <div>
+          <h2>Personal bests</h2>
+          <p>Squat: {personalBestLifts.squat}</p>
+          <p>Bench: {personalBestLifts.bench}</p>
+          <p>Deadlift: {personalBestLifts.deadlift}</p>
         </div>
       </section>
     </>

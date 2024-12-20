@@ -1,23 +1,40 @@
 import express from 'express';
 import cors from 'cors';
+
+
+
 const app = express();
-app.use(cors())
-const port = 3001;
+app.use(cors());
+app.use(express.json());
+
+let personalBestLifts = {
+    squat: 140,
+    bench: 110,
+    deadlift: 200,
+};
 
 
-app.get('/', (req, res) => {
-  //res.send('Hello World!')
-  res.status(200).json({message: "Node server is responding"})
-})
+app.get('/api/lifts', (req, res)=>{
+    res.json(personalBestLifts);
+});
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
-})
+
+app.post('/api/lifts', (req, res)=>{
+    personalBestLifts = {...personalBestLifts, ...req.body};
+    res.json({message: 'Lifts updated', personalBestLifts});
+
+});
+
+const PORT = 3001;
+app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
 
 
 
 
 /*
+
+TWITTER FREE API VERSION CAN ONLY GET RECENT TWEETS FROM WEEK AGO
+
 
 const express = require('express');
 const axios = require('axios');
