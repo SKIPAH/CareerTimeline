@@ -3,10 +3,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import { getTranslation } from "./Translations";
 import { useLanguage } from "../hooks/useLanguage";
 
-import twoStarDragonBall from "../files/images/dbz/2star.png";
-
-import DragonBall from "./DragonBall";
-
 export default function Footer() {
   const currentLanguage = useLanguage();
   return (
@@ -73,7 +69,7 @@ export default function Footer() {
           </Col>
           <Row className="mt-3">
             <Col md={12} className="text-center">
-              <p>&copy; 2024</p>
+              <p>&copy; Jussi Mehtälä 2024</p>
             </Col>
           </Row>
         </Row>

@@ -13,13 +13,13 @@ export default function NutritionLabel() {
       <div class="calories-info">
         <div class="left-container">
           <h2 class="bold small-text">Amount per serving</h2>
-          <p>Weight</p>
+          <p>Bodyweight</p>
         </div>
         <span>105kg</span>
       </div>
       <div class="divider medium"></div>
       <div class="daily-value small-text">
-        <p class="bold right no-divider">231 lbs *</p>
+        <p class="bold right no-divider">231 lbs</p>
         <div class="divider"></div>
         <p>
           <span>
@@ -27,12 +27,9 @@ export default function NutritionLabel() {
           </span>{" "}
           <span class="bold">28 years</span>
         </p>
+
         <p class="indent no-divider">
-          Active in gym <span class="bold">3 years</span>
-        </p>
-        <div class="divider"></div>
-        <p class="indent no-divider">
-            Squat <span class="bold">140kg/308lbs</span>
+          Squat <span class="bold">140kg/308lbs</span>
         </p>
         <div class="divider"></div>
         <p class="indent no-divider">
@@ -45,43 +42,38 @@ export default function NutritionLabel() {
         <div class="divider"></div>
         <p>
           <span>
-            <span class="bold">Total Carbohydrate</span> 37g
+            <span class="bold">Total Years in Gym</span>
           </span>{" "}
-          <span class="bold">13%</span>
+          <span class="bold">2</span>
         </p>
-        <p class="indent no-divider">Dietary Fiber 4g</p>
-        <div class="divider"></div>
-        <p class="indent no-divider">Total Sugars 12g</p>
+        <p>
+          <span>
+            <span class="bold">Previous sports experience</span>
+          </span>{" "}
+        </p>
+        <p class="indent no-divider">Track And Field</p>
         <div class="divider double-indent"></div>
         <p class="double-indent no-divider">
-          Includes 10g Added Sugars <span class="bold">20%</span>
+          Wrestling <span class="bold"></span>
         </p>
-        <div class="divider"></div>
-        <p class="no-divider">
-          <span>
-            <span class="bold">Protein</span> 3g
-          </span>
-        </p>
+        <div class="no-divider"></div>
+
         <div class="divider large"></div>
         <p>
-          Vitamin D 2mcg <span>10%</span>
+          Lean muscle mass <span>1%*</span>
         </p>
         <p>
-          Calcium 260mg <span>20%</span>
+          Fat <span>99%*</span>
         </p>
         <p>
-          Iron 8mg <span>45%</span>
+          BMI <span>Too high*</span>
         </p>
         <p class="no-divider">
-          Potassium 235mg <span>6%</span>
+          Mindset <span>FULL*</span>
         </p>
       </div>
       <div class="divider medium"></div>
-      <p class="note">
-        * The % Daily Value (DV) tells you how much a nutrient in a serving of
-        food contributes to a daily diet. 2,000 calories a day is used for
-        general nutrition advice.
-      </p>
+      <p class="note">* Not actual values.</p>
     </div>
   );
 }

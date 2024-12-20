@@ -1,4 +1,3 @@
-import { useEffect, useState, useMemo, useCallback } from "react";
 
 function CollectionDragonBalls() {
   const DRAGON_BALLS = Array.from({ length: 7 }, (_, i) => ({
