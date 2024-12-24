@@ -2,8 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 :root {
   --primary-color1: #f0f0f0;
-  --primary-color2: #FFD22B;
-  --navbar-color: #1D63FF;
+  --primary-color2: #ffd22b;
+  --navbar-color: #1d63ff;
   --border-color: #ffffff;
 }
 
@@ -154,6 +154,17 @@
   padding-bottom: 2.2em;
   border-radius: 2em;
 }
+.homepage-introduction .introduction-text-short-xmas {
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  word-wrap: break-word;
+  font-size: 3em;
+  margin: 0;
+  padding: 4em;
+  padding-top: 0em;
+  padding-bottom: 2.2em;
+  border-radius: 2em;
+}
 .homepage-introduction .introduction-text {
   margin: 0;
   padding: 4em;
@@ -243,7 +254,8 @@
 .fitness-section .embeds .nutrition-label .large {
   height: 10px;
 }
-.fitness-section .embeds .nutrition-label .large, .fitness-section .embeds .nutrition-label .medium {
+.fitness-section .embeds .nutrition-label .large,
+.fitness-section .embeds .nutrition-label .medium {
   background-color: black;
   border: 0;
 }
@@ -537,7 +549,7 @@ footer {
 }
 
 .schoolButton {
-  background-color: #FFD22B;
+  background-color: #ffd22b;
 }
 
 .schoolButton:hover {
@@ -609,7 +621,8 @@ footer {
 .test1 .large {
   height: 10px;
 }
-.test1 .large, .test1 .medium {
+.test1 .large,
+.test1 .medium {
   background-color: black;
   border: 0;
 }
@@ -704,6 +717,13 @@ footer {
     width: 100%;
     text-align: center;
     font-size: 1.5em;
+  }
+  .homepage-introduction .container .introduction-text-short-xmas {
+    line-height: 1.2;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.8em;
   }
   .homepage-introduction .container .introduction-text {
     line-height: 1.2;
