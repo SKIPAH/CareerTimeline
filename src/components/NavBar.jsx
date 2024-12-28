@@ -139,7 +139,7 @@ function NavBar() {
         <Button
           id="languageToggleBtn"
           onClick={handleLanguageToggle}
-          className="d-none d-lg-block"
+          // className="d-none d-lg-block"
         >
           {currentLanguage === "en" ? "SUOMEKSI" : "ENGLISH"}
         </Button>

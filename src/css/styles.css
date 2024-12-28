@@ -675,12 +675,33 @@ footer {
     margin-top: 1.5em;
   }
 }
-@media only screen and (max-width: 768px) {
-  .navbar .navbar-brand {
-    width: 75%;
+@media (min-width: 769px) and (max-width: 1080px) {
+  .navbar #languageToggleBtn {
+    font-size: 0.7em;
   }
-  .navbar span.navbar-brand {
-    margin-right: 0em;
+  .navbar .navbar-logos {
+    width: 1.5em;
+    margin: 0em;
+  }
+  .homepage-introduction .video-section {
+    height: auto;
+  }
+  .homepage-introduction .intro {
+    top: 450px;
+  }
+  .homepage-introduction .intro .title-text {
+    font-size: 4em;
+  }
+  .homepage-introduction .intro #profilepic {
+    margin-top: 0em;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .navbar #languageToggleBtn {
+    display: none;
+  }
+  .navbar #languageToggleBtnNavbar {
+    display: none;
   }
   .homepage-introduction .video-section {
     display: none;
