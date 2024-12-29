@@ -10,6 +10,7 @@ import reactlogo from "../files/images/techpics/react-logo.png";
 import BackgroundVideo from "../components/BackgroundVideo";
 import WebsiteVideo from "../files/videos/websitevideo.mp4";
 import { useScrollAnimation } from "../components/ScrollAnimation";
+import Timeline from "../components/Timeline";
 
 export default function Home() {
   const currentLanguage = useLanguage();
@@ -58,6 +59,7 @@ export default function Home() {
           </p>
         </div>
       </section>
+      <Timeline></Timeline>
     </>
   );
 }

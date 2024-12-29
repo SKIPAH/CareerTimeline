@@ -41,9 +41,6 @@ function NavBar() {
               <Nav.Link as={NavLink} to={"/"}>
                 {getTranslation("navbar-home", currentLanguage)}
               </Nav.Link>
-              <Nav.Link as={NavLink} to={"/experience"}>
-                {getTranslation("navbar-work", currentLanguage)}
-              </Nav.Link>
               <Nav.Link as={NavLink} to={"/dev"}>
                 {getTranslation("navbar-dev", currentLanguage)}
               </Nav.Link>
@@ -54,43 +51,6 @@ function NavBar() {
                 {getTranslation("navbar-fitness", currentLanguage)}
               </Nav.Link>
             </Nav>
-            {/*
-            <NavDropdown title="SOCIALS" id="basic-nav-dropdown">
-              <NavDropdown.Item href="https://x.com/SKIPAHH" target="_blank">
-                Twitter
-              </NavDropdown.Item>
-              <NavDropdown.Item
-                href="https://www.youtube.com/@SKIPAH"
-                target="_blank"
-              >
-                Youtube
-              </NavDropdown.Item>
-              <NavDropdown.Item
-                href="https://www.twitch.tv/skipah"
-                target="_blank"
-              >
-                Twitch
-              </NavDropdown.Item>
-              <NavDropdown.Item
-                href="https://www.instagram.com/skipaah/"
-                target="_blank"
-              >
-                Instagram
-              </NavDropdown.Item>
-              <NavDropdown.Item
-                href="https://github.com/SKIPAH"
-                target="_blank"
-              >
-                GitHub
-              </NavDropdown.Item>
-              <NavDropdown.Item
-                href="https://www.linkedin.com/in/jussi-mehtala/"
-                target="_blank"
-              >
-                Linkedin
-              </NavDropdown.Item>
-            </NavDropdown>
-            */}
             <Button id="languageToggleBtnNavbar" onClick={handleLanguageToggle}>
               {currentLanguage === "en" ? "SUOMEKSI" : "ENGLISH"}
             </Button>
