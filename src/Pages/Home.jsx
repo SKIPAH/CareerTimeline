@@ -23,7 +23,7 @@ export default function Home() {
         </div>
         <div className="intro">
           <img
-          className="hidden"
+            className="hidden"
             id="profilepic"
             src={profilepic}
             alt="picture of Jussi Mehtälä"
@@ -33,8 +33,6 @@ export default function Home() {
           </h1>
         </div>
         <div className="container">
-          <p className="introduction-text-short-xmas hidden">Hyvää joulua ja onnellista uutta vuotta!</p>
-          <p className="introduction-text-short-xmas hidden">Merry Christmas and Happy New Year!</p>
           <p className="introduction-text-short hidden">
             {getTranslation(
               "homepage-introduction-text-short",
