@@ -1,5 +1,5 @@
-<h2>Personal website project to learn more about Web Development. Plan is to show hobbies, achievements, social media material, development skills etc. </h2>
-<h2>Currently planning on adding material using Twitter API</h2>
+<h2>Personal website project made with HTML/SCSS/Javascript/React. Plan is to show hobbies, achievements, social media material, development skills etc. </h2>
+<h2>Planning to add other projects like games to the site. Project made with Unity and C# during thesis already added.</h2>
 
 <h2><a href="https://jussimehtala.com/">LINK TO WEBSITE</a></h2>
 
