@@ -31,7 +31,7 @@ export default function EsportsPage() {
               src={skipah4}
               alt="Lantrek BYOC picture. First lan event"
             ></img>
-            <p className="esports-text hidden">
+            <p className="esports-text-first hidden">
               {getTranslation("esports-text", currentLanguage)}
               <a
                 className="esports-link"
@@ -78,7 +78,7 @@ export default function EsportsPage() {
             </p>
           </div>
           <div className="esports-introduction-embed hidden">
-            <p className="esports-text hidden">
+            <p className="esports-text-first hidden">
               {getTranslation("esports-text-movie-1", currentLanguage)}
               <a href="https://x.com/mauserzjeh">Mauser.</a>
             </p>

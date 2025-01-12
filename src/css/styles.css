@@ -344,10 +344,19 @@
   margin-left: auto;
   margin-right: auto;
 }
+.esports-section .esports-text-first {
+  padding-top: 5em;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.6em;
+  text-align: center;
+}
 .esports-section .esports-text {
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.6em;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .esports-section .esports-link {
   font-family: "Josefin Sans", sans-serif;
@@ -484,6 +493,10 @@ footer {
     display: none;
   }
 }
+.navbar span.navbar-brand {
+  margin-right: 0em;
+}
+
 .timeline-div {
   background: var(--primary-color1);
   font-family: "Josefin Sans", sans-serif;
