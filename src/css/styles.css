@@ -2,8 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 :root {
   --primary-color1: #f0f0f0;
-  --primary-color2: #FFD22B;
-  --navbar-color: #1D63FF;
+  --primary-color2: #ffd22b;
+  --navbar-color: #1d63ff;
   --border-color: #ffffff;
 }
 
@@ -154,6 +154,17 @@
   padding-bottom: 2.2em;
   border-radius: 2em;
 }
+.homepage-introduction .introduction-text-short-xmas {
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  word-wrap: break-word;
+  font-size: 3em;
+  margin: 0;
+  padding: 4em;
+  padding-top: 0em;
+  padding-bottom: 2.2em;
+  border-radius: 2em;
+}
 .homepage-introduction .introduction-text {
   margin: 0;
   padding: 4em;
@@ -243,7 +254,8 @@
 .fitness-section .embeds .nutrition-label .large {
   height: 10px;
 }
-.fitness-section .embeds .nutrition-label .large, .fitness-section .embeds .nutrition-label .medium {
+.fitness-section .embeds .nutrition-label .large,
+.fitness-section .embeds .nutrition-label .medium {
   background-color: black;
   border: 0;
 }
@@ -332,10 +344,19 @@
   margin-left: auto;
   margin-right: auto;
 }
+.esports-section .esports-text-first {
+  padding-top: 5em;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.6em;
+  text-align: center;
+}
 .esports-section .esports-text {
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.6em;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .esports-section .esports-link {
   font-family: "Josefin Sans", sans-serif;
@@ -472,6 +493,10 @@ footer {
     display: none;
   }
 }
+.navbar span.navbar-brand {
+  margin-right: 0em;
+}
+
 .timeline-div {
   background: var(--primary-color1);
   font-family: "Josefin Sans", sans-serif;
@@ -537,7 +562,7 @@ footer {
 }
 
 .schoolButton {
-  background-color: #FFD22B;
+  background-color: #ffd22b;
 }
 
 .schoolButton:hover {
@@ -609,7 +634,8 @@ footer {
 .test1 .large {
   height: 10px;
 }
-.test1 .large, .test1 .medium {
+.test1 .large,
+.test1 .medium {
   background-color: black;
   border: 0;
 }
@@ -662,12 +688,33 @@ footer {
     margin-top: 1.5em;
   }
 }
-@media only screen and (max-width: 768px) {
-  .navbar .navbar-brand {
-    width: 75%;
+@media (min-width: 769px) and (max-width: 1080px) {
+  .navbar #languageToggleBtn {
+    font-size: 0.7em;
   }
-  .navbar span.navbar-brand {
-    margin-right: 0em;
+  .navbar .navbar-logos {
+    width: 1.5em;
+    margin: 0em;
+  }
+  .homepage-introduction .video-section {
+    height: auto;
+  }
+  .homepage-introduction .intro {
+    top: 450px;
+  }
+  .homepage-introduction .intro .title-text {
+    font-size: 4em;
+  }
+  .homepage-introduction .intro #profilepic {
+    margin-top: 0em;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .navbar #languageToggleBtn {
+    display: none;
+  }
+  .navbar #languageToggleBtnNavbar {
+    display: none;
   }
   .homepage-introduction .video-section {
     display: none;
@@ -704,6 +751,13 @@ footer {
     width: 100%;
     text-align: center;
     font-size: 1.5em;
+  }
+  .homepage-introduction .container .introduction-text-short-xmas {
+    line-height: 1.2;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.8em;
   }
   .homepage-introduction .container .introduction-text {
     line-height: 1.2;

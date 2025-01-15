@@ -9,7 +9,6 @@ import TestPage2 from "./Pages/TestPage2";
 
 import "/src/css/styles.css";
 import { Route, Routes } from "react-router-dom";
-import ExperiencePage from "./Pages/ExperiencePage";
 
 export default function App() {
   return (
@@ -17,7 +16,6 @@ export default function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route path="/experience" element={<ExperiencePage />}></Route>
         <Route path="/esports" element={<EsportsPage />}></Route>
         <Route path="/dev" element={<DevPage />}></Route>
         <Route path="/fitness" element={<FitnessPage />}></Route>

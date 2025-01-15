@@ -7,16 +7,18 @@ import "react-vertical-timeline-component/style.min.css";
 import { getTranslation } from "./Translations";
 import { useLanguage } from "../hooks/useLanguage";
 import { Button } from "react-bootstrap";
+import { useScrollAnimation } from "../components/ScrollAnimation";
 
 export default function Timeline() {
   let IconStyles = { background: "#FFD22B" };
   const currentLanguage = useLanguage();
+  useScrollAnimation();
 
   const toTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
   return (
     <div className="timeline-div">
-      <h1 className="timeline-title">
+      <h1 className="timeline-title hidden">
         {getTranslation("timeline-title-text", currentLanguage)}
       </h1>
       <VerticalTimeline>
