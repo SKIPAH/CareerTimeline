@@ -1,9 +1,16 @@
 import { useEffect, useState } from "react";
 import NutritionLabel from "../components/NutritionLabel";
 import ServerTest from "../components/ServerTest";
+import axios from "axios";
 
 export default function TestPage() {
   const [position, setPosition] = useState({ x: 0, y: 0 });
+
+  const [personalBestLifts, setPersonalBestLifts] = useState({
+    squat: 0,
+    bench: 0,
+    deadlift: 0,
+  });
 
   useEffect(() => {
     function handleMove(e) {
@@ -17,8 +24,15 @@ export default function TestPage() {
     };
   }, []);
 
+  useEffect(() => {
+    axios
+      .get("http://localhost:3001/api/lifts")
+      .then((response) => setPersonalBestLifts(response.data))
+      .catch((error) => console.error("Error fetching lifts", error));
+  }, []);
+
   return (
-    <div>
+    <>
       <div
         style={{
           position: "absolute",
@@ -35,8 +49,13 @@ export default function TestPage() {
       ></div>
       <div className="test1">
         <NutritionLabel></NutritionLabel>
-        <ServerTest></ServerTest>
       </div>
-    </div>
+      <div>
+        <h2>Personal bests</h2>
+        <p>Squat: {personalBestLifts.squat}</p>
+        <p>Bench: {personalBestLifts.bench}</p>
+        <p>Deadlift: {personalBestLifts.deadlift}</p>
+      </div>
+    </>
   );
 }
