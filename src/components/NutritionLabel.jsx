@@ -1,4 +1,22 @@
+import axios from "axios";
+import { useEffect, useState } from "react";
+
 export default function NutritionLabel() {
+  const kilogramToLbs = 2.20462;
+
+  const [personalBestLifts, setPersonalBestLifts] = useState({
+    squat: 0,
+    bench: 0,
+    deadlift: 0,
+  });
+
+  useEffect(() => {
+    axios
+      .get("http://localhost:3001/api/lifts")
+      .then((response) => setPersonalBestLifts(response.data))
+      .catch((error) => console.error("Error fetching lifts", error));
+  }, []);
+
   return (
     <div class="label">
       <header>
@@ -29,15 +47,27 @@ export default function NutritionLabel() {
         </p>
 
         <p class="indent no-divider">
-          Squat <span class="bold">140kg/308lbs</span>
+          Squat{" "}
+          <span class="bold">
+            {personalBestLifts.squat}kg/
+            {Math.round(personalBestLifts.squat * kilogramToLbs)}lbs
+          </span>
         </p>
         <div class="divider"></div>
         <p class="indent no-divider">
-          Bench<span class="bold">110kg/242lbs</span>
+          Bench
+          <span class="bold">
+            {personalBestLifts.bench}kg/
+            {Math.round(personalBestLifts.bench * kilogramToLbs)}lbs
+          </span>
         </p>
         <div class="divider"></div>
         <p class="indent no-divider">
-          Deadlift<span class="bold">200kg/440lbs</span>
+          Deadlift
+          <span class="bold">
+            {personalBestLifts.deadlift}kg/
+            {Math.round(personalBestLifts.deadlift * kilogramToLbs)}lbs
+          </span>
         </p>
         <div class="divider"></div>
         <p>

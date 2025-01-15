@@ -7,6 +7,8 @@ import jslogo from "../files/images/techpics/js-logo.png";
 import csharplogo from "../files/images/techpics/csharp-logo.png";
 import githublogo from "../files/images/techpics/github-logo.png";
 import reactlogo from "../files/images/techpics/react-logo.png";
+import nodejslogo from "../files/images/techpics/node.png";
+import expresslogo from "../files/images/techpics/express-js.png";
 import BackgroundVideo from "../components/BackgroundVideo";
 import WebsiteVideo from "../files/videos/websitevideo.mp4";
 import { useScrollAnimation } from "../components/ScrollAnimation";
@@ -50,6 +52,8 @@ export default function Home() {
             <img id="js-logo" src={jslogo}></img>
             <img id="react-logo" src={reactlogo}></img>
             <img id="c#-logo" src={csharplogo}></img>
+            <img id="nodejs-logo" src={nodejslogo}></img>
+            <img id="express-logo" src={expresslogo}></img>
             <img id="github-logo" src={githublogo}></img>
           </div>
           <p className="introduction-text hidden">

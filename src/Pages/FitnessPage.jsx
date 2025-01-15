@@ -13,9 +13,9 @@ export default function Fitness() {
   useScrollAnimation();
 
   const [personalBestLifts, setPersonalBestLifts] = useState({
-    squat: 0,
-    bench: 0,
-    deadlift: 0,
+    squat: 140,
+    bench: 110,
+    deadlift: 200,
   });
 
   useEffect(() => {
@@ -52,13 +52,16 @@ export default function Fitness() {
             ></YoutubeEmbed>
           </div>
         </div>
-        <div>
+      </section>
+    </>
+  );
+}
+
+/*
+<div>
           <h2>Personal bests</h2>
           <p>Squat: {personalBestLifts.squat}</p>
           <p>Bench: {personalBestLifts.bench}</p>
           <p>Deadlift: {personalBestLifts.deadlift}</p>
         </div>
-      </section>
-    </>
-  );
-}
+*/
