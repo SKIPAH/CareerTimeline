@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import { getCurrentLanguage } from '../components/Translations';
+import { useState, useEffect } from "react";
+import { getCurrentLanguage } from "../components/Translations";
 
 export const useLanguage = () => {
   const [currentLanguage, setCurrentLanguage] = useState(getCurrentLanguage());
@@ -17,4 +17,4 @@ export const useLanguage = () => {
   }, [currentLanguage]);
 
   return currentLanguage;
-}; 
+};
