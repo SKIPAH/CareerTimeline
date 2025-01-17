@@ -5,9 +5,9 @@ export default function NutritionLabel() {
   const kilogramToLbs = 2.20462;
 
   const [personalBestLifts, setPersonalBestLifts] = useState({
-    squat: 0,
-    bench: 0,
-    deadlift: 0,
+    squat: 140,
+    bench: 110,
+    deadlift: 200,
   });
 
   useEffect(() => {
