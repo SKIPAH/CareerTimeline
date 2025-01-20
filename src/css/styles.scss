@@ -100,6 +100,9 @@
     background-color: var(--primary-color1);
     border-color: white;
   }
+  #languageToggleBtn:hover {
+    background-color: #ffd22b;
+  }
 }
 
 .homepage-introduction {
@@ -377,6 +380,10 @@
       margin-left: auto;
       margin-right: auto;
     }
+    #to-top-button-esports:hover {
+      background-color: #ffd22b;
+      width: 150px;
+    }
   }
 
   .esports-text-first {
@@ -437,6 +444,30 @@
     align-items: center;
     margin: 0 auto;
     border: 5px solid #fff;
+  }
+  .unity-start-loading-button {
+    color: black;
+    margin-top: 5em;
+    background-color: var(--primary-color1);
+    border-color: black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    margin-top: 1em;
+  }
+  .unity-start-loading-button:hover {
+    color: black;
+    margin-top: 5em;
+    background-color: var(--primary-color1);
+    border-color: black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    margin-top: 1em;
+    background-color: #ffd22b;
+    width: 200px;
   }
 }
 
@@ -558,6 +589,10 @@ footer {
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+  #to-top-button-timeline:hover {
+    background-color: #ffd22b;
+    width: 150px;
   }
 }
 .timeline-title {
@@ -860,6 +895,7 @@ footer {
       display: block;
       margin: 1em;
     }
+
     .navbar-logos {
       width: 2.5em;
       margin: 0.3em;

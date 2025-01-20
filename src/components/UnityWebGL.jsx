@@ -1,10 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { Unity, useUnityContext } from "react-unity-webgl";
 import { useLocation } from "react-router-dom";
+import { getTranslation } from "../components/Translations";
+import { useLanguage } from "../hooks/useLanguage";
+import { Button } from "react-bootstrap";
 
 export default function UnityWebGL() {
   const [isMobile, setIsMobile] = useState(true);
+  const [startLoading, setStartLoading] = useState(false);
   const location = useLocation();
+  const currentLanguage = useLanguage();
 
   const { unityProvider, loadingProgression, unload } = useUnityContext({
     loaderUrl: "/WEBGLBUILDFORWEBSITE.loader.js",
@@ -29,12 +34,14 @@ export default function UnityWebGL() {
 
   // Effect to handle route changes
   useEffect(() => {
-    return () => {
-      if (location.pathname !== "/dev") {
-        unload(); // Unload Unity when navigating away from dev page
-      }
-    };
+    if (location.pathname !== "/dev") {
+      unload(); // Unload Unity when navigating away from dev page
+    }
   }, [location, unload]);
+
+  if (location.pathname !== "/dev") {
+    return null; // Do not render anything if not on /dev route
+  }
 
   if (isMobile) {
     return (
@@ -45,12 +52,21 @@ export default function UnityWebGL() {
   } else {
     return (
       <>
-        {loadingProgression !== 1 && (
-          <h1>Loading... {Math.round(loadingProgression * 100)}%</h1>
+        {!startLoading && (
+          <Button
+            className="unity-start-loading-button"
+            onClick={setStartLoading}
+          >
+            {getTranslation("unity-start-loading-button", currentLanguage)}
+          </Button>
         )}
-        <Unity unityProvider={unityProvider} className="unity-webgl" />
+
+        {startLoading &&
+          (loadingProgression !== 1 && (
+            <h1>Loading... {Math.round(loadingProgression * 100)}%</h1>
+          ),
+          (<Unity unityProvider={unityProvider} className="unity-webgl" />))}
       </>
     );
   }
 }
-

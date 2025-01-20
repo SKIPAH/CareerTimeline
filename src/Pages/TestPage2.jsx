@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import NutritionLabel from "../components/NutritionLabel";
-import ServerTest from "../components/ServerTest";
 import axios from "axios";
 
 export default function TestPage() {
