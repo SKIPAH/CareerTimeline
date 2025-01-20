@@ -1,7 +1,7 @@
 import { InstagramEmbed } from "react-social-media-embed";
 import React from "react";
 
-function InstagramEmbedVideo({ embedURL }) {
+export default function InstagramEmbedVideo({ embedURL }) {
   return (
     <InstagramEmbed
       url={`https://www.instagram.com/p/${embedURL}/`}
@@ -10,4 +10,3 @@ function InstagramEmbedVideo({ embedURL }) {
   );
 }
 
-export default InstagramEmbedVideo;

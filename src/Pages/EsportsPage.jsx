@@ -3,6 +3,7 @@ import assembly from "../files/images/nyyrikkipictures/assembly.webp";
 import skipah4 from "../files/images/nyyrikkipictures/skipah4.webp";
 import skipahuusi from "../files/images/nyyrikkipictures/skipahuusi.jpg";
 import nyyrikkiskipah2 from "../files/images/nyyrikkipictures/nyyrikkiskipah2.png";
+import hreds from "../files/images/nyyrikkipictures/hreds.webp";
 import skipah3 from "../files/images/nyyrikkipictures/skipah3.webp";
 import { useLanguage } from "../hooks/useLanguage";
 import { getTranslation } from "../components/Translations";
@@ -76,6 +77,17 @@ export default function EsportsPage() {
             <p className="esports-text hidden">
               {getTranslation("esports-text-6", currentLanguage)}
             </p>
+          </div>
+          <div className="esports-introduction">
+            <p className="esports-text hidden">
+              {getTranslation("esports-text-7", currentLanguage)}
+            </p>
+          </div>
+          <div className="esports-introduction">
+            <p className="esports-text hidden">
+              {getTranslation("esports-text-8", currentLanguage)}
+            </p>
+            <img className="image hidden" src={hreds} alt="hreds"></img>
           </div>
           <div className="esports-introduction-embed hidden">
             <p className="esports-text-first hidden">

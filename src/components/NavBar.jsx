@@ -17,7 +17,7 @@ import twitch from "../files/images/twitch.png";
 import { useState } from "react";
 import skipahlogo from "../files/images/SKIPAHlogo.png";
 
-function NavBar() {
+export default function NavBar() {
   const [currentLanguage, setCurrentLanguage] = useState(getCurrentLanguage());
 
   const handleLanguageToggle = () => {
@@ -108,4 +108,3 @@ function NavBar() {
   );
 }
 
-export default NavBar;

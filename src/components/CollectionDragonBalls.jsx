@@ -1,5 +1,5 @@
 
-function CollectionDragonBalls() {
+export default function CollectionDragonBalls() {
   const DRAGON_BALLS = Array.from({ length: 7 }, (_, i) => ({
     id: i + 1,
     src: `src/files/images/dbz/${i + 1}star.png`,
@@ -21,4 +21,4 @@ function CollectionDragonBalls() {
   );
 }
 
-export default CollectionDragonBalls;
+

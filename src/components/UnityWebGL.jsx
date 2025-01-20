@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Unity, useUnityContext } from "react-unity-webgl";
 import { useLocation } from "react-router-dom";
 
-function UnityWebGL() {
+export default function UnityWebGL() {
   const [isMobile, setIsMobile] = useState(true);
   const location = useLocation();
 
@@ -54,4 +54,3 @@ function UnityWebGL() {
   }
 }
 
-export default UnityWebGL;
