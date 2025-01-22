@@ -12,7 +12,7 @@ app.use(express.json());
 
 let personalBestLifts = {
     squat: 140,
-    bench: 110,
+    bench: 115,
     deadlift: 200,
 };
 

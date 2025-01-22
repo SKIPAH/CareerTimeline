@@ -867,6 +867,9 @@ footer {
   .dev-section .container .unity-webgl {
     display: none;
   }
+  .dev-section .container .unity-start-loading-button {
+    display: none;
+  }
   .fitness-section {
     display: inline-block;
     width: 100%;

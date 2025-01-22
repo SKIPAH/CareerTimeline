@@ -7,6 +7,7 @@ import jslogo from "../files/images/techpics/js-logo.png";
 import csharplogo from "../files/images/techpics/csharp-logo.png";
 import githublogo from "../files/images/techpics/github-logo.png";
 import reactlogo from "../files/images/techpics/react-logo.png";
+import unitylogo from "../files/images/techpics/unity.webp";
 import nodejslogo from "../files/images/techpics/node.png";
 import expresslogo from "../files/images/techpics/express-js.png";
 import BackgroundVideo from "../components/BackgroundVideo";
@@ -51,9 +52,10 @@ export default function Home() {
             <img id="css-logo" src={csslogo}></img>
             <img id="js-logo" src={jslogo}></img>
             <img id="react-logo" src={reactlogo}></img>
-            <img id="c#-logo" src={csharplogo}></img>
             <img id="nodejs-logo" src={nodejslogo}></img>
             <img id="express-logo" src={expresslogo}></img>
+            <img id="c#-logo" src={csharplogo}></img>
+            <img id="unity.logo" src={unitylogo}></img>
             <img id="github-logo" src={githublogo}></img>
           </div>
           <p className="introduction-text hidden">
