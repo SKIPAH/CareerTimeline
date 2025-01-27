@@ -430,6 +430,20 @@
   background-color: #ffd22b;
   width: 200px;
 }
+.dev-section .unity-content {
+  position: relative;
+}
+.dev-section .loading-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 8px;
+  color: white;
+}
 
 .dbz-section .dbz-container {
   background-color: var(--primary-color1);

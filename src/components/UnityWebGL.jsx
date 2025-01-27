@@ -55,17 +55,23 @@ export default function UnityWebGL() {
         {!startLoading && (
           <Button
             className="unity-start-loading-button"
-            onClick={setStartLoading}
+            onClick={() => setStartLoading(true)}
           >
             {getTranslation("unity-start-loading-button", currentLanguage)}
           </Button>
         )}
 
-        {startLoading &&
-          (loadingProgression !== 1 && (
-            <h1>Loading... {Math.round(loadingProgression * 100)}%</h1>
-          ),
-          (<Unity unityProvider={unityProvider} className="unity-webgl" />))}
+        {startLoading && (
+          <div className="unity-content">
+            {loadingProgression < 1 && (
+              <div className="loading-overlay">
+                <h1>Loading... {Math.round(loadingProgression * 100)}%</h1>
+              </div>
+            )}
+            ,
+            <Unity unityProvider={unityProvider} className="unity-webgl" />
+          </div>
+        )}
       </>
     );
   }
