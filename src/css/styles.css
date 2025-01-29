@@ -7,6 +7,12 @@
   --border-color: #ffffff;
 }
 
+.hide {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
 .hidden {
   opacity: 0;
   transition: all 1s;
@@ -766,19 +772,27 @@ footer {
     display: none;
   }
   .homepage-introduction .video-section {
-    display: none;
+    position: relative;
+    height: 5vh;
+    width: 100%;
   }
   .homepage-introduction .background-video-container {
-    display: none;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .homepage-introduction .background-video {
-    display: none;
+    height: auto;
+    width: 100%;
+    float: left;
+    clear: none;
+    padding-bottom: 4em;
   }
   .homepage-introduction .intro {
-    position: relative;
-    display: inline-block;
-    width: 100%;
-    background-color: var(--primary-color1);
+    position: absolute;
+    top: 20%;
+    display: grid;
+    grid-template-columns: 5fr 5fr;
   }
   .homepage-introduction .intro #profilepic {
     display: block;

@@ -14,11 +14,35 @@ import twitter from "../files/images/twitter.png";
 import instagram from "../files/images/instagram.png";
 import youtube from "../files/images/youtube.png";
 import twitch from "../files/images/twitch.png";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import skipahlogo from "../files/images/SKIPAHlogo.png";
 
 export default function NavBar() {
   const [currentLanguage, setCurrentLanguage] = useState(getCurrentLanguage());
+  const [expanded, setExpanded] = useState(false);
+
+  const toggleProfileElements = () => {
+    const profilePic = document.querySelector("#profilepic");
+    const titleText = document.querySelector(".title-text");
+
+    if (expanded) {
+      profilePic?.classList.add("hide");
+      profilePic?.classList.remove("hidden");
+      titleText?.classList.add("hide");
+    } else {
+      profilePic?.classList.remove("hide");
+      titleText?.classList.remove("hide");
+    }
+  };
+
+  const handleToggleClick = () => {
+    setExpanded(!expanded);
+    toggleProfileElements();
+  };
+
+  useEffect(() => {
+    toggleProfileElements();
+  }, [expanded]);
 
   const handleLanguageToggle = () => {
     const newLanguage = currentLanguage === "en" ? "fi" : "en";
@@ -28,7 +52,12 @@ export default function NavBar() {
 
   return (
     <>
-      <Navbar className="navbar-full" collapseOnSelect expand="lg">
+      <Navbar
+        className="navbar-full"
+        expand="lg"
+        expanded={expanded}
+        onToggle={handleToggleClick}
+      >
         <Container className="navbar-container">
           <Navbar.Brand>
             <Nav.Link as={NavLink} to={"/"}>
@@ -107,4 +136,3 @@ export default function NavBar() {
     </>
   );
 }
-
