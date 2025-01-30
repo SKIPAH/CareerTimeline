@@ -21,6 +21,10 @@ export default function NavBar() {
   const [currentLanguage, setCurrentLanguage] = useState(getCurrentLanguage());
   const [expanded, setExpanded] = useState(false);
 
+  const handleNavClose = () => {
+    setExpanded(false);
+  }
+  
   const toggleProfileElements = () => {
     const profilePic = document.querySelector("#profilepic");
     const titleText = document.querySelector(".title-text");
@@ -33,11 +37,6 @@ export default function NavBar() {
       profilePic?.classList.remove("hide");
       titleText?.classList.remove("hide");
     }
-  };
-
-  const handleToggleClick = () => {
-    setExpanded(!expanded);
-    toggleProfileElements();
   };
 
   useEffect(() => {
@@ -56,7 +55,7 @@ export default function NavBar() {
         className="navbar-full"
         expand="lg"
         expanded={expanded}
-        onToggle={handleToggleClick}
+        onToggle={(isExpanded) => setExpanded(isExpanded)}
       >
         <Container className="navbar-container">
           <Navbar.Brand>
@@ -67,16 +66,16 @@ export default function NavBar() {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link as={NavLink} to={"/"}>
+              <Nav.Link as={NavLink} to={"/"} onClick={handleNavClose}>
                 {getTranslation("navbar-home", currentLanguage)}
               </Nav.Link>
-              <Nav.Link as={NavLink} to={"/dev"}>
+              <Nav.Link as={NavLink} to={"/dev"} onClick={handleNavClose}>
                 {getTranslation("navbar-dev", currentLanguage)}
               </Nav.Link>
-              <Nav.Link as={NavLink} to={"/esports"}>
+              <Nav.Link as={NavLink} to={"/esports"} onClick={handleNavClose}>
                 {getTranslation("navbar-esports", currentLanguage)}
               </Nav.Link>
-              <Nav.Link as={NavLink} to={"/fitness"}>
+              <Nav.Link as={NavLink} to={"/fitness"} onClick={handleNavClose}>
                 {getTranslation("navbar-fitness", currentLanguage)}
               </Nav.Link>
             </Nav>

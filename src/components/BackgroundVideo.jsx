@@ -1,5 +1,5 @@
 export default function BackgroundVideo({ src }) {
-  const isMobile = /iPhone|iPod|Android/i.test(navigator.userAgent);
+  // const isMobile = /iPhone|iPod|Android/i.test(navigator.userAgent);
   return (
     <div>
       <video
@@ -7,7 +7,7 @@ export default function BackgroundVideo({ src }) {
         className="background-video"
         loop
         muted
-        autoPlay={!isMobile}
+        autoPlay
         playsInline
       ></video>
     </div>
