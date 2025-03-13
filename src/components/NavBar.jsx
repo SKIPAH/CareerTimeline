@@ -23,8 +23,8 @@ export default function NavBar() {
 
   const handleNavClose = () => {
     setExpanded(false);
-  }
-  
+  };
+
   const toggleProfileElements = () => {
     const profilePic = document.querySelector("#profilepic");
     const titleText = document.querySelector(".title-text");
@@ -60,7 +60,11 @@ export default function NavBar() {
         <Container className="navbar-container">
           <Navbar.Brand>
             <Nav.Link as={NavLink} to={"/"}>
-              <img className="navbar-home-logo" src={skipahlogo} />
+              <img
+                className="navbar-home-logo"
+                src={skipahlogo}
+                onClick={handleNavClose}
+              />
             </Nav.Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
