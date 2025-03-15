@@ -28,7 +28,7 @@
     "react-social-media-embed": "^2.5.18",
     "react-tweet": "^3.2.2",
     "react-unity-webgl": "^9.8.0",
-    "react-vertical-timeline-component": "^3.5.3",
+    "react-vertical-timeline-component": "^3.6.0",
     "typescript": "^5.8.2"
   },
   "devDependencies": {
