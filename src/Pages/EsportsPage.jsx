@@ -31,6 +31,7 @@ export default function EsportsPage() {
               className="image hidden"
               src={skipah4}
               alt="Lantrek BYOC picture. First lan event"
+              loading="lazy"
             ></img>
             <p className="esports-text-first hidden">
               {getTranslation("esports-text", currentLanguage)}
@@ -51,6 +52,7 @@ export default function EsportsPage() {
               className="image hidden"
               src={nyyrikkiskipah2}
               alt="Lantrek BYOC Picture with Nyyrikki Beanie on"
+              loading="lazy"
             ></img>
           </div>
           <div className="esports-introduction">
@@ -58,6 +60,7 @@ export default function EsportsPage() {
               className="image hidden"
               src={skipah3}
               alt="SKIPAH and Jönssöni watching Battalion showmatch at Lantrek"
+              loading="lazy"
             ></img>
             <p className="esports-text hidden">
               {getTranslation("esports-text-4", currentLanguage)}
@@ -71,6 +74,7 @@ export default function EsportsPage() {
               className="image hidden"
               src={skipahuusi}
               alt="Newest playerpicture"
+              loading="lazy"
             ></img>
           </div>
           <div className="esports-introduction">

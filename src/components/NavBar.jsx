@@ -8,14 +8,14 @@ import Translations, {
   setLanguage,
 } from "./Translations";
 import { Button } from "react-bootstrap";
-import linkedin from "../files/images/linkedin.png";
-import github from "../files/images/github.png";
-import twitter from "../files/images/twitter.png";
-import instagram from "../files/images/instagram.png";
-import youtube from "../files/images/youtube.png";
-import twitch from "../files/images/twitch.png";
+import linkedin from "../files/images/linkedin.webp";
+import github from "../files/images/github.webp";
+import twitter from "../files/images/twitter.webp";
+import instagram from "../files/images/instagram.webp";
+import youtube from "../files/images/youtube.webp";
+import twitch from "../files/images/twitch.webp";
 import { useEffect, useState } from "react";
-import skipahlogo from "../files/images/SKIPAHlogo.png";
+import skipahlogo from "../files/images/SKIPAHlogo.webp";
 
 export default function NavBar() {
   const [currentLanguage, setCurrentLanguage] = useState(getCurrentLanguage());
@@ -73,7 +73,11 @@ export default function NavBar() {
               <Nav.Link as={NavLink} to={"/"} onClick={handleNavClose}>
                 {getTranslation("navbar-home", currentLanguage)}
               </Nav.Link>
-              <Nav.Link as={NavLink} to={"/dev"} onClick={handleNavClose}>
+              <Nav.Link
+                as={NavLink}
+                to={"/programming"}
+                onClick={handleNavClose}
+              >
                 {getTranslation("navbar-dev", currentLanguage)}
               </Nav.Link>
               <Nav.Link as={NavLink} to={"/esports"} onClick={handleNavClose}>

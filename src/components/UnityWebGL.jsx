@@ -34,12 +34,12 @@ export default function UnityWebGL() {
 
   // Effect to handle route changes
   useEffect(() => {
-    if (location.pathname !== "/dev") {
+    if (location.pathname !== "/programming") {
       unload(); // Unload Unity when navigating away from dev page
     }
   }, [location, unload]);
 
-  if (location.pathname !== "/dev") {
+  if (location.pathname !== "/programming") {
     return null; // Do not render anything if not on /dev route
   }
 

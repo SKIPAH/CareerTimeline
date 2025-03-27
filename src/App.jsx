@@ -1,6 +1,6 @@
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
-import DevPage from "./Pages/DevPage";
+import ProgrammingPage from "./Pages/ProgrammingPage";
 import FitnessPage from "./Pages/FitnessPage";
 import EsportsPage from "./Pages/EsportsPage";
 import TestPage from "./Pages/TestPage";
@@ -17,7 +17,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/esports" element={<EsportsPage />}></Route>
-        <Route path="/dev" element={<DevPage />}></Route>
+        <Route path="/programming" element={<ProgrammingPage />}></Route>
         <Route path="/fitness" element={<FitnessPage />}></Route>
         <Route path="/test" element={<TestPage />}></Route>
         <Route path="/test2" element={<TestPage2 />}></Route>
