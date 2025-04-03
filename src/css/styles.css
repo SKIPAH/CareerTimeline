@@ -526,6 +526,13 @@ footer {
   left: 0;
 }
 
+.navbar-home-logo-footer {
+  height: auto;
+  width: auto;
+  max-height: 72px;
+  max-width: 250px;
+}
+
 .video-responsive {
   overflow: hidden;
   padding-bottom: 56.25%;

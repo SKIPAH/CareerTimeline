@@ -2,12 +2,20 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { getTranslation } from "./Translations";
 import { useLanguage } from "../hooks/useLanguage";
+import skipahlogo from "../files/images/SKIPAHlogo.webp";
+import { NavLink } from "react-router-dom";
+import Nav from "react-bootstrap/Nav";
 
 export default function Footer() {
   const currentLanguage = useLanguage();
   return (
     <footer className="bg-dark text-white py-4">
       <Container>
+        <div>
+          <Nav.Link as={NavLink} to={"/"}>
+            <img className="navbar-home-logo-footer" src={skipahlogo} />
+          </Nav.Link>
+        </div>
         <Row>
           <Col md={4}>
             <h5>{getTranslation("aboutMe", currentLanguage)}</h5>
@@ -69,7 +77,7 @@ export default function Footer() {
           </Col>
           <Row className="mt-3">
             <Col md={12} className="text-center">
-              <p>&copy; Jussi Mehtälä 2024</p>
+              <p>&copy; Jussi Mehtälä 2025</p>
             </Col>
           </Row>
         </Row>

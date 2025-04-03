@@ -4,6 +4,7 @@ import profilepic from "../files/images/profiilikuva2.webp";
 import htmllogo from "../files/images/techpics/html-logo.webp";
 import csslogo from "../files/images/techpics/css-logo.webp";
 import jslogo from "../files/images/techpics/js-logo.webp";
+import webflowlogo from "../files/images/techpics/webflow.png";
 import csharplogo from "../files/images/techpics/csharp-logo.webp";
 import githublogo from "../files/images/techpics/github-logo.webp";
 import reactlogo from "../files/images/techpics/react-logo.png";
@@ -51,6 +52,7 @@ export default function Home() {
             <img id="html-logo" src={htmllogo}></img>
             <img id="css-logo" src={csslogo}></img>
             <img id="js-logo" src={jslogo}></img>
+            <img id="webflow-logo" src={webflowlogo}></img>
             <img id="react-logo" src={reactlogo}></img>
             <img id="nodejs-logo" src={nodejslogo}></img>
             <img id="express-logo" src={expresslogo}></img>
