@@ -2,6 +2,7 @@ import UnityWebGL from "../components/UnityWebGL";
 import { useLanguage } from "../hooks/useLanguage";
 import { getTranslation } from "../components/Translations";
 import { useScrollAnimation } from "../components/ScrollAnimation";
+import { unityProjects } from "../components/UnityProjectConfig";
 
 export default function DevPage() {
   const currentLanguage = useLanguage();
@@ -68,7 +69,10 @@ export default function DevPage() {
           <p className="hidden">
             {getTranslation("dev-webgl-note", currentLanguage)}
           </p>
-          <UnityWebGL className="unity-webgl"></UnityWebGL>
+          <UnityWebGL
+            config={unityProjects[0]}
+            className="unity-webgl"
+          ></UnityWebGL>
         </div>
       </section>
     </>

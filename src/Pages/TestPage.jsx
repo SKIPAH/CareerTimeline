@@ -8,6 +8,7 @@ import CollectionDragonBalls from "../components/CollectionDragonBalls";
 import DragonBall from "../components/DragonBall";
 import twoStarDragonBall from "../files/images/dbz/2star.png";
 import TweetEmbed from "../components/TweetEmbed";
+import UnityWebGL from "../components/UnityWebGL";
 
 export default function TestPage() {
   const [count, setCount] = useState(0);
@@ -58,7 +59,13 @@ export default function TestPage() {
         Hello, {name}. You are {age}.
       </p>
       <TweetEmbed tweetId="1688619094377930752"></TweetEmbed>
-      
+
+      <div className="container">
+        <UnityWebGL
+          config={unityProjects[1]}
+          className="unity-webgl"
+        ></UnityWebGL>
+      </div>
     </main>
   );
 }

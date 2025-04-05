@@ -80,6 +80,13 @@ export default function NavBar() {
               >
                 {getTranslation("navbar-dev", currentLanguage)}
               </Nav.Link>
+              <Nav.Link
+                as={NavLink}
+                to={"/gamedevelopment"}
+                onClick={handleNavClose}
+              >
+                GAMES
+              </Nav.Link>
               <Nav.Link as={NavLink} to={"/esports"} onClick={handleNavClose}>
                 {getTranslation("navbar-esports", currentLanguage)}
               </Nav.Link>

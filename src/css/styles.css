@@ -405,8 +405,11 @@
   text-decoration: none;
 }
 .dev-section .unity-webgl {
-  width: 960px;
-  height: 600px;
+  max-width: 1920px;
+  max-height: 1080px;
+  width: 100%;
+  transform: scale(0.8);
+  transform-origin: top center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -439,6 +442,7 @@
 }
 .dev-section .unity-content {
   position: relative;
+  padding-bottom: 20vh;
 }
 .dev-section .loading-overlay {
   position: absolute;
