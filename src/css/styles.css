@@ -106,6 +106,7 @@
 }
 
 .homepage-introduction .video-section {
+  background-color: var(--primary-color1);
   position: relative;
   height: 100vh;
   width: 100%;
@@ -126,7 +127,8 @@
   position: absolute;
   top: 50%;
   display: grid;
-  grid-template-columns: 5fr 5fr;
+  padding-right: 2em;
+  grid-template-columns: 3fr 5fr;
 }
 .homepage-introduction .intro .introduction-text {
   text-align: center;
@@ -143,11 +145,12 @@
 }
 .homepage-introduction .intro .title-text {
   color: white;
-  font-size: 8em;
+  font-size: 6em;
   background-color: rgba(0, 0, 0, 0.5);
-  margin: 0;
-  padding: 0;
+  padding: 0.5em;
+  text-align: center;
   outline: 2px solid white;
+  border-radius: 10px;
 }
 .homepage-introduction .container {
   background-color: var(--primary-color1);
@@ -383,10 +386,12 @@
 }
 
 .dev-section {
+  background-color: var(--primary-color1);
   display: flex;
   flex-direction: column;
   min-width: 100%;
   max-width: 100%;
+  min-height: 100vh;
   align-items: center;
 }
 .dev-section .container {
