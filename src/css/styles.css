@@ -207,9 +207,12 @@
   width: 5%;
 }
 
+.fitness-section {
+  background-color: var(--primary-color1);
+}
 .fitness-section .container {
   background-color: var(--primary-color1);
-  max-width: 100%;
+  max-width: 80vw;
 }
 .fitness-section .fitness-text {
   font-family: "Josefin Sans", sans-serif;
@@ -314,6 +317,7 @@
 }
 
 .esports-section {
+  background-color: var(--primary-color1);
   max-width: 100%;
   display: flex;
   flex-direction: column;
@@ -344,7 +348,7 @@
 }
 .esports-section .container {
   background-color: var(--primary-color1);
-  max-width: 100%;
+  max-width: 80vw;
   align-items: center;
 }
 .esports-section .container #to-top-button-esports {
@@ -363,14 +367,17 @@
 }
 .esports-section .esports-text-first {
   padding-top: 5em;
+  padding-left: 1em;
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.6em;
-  text-align: center;
+  text-align: left;
 }
 .esports-section .esports-text {
   font-family: "Josefin Sans", sans-serif;
+  padding-left: 1em;
+  padding-right: 1em;
   font-size: 1.6em;
-  text-align: center;
+  text-align: left;
   display: flex;
   justify-content: center;
   align-items: center;

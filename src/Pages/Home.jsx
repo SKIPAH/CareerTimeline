@@ -33,6 +33,7 @@ export default function Home() {
             alt="picture of Jussi Mehtälä"
           ></img>
           <h1 className="title-text hidden">
+          JUSSI MEHTÄLÄ<br />
             {getTranslation("homepage-title", currentLanguage)}
           </h1>
         </div>
