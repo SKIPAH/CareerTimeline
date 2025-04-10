@@ -1,12 +1,19 @@
+import React from "react";
+
 import YoutubeEmbed from "../components/YoutubeEmbed";
 import InstagramEmbedVideo from "../components/InstagramEmbedVideo";
-import { useLanguage } from "../hooks/useLanguage";
-import { getTranslation } from "../components/Translations";
+import { useLanguage } from "../hooks/useLanguage2";
+import { getTranslation } from "../components/Translations2";
 import TweetEmbed from "../components/TweetEmbed";
 import NutritionLabel from "../components/NutritionLabel";
 import { useScrollAnimation } from "../components/ScrollAnimation";
 import axios from "axios";
 import { useEffect, useState } from "react";
+
+interface FitnessProps {
+  embedId: string;
+  className?: string;
+}
 
 export default function Fitness() {
   const currentLanguage = useLanguage();
@@ -45,23 +52,11 @@ export default function Fitness() {
               <NutritionLabel></NutritionLabel>
             </div>
           </div>
-          <div classname="embed-youtube">
-            <YoutubeEmbed
-              embedId="8t4Bgw02xTI"
-              className="fitness-youtube-embed"
-            ></YoutubeEmbed>
+          <div className="embed-youtube">
+            <YoutubeEmbed embedId="8t4Bgw02xTI"></YoutubeEmbed>
           </div>
         </div>
       </section>
     </>
   );
 }
-
-/*
-<div>
-          <h2>Personal bests</h2>
-          <p>Squat: {personalBestLifts.squat}</p>
-          <p>Bench: {personalBestLifts.bench}</p>
-          <p>Deadlift: {personalBestLifts.deadlift}</p>
-        </div>
-*/

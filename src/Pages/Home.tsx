@@ -1,5 +1,6 @@
-import { useLanguage } from "../hooks/useLanguage";
-import { getTranslation } from "../components/Translations";
+import React from "react";
+import { useLanguage } from "../hooks/useLanguage2";
+import { getTranslation } from "../components/Translations2";
 import profilepic from "../files/images/profiilikuva2.webp";
 import htmllogo from "../files/images/techpics/html-logo.webp";
 import csslogo from "../files/images/techpics/css-logo.webp";
@@ -33,7 +34,8 @@ export default function Home() {
             alt="picture of Jussi Mehtälä"
           ></img>
           <h1 className="title-text hidden">
-          JUSSI MEHTÄLÄ<br />
+            JUSSI MEHTÄLÄ
+            <br />
             {getTranslation("homepage-title", currentLanguage)}
           </h1>
         </div>

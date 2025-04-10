@@ -5,6 +5,7 @@ interface TranslationStrings {
   'navbar-work': string;
   'navbar-esports': string;
   'navbar-dev': string;
+  'navbar-games': string;
   'navbar-fitness': string;
   'navbar-test': string;
   'homepage-title': string;
@@ -59,10 +60,11 @@ const Translations: TranslationsType = {
     "navbar-work": "WORK AND EDUCATION",
     "navbar-esports": "ESPORTS",
     "navbar-dev": "DEV",
+    "navbar-games": "GAMES",
     "navbar-fitness": "FITNESS",
     "navbar-test": "TEST PAGE",
-    "homepage-title": "WEBSITE OF JUSSI MEHTÄLÄ",
-    "homepage-introduction-text-short": "Hi! My name is Jussi Mehtälä, I am a 28-year-old guy from Finland and I have graduated as a Bachelor of Engineering in information technology specialized in software development. I am currently looking for a job in the IT field as a developer!",
+    "homepage-title": "Web and Game Developer",
+    "homepage-introduction-text-short": "Hi! My name is Jussi Mehtälä, also known as SKIPAH in the esports scene. I am a 28-year-old guy from Finland and I have graduated as a Bachelor of Engineering in information technology specialized in software development. I am currently looking for a job in the IT field as a developer!",
     "homepage-introduction-text": "On this website you can find information about my !",
     "homepage-introduction-text-tech": "Technologies I use regularly and on this website:",
     "homepage-introduction-text-2": "I am also well versed in social media platforms and content creation. On top you can find different categories about job related information, achievements and my hobbies.",
@@ -104,10 +106,11 @@ const Translations: TranslationsType = {
     "navbar-work": "TYÖ JA KOULUTUS",
     "navbar-esports": "E-URHEILU",
     "navbar-dev": "OHJELMOINTI",
+    "navbar-games": "PELIT",
     "navbar-fitness": "FITNESS",
     "navbar-test": "TESTI",
-    "homepage-title": "JUSSI MEHTÄLÄN KOTISIVU",
-    "homepage-introduction-text-short": "Hei! Minun nimeni on Jussi Mehtälä, olen 28-vuotias ja olen valmistunut tieto ja viestintätekniikan insinööriksi suuntautumisena ohjelmistokehitys. Etsin tällä hetkellä töitä IT-alalta ohjelmistosuunnittelijan rooliin!",
+    "homepage-title": "Web- ja pelikehittäjä", 
+    "homepage-introduction-text-short": "Hei! Minun nimeni on Jussi Mehtälä, myös tunnettu lempinimellä SKIPAH kilpapelaamisen puolella. Olen 28-vuotias ja olen valmistunut tieto ja viestintätekniikan insinööriksi suuntautumisena ohjelmistokehitys. Etsin tällä hetkellä töitä IT-alalta ohjelmistosuunnittelijan rooliin!",
     "homepage-introduction-text": "Olen valmistunut tieto ja viestintätekniikan insinööriksi suuntautumisena ohjelmistokehitys. Halusin opetella Web-kehitystä, joten päätin luoda omat verkkosivut jossa voin näyttää kaikenlaisia omaan elämään liittyviä asioita!",
     "homepage-introduction-text-tech": "Tekniikat, joita käytän aktiivisesti ja tällä sivulla:",
     "homepage-introduction-text-2": "Lisäksi olen kokenut käyttäjä eri sosiaalisen median alustoilla ja sisällöntuottaja. Sivun yläosasta löydät lisää harrastuksiin ja työhön liittyviä asioita, sekä sosiaalisen median linkit.",

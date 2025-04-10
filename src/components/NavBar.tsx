@@ -1,3 +1,4 @@
+import React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -6,7 +7,7 @@ import Translations, {
   getTranslation,
   getCurrentLanguage,
   setLanguage,
-} from "./Translations";
+} from "./Translations2";
 import { Button } from "react-bootstrap";
 import linkedin from "../files/images/linkedin.webp";
 import github from "../files/images/github.webp";
@@ -142,7 +143,6 @@ export default function NavBar() {
         <Button
           id="languageToggleBtn"
           onClick={handleLanguageToggle}
-          // className="d-none d-lg-block"
         >
           {currentLanguage === "en" ? "SUOMEKSI" : "ENGLISH"}
         </Button>

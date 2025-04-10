@@ -15,7 +15,6 @@ export const useScrollAnimation = () => {
     hiddenElements.forEach((el) => observer.observe(el));
     hiddenElements2.forEach((el) => observer.observe(el));
 
-    // Cleanup function
     return () => {
       hiddenElements.forEach((el) => observer.unobserve(el));
       hiddenElements2.forEach((el) => observer.unobserve(el));

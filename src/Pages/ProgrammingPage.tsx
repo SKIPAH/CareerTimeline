@@ -1,8 +1,9 @@
 import UnityWebGL from "../components/UnityWebGL";
-import { useLanguage } from "../hooks/useLanguage";
-import { getTranslation } from "../components/Translations";
+import { useLanguage } from "../hooks/useLanguage2";
+import { getTranslation } from "../components/Translations2";
 import { useScrollAnimation } from "../components/ScrollAnimation";
 import { unityProjects } from "../components/UnityProjectConfig";
+import React from "react";
 
 export default function DevPage() {
   const currentLanguage = useLanguage();

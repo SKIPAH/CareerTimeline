@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { getTranslation } from "./Translations";
-import { useLanguage } from "../hooks/useLanguage";
+import { getTranslation } from "./Translations2";
+import { useLanguage } from "../hooks/useLanguage2";
 import skipahlogo from "../files/images/SKIPAHlogo.webp";
 import { NavLink } from "react-router-dom";
 import Nav from "react-bootstrap/Nav";

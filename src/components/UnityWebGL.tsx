@@ -9,6 +9,7 @@ import {UnityProjectConfig} from "./UnityProjectConfig";
 
 interface UnityWebGLProps {
   config: UnityProjectConfig
+  className?: string;
 }
 
 

@@ -3,19 +3,36 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-import TimelineElements from "./TimelineElements";
+import TimelineElements from "./TimelineElements2";
 import "react-vertical-timeline-component/style.min.css";
-import { getTranslation } from "./Translations";
-import { useLanguage } from "../hooks/useLanguage";
+import { getTranslation } from "./Translations2";
+import { useLanguage } from "../hooks/useLanguage2";
 import { Button } from "react-bootstrap";
-import { useScrollAnimation } from "../components/ScrollAnimation";
+import { useScrollAnimation } from "./ScrollAnimation";
 
-export default function Timeline() {
-  let IconStyles = { background: "#FFD22B" };
+interface TimelineElement {
+  id: number;
+  title: string;
+  location: string;
+  description: string;
+  date: string;
+  icon: string;
+  buttonText?: string;
+  buttonLink?: string;
+  buttonText2?: string;
+  buttonLink2?: string;
+}
+
+interface IconStyles {
+  background: string;
+}
+
+const Timeline: React.FC = () => {
+  const IconStyles: IconStyles = { background: "#FFD22B" };
   const currentLanguage = useLanguage();
   useScrollAnimation();
 
-  const toTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
+  const toTop = (): void => window.scrollTo({ top: 0, behavior: "smooth" });
 
   return (
     <div className="timeline-div">
@@ -23,7 +40,7 @@ export default function Timeline() {
         {getTranslation("timeline-title-text", currentLanguage)}
       </h1>
       <VerticalTimeline>
-        {TimelineElements[currentLanguage].map((element) => {
+        {TimelineElements[currentLanguage].map((element: TimelineElement) => {
           let isWorkIcon = element.icon === "work";
           let showButton =
             element.buttonText !== undefined &&
@@ -86,4 +103,6 @@ export default function Timeline() {
       </Button>
     </div>
   );
-}
+};
+
+export default Timeline;
