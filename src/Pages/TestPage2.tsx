@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import NutritionLabel from "../components/NutritionLabel";
 import axios from "axios";
+import React, { ChangeEvent } from "react";
 
 export default function TestPage() {
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -10,18 +11,6 @@ export default function TestPage() {
     bench: 0,
     deadlift: 0,
   });
-
-  useEffect(() => {
-    function handleMove(e) {
-      const newPosition = { x: e.clientX, y: e.clientY };
-      console.log("Mouse position:", newPosition); // Added console.log
-      setPosition(newPosition);
-    }
-    window.addEventListener("pointermove", handleMove);
-    return () => {
-      window.removeEventListener("pointermove", handleMove);
-    };
-  }, []);
 
   useEffect(() => {
     axios

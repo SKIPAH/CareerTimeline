@@ -2,8 +2,9 @@ import React from "react";
 
 type Props = {
   src: string;
+  className?: string;
 };
-const BackgroundVideo = ({ src }: Props) => {
+const BackgroundVideo = ({ src, className }: Props) => {
   // const isMobile = /iPhone|iPod|Android/i.test(navigator.userAgent);
   return (
     <div>

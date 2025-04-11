@@ -7,8 +7,8 @@ import { useEffect, useState, useMemo, useCallback } from "react";
 import CollectionDragonBalls from "../components/CollectionDragonBalls";
 import DragonBall from "../components/DragonBall";
 import twoStarDragonBall from "../files/images/dbz/2star.png";
-import TweetEmbed from "../components/TweetEmbed";
-import UnityWebGL from "../components/UnityWebGL";
+
+import React, { ChangeEvent } from "react";
 
 export default function TestPage() {
   const [count, setCount] = useState(0);
@@ -22,11 +22,11 @@ export default function TestPage() {
     setCount(count + 1);
   }
 
-  function handleTextChange(e) {
+  function handleTextChange(e: ChangeEvent<HTMLInputElement>) {
     setText(e.target.value);
   }
 
-  function handleLikeChange(e) {
+  function handleLikeChange(e: ChangeEvent<HTMLInputElement>) {
     setLiked(e.target.checked);
   }
   return (
@@ -58,14 +58,6 @@ export default function TestPage() {
       <p>
         Hello, {name}. You are {age}.
       </p>
-      <TweetEmbed tweetId="1688619094377930752"></TweetEmbed>
-
-      <div className="container">
-        <UnityWebGL
-          config={unityProjects[1]}
-          className="unity-webgl"
-        ></UnityWebGL>
-      </div>
     </main>
   );
 }

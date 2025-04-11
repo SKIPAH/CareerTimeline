@@ -1,4 +1,4 @@
-
+import React from "react";
 export default function CollectionDragonBalls() {
   const DRAGON_BALLS = Array.from({ length: 7 }, (_, i) => ({
     id: i + 1,
@@ -20,5 +20,3 @@ export default function CollectionDragonBalls() {
     </div>
   );
 }
-
-

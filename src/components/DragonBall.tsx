@@ -1,13 +1,18 @@
 import monkeAudio from "../files/audio/monke.mp3";
 import React, { useState, useEffect } from "react";
 
+interface DragonBallProps {
+  id: number;
+  src: string;
+}
+
 const ballCount = () => Number(localStorage.getItem("collectedAmount")) || 0;
-export default function DragonBall({ id, src }) {
+export default function DragonBall({ id, src }: DragonBallProps) {
   const [collectedAmount, setCollectedAmount] = useState(ballCount());
 
   useEffect(() => {
     //collectDragonBall();
-    localStorage.setItem("collectedAmount", collectedAmount);
+    localStorage.setItem("collectedAmount", collectedAmount.toString());
   }, [collectedAmount]);
 
   /*
@@ -26,11 +31,10 @@ export default function DragonBall({ id, src }) {
         className={`dragon-ball ${collectedAmount > 0 ? "collected" : ""}`}
         src={src}
         onClick={() => setCollectedAmount(collectedAmount + 1)}
+        alt={`Dragon Ball ${id}`}
       ></img>
       <p>{collectedAmount}</p>
-      <button onClick={() => localStorage.clear()}>asd</button>
+      <button onClick={() => localStorage.clear()}>Clear</button>
     </>
   );
 }
-
-

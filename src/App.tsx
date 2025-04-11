@@ -7,6 +7,7 @@ import TestPage from "./Pages/TestPage";
 import Home from "./Pages/Home";
 import TestPage2 from "./Pages/TestPage2";
 import GameDevPage from "./Pages/GameDevPage";
+import React from "react";
 
 import "/src/css/styles.css";
 import { Route, Routes } from "react-router-dom";

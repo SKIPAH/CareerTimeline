@@ -12,6 +12,11 @@ declare module "*.jpg" {
   const content: string;
   export default content;
 }
+declare module "*.pdf" {
+  const content: string;
+  export default content;
+}
+
 
 declare module "../components/BackgroundVideo" {
     const BackgroundVideo: React.FC<{ src: string }>;
@@ -19,6 +24,10 @@ declare module "../components/BackgroundVideo" {
   }
 
   declare module "*.mp4" {
+    const src: string;
+    export default src;
+  }
+  declare module "*.mp3" {
     const src: string;
     export default src;
   }

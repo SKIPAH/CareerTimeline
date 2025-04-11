@@ -1,3 +1,4 @@
+import React from "react";
 import assembly from "../files/images/nyyrikkipictures/assembly.webp";
 import skipah4 from "../files/images/nyyrikkipictures/skipah4.webp";
 import skipahuusi from "../files/images/nyyrikkipictures/skipahuusi.jpg";
