@@ -2,8 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 :root {
   --primary-color1: #f0f0f0;
-  --primary-color2: #ffd22b;
-  --navbar-color: #1d63ff;
+  --primary-color2: #eeeeee;
+  --primary-yellow: #ffeb00;
+  --black-color: #1f1f1f;
   --border-color: #ffffff;
 }
 
@@ -46,21 +47,25 @@
 }
 
 .navbar {
-  background-color: var(--navbar-color);
+  background-color: var(--black-color);
 }
-.navbar .nav-link.active {
-  color: black;
+.navbar a.nav-link.active {
+  color: var(--primary-yellow);
   font-weight: bold;
 }
-.navbar .navbar-right {
-  margin: 0;
+.navbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+.navbar .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.9) !important;
 }
 .navbar .navbar-logos {
   width: 2em;
-  margin: 0.1em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
   cursor: pointer;
   background-color: #ffffff;
-  border-radius: 0.4em;
+  border-radius: 10px;
 }
 .navbar span.navbar-brand {
   margin: 0;
@@ -160,18 +165,7 @@
   font-family: "Josefin Sans", sans-serif;
   text-align: center;
   word-wrap: break-word;
-  font-size: 2em;
-  margin: 0;
-  padding: 4em;
-  padding-top: 0em;
-  padding-bottom: 2.2em;
-  border-radius: 2em;
-}
-.homepage-introduction .introduction-text-short-xmas {
-  font-family: "Josefin Sans", sans-serif;
-  text-align: center;
-  word-wrap: break-word;
-  font-size: 3em;
+  font-size: 2rem;
   margin: 0;
   padding: 4em;
   padding-top: 0em;
@@ -184,7 +178,7 @@
   padding-top: 0em;
   padding-bottom: 2.2em;
   font-family: "Josefin Sans", sans-serif;
-  font-size: 2em;
+  font-size: 2rem;
   text-align: center;
 }
 .homepage-introduction .introduction-text-tech {
@@ -200,8 +194,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 1em;
   flex-wrap: wrap;
-  padding-bottom: 1.8em;
+  padding-bottom: 2em;
 }
 .homepage-introduction .tech-used-container img {
   width: 5%;
@@ -386,7 +381,7 @@
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.1em;
   text-align: center;
-  text-decoration: none;
+  color: var(--black-color);
 }
 .esports-section .esports-link:hover {
   font-size: 1.3em;
@@ -414,7 +409,7 @@
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.5em;
   text-align: center;
-  text-decoration: none;
+  color: var(--black-color);
 }
 .dev-section .unity-webgl {
   max-width: 1920px;
@@ -534,17 +529,15 @@ footer {
   margin-top: auto;
   bottom: 0;
   padding-top: 10px;
-  border-top: 2px solid #f5f5f5;
+  border-top: 7px solid var(--primary-yellow);
   background-size: cover;
-  text-align: center;
+  text-align: left;
   background-color: #333;
   color: #fff;
   left: 0;
 }
 
 .navbar-home-logo-footer {
-  height: auto;
-  width: auto;
   max-height: 72px;
   max-width: 250px;
 }
@@ -641,7 +634,7 @@ footer {
 }
 
 .schoolButton {
-  background-color: #ffd22b;
+  background-color: var(--primary-yellow);
 }
 
 .schoolButton:hover {

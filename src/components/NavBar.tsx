@@ -99,7 +99,7 @@ export default function NavBar() {
               {currentLanguage === "en" ? "SUOMEKSI" : "ENGLISH"}
             </Button>
 
-            <ul className="navbar-right">
+            <div className="navbar-right">
               <a
                 href="https://www.linkedin.com/in/jussi-mehtala/"
                 target="_blank"
@@ -137,7 +137,7 @@ export default function NavBar() {
               <a href="https://www.twitch.tv/skipah" target="_blank">
                 <img src={twitch} className="navbar-logos" alt="twitch logo" />
               </a>
-            </ul>
+            </div>
           </Navbar.Collapse>
         </Container>
         <Button

@@ -102,7 +102,9 @@ export default function EsportsPage() {
           <div className="esports-introduction-embed hidden">
             <p className="esports-text-first hidden">
               {getTranslation("esports-text-movie-1", currentLanguage)}
-              <a href="https://x.com/mauserzjeh">Mauser.</a>
+              <a href="https://x.com/mauserzjeh" className="esports-link">
+                Mauser.
+              </a>
             </p>
             <YoutubeEmbed
               className="esports-youtube-embed"
