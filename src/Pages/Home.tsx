@@ -40,12 +40,14 @@ export default function Home() {
           </h1>
         </div>
         <div className="container">
-          <p className="introduction-text-short hidden">
-            {getTranslation(
-              "homepage-introduction-text-short",
-              currentLanguage
-            )}
-          </p>
+          <div className="flex-container">
+            <p className="introduction-text-short hidden">
+              {getTranslation(
+                "homepage-introduction-text-short",
+                currentLanguage
+              )}
+            </p>
+          </div>
         </div>
         <div className="container">
           <p className="introduction-text-tech hidden">

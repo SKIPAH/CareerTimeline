@@ -69,8 +69,8 @@ export default function Footer() {
             <h5>{getTranslation("contactMe", currentLanguage)}</h5>
             <address>
               Email:{" "}
-              <a href="mailto:juzzii.mehta@gmail.com" className="text-white">
-                juzzii.mehta@gmail.com
+              <a href="mailto:jussi.mehtala96@gmail.com" className="text-white">
+                jussi.mehtala96@gmail.com
               </a>
               <br />
             </address>

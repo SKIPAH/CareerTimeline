@@ -110,6 +110,12 @@
   background-color: #ffd22b;
 }
 
+.homepage-introduction .flex-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+}
 .homepage-introduction .video-section {
   background-color: var(--primary-color1);
   position: relative;
@@ -136,7 +142,6 @@
   grid-template-columns: 3fr 5fr;
 }
 .homepage-introduction .intro .introduction-text {
-  text-align: center;
   word-wrap: break-word;
   font-size: 4em;
 }
@@ -163,7 +168,6 @@
 }
 .homepage-introduction .introduction-text-short {
   font-family: "Josefin Sans", sans-serif;
-  text-align: center;
   word-wrap: break-word;
   font-size: 2rem;
   margin: 0;

@@ -120,6 +120,12 @@
 }
 
 .homepage-introduction {
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+  }
   .video-section {
     background-color: var(--primary-color1);
     position: relative;
@@ -145,7 +151,6 @@
     grid-template-columns: 3fr 5fr;
 
     .introduction-text {
-      text-align: center;
       word-wrap: break-word;
       font-size: 4em;
     }
@@ -174,7 +179,7 @@
   }
   .introduction-text-short {
     font-family: "Josefin Sans", sans-serif;
-    text-align: center;
+
     word-wrap: break-word;
     font-size: 2rem;
     margin: 0;
