@@ -35,7 +35,7 @@ export default function Fitness() {
   return (
     <>
       <section className="fitness-section">
-        <div className="container">
+        <div className="container-fitness">
           <h1 className="title-text hidden">
             {getTranslation("fitness-title", currentLanguage)}
           </h1>

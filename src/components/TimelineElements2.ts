@@ -30,7 +30,7 @@ interface TimelineElement {
           title: "Nucu Oy. Software developer. Intern/Thesis",
           location: "Oulu",
           description: "Worked on a WebGL 3D Product Configurator and Simulator for Nucu Oy's products. You are able to test a modified version of the simulator on the Dev page",
-          buttonText: "Project link",
+          buttonText: "Project",
           buttonText2: "Nucu Oy",
           date: "May 2023-May 2024",
           icon: work,

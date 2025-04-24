@@ -110,6 +110,9 @@
   background-color: #ffd22b;
 }
 
+.homepage-introduction {
+  background-color: var(--primary-color1);
+}
 .homepage-introduction .flex-container {
   display: flex;
   flex-direction: row;
@@ -155,9 +158,9 @@
 }
 .homepage-introduction .intro .title-text {
   color: white;
-  font-size: 6em;
+  font-size: 5em;
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 0.5em;
+  padding: 0.1em;
   text-align: center;
   outline: 2px solid white;
   border-radius: 10px;
@@ -166,8 +169,19 @@
   background-color: var(--primary-color1);
   max-width: 100%;
 }
+.homepage-introduction .container .CTA-button {
+  background-color: var(--primary-yellow);
+  font-size: 1.5rem;
+  color: black;
+  font-family: "Josefin Sans", sans-serif;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  margin-bottom: 1em;
+}
 .homepage-introduction .introduction-text-short {
   font-family: "Josefin Sans", sans-serif;
+  text-align: center;
   word-wrap: break-word;
   font-size: 2rem;
   margin: 0;
@@ -825,7 +839,7 @@ footer {
     top: 0%;
   }
   .homepage-introduction .intro .title-text {
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: center;
     padding: 0.5em;
   }
@@ -834,28 +848,21 @@ footer {
     padding: 10px;
     width: 100%;
     text-align: center;
-    font-size: 1.5em;
-  }
-  .homepage-introduction .container .introduction-text-short-xmas {
-    line-height: 1.2;
-    padding: 10px;
-    width: 100%;
-    text-align: center;
-    font-size: 1.8em;
+    font-size: 1rem;
   }
   .homepage-introduction .container .introduction-text {
     line-height: 1.2;
     padding: 10px;
     width: 100%;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1rem;
   }
   .homepage-introduction .container .introduction-text-tech {
     line-height: 1.2;
     padding: 10px;
     width: 100%;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1rem;
   }
   .homepage-introduction .container .tech-used-container img {
     width: 15%;
@@ -872,7 +879,7 @@ footer {
     margin: 0.3em;
   }
   .timeline-title {
-    font-size: 3em;
+    font-size: 2rem;
     padding-left: 0em;
     text-align: center;
     margin-left: 0;
@@ -886,7 +893,7 @@ footer {
     width: 100%;
   }
   .esports-section .title-text {
-    font-size: 3em;
+    font-size: 2rem;
     padding-left: 0em;
   }
   .esports-section .image {
@@ -901,17 +908,20 @@ footer {
     border-radius: 20px;
   }
   .esports-section .esports-text {
-    font-size: 1.5em;
+    font-size: 1rem;
+  }
+  .esports-section .esports-text-first {
+    font-size: 1rem;
   }
   .dev-section .title-text {
-    font-size: 3em;
+    font-size: 2rem;
     padding-left: 0em;
   }
   .dev-section p {
-    font-size: 1.5em;
+    font-size: 1rem;
   }
   .dev-section a {
-    font-size: 1.2em;
+    font-size: 1rem;
   }
   .dev-section .container .unity-webgl {
     display: none;
@@ -923,25 +933,36 @@ footer {
     display: inline-block;
     width: 100%;
   }
+  .fitness-section .container-fitness {
+    max-width: 100%;
+    padding: 10px;
+  }
   .fitness-section .title-text {
-    font-size: 3em;
+    font-size: 2rem;
   }
   .fitness-section .fitness-text {
-    font-size: 1.2em;
+    font-size: 1rem;
   }
   .fitness-section .fitness-embed {
     width: 80%;
     border: 5px solid #fff;
   }
-  .fitness-section .video-responsive {
-    width: 80%;
-    height: 80%;
-  }
   .fitness-section .embeds {
-    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .fitness-section .embeds .instagram-embed {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .fitness-section .embeds .tweet-embed {
+    padding-left: 30px;
+    padding-right: 30px;
   }
   .dbz-section .title-text {
-    font-size: 3em;
+    font-size: 2rem;
   }
   .dbz-section .background-video {
     width: 25%;

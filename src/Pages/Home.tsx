@@ -16,6 +16,7 @@ import BackgroundVideo from "../components/BackgroundVideo";
 import WebsiteVideo from "../files/videos/websitevideo.mp4";
 import { useScrollAnimation } from "../components/ScrollAnimation";
 import Timeline from "../components/Timeline";
+import { Button } from "react-bootstrap";
 
 export default function Home() {
   const currentLanguage = useLanguage();
@@ -40,16 +41,21 @@ export default function Home() {
           </h1>
         </div>
         <div className="container">
+          
+        
           <div className="flex-container">
             <p className="introduction-text-short hidden">
               {getTranslation(
                 "homepage-introduction-text-short",
                 currentLanguage
               )}
+              
             </p>
+            
           </div>
         </div>
         <div className="container">
+        <Button className="CTA-button">Contact me!</Button>
           <p className="introduction-text-tech hidden">
             {getTranslation("homepage-introduction-text-tech", currentLanguage)}
           </p>
