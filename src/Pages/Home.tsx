@@ -41,22 +41,18 @@ export default function Home() {
           </h1>
         </div>
         <div className="container">
-          
-        
           <div className="flex-container">
-            <p className="introduction-text-short hidden">
+            <p className="introduction-text-short">
               {getTranslation(
                 "homepage-introduction-text-short",
                 currentLanguage
               )}
-              
             </p>
-            
           </div>
         </div>
         <div className="container">
-        <Button className="CTA-button">Contact me!</Button>
-          <p className="introduction-text-tech hidden">
+          {/* <Button className="CTA-button">Contact me!</Button>*/}
+          <p className="introduction-text-tech">
             {getTranslation("homepage-introduction-text-tech", currentLanguage)}
           </p>
           <div className="tech-used-container hidden-icons">
@@ -71,7 +67,7 @@ export default function Home() {
             <img id="unity.logo" src={unitylogo}></img>
             <img id="github-logo" src={githublogo}></img>
           </div>
-          <p className="introduction-text hidden">
+          <p className="introduction-text">
             {getTranslation("homepage-introduction-text-2", currentLanguage)}
           </p>
         </div>

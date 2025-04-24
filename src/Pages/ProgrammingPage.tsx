@@ -16,7 +16,7 @@ export default function DevPage() {
           <h1 className="title-text hidden">
             {getTranslation("dev-title", currentLanguage)}
           </h1>
-          <p className="hidden">
+          <p>
             <a
               href="https://www.linkedin.com/in/jussi-mehtala/"
               target="_blank"
@@ -47,7 +47,7 @@ export default function DevPage() {
               </a>
             </p>
           </p>
-          <p className="hidden">
+          <p>
             <a
               href="https://www.theseus.fi/handle/10024/856201"
               target="_blank"
@@ -64,10 +64,10 @@ export default function DevPage() {
           </p>
         </div>
         <div className="container">
-          <p className="hidden">
+          <p>
             {getTranslation("dev-webgl", currentLanguage)}
           </p>
-          <p className="hidden">
+          <p>
             {getTranslation("dev-webgl-note", currentLanguage)}
           </p>
           <UnityWebGL

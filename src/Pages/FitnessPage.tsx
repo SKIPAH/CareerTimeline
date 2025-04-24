@@ -39,13 +39,13 @@ export default function Fitness() {
           <h1 className="title-text hidden">
             {getTranslation("fitness-title", currentLanguage)}
           </h1>
-          <p className="fitness-text hidden">
+          <p className="fitness-text ">
             {getTranslation("fitness-text", currentLanguage)}
           </p>
-          <p className="fitness-text hidden">
+          <p className="fitness-text ">
             {getTranslation("fitness-text-2", currentLanguage)}
           </p>
-          <div className="embeds hidden">
+          <div className="embeds">
             <InstagramEmbedVideo embedURL="C1XDVxIMNAX"></InstagramEmbedVideo>
             <TweetEmbed tweetId="1688619094377930752"></TweetEmbed>
             <div className="nutrition-label">

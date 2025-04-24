@@ -32,14 +32,14 @@ export default function EsportsPage() {
               alt="Assembly Summer 2018 stage picture of SKIPAH"
             ></img>
           </h1>
-          <div className="esports-introduction hidden">
+          <div className="esports-introduction">
             <img
               className="image hidden"
               src={skipah4}
               alt="Lantrek BYOC picture. First lan event"
               loading="lazy"
             ></img>
-            <p className="esports-text-first hidden">
+            <p className="esports-text-first">
               {getTranslation("esports-text", currentLanguage)}
               <a
                 className="esports-link"
@@ -51,7 +51,7 @@ export default function EsportsPage() {
             </p>
           </div>
           <div className="esports-introduction">
-            <p className="esports-text hidden">
+            <p className="esports-text">
               {getTranslation("esports-text-3", currentLanguage)}
             </p>
             <img
@@ -68,12 +68,12 @@ export default function EsportsPage() {
               alt="SKIPAH and Jönssöni watching Battalion showmatch at Lantrek"
               loading="lazy"
             ></img>
-            <p className="esports-text hidden">
+            <p className="esports-text">
               {getTranslation("esports-text-4", currentLanguage)}
             </p>
           </div>
           <div className="esports-introduction">
-            <p className="esports-text hidden">
+            <p className="esports-text ">
               {getTranslation("esports-text-5", currentLanguage)}
             </p>
             <img
@@ -84,23 +84,23 @@ export default function EsportsPage() {
             ></img>
           </div>
           <div className="esports-introduction">
-            <p className="esports-text hidden">
+            <p className="esports-text ">
               {getTranslation("esports-text-6", currentLanguage)}
             </p>
           </div>
           <div className="esports-introduction">
-            <p className="esports-text hidden">
+            <p className="esports-text ">
               {getTranslation("esports-text-7", currentLanguage)}
             </p>
           </div>
           <div className="esports-introduction">
-            <p className="esports-text hidden">
+            <p className="esports-text">
               {getTranslation("esports-text-8", currentLanguage)}
             </p>
             <img className="image hidden" src={hreds} alt="hreds"></img>
           </div>
-          <div className="esports-introduction-embed hidden">
-            <p className="esports-text-first hidden">
+          <div className="esports-introduction-embed ">
+            <p className="esports-text-first ">
               {getTranslation("esports-text-movie-1", currentLanguage)}
               <a href="https://x.com/mauserzjeh" className="esports-link">
                 Mauser.
@@ -111,12 +111,12 @@ export default function EsportsPage() {
               embedId="4MIz6BQikh4"
             ></YoutubeEmbed>
           </div>
-          <div className="esports-introduction-embed hidden">
+          <div className="esports-introduction-embed">
             <YoutubeEmbed
               className="esports-youtube-embed"
               embedId="uY3LpNTSYqg"
             ></YoutubeEmbed>
-            <p className="esports-text hidden">
+            <p className="esports-text ">
               {getTranslation("esports-text-movie-2", currentLanguage)}
             </p>
           </div>
