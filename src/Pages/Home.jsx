@@ -1,6 +1,6 @@
 import React from "react";
-import { useLanguage } from "../hooks/useLanguage2";
-import { getTranslation } from "../components/Translations2";
+import { useLanguage } from "../hooks/useLanguage";
+import { getTranslation } from "../components/Translations";
 import profilepic from "../files/images/profiilikuva2.webp";
 import htmllogo from "../files/images/techpics/html-logo.webp";
 import csslogo from "../files/images/techpics/css-logo.webp";

@@ -22,11 +22,11 @@ export default function TestPage() {
     setCount(count + 1);
   }
 
-  function handleTextChange(e: ChangeEvent<HTMLInputElement>) {
+  function handleTextChange(e) {
     setText(e.target.value);
   }
 
-  function handleLikeChange(e: ChangeEvent<HTMLInputElement>) {
+  function handleLikeChange(e) {
     setLiked(e.target.checked);
   }
   return (

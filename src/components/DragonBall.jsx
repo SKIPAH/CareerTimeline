@@ -1,13 +1,10 @@
 import monkeAudio from "../files/audio/monke.mp3";
 import React, { useState, useEffect } from "react";
 
-interface DragonBallProps {
-  id: number;
-  src: string;
-}
+
 
 const ballCount = () => Number(localStorage.getItem("collectedAmount")) || 0;
-export default function DragonBall({ id, src }: DragonBallProps) {
+export default function DragonBall({ id, src }) {
   const [collectedAmount, setCollectedAmount] = useState(ballCount());
 
   useEffect(() => {

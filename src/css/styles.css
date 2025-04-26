@@ -48,6 +48,7 @@
 
 .navbar {
   background-color: var(--black-color);
+  border-bottom: 7px solid var(--primary-yellow);
 }
 .navbar a.nav-link.active {
   color: var(--primary-yellow);
@@ -67,10 +68,9 @@
   background-color: #ffffff;
   border-radius: 10px;
 }
-.navbar span.navbar-brand {
-  margin: 0;
-  padding: 0;
-  margin-right: 5em;
+.navbar .navbar-logos:hover {
+  background-color: var(--primary-yellow);
+  border-radius: 10px;
 }
 .navbar .navbar-home-logo {
   height: auto;
@@ -87,6 +87,10 @@
   font-size: 1em;
   font-family: "Josefin Sans", sans-serif;
   color: var(--primary-color2);
+}
+.navbar a.nav-link:hover {
+  color: var(--primary-yellow);
+  font-weight: bold;
 }
 .navbar #languageToggleBtn {
   margin-right: 2em;
@@ -223,9 +227,11 @@
 .fitness-section {
   background-color: var(--primary-color1);
 }
-.fitness-section .container {
+.fitness-section .container-fitness {
   background-color: var(--primary-color1);
   max-width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 .fitness-section .fitness-text {
   font-family: "Josefin Sans", sans-serif;
@@ -378,12 +384,16 @@
   background-color: #ffd22b;
   width: 150px;
 }
+.esports-section .container .centered-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-align: left;
+}
 .esports-section .esports-text-first {
-  padding-top: 5em;
-  padding-left: 1em;
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.6em;
-  text-align: left;
 }
 .esports-section .esports-text {
   font-family: "Josefin Sans", sans-serif;
@@ -409,14 +419,20 @@
   background-color: var(--primary-color1);
   display: flex;
   flex-direction: column;
-  min-width: 100%;
-  max-width: 100%;
+  min-width: 80vw;
   min-height: 100vh;
   align-items: center;
 }
 .dev-section .container {
   background-color: var(--primary-color1);
-  max-width: 100%;
+}
+.dev-section .container .flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  font-size: 1.5em;
 }
 .dev-section p {
   font-family: "Josefin Sans", sans-serif;
@@ -913,6 +929,9 @@ footer {
   .esports-section .esports-text-first {
     font-size: 1rem;
   }
+  .dev-section {
+    min-height: auto;
+  }
   .dev-section .title-text {
     font-size: 2rem;
     padding-left: 0em;
@@ -928,6 +947,11 @@ footer {
   }
   .dev-section .container .unity-start-loading-button {
     display: none;
+  }
+  .dev-section .container .flex-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
   }
   .fitness-section {
     display: inline-block;

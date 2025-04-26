@@ -1,10 +1,28 @@
+/*
+
 import React, { useRef } from "react";
 import { Form, Button, Card } from "react-bootstrap";
+import { useAuth } from "../contexts/AuthContext";
+import { useState } from "react";
+
 
 function Signup() {
-  const emailRef = useRef<HTMLInputElement>(null);
-  const passwordRef = useRef<HTMLInputElement>(null);
-  const passwordconfirmRef = useRef<HTMLInputElement>(null);
+  const emailRef = useRef(null);
+  const passwordRef = useRef(null);
+  const passwordconfirmRef = useRef(null);
+  const { signup } = useAuth();
+  const [error, setError] = useState("");
+
+  function handleSubmit(e) {
+    e.preventDefault();
+
+    if (passwordRef.current.value !== passwordconfirmRef.current.value) {
+      return setError("Passwords do not match");
+    }
+
+    signup(emailRef.current.value, passwordRef.current.value);
+  }
+
   return (
     <>
       <Card>
@@ -35,3 +53,5 @@ function Signup() {
 }
 
 export default Signup;
+
+*/

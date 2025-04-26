@@ -7,7 +7,6 @@
   --primary-yellow: #ffeb00;
   --black-color: #1f1f1f;
   --border-color: #ffffff;
-  
 }
 .hide {
   display: none;
@@ -49,6 +48,7 @@
 
 .navbar {
   background-color: var(--black-color);
+  border-bottom: 7px solid var(--primary-yellow);
 
   a.nav-link.active {
     color: var(--primary-yellow);
@@ -71,11 +71,9 @@
     background-color: #ffffff;
     border-radius: 10px;
   }
-
-  span.navbar-brand {
-    margin: 0;
-    padding: 0;
-    margin-right: 5em;
+  .navbar-logos:hover {
+    background-color: var(--primary-yellow);
+    border-radius: 10px;
   }
 
   .navbar-home-logo {
@@ -94,6 +92,10 @@
     font-size: 1em;
     font-family: "Josefin Sans", sans-serif;
     color: var(--primary-color2);
+  }
+  a.nav-link:hover {
+    color: var(--primary-yellow);
+    font-weight: bold;
   }
 
   #languageToggleBtn {
@@ -174,13 +176,12 @@
       outline: 2px solid white;
       border-radius: 10px;
     }
-    
   }
   .container {
     background-color: var(--primary-color1);
     max-width: 100%;
 
-    .CTA-button{
+    .CTA-button {
       background-color: var(--primary-yellow);
       font-size: 1.5rem;
       color: black;
@@ -188,7 +189,7 @@
       margin-right: auto;
       margin-left: auto;
       display: block;
-      
+
       margin-bottom: 1em;
     }
   }
@@ -238,9 +239,11 @@
 
 .fitness-section {
   background-color: var(--primary-color1);
-  .container {
+  .container-fitness {
     background-color: var(--primary-color1);
     max-width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
   }
   .fitness-text {
     font-family: "Josefin Sans", sans-serif;
@@ -414,14 +417,19 @@
       background-color: #ffd22b;
       width: 150px;
     }
+
+    .centered-text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      text-align: left;
+    }
   }
 
   .esports-text-first {
-    padding-top: 5em;
-    padding-left: 1em;
     font-family: "Josefin Sans", sans-serif;
     font-size: 1.6em;
-    text-align: left;
   }
   .esports-text {
     font-family: "Josefin Sans", sans-serif;
@@ -448,14 +456,21 @@
   background-color: var(--primary-color1);
   display: flex;
   flex-direction: column;
-  min-width: 100%;
-  max-width: 100%;
+  min-width: 80vw;
   min-height: 100vh;
   align-items: center;
 
   .container {
     background-color: var(--primary-color1);
-    max-width: 100%;
+
+    .flex-row {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 4rem;
+      font-size: 1.5em;
+    }
   }
 
   p {
@@ -1005,6 +1020,8 @@ footer {
   }
 
   .dev-section {
+    min-height: auto;
+
     .title-text {
       font-size: 2rem;
       padding-left: 0em;
@@ -1021,6 +1038,12 @@ footer {
       }
       .unity-start-loading-button {
         display: none;
+      }
+
+      .flex-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
       }
     }
   }
@@ -1043,9 +1066,7 @@ footer {
       width: 80%;
       border: 5px solid #fff;
     }
-    .video-responsive {
-      
-    }
+
     .embeds {
       display: flex;
       justify-content: center;
@@ -1060,7 +1081,6 @@ footer {
         padding-left: 30px;
         padding-right: 30px;
       }
-     
     }
   }
 

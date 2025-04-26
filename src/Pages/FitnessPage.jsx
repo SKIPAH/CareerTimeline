@@ -2,18 +2,13 @@ import React from "react";
 
 import YoutubeEmbed from "../components/YoutubeEmbed";
 import InstagramEmbedVideo from "../components/InstagramEmbedVideo";
-import { useLanguage } from "../hooks/useLanguage2";
-import { getTranslation } from "../components/Translations2";
+import { useLanguage } from "../hooks/useLanguage";
+import { getTranslation } from "../components/Translations";
 import TweetEmbed from "../components/TweetEmbed";
 import NutritionLabel from "../components/NutritionLabel";
 import { useScrollAnimation } from "../components/ScrollAnimation";
 import axios from "axios";
 import { useEffect, useState } from "react";
-
-interface FitnessProps {
-  embedId: string;
-  className?: string;
-}
 
 export default function Fitness() {
   const currentLanguage = useLanguage();

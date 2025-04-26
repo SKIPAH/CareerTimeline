@@ -1,6 +1,6 @@
 import UnityWebGL from "../components/UnityWebGL";
-import { useLanguage } from "../hooks/useLanguage2";
-import { getTranslation } from "../components/Translations2";
+import { useLanguage } from "../hooks/useLanguage";
+import { getTranslation } from "../components/Translations";
 import { useScrollAnimation } from "../components/ScrollAnimation";
 import { unityProjects } from "../components/UnityProjectConfig";
 import React from "react";
@@ -16,7 +16,7 @@ export default function DevPage() {
           <h1 className="title-text hidden">
             {getTranslation("dev-title", currentLanguage)}
           </h1>
-          <p>
+          <div className="flex-row">
             <a
               href="https://www.linkedin.com/in/jussi-mehtala/"
               target="_blank"
@@ -46,7 +46,8 @@ export default function DevPage() {
                 Portfolio
               </a>
             </p>
-          </p>
+          </div>
+
           <p>
             <a
               href="https://www.theseus.fi/handle/10024/856201"
@@ -64,12 +65,8 @@ export default function DevPage() {
           </p>
         </div>
         <div className="container">
-          <p>
-            {getTranslation("dev-webgl", currentLanguage)}
-          </p>
-          <p>
-            {getTranslation("dev-webgl-note", currentLanguage)}
-          </p>
+          <p>{getTranslation("dev-webgl", currentLanguage)}</p>
+          <p>{getTranslation("dev-webgl-note", currentLanguage)}</p>
           <UnityWebGL
             config={unityProjects[0]}
             className="unity-webgl"

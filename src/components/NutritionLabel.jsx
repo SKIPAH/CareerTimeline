@@ -2,28 +2,20 @@ import axios from "axios";
 import React from "react";
 import { useEffect, useState } from "react";
 
-interface PersonalBestLifts {
-  squat: number;
-  bench: number;
-  deadlift: number;
-}
+export default function NutritionLabel() {
+  const kilogramToLbs = 2.20462;
 
-const NutritionLabel: React.FC = () => {
-  const kilogramToLbs: number = 2.20462;
-
-  const [personalBestLifts, setPersonalBestLifts] = useState<PersonalBestLifts>(
-    {
-      squat: 140,
-      bench: 110,
-      deadlift: 200,
-    }
-  );
+  const [personalBestLifts, setPersonalBestLifts] = useState({
+    squat: 140,
+    bench: 110,
+    deadlift: 200,
+  });
 
   useEffect(() => {
     axios
-      .get<PersonalBestLifts>("http://localhost:3001/api/lifts")
+      .get("http://localhost:3001/api/lifts")
       .then((response) => setPersonalBestLifts(response.data))
-      .catch((error: Error) => console.error("Error fetching lifts", error));
+      .catch((error) => console.error("Error fetching lifts", error));
   }, []);
 
   return (
@@ -115,6 +107,4 @@ const NutritionLabel: React.FC = () => {
       <p className="note">* Not actual values.</p>
     </div>
   );
-};
-
-export default NutritionLabel;
+}

@@ -1,59 +1,9 @@
-type LanguageCode = 'en' | 'fi';
-
-interface TranslationStrings {
-  'navbar-home': string;
-  'navbar-work': string;
-  'navbar-esports': string;
-  'navbar-dev': string;
-  'navbar-games': string;
-  'navbar-fitness': string;
-  'navbar-test': string;
-  'homepage-title': string;
-  'homepage-introduction-text-short': string;
-  'homepage-introduction-text-tech': string;
-  'homepage-introduction-text-2': string;
-  'timeline-title-text': string;
-  'dev-title': string;
-  'dev-linkedin': string;
-  'dev-linkedin-2': string;
-  'dev-github-3': string;
-  'dev-cv': string;
-  'dev-cv-2': string;
-  'dev-webgl': string;
-  'dev-webgl-note': string;
-  'fitness-title': string;
-  'dev-thesis': string;
-  'dev-itch': string;
-  'dev-download': string;
-  'aboutMe': string;
-  'aboutMe-text': string;
-  'followMe': string;
-  'contactMe': string;
-  'esports-title-text': string;
-  'esports-text': string;
-  'esports-text-2': string;
-  'esports-text-3': string;
-  'esports-text-4': string;
-  'esports-text-5': string;
-  'esports-text-6': string;
-  'esports-text-7': string;
-  'esports-text-8': string;
-  'esports-text-movie-1': string;
-  'esports-text-movie-2': string;
-  'fitness-text': string;
-  'fitness-text-2': string;
-  'back-to-top-text': string;
-  'unity-start-loading-button': string;
-}
-interface TranslationsType {
-    en: TranslationStrings;
-    fi: TranslationStrings;
-  }
-
-  let language: LanguageCode = "en";
 
 
-const Translations: TranslationsType = {
+  let language = "en";
+
+
+const Translations = {
   en: {
     "navbar-home": "HOME",
     "navbar-work": "WORK AND EDUCATION",
@@ -97,7 +47,8 @@ const Translations: TranslationsType = {
     "fitness-text": "I have been quite active my whole life in different sports. Currently I'm not competing in any, but active in gym and interested in all kinds of strength related activities like powerlifting, calisthenics and being athletic in general.",
     "fitness-text-2": "I started doing track and field when I was 5-years old and wrestling when I was 7. I built my foundation basically by training and competing in those sports for over 10+ years. During high school I slowly lost interest in competing, as I didn't find myself improving or getting to a level where I wanted. At the same time my interest towards esports grew rapidly and you can find my journey in that area in the esports section of my website. During the pandemic I noticed myself getting in awful shape both physically and mentally, but luckily noticed this and reacted accordingly. I started exercising regularly and found great joy from it.",
     "back-to-top-text": "Back to top",
-    "unity-start-loading-button": "Show Unity project",
+    "unity-start-loading-button": "SHOW COOL UNITY PROJECT!",
+    "game-dev-description": "Personal Unity game project where I created small minigames and sprites with Unity Muse AI tool.",
   },
   fi: {
     "navbar-home": "ETUSIVU",
@@ -142,22 +93,20 @@ const Translations: TranslationsType = {
     "fitness-text": "Olen ollut aktiivinen monessa eri urheilulajissa nuorempana, mutta nykyisin en kilpaile vaan keskityn olemaan urheilullinen ja aktiivinen. Harjoittelen aktiivisesti kuntosalilla ja seuraan paljon eri voimaurheilulajeja, kuten voimannostoa ja voimamieskilpailuja.",
     "fitness-text-2": "Aloitin harjoittelemaan ja kilpailemaan yleisurheilussa 5-vuotiaana ja sen jälkeen myös painissa 7-vuotiaana. Kilpailin näissä lajeilla yli 10 vuotta ja sain luotua itselleni hyvän pohjan kunnolleni. Kiinnostukseni kuitenkin kilpailla yleisurheilussa ja painissa katosi lukiossa, koska en saanut toivomaani kehitystä ja tuloksia, sekä pieni loukkaantuminen keihäänheitossa esti harjoittelemisen. Samaan aikaan kiinnostukseni kasvoi e-urheiluun, josta enemmän tietoa e-urheilu kategoriassa ylhäällä. Koronapandemian aikana huomasin kuntoni olevan huonossa kunnossa, jolloin aloitin jälleen aktiivisesti liikkumaan ja olen pitänyt treenirutiinit yllä.",
     "back-to-top-text": "Takaisin ylös",
-    "unity-start-loading-button": "Näytä Unity projekti",
+    "unity-start-loading-button": "KOKEILE SIISTIÄ UNITY PROJEKTIA!",
+    "game-dev-description": "Oma Unity peli projekti, jossa tein pieniä minipelejä ja spritet Unity Muse AI työkalulla.",
   },
 };
 
 
-export const getTranslation = (
-    key: keyof TranslationStrings, 
-    currentLanguage: LanguageCode = language
-  ): string => {
-    return Translations[currentLanguage][key];
-  };
-  
-  export const getCurrentLanguage = (): LanguageCode => language;
-  
-  export const setLanguage = (newLanguage: LanguageCode): void => {
-    language = newLanguage;
-  };
-  
-  export default Translations;
+export const getTranslation = (key, currentLanguage = language) => {
+  return Translations[currentLanguage][key];
+};
+
+export const getCurrentLanguage = () => language;
+
+export const setLanguage = (newLanguage) => {
+  language = newLanguage;
+};
+
+export default Translations;

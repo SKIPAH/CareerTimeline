@@ -1,10 +1,13 @@
+/*
+
 import React from "react";
-import Signup from "../components/authentication/Signup";
+import Signup from "./Signup";
 import { Container } from "react-bootstrap";
+import { AuthProvider } from "../contexts/AuthContext";
 
 function LoginPage() {
   return (
-    <>
+    <AuthProvider>
       <Container
         className="d-flex align-items-center justify-content-center"
         style={{ minHeight: "100vh" }}
@@ -13,8 +16,9 @@ function LoginPage() {
           <Signup />
         </div>
       </Container>
-    </>
+    </AuthProvider>
   );
 }
 
 export default LoginPage;
+*/

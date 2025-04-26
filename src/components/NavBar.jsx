@@ -7,7 +7,7 @@ import Translations, {
   getTranslation,
   getCurrentLanguage,
   setLanguage,
-} from "./Translations2";
+} from "./Translations";
 import { Button } from "react-bootstrap";
 import linkedin from "../files/images/linkedin.webp";
 import github from "../files/images/github.webp";
@@ -140,10 +140,7 @@ export default function NavBar() {
             </div>
           </Navbar.Collapse>
         </Container>
-        <Button
-          id="languageToggleBtn"
-          onClick={handleLanguageToggle}
-        >
+        <Button id="languageToggleBtn" onClick={handleLanguageToggle}>
           {currentLanguage === "en" ? "SUOMEKSI" : "ENGLISH"}
         </Button>
       </Navbar>

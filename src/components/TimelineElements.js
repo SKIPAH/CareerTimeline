@@ -4,26 +4,7 @@ import hreds from "../files/images/hreds.webp";
 import nyyrikki from "../files/images/nyyrikki.webp";
 
 
-
-interface TimelineElement {
-    id: number;
-    title: string;
-    location: string;
-    description: string;
-    date: string;
-    icon: string;
-    buttonText?: string;
-    buttonLink?: string;
-    buttonText2?: string;
-    buttonLink2?: string;
-  }
-  
-  interface TimelineElementsType {
-    en: TimelineElement[];
-    fi: TimelineElement[];
-  }
-  
-  const TimelineElements: TimelineElementsType = {
+  const TimelineElements = {
     en: [
         {
           id: 1,

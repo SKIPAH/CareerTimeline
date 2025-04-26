@@ -1,11 +1,7 @@
 import { InstagramEmbed } from "react-social-media-embed";
 import React from "react";
 
-type Props = {
-  embedURL: string;
-};
-
-const InstagramEmbedVideo = ({ embedURL }: Props) => {
+const InstagramEmbedVideo = ({ embedURL }) => {
   return (
     <InstagramEmbed
       url={`https://www.instagram.com/p/${embedURL}/`}

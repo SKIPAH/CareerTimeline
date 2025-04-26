@@ -5,16 +5,12 @@ import skipahuusi from "../files/images/nyyrikkipictures/skipahuusi.jpg";
 import nyyrikkiskipah2 from "../files/images/nyyrikkipictures/nyyrikkiskipah2.png";
 import hreds from "../files/images/nyyrikkipictures/hreds.webp";
 import skipah3 from "../files/images/nyyrikkipictures/skipah3.webp";
-import { useLanguage } from "../hooks/useLanguage2";
-import { getTranslation } from "../components/Translations2";
+import { useLanguage } from "../hooks/useLanguage";
+import { getTranslation } from "../components/Translations";
 import { Button } from "react-bootstrap";
 import { useScrollAnimation } from "../components/ScrollAnimation";
 import React from "react";
 
-interface EsportsProps {
-  embedId: string;
-  className?: string;
-}
 
 export default function EsportsPage() {
   const currentLanguage = useLanguage();
@@ -39,16 +35,18 @@ export default function EsportsPage() {
               alt="Lantrek BYOC picture. First lan event"
               loading="lazy"
             ></img>
-            <p className="esports-text-first">
-              {getTranslation("esports-text", currentLanguage)}
-              <a
-                className="esports-link"
-                href="https://liquipedia.net/overwatch/SKIPAH"
-              >
-                Liquidpedia
-              </a>{" "}
-              {getTranslation("esports-text-2", currentLanguage)}
-            </p>
+            <div className="centered-text">
+              <p className="esports-text-first">
+                {getTranslation("esports-text", currentLanguage)}
+                <a
+                  className="esports-link"
+                  href="https://liquipedia.net/overwatch/SKIPAH"
+                >
+                  Liquidpedia
+                </a>{" "}
+                {getTranslation("esports-text-2", currentLanguage)}
+              </p>
+            </div>
           </div>
           <div className="esports-introduction">
             <p className="esports-text">

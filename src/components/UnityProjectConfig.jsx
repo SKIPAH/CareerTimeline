@@ -1,13 +1,4 @@
-export interface UnityProjectConfig {
-  id: string;
-  loaderUrl: string;
-  dataUrl: string;
-  frameworkUrl: string;
-  codeUrl: string;
-  route: string;
-}
-
-export const unityProjects: UnityProjectConfig[] = [
+export const unityProjects = [
   {
     id: "project1",
     loaderUrl: "/WEBGLBUILDFORWEBSITE.loader.js",

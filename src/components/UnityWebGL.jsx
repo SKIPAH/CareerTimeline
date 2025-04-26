@@ -1,19 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Unity, useUnityContext } from "react-unity-webgl";
 import { useLocation } from "react-router-dom";
-import { getTranslation } from "./Translations2";
-import { useLanguage } from "../hooks/useLanguage2";
+import { getTranslation } from "./Translations";
+import { useLanguage } from "../hooks/useLanguage";
 import { Button } from "react-bootstrap";
-import {UnityProjectConfig} from "./UnityProjectConfig";
+import { unityProjects } from "./UnityProjectConfig";
 
-
-interface UnityWebGLProps {
-  config: UnityProjectConfig
-  className?: string;
-}
-
-
-export default function UnityWebGL({config}: UnityWebGLProps) {
+export default function UnityWebGL({ config }) {
   const [isMobile, setIsMobile] = useState(true);
   const [startLoading, setStartLoading] = useState(false);
   const location = useLocation();
