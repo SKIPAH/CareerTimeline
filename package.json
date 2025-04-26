@@ -23,7 +23,7 @@
     "react-bootstrap": "^2.10.9",
     "react-dom": "^18.3.1",
     "react-pdf": "^9.2.1",
-    "react-router-dom": "^7.3.0",
+    "react-router-dom": "^7.5.2",
     "react-social-media-embed": "^2.5.18",
     "react-tweet": "^3.2.2",
     "react-unity-webgl": "^9.8.0",
