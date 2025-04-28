@@ -17,17 +17,24 @@ import WebsiteVideo from "../files/videos/websitevideo.mp4";
 import { useScrollAnimation } from "../components/ScrollAnimation";
 import Timeline from "../components/Timeline";
 import { Button } from "react-bootstrap";
+import ContactMe from "../components/ContactMe";
 
 export default function Home() {
   const currentLanguage = useLanguage();
   useScrollAnimation();
+  const toTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
+  const toBottom = () =>
+    window.scrollTo({
+      top: document.documentElement.scrollHeight,
+      behavior: "smooth",
+    });
   return (
     <>
-      <section className="homepage-introduction">
-        <div className="video-section">
+      <section className="section-home">
+        <div className="video-container">
           <BackgroundVideo src={WebsiteVideo} />
         </div>
-        <div className="intro">
+        <div className="hero-container">
           <img
             className="hidden"
             id="profilepic"
@@ -42,7 +49,7 @@ export default function Home() {
         </div>
         <div className="container">
           <div className="flex-container">
-            <p className="introduction-text-short">
+            <p className="center">
               {getTranslation(
                 "homepage-introduction-text-short",
                 currentLanguage
@@ -51,8 +58,7 @@ export default function Home() {
           </div>
         </div>
         <div className="container">
-          {/* <Button className="CTA-button">Contact me!</Button>*/}
-          <p className="introduction-text-tech">
+          <p className="center">
             {getTranslation("homepage-introduction-text-tech", currentLanguage)}
           </p>
           <div className="tech-used-container hidden-icons">
@@ -67,12 +73,25 @@ export default function Home() {
             <img id="unity.logo" src={unitylogo}></img>
             <img id="github-logo" src={githublogo}></img>
           </div>
-          <p className="introduction-text">
+          <p className="center">
             {getTranslation("homepage-introduction-text-2", currentLanguage)}
           </p>
+
+          <div className="CTA-wrapper">
+            <p className="white">Do you need a website?</p>
+            <p className="white">I can create you one!</p>
+            <Button className="CTA-button" onClick={toBottom}>
+              Contact me!
+            </Button>
+          </div>
         </div>
       </section>
       <Timeline></Timeline>
+      <ContactMe></ContactMe>
+
+      <Button id="to-top-button-timeline" onClick={toTop}>
+        {getTranslation("back-to-top-text", currentLanguage)}
+      </Button>
     </>
   );
 }

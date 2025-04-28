@@ -48,7 +48,7 @@ export default function DevPage() {
             </p>
           </div>
 
-          <p>
+          <p className="center">
             <a
               href="https://www.theseus.fi/handle/10024/856201"
               target="_blank"
@@ -65,8 +65,12 @@ export default function DevPage() {
           </p>
         </div>
         <div className="container">
-          <p>{getTranslation("dev-webgl", currentLanguage)}</p>
-          <p>{getTranslation("dev-webgl-note", currentLanguage)}</p>
+          <p className="center">
+            {getTranslation("dev-webgl", currentLanguage)}
+          </p>
+          <p className="center">
+            {getTranslation("dev-webgl-note", currentLanguage)}
+          </p>
           <UnityWebGL
             config={unityProjects[0]}
             className="unity-webgl"

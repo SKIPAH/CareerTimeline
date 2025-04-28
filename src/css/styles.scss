@@ -8,6 +8,29 @@
   --black-color: #1f1f1f;
   --border-color: #ffffff;
 }
+
+#root {
+  background-color: var(--primary-color1);
+}
+p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5rem;
+  text-align: left;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+a {
+  text-decoration: none;
+  color: var(--black-color);
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5rem;
+  text-align: left;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.center {
+  text-align: center;
+}
 .hide {
   display: none;
   visibility: hidden;
@@ -41,7 +64,7 @@
 }
 
 .title-text {
-  font-size: 8em;
+  font-size: 4rem;
   font-family: "Bebas Neue", sans-serif;
   text-align: center;
 }
@@ -64,7 +87,7 @@
   }
 
   .navbar-logos {
-    width: 2em;
+    width: 1.5em;
     margin-left: 0.5em;
     margin-right: 0.5em;
     cursor: pointer;
@@ -122,24 +145,57 @@
   }
 }
 
-.homepage-introduction {
+#to-top-button-timeline {
+  color: black;
+  margin-top: 5em;
   background-color: var(--primary-color1);
+  border-color: black;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#to-top-button-timeline:hover {
+  background-color: #ffd22b;
+  width: 150px;
+}
+
+.contact-me-container {
+  background-color: #ffffff;
+  margin-top: 5rem;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  border: #000000 2px solid;
+}
+
+.contact-me-wrapper {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  font-size: 1.5em;
+}
+
+.section-home {
+  background-color: var(--primary-color1);
+
   .flex-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     text-align: left;
   }
-  .video-section {
-    background-color: var(--primary-color1);
+  .video-container {
     position: relative;
     height: 100vh;
     width: 100%;
   }
-  .background-video-container {
-    width: 100%;
-    object-fit: cover;
-  }
+
   .background-video {
     height: auto;
     width: 100%;
@@ -147,17 +203,12 @@
     clear: none;
     padding-bottom: 4em;
   }
-  .intro {
+  .hero-container {
     position: absolute;
     top: 50%;
     display: grid;
     padding-right: 2em;
     grid-template-columns: 3fr 5fr;
-
-    .introduction-text {
-      word-wrap: break-word;
-      font-size: 4em;
-    }
 
     #profilepic {
       width: 29%;
@@ -170,7 +221,7 @@
     .title-text {
       color: white;
       font-size: 5em;
-      background-color: rgba(0, 0, 0, 0.5);
+      background-color: rgba(0, 0, 0, 0.8);
       padding: 0.1em;
       text-align: center;
       outline: 2px solid white;
@@ -179,7 +230,7 @@
   }
   .container {
     background-color: var(--primary-color1);
-    max-width: 100%;
+    max-width: 80vw;
 
     .CTA-button {
       background-color: var(--primary-yellow);
@@ -192,36 +243,24 @@
 
       margin-bottom: 1em;
     }
-  }
-  .introduction-text-short {
-    font-family: "Josefin Sans", sans-serif;
-    text-align: center;
-    word-wrap: break-word;
-    font-size: 2rem;
-    margin: 0;
-    padding: 4em;
-    padding-top: 0em;
-    padding-bottom: 2.2em;
-    border-radius: 2em;
+    .CTA-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: var(--black-color);
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 1em;
+      border-radius: 2em;
+      box-shadow: #000000 0px 0px 10px;
+      margin-bottom: 2rem;
+    }
   }
 
-  .introduction-text {
-    margin: 0;
-    padding: 4em;
-    padding-top: 0em;
-    padding-bottom: 2.2em;
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 2rem;
-    text-align: center;
-  }
-  .introduction-text-tech {
-    margin: 0;
-    padding: 4em;
-    padding-top: 0em;
-    padding-bottom: 1.2em;
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 2em;
-    text-align: center;
+  .white {
+    color: white;
   }
 
   .tech-used-container {
@@ -240,16 +279,11 @@
 .fitness-section {
   background-color: var(--primary-color1);
   .container-fitness {
-    background-color: var(--primary-color1);
     max-width: 80vw;
     margin-left: auto;
     margin-right: auto;
   }
-  .fitness-text {
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 1.5em;
-    text-align: center;
-  }
+
   .fitness-embed {
     width: 15%;
     height: 500px;
@@ -289,9 +323,11 @@
       }
 
       p {
+        font-family: "Helvetica Neue", sans-serif;
         margin: 0;
         display: flex;
         justify-content: space-between;
+        font-size: 1rem;
       }
 
       .divider {
@@ -369,7 +405,7 @@
 
 .esports-section {
   background-color: var(--primary-color1);
-  max-width: 100%;
+
   display: flex;
   flex-direction: column;
   min-height: 40vh;
@@ -393,11 +429,6 @@
     border-radius: 20px;
   }
 
-  .title-text {
-    padding-top: 2em;
-    padding-bottom: 0.5em;
-    font-size: 6em;
-  }
   .container {
     background-color: var(--primary-color1);
     max-width: 80vw;
@@ -471,12 +502,6 @@
       gap: 4rem;
       font-size: 1.5em;
     }
-  }
-
-  p {
-    font-family: "Josefin Sans", sans-serif;
-    text-align: center;
-    font-size: 1.5em;
   }
 
   a {
@@ -619,10 +644,18 @@ footer {
   background-color: #333;
   color: #fff;
   left: 0;
+
+  .footer-text {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1rem;
+    text-align: left;
+    padding-bottom: 1em;
+  }
 }
 .navbar-home-logo-footer {
   max-height: 72px;
   max-width: 250px;
+  margin-left: 3rem;
 }
 
 .video-responsive {
@@ -655,23 +688,9 @@ footer {
   font-size: 16px;
   color: rgb(53, 53, 53);
   width: 100%;
-
-  #to-top-button-timeline {
-    color: black;
-    margin-top: 5em;
-    background-color: var(--primary-color1);
-    border-color: black;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  #to-top-button-timeline:hover {
-    background-color: #ffd22b;
-    width: 150px;
-  }
 }
 .timeline-title {
-  font-size: 8em;
+  font-size: 4rem;
   text-align: center;
   font-family: "Bebas Neue", sans-serif;
 }
@@ -1083,7 +1102,6 @@ footer {
       }
     }
   }
-
   .dbz-section {
     .title-text {
       font-size: 2rem;

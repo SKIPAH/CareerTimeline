@@ -15,7 +15,7 @@ export default function Timeline() {
   const currentLanguage = useLanguage();
   useScrollAnimation();
 
-  const toTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
+
 
   return (
     <div className="timeline-div">
@@ -81,9 +81,7 @@ export default function Timeline() {
           );
         })}
       </VerticalTimeline>
-      <Button id="to-top-button-timeline" onClick={toTop}>
-        {getTranslation("back-to-top-text", currentLanguage)}
-      </Button>
+     
     </div>
   );
 }

@@ -18,34 +18,40 @@ export default function Footer() {
         </div>
         <Row>
           <Col md={4}>
-            <h5>{getTranslation("aboutMe", currentLanguage)}</h5>
-            <p>{getTranslation("aboutMe-text", currentLanguage)}</p>
+            <p className="footer-text">
+              {getTranslation("aboutMe-text", currentLanguage)}
+            </p>
           </Col>
           <Col md={4}>
-            <h5>{getTranslation("followMe", currentLanguage)}</h5>
-            <ul className="list-unstyled">
+            <ul className="list-unstyled footer-text">
               <li>
-                <a href="https://x.com/SKIPAHH" className="text-white">
+                <a
+                  href="https://x.com/SKIPAHH"
+                  className="footer-text text-white"
+                >
                   Twitter/X
                 </a>
               </li>
               <li>
                 <a
                   href="https://www.youtube.com/@SKIPAH"
-                  className="text-white"
+                  className="footer-text text-white"
                 >
                   Youtube
                 </a>
               </li>
               <li>
-                <a href="https://www.twitch.tv/skipah" className="text-white">
+                <a
+                  href="https://www.twitch.tv/skipah"
+                  className="footer-text text-white"
+                >
                   Twitch
                 </a>
               </li>
               <li>
                 <a
                   href="https://www.instagram.com/skipaah/"
-                  className="text-white"
+                  className="footer-text text-white"
                 >
                   Instagram
                 </a>
@@ -53,23 +59,25 @@ export default function Footer() {
               <li>
                 <a
                   href="https://www.linkedin.com/in/jussi-mehtala/"
-                  className="text-white"
+                  className="footer-text text-white"
                 >
                   Linkedin
                 </a>
               </li>
               <li>
-                <a href="https://github.com/SKIPAH" className="text-white">
+                <a
+                  href="https://github.com/SKIPAH"
+                  className="footer-text text-white"
+                >
                   GitHub
                 </a>
               </li>
             </ul>
           </Col>
           <Col md={4}>
-            <h5>{getTranslation("contactMe", currentLanguage)}</h5>
-            <address>
+            <address className="footer-text">
               Email:{" "}
-              <a href="mailto:jussi.mehtala96@gmail.com" className="text-white">
+              <a href="mailto:jussi.mehtala96@gmail.com" className="footer-text text-white">
                 jussi.mehtala96@gmail.com
               </a>
               <br />
