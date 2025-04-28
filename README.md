@@ -1,7 +1,6 @@
 <h2>Personal website project made with HTML/SCSS/Javascript/React. Plan is to show hobbies, achievements, social media material, development skills etc. </h2>
 <h2>Planning to add other projects like games to the site. Project made with Unity and C# during thesis already added.</h2>
 
-<h2>Update: Converting the project to TypeScript currently.</h2>
 
 <h2><a href="https://jussimehtala.com/">LINK TO WEBSITE</a></h2>
 
