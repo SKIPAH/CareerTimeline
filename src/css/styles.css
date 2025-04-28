@@ -816,6 +816,9 @@ footer .footer-text {
   }
 }
 @media (min-width: 769px) and (max-width: 1080px) {
+  .CTA-wrapper {
+    width: 500px;
+  }
   .navbar #languageToggleBtn {
     font-size: 0.7em;
   }
@@ -823,16 +826,16 @@ footer .footer-text {
     width: 1.5em;
     margin: 0em;
   }
-  .homepage-introduction .video-section {
+  .section-home .video-container {
     height: auto;
   }
-  .homepage-introduction .intro {
+  .section-home .hero-container {
     top: 450px;
   }
-  .homepage-introduction .intro .title-text {
+  .section-home .hero-container .title-text {
     font-size: 4em;
   }
-  .homepage-introduction .intro #profilepic {
+  .section-home .hero-container #profilepic {
     margin-top: 0em;
   }
 }
@@ -843,30 +846,30 @@ footer .footer-text {
   .navbar #languageToggleBtnNavbar {
     display: none;
   }
-  .homepage-introduction .video-section {
+  .section-home .video-container {
     position: relative;
     height: 5vh;
     width: 100%;
   }
-  .homepage-introduction .background-video-container {
+  .section-home .background-video-container {
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .homepage-introduction .background-video {
+  .section-home .background-video {
     height: auto;
     width: 100%;
     float: left;
     clear: none;
     padding-bottom: 4em;
   }
-  .homepage-introduction .intro {
+  .section-home .hero-container {
     position: absolute;
     top: 20%;
     display: grid;
     grid-template-columns: 5fr 5fr;
   }
-  .homepage-introduction .intro #profilepic {
+  .section-home .hero-container #profilepic {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -875,33 +878,36 @@ footer .footer-text {
     width: 35%;
     top: 0%;
   }
-  .homepage-introduction .intro .title-text {
+  .section-home .hero-container .title-text {
     font-size: 1.5em;
     text-align: center;
     padding: 0.5em;
   }
-  .homepage-introduction .container .introduction-text-short {
+  .section-home .container .CTA-wrapper {
+    width: 100%;
+  }
+  .section-home .container .introduction-text-short {
     line-height: 1.2;
     padding: 10px;
     width: 100%;
     text-align: center;
     font-size: 1rem;
   }
-  .homepage-introduction .container .introduction-text {
+  .section-home .container .introduction-text {
     line-height: 1.2;
     padding: 10px;
     width: 100%;
     text-align: center;
     font-size: 1rem;
   }
-  .homepage-introduction .container .introduction-text-tech {
+  .section-home .container .introduction-text-tech {
     line-height: 1.2;
     padding: 10px;
     width: 100%;
     text-align: center;
     font-size: 1rem;
   }
-  .homepage-introduction .container .tech-used-container img {
+  .section-home .container .tech-used-container img {
     width: 15%;
   }
   .navbar #languageToggleBtn {
@@ -1005,6 +1011,15 @@ footer .footer-text {
   .fitness-section .embeds .tweet-embed {
     padding-left: 30px;
     padding-right: 30px;
+  }
+  .contact-me-wrapper {
+    align-items: start;
+  }
+  .contact-me-wrapper p {
+    font-size: 1rem;
+  }
+  .contact-me-wrapper a {
+    font-size: 1rem;
   }
   .dbz-section .title-text {
     font-size: 2rem;

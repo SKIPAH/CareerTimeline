@@ -878,6 +878,12 @@ footer {
 }
 
 @media (min-width: 769px) and (max-width: 1080px) {
+  
+    .CTA-wrapper {
+      width: 500px;
+    }
+  
+
   .navbar {
     #languageToggleBtn {
       font-size: 0.7em;
@@ -887,11 +893,11 @@ footer {
       margin: 0em;
     }
   }
-  .homepage-introduction {
-    .video-section {
+  .section-home {
+    .video-container {
       height: auto;
     }
-    .intro {
+    .hero-container {
       top: 450px;
       .title-text {
         font-size: 4em;
@@ -904,6 +910,8 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
+
+ 
   .navbar {
     #languageToggleBtn {
       display: none;
@@ -912,8 +920,11 @@ footer {
       display: none;
     }
   }
-  .homepage-introduction {
-    .video-section {
+  .section-home {
+
+    
+  
+    .video-container {
       position: relative;
       height: 5vh;
       width: 100%;
@@ -929,7 +940,7 @@ footer {
       clear: none;
       padding-bottom: 4em;
     }
-    .intro {
+    .hero-container {
       position: absolute;
       top: 20%;
       display: grid;
@@ -952,6 +963,12 @@ footer {
       }
     }
     .container {
+
+
+
+      .CTA-wrapper {
+        width: 100%;
+      }
       .introduction-text-short {
         line-height: 1.2;
         padding: 10px;
@@ -1100,6 +1117,18 @@ footer {
         padding-left: 30px;
         padding-right: 30px;
       }
+    }
+  }
+
+ 
+  
+  .contact-me-wrapper {
+    align-items: start;
+    p{
+      font-size: 1rem;
+    }
+    a{
+      font-size: 1rem;
     }
   }
   .dbz-section {
