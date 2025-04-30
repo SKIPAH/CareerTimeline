@@ -11,7 +11,6 @@ import { Button } from "react-bootstrap";
 import { useScrollAnimation } from "../components/ScrollAnimation";
 import React from "react";
 
-
 export default function EsportsPage() {
   const currentLanguage = useLanguage();
   const toTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
@@ -26,6 +25,7 @@ export default function EsportsPage() {
               className="image hidden"
               src={assembly}
               alt="Assembly Summer 2018 stage picture of SKIPAH"
+              loading="lazy"
             ></img>
           </h1>
           <div className="esports-introduction">

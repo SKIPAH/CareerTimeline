@@ -48,14 +48,12 @@ export default function Home() {
           </h1>
         </div>
         <div className="container">
-          <div className="flex-container">
-            <p className="center">
-              {getTranslation(
-                "homepage-introduction-text-short",
-                currentLanguage
-              )}
-            </p>
-          </div>
+          <p className="center">
+            {getTranslation(
+              "homepage-introduction-text-short",
+              currentLanguage
+            )}
+          </p>
         </div>
         <div className="container">
           <p className="center">
@@ -78,10 +76,14 @@ export default function Home() {
           </p>
 
           <div className="CTA-wrapper">
-            <p className="white">Do you need a website?</p>
-            <p className="white">I can create you one!</p>
+            <p className="white">
+              {getTranslation("contactMe-text", currentLanguage)}
+            </p>
+            <p className="white">
+              {getTranslation("contactMe-text-2", currentLanguage)}
+            </p>
             <Button className="CTA-button" onClick={toBottom}>
-              Contact me!
+              {getTranslation("contactMe-text-3", currentLanguage)}
             </Button>
           </div>
         </div>

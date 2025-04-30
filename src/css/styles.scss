@@ -12,6 +12,7 @@
 #root {
   background-color: var(--primary-color1);
 }
+
 p {
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.5rem;
@@ -67,6 +68,7 @@ a {
   font-size: 4rem;
   font-family: "Bebas Neue", sans-serif;
   text-align: center;
+  padding-top: 2rem;
 }
 
 .navbar {
@@ -93,6 +95,7 @@ a {
     cursor: pointer;
     background-color: #ffffff;
     border-radius: 10px;
+    border: 1px solid var(--primary-color1);
   }
   .navbar-logos:hover {
     background-color: var(--primary-yellow);
@@ -205,6 +208,7 @@ a {
   }
   .hero-container {
     position: absolute;
+    align-items: center;
     top: 50%;
     display: grid;
     padding-right: 2em;
@@ -878,11 +882,9 @@ footer {
 }
 
 @media (min-width: 769px) and (max-width: 1080px) {
-  
-    .CTA-wrapper {
-      width: 500px;
-    }
-  
+  .CTA-wrapper {
+    width: 500px;
+  }
 
   .navbar {
     #languageToggleBtn {
@@ -898,9 +900,9 @@ footer {
       height: auto;
     }
     .hero-container {
-      top: 450px;
+      top: 25%;
       .title-text {
-        font-size: 4em;
+        font-size: 3em;
       }
       #profilepic {
         margin-top: 0em;
@@ -910,8 +912,6 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
-
- 
   .navbar {
     #languageToggleBtn {
       display: none;
@@ -921,9 +921,6 @@ footer {
     }
   }
   .section-home {
-
-    
-  
     .video-container {
       position: relative;
       height: 5vh;
@@ -942,7 +939,9 @@ footer {
     }
     .hero-container {
       position: absolute;
-      top: 20%;
+
+      align-items: center;
+      top: 25%;
       display: grid;
       grid-template-columns: 5fr 5fr;
 
@@ -959,13 +958,9 @@ footer {
       .title-text {
         font-size: 1.5em;
         text-align: center;
-        padding: 0.5em;
       }
     }
     .container {
-
-
-
       .CTA-wrapper {
         width: 100%;
       }
@@ -1120,14 +1115,12 @@ footer {
     }
   }
 
- 
-  
   .contact-me-wrapper {
     align-items: start;
-    p{
+    p {
       font-size: 1rem;
     }
-    a{
+    a {
       font-size: 1rem;
     }
   }
