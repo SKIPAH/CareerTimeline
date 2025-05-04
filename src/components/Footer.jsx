@@ -77,7 +77,10 @@ export default function Footer() {
           <Col md={4}>
             <address className="footer-text">
               Email:{" "}
-              <a href="mailto:jussi.mehtala96@gmail.com" className="footer-text text-white">
+              <a
+                href="mailto:jussi.mehtala96@gmail.com"
+                className="footer-text text-white"
+              >
                 jussi.mehtala96@gmail.com
               </a>
               <br />
@@ -85,7 +88,7 @@ export default function Footer() {
           </Col>
           <Row className="mt-3">
             <Col md={12} className="text-center">
-              <p>&copy; Jussi Mehtälä 2025</p>
+              <p>&copy; Jussi "SKIPAH" Mehtälä 2025</p>
             </Col>
           </Row>
         </Row>

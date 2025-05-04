@@ -34,7 +34,7 @@ const Translations = {
     "dev-download": "Download",
     aboutMe: "About me",
     "aboutMe-text":
-      "My name is Jussi Mehtälä, I am 28 years old and I'm from Oulu, Finland. I am focusing on starting a career in IT industry. I like strength related activities, esports and DragonBall Z.",
+      "My name is Jussi Mehtälä also known as SKIPAH, I am 28 years old and I'm from Oulu, Finland. I am focusing on starting a career in IT industry. I like strength related activities, esports and DragonBall Z.",
     followMe: "Social media",
     contactMe: "Contact me",
     "esports-title-text": "My journey as a esports athlete!",
@@ -99,7 +99,7 @@ const Translations = {
     "dev-download": "Lataa",
     aboutMe: "Tietoa minusta",
     "aboutMe-text":
-      "Olen Jussi Mehtälä, 28-vuotias Oululainen mies ja minulla on tavoittena aloittaa ja luoda ura IT-alalla. Tykkään yleisesti urheilusta, voimailusta, kilpapelaamisesta sekä DragonBall Z:sta.",
+      "Olen Jussi Mehtälä, myös tunnettu nimellä SKIPAH. Tavoitteenani on aloittaa ja luoda ura IT-alalla. Tykkään yleisesti urheilusta, voimailusta, kilpapelaamisesta sekä DragonBall Z:sta.",
     followMe: "Sosiaalinen media",
     contactMe: "Ota yhteyttä",
     "esports-title-text": "Urani e-urheilijana!",
