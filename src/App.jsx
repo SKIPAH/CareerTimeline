@@ -7,6 +7,7 @@ import TestPage from "./Pages/TestPage";
 import Home from "./Pages/Home";
 import TestPage2 from "./Pages/TestPage2";
 import GameDevPage from "./Pages/GameDevPage";
+import SignUpPage from "./components/authentication/SignUpPage";
 
 import React from "react";
 
@@ -23,6 +24,7 @@ export default function App() {
         <Route path="/programming" element={<ProgrammingPage />}></Route>
         <Route path="/gamedevelopment" element={<GameDevPage />}></Route>
         <Route path="/fitness" element={<FitnessPage />}></Route>
+        <Route path="/signup" element={<SignUpPage />}></Route>
         <Route path="/test" element={<TestPage />}></Route>
         <Route path="/test2" element={<TestPage2 />}></Route>
       </Routes>
