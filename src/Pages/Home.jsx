@@ -85,7 +85,7 @@ export default function Home() {
             </Button>
           </div>
           <div className="padding center">
-            <h2 className="title-text center">
+            <h2 className="title-text">
               {getTranslation("past-websites", currentLanguage)}
             </h2>
             <a href="https://www.oulun-parturi.fi">

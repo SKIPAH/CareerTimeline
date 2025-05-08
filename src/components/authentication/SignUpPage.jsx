@@ -1,7 +1,12 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 import { useState } from "react";
-import { createUserWithEmailAndPassword } from "firebase/auth";
+import {
+  createUserWithEmailAndPassword,
+  onAuthStateChanged,
+  signOut,
+  signInWithEmailAndPassword,
+} from "firebase/auth";
 import { auth } from "./firebase-config";
 
 function SignUpPage() {
@@ -9,6 +14,13 @@ function SignUpPage() {
   const [registerPassword, setRegisterPassword] = useState("");
   const [loginEmail, setLoginEmail] = useState("");
   const [loginPassword, setLoginPassword] = useState("");
+
+  const [user, setUser] = useState({});
+
+  onAuthStateChanged(auth, (currentUser) => {
+    setUser(currentUser);
+    console.log(currentUser);
+  });
 
   const register = async () => {
     try {
@@ -23,9 +35,23 @@ function SignUpPage() {
     }
   };
 
-  const login = async () => {};
+  const login = async () => {
+    try {
+      const user = await signInWithEmailAndPassword(
+        auth,
+        loginEmail,
+        loginPassword
+      );
+      console.log(user);
+    } catch (error) {
+      console.log(error.message + "Error during registration");
+    }
+  };
 
-  const logout = async () => {};
+  const logout = async () => {
+    await signOut(auth);
+    console.log("User logged out");
+  };
 
   return (
     <div>
@@ -67,12 +93,12 @@ function SignUpPage() {
             setLoginPassword(event.target.value);
           }}
         />
-        <Button>Login</Button>
+        <Button onClick={login}>Login</Button>
       </div>
       <div>
         <h3>User Logged in:</h3>
-        {/*{auth.currentUser.email}*/}
-        <Button>Logout</Button>
+        {user?.email}
+        <Button onClick={logout}>Logout</Button>
       </div>
     </div>
   );
