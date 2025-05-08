@@ -34,6 +34,11 @@ a {
   text-align: center;
 }
 
+.padding {
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
 .hide {
   display: none;
   visibility: hidden;
@@ -70,7 +75,8 @@ a {
   font-size: 4rem;
   font-family: "Bebas Neue", sans-serif;
   text-align: center;
-  padding-top: 2rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .navbar {
@@ -249,10 +255,18 @@ a {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 4em;
+  margin-bottom: 4em;
   padding: 1em;
   border-radius: 2em;
   box-shadow: #000000 0px 0px 10px;
   margin-bottom: 2rem;
+}
+.section-home .container #oulunparturilogo {
+  transition: transform 0.3s ease;
+}
+.section-home .container #oulunparturilogo:hover {
+  transform: scale(1.15);
 }
 .section-home .white {
   color: white;

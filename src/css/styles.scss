@@ -20,6 +20,7 @@ p {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
+
 a {
   text-decoration: none;
   color: var(--black-color);
@@ -31,6 +32,11 @@ a {
 }
 .center {
   text-align: center;
+}
+
+.padding {
+  padding-top: 5em;
+  padding-bottom: 5em;
 }
 .hide {
   display: none;
@@ -68,7 +74,8 @@ a {
   font-size: 4rem;
   font-family: "Bebas Neue", sans-serif;
   text-align: center;
-  padding-top: 2rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .navbar {
@@ -256,10 +263,20 @@ a {
       width: 50%;
       margin-left: auto;
       margin-right: auto;
+      margin-top: 4em;
+      margin-bottom: 4em;
       padding: 1em;
       border-radius: 2em;
       box-shadow: #000000 0px 0px 10px;
       margin-bottom: 2rem;
+    }
+
+    #oulunparturilogo {
+      transition: transform 0.3s ease; // Optional: adds smooth hover effect
+
+      &:hover {
+        transform: scale(1.15); // Optional: adds hover effect
+      }
     }
   }
 

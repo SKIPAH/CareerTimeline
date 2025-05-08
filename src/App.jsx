@@ -8,6 +8,7 @@ import Home from "./Pages/Home";
 import TestPage2 from "./Pages/TestPage2";
 import GameDevPage from "./Pages/GameDevPage";
 import SignUpPage from "./components/authentication/SignUpPage";
+import NotFound from "./Pages/NotFound";
 
 import React from "react";
 
@@ -27,6 +28,7 @@ export default function App() {
         <Route path="/signup" element={<SignUpPage />}></Route>
         <Route path="/test" element={<TestPage />}></Route>
         <Route path="/test2" element={<TestPage2 />}></Route>
+        <Route path="*" element={<NotFound />}></Route>
       </Routes>
       <Footer></Footer>
     </>

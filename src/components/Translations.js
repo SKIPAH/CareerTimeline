@@ -63,9 +63,9 @@ const Translations = {
     "unity-start-loading-button": "SHOW COOL UNITY PROJECT!",
     "game-dev-description":
       "Personal Unity game project where I created small minigames and sprites with Unity Muse AI tool.",
-    "contactMe-text": "Do you need a website?",
-    "contactMe-text-2": "I can create you one!",
+    "contactMe-text": "Do you need a website? I can create you one!",
     "contactMe-text-3": "Contact me",
+    "past-websites": "Websites that I have worked on",
   },
   fi: {
     "navbar-home": "ETUSIVU",
@@ -128,9 +128,10 @@ const Translations = {
     "unity-start-loading-button": "KOKEILE SIISTIÄ UNITY PROJEKTIA!",
     "game-dev-description":
       "Oma Unity peli projekti, jossa tein pieniä minipelejä ja spritet Unity Muse AI työkalulla.",
-    "contactMe-text": "Tarvitsetko nettisivut?",
-    "contactMe-text-2": "Minä voin tehdä sinulle sellaiset!",
+    "contactMe-text":
+      "Tarvitsetko nettisivut? Minä voin tehdä sinulle sellaiset!",
     "contactMe-text-3": "Ota yhteyttä",
+    "past-websites": "Sivustot, jotka olen totetuttanut",
   },
 };
 
