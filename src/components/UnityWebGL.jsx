@@ -69,7 +69,7 @@ export default function UnityWebGL({ config }) {
                 <h1>Loading... {Math.round(loadingProgression * 100)}%</h1>
               </div>
             )}
-            ,
+
             <Unity unityProvider={unityProvider} className="unity-webgl" />
           </div>
         )}

@@ -551,16 +551,9 @@ a {
   }
 
   .unity-webgl {
-    max-width: 1920px;
-    max-height: 1080px;
     width: 100%;
-    transform: scale(0.8); // Adjust this value to change size
-    transform-origin: top center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    border: 5px solid #fff;
+    height: 100%;
+    transform: scale(1); /* no need to scale manually */
   }
   .unity-start-loading-button {
     color: black;
@@ -587,8 +580,6 @@ a {
     width: 200px;
   }
   .unity-content {
-    position: relative;
-    // Add padding to compensate for scaled content
     padding-bottom: calc(20vh); // Adjust this value based on your scale
   }
 
