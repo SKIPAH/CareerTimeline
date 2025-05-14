@@ -10,6 +10,8 @@ import GameDevPage from "./Pages/GameDevPage";
 import SignUpPage from "./components/authentication/SignUpPage";
 import NotFound from "./Pages/NotFound";
 
+import ProtectedRoute from "./components/ProtectedRoute";
+
 import React from "react";
 
 import "/src/css/styles.css";
@@ -26,7 +28,15 @@ export default function App() {
         <Route path="/gamedevelopment" element={<GameDevPage />}></Route>
         <Route path="/fitness" element={<FitnessPage />}></Route>
         <Route path="/signup" element={<SignUpPage />}></Route>
-        <Route path="/test" element={<TestPage />}></Route>
+        <Route
+          path="/testsignup"
+          element={
+            <ProtectedRoute>
+              <TestPage></TestPage>
+            </ProtectedRoute>
+          }
+        />
+
         <Route path="/test2" element={<TestPage2 />}></Route>
         <Route path="*" element={<NotFound />}></Route>
       </Routes>

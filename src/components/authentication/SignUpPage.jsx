@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "react-bootstrap";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   createUserWithEmailAndPassword,
   onAuthStateChanged,
@@ -8,8 +8,11 @@ import {
   signInWithEmailAndPassword,
 } from "firebase/auth";
 import { auth } from "./firebase-config";
+import { useNavigate } from "react-router-dom";
 
 function SignUpPage() {
+  const navigate = useNavigate();
+
   const [registerEmail, setRegisterEmail] = useState("");
   const [registerPassword, setRegisterPassword] = useState("");
   const [loginEmail, setLoginEmail] = useState("");
@@ -17,10 +20,15 @@ function SignUpPage() {
 
   const [user, setUser] = useState({});
 
-  onAuthStateChanged(auth, (currentUser) => {
-    setUser(currentUser);
-    console.log(currentUser);
-  });
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+      setUser(currentUser);
+      console.log(currentUser);
+    });
+
+    // Cleanup subscription on unmount
+    return () => unsubscribe();
+  }, []);
 
   const register = async () => {
     try {
@@ -30,6 +38,7 @@ function SignUpPage() {
         registerPassword
       );
       console.log(user);
+      navigate("/testsignup");
     } catch (error) {
       console.log(error.message + "Error during registration");
     }
@@ -42,6 +51,7 @@ function SignUpPage() {
         loginEmail,
         loginPassword
       );
+      navigate("/testsignup");
       console.log(user);
     } catch (error) {
       console.log(error.message + "Error during registration");
@@ -54,7 +64,10 @@ function SignUpPage() {
   };
 
   return (
-    <div>
+    <div className="signup-section">
+      <div>
+        <h2>This page requires signing up first</h2>
+      </div>
       <div>
         <h2>Register User</h2>
         <input
