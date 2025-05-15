@@ -156,11 +156,12 @@ a {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  transition: transform 0.3s ease;
+  margin-bottom: 1em;
 }
 
 #to-top-button-timeline:hover {
-  background-color: #ffd22b;
-  width: 150px;
+  transform: scale(1.15);
 }
 
 .contact-me-container {
@@ -259,7 +260,11 @@ a {
   margin-right: auto;
   margin-left: auto;
   display: block;
+  transition: transform 0.3s ease;
   margin-bottom: 1em;
+}
+.section-home .container .CTA-button:hover {
+  transform: scale(1.15);
 }
 .section-home .container .CTA-wrapper {
   display: flex;
@@ -267,15 +272,19 @@ a {
   align-items: center;
   flex-direction: column;
   background-color: var(--black-color);
-  width: 50%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 4em;
   margin-bottom: 4em;
   padding: 1em;
+  padding-top: 5em;
+  padding-bottom: 5em;
   border-radius: 2em;
   box-shadow: #000000 0px 0px 10px;
-  margin-bottom: 2rem;
+}
+.section-home .container .CTA-wrapper .white {
+  font-size: 2rem;
 }
 .section-home .container #oulunparturilogo {
   transition: transform 0.3s ease;
@@ -443,10 +452,10 @@ a {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  transition: transform 0.3s ease;
 }
 .esports-section .container #to-top-button-esports:hover {
-  background-color: #ffd22b;
-  width: 150px;
+  transform: scale(1.15);
 }
 .esports-section .container .centered-text {
   display: flex;
@@ -519,28 +528,27 @@ a {
   transform: scale(1); /* no need to scale manually */
 }
 .dev-section .unity-start-loading-button {
+  font-size: 1.5rem;
   color: black;
   margin-top: 5em;
-  background-color: var(--primary-color1);
+  background-color: #ffd22b;
   border-color: black;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 2em;
-  margin-top: 1em;
+  margin-bottom: 4em;
+  margin-top: 4em;
+  padding: 0.5em;
+  transition: transform 0.3s ease;
 }
 .dev-section .unity-start-loading-button:hover {
   color: black;
-  margin-top: 5em;
-  background-color: var(--primary-color1);
   border-color: black;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 2em;
-  margin-top: 1em;
+  transform: scale(1.3);
   background-color: #ffd22b;
-  width: 200px;
 }
 .dev-section .unity-content {
   padding-bottom: 20vh;
@@ -849,8 +857,12 @@ footer .footer-text {
   }
 }
 @media (min-width: 769px) and (max-width: 1080px) {
-  .CTA-wrapper {
+  .section-home .container .CTA-wrapper {
     width: 500px;
+  }
+  .section-home .container .CTA-wrapper .white {
+    text-align: center;
+    font-size: 1.5rem;
   }
   .navbar #languageToggleBtn {
     font-size: 0.7em;
@@ -919,7 +931,8 @@ footer .footer-text {
   .section-home .container .CTA-wrapper {
     width: 100%;
   }
-  .section-home .container .CTA-wrapper p {
+  .section-home .container .CTA-wrapper .white {
+    font-size: 1.2rem;
     text-align: center;
   }
   .section-home .container .introduction-text-short {

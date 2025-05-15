@@ -109,8 +109,7 @@ function SignUpPage() {
         <Button onClick={login}>Login</Button>
       </div>
       <div>
-        <h3>User Logged in:</h3>
-        {user?.email}
+        <h3>User Logged in: {user?.email || "None"}</h3>
         <Button onClick={logout}>Logout</Button>
       </div>
     </div>
