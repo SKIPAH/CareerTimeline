@@ -9,9 +9,9 @@ const Translations = {
     "navbar-games": "GAMES",
     "navbar-fitness": "FITNESS",
     "navbar-test": "TEST PAGE",
-    "homepage-title": "Web and Game Developer",
+    "homepage-title": "Web/Game Developer and game tester",
     "homepage-introduction-text-short":
-      "Hi! My name is Jussi Mehtälä, also known as SKIPAH in the esports scene. I am a 28-year-old guy from Finland and I am currently looking for a job in the IT field as a developer!",
+      "Hi! My name is Jussi Mehtälä, also known as SKIPAH in the esports scene. I am a 28-year-old guy from Finland and I am currently looking for a job in the IT and Esports field!",
     "homepage-introduction-text-tech":
       "Technologies I use regularly and on this website:",
     "homepage-introduction-text-2":
@@ -75,9 +75,9 @@ const Translations = {
     "navbar-games": "PELIT",
     "navbar-fitness": "FITNESS",
     "navbar-test": "TESTI",
-    "homepage-title": "Web- ja pelikehittäjä",
+    "homepage-title": "Web- ja pelikehittäjä sekä pelitestaaja",
     "homepage-introduction-text-short":
-      "Hei! Minun nimeni on Jussi Mehtälä, myös tunnettu lempinimellä SKIPAH kilpapelaamisen puolella. Etsin tällä hetkellä töitä IT-alalta ohjelmistosuunnittelijan rooliin!",
+      "Hei! Minun nimeni on Jussi Mehtälä, myös tunnettu lempinimellä SKIPAH kilpapelaamisen puolella. Etsin tällä hetkellä töitä IT sekä esports alalta!",
     "homepage-introduction-text-tech":
       "Tekniikat, joita käytän aktiivisesti ja tällä sivulla:",
     "homepage-introduction-text-2":

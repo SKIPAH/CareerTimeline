@@ -9,7 +9,8 @@ const TimelineElements = {
       id: 1,
       title: "WebFlow Developer",
       location: "Oulu",
-      description: "Currently creating websites for businesses using WebFlow.",
+      description:
+        "Currently creating websites for businesses using WebFlow on my own.",
       date: "March 2025- Current",
       icon: work,
     },
@@ -77,7 +78,7 @@ const TimelineElements = {
       title: "WebFlow Kehittäjä",
       location: "Oulu",
       description:
-        "Tällä hetkellä luon verkkosivustoja yrityksille WebFlow:lla.",
+        "Tällä hetkellä luon verkkosivustoja yrityksille WebFlow:lla itsenäisesti.",
 
       date: "Maaliskuu 2025- Nykyinen",
       icon: work,
