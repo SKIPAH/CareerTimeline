@@ -26,38 +26,6 @@ export default function Footer() {
             <ul className="list-unstyled footer-text">
               <li>
                 <a
-                  href="https://x.com/SKIPAHH"
-                  className="footer-text text-white"
-                >
-                  Twitter/X
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.youtube.com/@SKIPAH"
-                  className="footer-text text-white"
-                >
-                  Youtube
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.twitch.tv/skipah"
-                  className="footer-text text-white"
-                >
-                  Twitch
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.instagram.com/skipaah/"
-                  className="footer-text text-white"
-                >
-                  Instagram
-                </a>
-              </li>
-              <li>
-                <a
                   href="https://www.linkedin.com/in/jussi-mehtala/"
                   className="footer-text text-white"
                 >
@@ -70,6 +38,46 @@ export default function Footer() {
                   className="footer-text text-white"
                 >
                   GitHub
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://x.com/SKIPAHH"
+                  className="footer-text text-white"
+                >
+                  Twitter/X
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/skipaah/"
+                  className="footer-text text-white"
+                >
+                  Instagram
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/@SKIPAH"
+                  className="footer-text text-white"
+                >
+                  Youtube
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.tiktok.com/@skipaah"
+                  className="footer-text text-white"
+                >
+                  TikTok
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.twitch.tv/skipah"
+                  className="footer-text text-white"
+                >
+                  Twitch
                 </a>
               </li>
             </ul>

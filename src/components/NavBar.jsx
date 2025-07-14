@@ -17,6 +17,7 @@ import youtube from "../files/images/youtube.webp";
 import twitch from "../files/images/twitch.webp";
 import { useEffect, useState } from "react";
 import skipahlogo from "../files/images/SKIPAHlogo.webp";
+import tiktok from "../files/images/tiktok1.webp";
 
 export default function NavBar() {
   const [currentLanguage, setCurrentLanguage] = useState(getCurrentLanguage());
@@ -133,6 +134,9 @@ export default function NavBar() {
                   className="navbar-logos"
                   alt="youtube logo"
                 />
+              </a>
+              <a href="https://www.tiktok.com/@skipaah" target="_blank">
+                <img src={tiktok} className="navbar-logos" alt="tiktok logo" />
               </a>
               <a href="https://www.twitch.tv/skipah" target="_blank">
                 <img src={twitch} className="navbar-logos" alt="twitch logo" />
