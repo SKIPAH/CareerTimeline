@@ -11,7 +11,7 @@ const Translations = {
     "navbar-test": "TEST PAGE",
     "homepage-title": "Web/Game Developer and game tester",
     "homepage-introduction-text-short":
-      "Hi! My name is Jussi Mehtälä, also known as SKIPAH in the esports scene. I am a 28-year-old guy from Finland and I am currently looking for a job in the IT and Esports field!",
+      "Hi! My name is Jussi Mehtälä, also known as SKIPAH in the esports scene. I am currently looking for a job in the IT and Esports field!",
     "homepage-introduction-text-tech":
       "Technologies I use regularly and on this website:",
     "homepage-introduction-text-2":
