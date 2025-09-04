@@ -7,6 +7,15 @@ const TimelineElements = {
   en: [
     {
       id: 1,
+      title: "XPFIRST. Game tester, Esports Admin",
+      location: "Oulu",
+      description:
+        "Active game tester in various projects. Worked on projects like My Pet Hooligan, Supermoves and Farcana. Finding problems in games in early development, documenting bugs and contributing to game design ideas. Esports tournament admin.",
+      date: "2023- Current",
+      icon: work,
+    },
+    {
+      id: 2,
       title: "WebFlow Developer",
       location: "Oulu",
       description:
@@ -15,7 +24,7 @@ const TimelineElements = {
       icon: work,
     },
     {
-      id: 2,
+      id: 3,
       title: "Nucu Oy. Software developer. Intern/Thesis",
       location: "Oulu",
       description:
@@ -29,7 +38,7 @@ const TimelineElements = {
       buttonLink2: "https://www.nucu.fi/",
     },
     {
-      id: 3,
+      id: 4,
       title: "Oulu University of Applied Sciences.",
       location: "Oulu",
       description:
@@ -40,7 +49,7 @@ const TimelineElements = {
       buttonLink: "https://oamk.fi/",
     },
     {
-      id: 4,
+      id: 5,
       title: "Helsinki REDS, Esports Athlete",
       location: "Oulu, Remote",
       description:
@@ -51,7 +60,7 @@ const TimelineElements = {
       buttonLink: "https://www.vlr.gg/player/3670/skipah",
     },
     {
-      id: 5,
+      id: 6,
       title: "Nyyrikki Esports, Esports Athlete",
       location: "Oulu, Remote",
       description:
@@ -62,7 +71,7 @@ const TimelineElements = {
       buttonLink: "https://liquipedia.net/overwatch/SKIPAH",
     },
     {
-      id: 6,
+      id: 7,
       title: "Entersec Oy, Security guard.",
       location: "Ylivieska, Haapavesi, Oulainen",
       description: "Working as a security guard in various locations.",
@@ -75,6 +84,16 @@ const TimelineElements = {
   fi: [
     {
       id: 1,
+      title: "XPFIRST. Pelitestaaja, E-urheilu Admin",
+      location: "Oulu",
+      description:
+        "Pelitestaajan tehtävät projekteissa kuten My pet Hooligan, Supermoves ja Farcana. Ongelmien löytö peleissä ja niistä dokumentointi sekä pelisuunnittelu ideoiden antaminen. E-urheiluturnausten admin.",
+
+      date: "2023- Nykyinen",
+      icon: work,
+    },
+    {
+      id: 2,
       title: "WebFlow Kehittäjä",
       location: "Oulu",
       description:
@@ -84,7 +103,7 @@ const TimelineElements = {
       icon: work,
     },
     {
-      id: 2,
+      id: 3,
       title: "Nucu Oy. Ohjelmistokehittäjä. Harjoittelija/Opinnäytetyö",
       location: "Oulu",
       description:
@@ -98,7 +117,7 @@ const TimelineElements = {
       buttonLink2: "https://www.nucu.fi/",
     },
     {
-      id: 3,
+      id: 4,
       title: "Oulun ammattikorkeakoulu",
       location: "Oulu",
       description:
@@ -107,17 +126,6 @@ const TimelineElements = {
       date: "Elokuu 2017-Kesäkuu 2024",
       icon: school,
       buttonLink: "https://oamk.fi/",
-    },
-    {
-      id: 4,
-      title: "Helsinki REDS, E-Urheilija",
-      location: "Oulu, Etätyö",
-      description:
-        "Helsinki REDS joukkueen edustus Valorant videopelissä eri tapahtumissa.",
-      buttonText: "VLR Profiili",
-      date: "Elokuu 2020-Tammikuu 2021",
-      icon: hreds,
-      buttonLink: "https://www.vlr.gg/player/3670/skipah",
     },
     {
       id: 5,
@@ -132,6 +140,17 @@ const TimelineElements = {
     },
     {
       id: 6,
+      title: "Helsinki REDS, E-Urheilija",
+      location: "Oulu, Etätyö",
+      description:
+        "Helsinki REDS joukkueen edustus Valorant videopelissä eri tapahtumissa.",
+      buttonText: "VLR Profiili",
+      date: "Elokuu 2020-Tammikuu 2021",
+      icon: hreds,
+      buttonLink: "https://www.vlr.gg/player/3670/skipah",
+    },
+    {
+      id: 7,
       title: "Entersec Oy, Vartija.",
       location: "Ylivieska, Haapavesi, Oulainen",
       description: "Vartijan työ päivällä ja yöllä eri kohteissa.",
