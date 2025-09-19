@@ -1,6 +1,72 @@
-let language = "en";
+let language = "fi";
 
 const Translations = {
+  fi: {
+    "navbar-home": "ETUSIVU",
+    "navbar-work": "TYÖ JA KOULUTUS",
+    "navbar-esports": "E-URHEILU",
+    "navbar-dev": "OHJELMOINTI",
+    "navbar-games": "PELIT",
+    "navbar-fitness": "FITNESS",
+    "navbar-test": "TESTI",
+    "homepage-title": "Kotisivut, pelitestaus ja videoeditointi Oulussa",
+    "homepage-introduction-text-short":
+      "Olen Jussi Mehtälä ja toteutan kotisivuja Oulun alueella. Tarjoan palveluita myös pelitestaajana, videoeditoijana ja sosiaalisen median alustojen asiantuntijana.",
+    "homepage-introduction-text-tech":
+      "Tekniikat, joita käytän aktiivisesti ja tällä sivulla:",
+    "homepage-introduction-text-2":
+      "Olen taitava pelitestaaja tarkalla silmällä esports urani sekä unity kehittäjän taitojen ansiosta. Lisäksi olen kokenut käyttäjä eri sosiaalisen median alustoilla ja sisällöntuottaja. Sivun yläosasta löydät lisää harrastuksiin ja työhön liittyviä asioita, sekä sosiaalisen median linkit.",
+    "timeline-title-text": "Koulutus ja työkokemus",
+    "dev-title": "Ohjelmointiin liittyvät asiat",
+    "dev-linkedin": "Minun",
+    "dev-linkedin-2": "ja",
+    "dev-github-3": "profiilit",
+    "dev-cv": "Minun",
+    "dev-cv-2": "ja",
+    "dev-webgl":
+      "Minun WebGL 3D tuotekonfiguraattori alla hieman muokattuna. Ylhäällä linkki oikeaan projektiin.",
+    "dev-webgl-note":
+      "HUOM! Ohjelma poissa käytöstä puhelimilla, koska Unity WebGL ei ole tuettu mobiilille. Aktivoi laitteistokiihdytys, jos käytät Google Chromea.",
+    "fitness-title": "Urheilu ja fitness",
+    "dev-thesis": "Opinnäytetyö",
+    "dev-itch": "Nucu Oy 3D Tuotekonfiguraattori",
+    "dev-download": "Lataa",
+    aboutMe: "Tietoa minusta",
+    "aboutMe-text":
+      "Olen Jussi Mehtälä, myös tunnettu nimellä SKIPAH. Tavoitteenani on aloittaa ja luoda ura IT-alalla. Tykkään yleisesti urheilusta, voimailusta, kilpapelaamisesta sekä DragonBall Z:sta.",
+    followMe: "Sosiaalinen media",
+    contactMe: "Ota yhteyttä",
+    "esports-title-text": "Urani e-urheilijana!",
+    "esports-text":
+      "Vuosina 2019-2022 edustin e-urheilijana useita suomalaisia ja eurooppalaisia joukkueita ja organisaatioita Overwatch ja Valorant videopeleissä. Tässä on minun ",
+    "esports-text-2": "sivu, josta näkee turnaustuloksia ja joukkueeni.",
+    "esports-text-3":
+      "Ensimmäinen videopeli jota koskaan pelasin oli Super Nintendon Donkey Kong Country. Minulla on neljä veljeä ja yleensä olin se, joka pelasi läpi pelien vaikeimmat tasot, jos veljeni eivät osanneet.",
+    "esports-text-4":
+      "Kun lopetin yleisurheilussa ja painissa kilpailemisen lukiossa, pelasin Dota 2 videopeliä hurjat määrät, jota kautta sain ensimmäisiä kokemuksia e-urheilusta. Lukion jälkeen aloitin armeijapalvelukseni sotilaspoliisina, joka kesti 9 kuukautta. Kun jäljellä oli enää muutama kuukausi, kuulin pelistä Overwatch joka julkaistaisiin lähes heti sen jälkeen kun saan palvelukseni suoritettua. Muistan kertoneeni tupakavereilleni, että aion pelata kilpaa tuossa kyseisessä pelissä ja aloitin harjoittelemisen välittömästi.",
+    "esports-text-5":
+      "Ensimmäisen kauden aikana onnistuin pääsemään Top 500 ranking sijoituksille Euroopassa, mutta putosin kauden lopussa ulos parhaan 500 pelaajan joukosta. Tuolloin kuitenkin ymmärsin että potentiaalia kilpapelaajaksi voisi olla, koska muutama henkilö otti myös minuun yhteyttä, koska halusivat minun liittyä heidän joukkueeseen. Ensimmäisen kauden jälkeen aloitin työni vartijana ja työvuoroni olivat yleensä öisin, joka hankaloitti aikataulutusta pelata joukkueissa. Lopetin vartijan työt noin puolen vuoden jälkeen, koska pääsin opiskelemaan Tieto- ja viestintätekniikkaa Oulun Ammattikorkeakouluun. Pystyin myös taas jälleen panostamaan enemmän Overwatchiin. ",
+    "esports-text-6":
+      "Pelasin muutamassa eri suomalaisessa joukkueessa ja turnauksessa, ennen kuin törmäsin julkaisuun jossa Nyyrikki esports niminen joukkue etsii suomalaisia pelaajia edustamaan Overwatch joukkuetta. Kiinnostuin välittömästi, koska tämä voisi olla se mahdollisuus, jolloin ura ammattilaiseksi alkaisi. Sain kutsun joukkueen kokeeseen ja lopulta pääsin mukaan edustamaan Hitscan DPS roolia.",
+    "esports-text-7":
+      "Edustin Nyyrikki Esportsia 16 kuukautta putkeen, jolloin pääsin matkustamaan suomessa eri turnauksiin loistavien joukkuekavereiden ja organisaation henkilöstön kanssa. Kehityin hurjasti matkan varrella pelissä ja pelin ulkopuolella. Nyyrikki tarjosi loistavaa valmennusta, josta kerrytin itselleni taitoja, mitä voi käyttää myös muutenkin elämässä. Nyyrikki esportsin jälkeen edustin myös Vasta Gaming joukkuetta hetken aikaa, kunnes uusi peli julkaistiin nimeltä Valorant, josta kiinnostuin heti ja päätin vaihtaa kilpailemaan siihen.",
+    "esports-text-8":
+      "Valorant peli muistutti paljon Counter-Strike peliä, josta minulla oli jo kokemusta. Aluksi pelasin peliä eurooppalaisessa joukkueessa samalla opetellen peliä. Hetki julkaisun jälkeen HIFK:n esports joukkue Helsinki REDS etsi suomalaisia pelaajia, ja päätin ilmoittatua heidän kokeisiin. Kokeilujen jälkeen pääsin edustamaan 5 hengen joukkuetta operator pelaajana.",
+    "esports-text-movie-1": "Loistava video minun pelihetkistä, jonka teki ",
+    "esports-text-movie-2": "Minun itse tekemä suosikki videoni.",
+    "fitness-text":
+      "Olen ollut aktiivinen monessa eri urheilulajissa nuorempana, mutta nykyisin en kilpaile vaan keskityn olemaan urheilullinen ja aktiivinen. Harjoittelen aktiivisesti kuntosalilla ja seuraan paljon eri voimaurheilulajeja, kuten voimannostoa ja voimamieskilpailuja.",
+    "fitness-text-2":
+      "Aloitin harjoittelemaan ja kilpailemaan yleisurheilussa 5-vuotiaana ja sen jälkeen myös painissa 7-vuotiaana. Kilpailin näissä lajeilla yli 10 vuotta ja sain luotua itselleni hyvän pohjan kunnolleni. Kiinnostukseni kuitenkin kilpailla yleisurheilussa ja painissa katosi lukiossa, koska en saanut toivomaani kehitystä ja tuloksia, sekä pieni loukkaantuminen keihäänheitossa esti harjoittelemisen. Samaan aikaan kiinnostukseni kasvoi e-urheiluun, josta enemmän tietoa e-urheilu kategoriassa ylhäällä. Koronapandemian aikana huomasin kuntoni olevan huonossa kunnossa, jolloin aloitin jälleen aktiivisesti liikkumaan ja olen pitänyt treenirutiinit yllä.",
+    "back-to-top-text": "Takaisin ylös",
+    "unity-start-loading-button": "KOKEILE SIISTIÄ UNITY PROJEKTIA!",
+    "game-dev-description":
+      "Oma Unity peli projekti, jossa tein pieniä minipelejä ja spritet Unity Muse AI työkalulla.",
+    "contactMe-text":
+      "Tarvitsetko kotisivut? Minä voin tehdä sinulle sellaiset!",
+    "contactMe-text-3": "Ota yhteyttä",
+    "past-websites": "Sivustot, jotka olen totetuttanut",
+  },
   en: {
     "navbar-home": "HOME",
     "navbar-work": "WORK AND EDUCATION",
@@ -9,13 +75,13 @@ const Translations = {
     "navbar-games": "GAMES",
     "navbar-fitness": "FITNESS",
     "navbar-test": "TEST PAGE",
-    "homepage-title": "Web/Game Developer and game tester",
+    "homepage-title": "Websites, game testing and video editing in Oulu",
     "homepage-introduction-text-short":
       "Hi! My name is Jussi Mehtälä, also known as SKIPAH in the esports scene. I am currently looking for a job in the IT and Esports field!",
     "homepage-introduction-text-tech":
       "Technologies I use regularly and on this website:",
     "homepage-introduction-text-2":
-      "I am also well versed in social media platforms and content creation. On top you can find different categories about job related information, achievements and my hobbies.",
+      "I am a expert game tester with sharp eye for detail thanks to my esports career, Unity game development skills and long love for videogames. I am also well versed in social media platforms and content creation.",
     "timeline-title-text": "Education and work experience",
     "dev-title": "Development related files",
     "dev-linkedin": "My",
@@ -66,72 +132,6 @@ const Translations = {
     "contactMe-text": "Do you need a website? I can create you one!",
     "contactMe-text-3": "Contact me",
     "past-websites": "Websites that I have worked on",
-  },
-  fi: {
-    "navbar-home": "ETUSIVU",
-    "navbar-work": "TYÖ JA KOULUTUS",
-    "navbar-esports": "E-URHEILU",
-    "navbar-dev": "OHJELMOINTI",
-    "navbar-games": "PELIT",
-    "navbar-fitness": "FITNESS",
-    "navbar-test": "TESTI",
-    "homepage-title": "Web- ja pelikehittäjä sekä pelitestaaja",
-    "homepage-introduction-text-short":
-      "Hei! Minun nimeni on Jussi Mehtälä, myös tunnettu lempinimellä SKIPAH kilpapelaamisen puolella. Etsin tällä hetkellä töitä IT sekä esports alalta!",
-    "homepage-introduction-text-tech":
-      "Tekniikat, joita käytän aktiivisesti ja tällä sivulla:",
-    "homepage-introduction-text-2":
-      "Lisäksi olen kokenut käyttäjä eri sosiaalisen median alustoilla ja sisällöntuottaja. Sivun yläosasta löydät lisää harrastuksiin ja työhön liittyviä asioita, sekä sosiaalisen median linkit.",
-    "timeline-title-text": "Koulutus ja työkokemus",
-    "dev-title": "Ohjelmointiin liittyvät asiat",
-    "dev-linkedin": "Minun",
-    "dev-linkedin-2": "ja",
-    "dev-github-3": "profiilit",
-    "dev-cv": "Minun",
-    "dev-cv-2": "ja",
-    "dev-webgl":
-      "Minun WebGL 3D tuotekonfiguraattori alla hieman muokattuna. Ylhäällä linkki oikeaan projektiin.",
-    "dev-webgl-note":
-      "HUOM! Ohjelma poissa käytöstä puhelimilla, koska Unity WebGL ei ole tuettu mobiilille. Aktivoi laitteistokiihdytys, jos käytät Google Chromea.",
-    "fitness-title": "Urheilu ja fitness",
-    "dev-thesis": "Opinnäytetyö",
-    "dev-itch": "Nucu Oy 3D Tuotekonfiguraattori",
-    "dev-download": "Lataa",
-    aboutMe: "Tietoa minusta",
-    "aboutMe-text":
-      "Olen Jussi Mehtälä, myös tunnettu nimellä SKIPAH. Tavoitteenani on aloittaa ja luoda ura IT-alalla. Tykkään yleisesti urheilusta, voimailusta, kilpapelaamisesta sekä DragonBall Z:sta.",
-    followMe: "Sosiaalinen media",
-    contactMe: "Ota yhteyttä",
-    "esports-title-text": "Urani e-urheilijana!",
-    "esports-text":
-      "Vuosina 2019-2022 edustin e-urheilijana useita suomalaisia ja eurooppalaisia joukkueita ja organisaatioita Overwatch ja Valorant videopeleissä. Tässä on minun ",
-    "esports-text-2": "sivu, josta näkee turnaustuloksia ja joukkueeni.",
-    "esports-text-3":
-      "Ensimmäinen videopeli jota koskaan pelasin oli Super Nintendon Donkey Kong Country. Minulla on neljä veljeä ja yleensä olin se, joka pelasi läpi pelien vaikeimmat tasot, jos veljeni eivät osanneet.",
-    "esports-text-4":
-      "Kun lopetin yleisurheilussa ja painissa kilpailemisen lukiossa, pelasin Dota 2 videopeliä hurjat määrät, jota kautta sain ensimmäisiä kokemuksia e-urheilusta. Lukion jälkeen aloitin armeijapalvelukseni sotilaspoliisina, joka kesti 9 kuukautta. Kun jäljellä oli enää muutama kuukausi, kuulin pelistä Overwatch joka julkaistaisiin lähes heti sen jälkeen kun saan palvelukseni suoritettua. Muistan kertoneeni tupakavereilleni, että aion pelata kilpaa tuossa kyseisessä pelissä ja aloitin harjoittelemisen välittömästi.",
-    "esports-text-5":
-      "Ensimmäisen kauden aikana onnistuin pääsemään Top 500 ranking sijoituksille Euroopassa, mutta putosin kauden lopussa ulos parhaan 500 pelaajan joukosta. Tuolloin kuitenkin ymmärsin että potentiaalia kilpapelaajaksi voisi olla, koska muutama henkilö otti myös minuun yhteyttä, koska halusivat minun liittyä heidän joukkueeseen. Ensimmäisen kauden jälkeen aloitin työni vartijana ja työvuoroni olivat yleensä öisin, joka hankaloitti aikataulutusta pelata joukkueissa. Lopetin vartijan työt noin puolen vuoden jälkeen, koska pääsin opiskelemaan Tieto- ja viestintätekniikkaa Oulun Ammattikorkeakouluun. Pystyin myös taas jälleen panostamaan enemmän Overwatchiin. ",
-    "esports-text-6":
-      "Pelasin muutamassa eri suomalaisessa joukkueessa ja turnauksessa, ennen kuin törmäsin julkaisuun jossa Nyyrikki esports niminen joukkue etsii suomalaisia pelaajia edustamaan Overwatch joukkuetta. Kiinnostuin välittömästi, koska tämä voisi olla se mahdollisuus, jolloin ura ammattilaiseksi alkaisi. Sain kutsun joukkueen kokeeseen ja lopulta pääsin mukaan edustamaan Hitscan DPS roolia.",
-    "esports-text-7":
-      "Edustin Nyyrikki Esportsia 16 kuukautta putkeen, jolloin pääsin matkustamaan suomessa eri turnauksiin loistavien joukkuekavereiden ja organisaation henkilöstön kanssa. Kehityin hurjasti matkan varrella pelissä ja pelin ulkopuolella. Nyyrikki tarjosi loistavaa valmennusta, josta kerrytin itselleni taitoja, mitä voi käyttää myös muutenkin elämässä. Nyyrikki esportsin jälkeen edustin myös Vasta Gaming joukkuetta hetken aikaa, kunnes uusi peli julkaistiin nimeltä Valorant, josta kiinnostuin heti ja päätin vaihtaa kilpailemaan siihen.",
-    "esports-text-8":
-      "Valorant peli muistutti paljon Counter-Strike peliä, josta minulla oli jo kokemusta. Aluksi pelasin peliä eurooppalaisessa joukkueessa samalla opetellen peliä. Hetki julkaisun jälkeen HIFK:n esports joukkue Helsinki REDS etsi suomalaisia pelaajia, ja päätin ilmoittatua heidän kokeisiin. Kokeilujen jälkeen pääsin edustamaan 5 hengen joukkuetta operator pelaajana.",
-    "esports-text-movie-1": "Loistava video minun pelihetkistä, jonka teki ",
-    "esports-text-movie-2": "Minun itse tekemä suosikki videoni.",
-    "fitness-text":
-      "Olen ollut aktiivinen monessa eri urheilulajissa nuorempana, mutta nykyisin en kilpaile vaan keskityn olemaan urheilullinen ja aktiivinen. Harjoittelen aktiivisesti kuntosalilla ja seuraan paljon eri voimaurheilulajeja, kuten voimannostoa ja voimamieskilpailuja.",
-    "fitness-text-2":
-      "Aloitin harjoittelemaan ja kilpailemaan yleisurheilussa 5-vuotiaana ja sen jälkeen myös painissa 7-vuotiaana. Kilpailin näissä lajeilla yli 10 vuotta ja sain luotua itselleni hyvän pohjan kunnolleni. Kiinnostukseni kuitenkin kilpailla yleisurheilussa ja painissa katosi lukiossa, koska en saanut toivomaani kehitystä ja tuloksia, sekä pieni loukkaantuminen keihäänheitossa esti harjoittelemisen. Samaan aikaan kiinnostukseni kasvoi e-urheiluun, josta enemmän tietoa e-urheilu kategoriassa ylhäällä. Koronapandemian aikana huomasin kuntoni olevan huonossa kunnossa, jolloin aloitin jälleen aktiivisesti liikkumaan ja olen pitänyt treenirutiinit yllä.",
-    "back-to-top-text": "Takaisin ylös",
-    "unity-start-loading-button": "KOKEILE SIISTIÄ UNITY PROJEKTIA!",
-    "game-dev-description":
-      "Oma Unity peli projekti, jossa tein pieniä minipelejä ja spritet Unity Muse AI työkalulla.",
-    "contactMe-text":
-      "Tarvitsetko nettisivut? Minä voin tehdä sinulle sellaiset!",
-    "contactMe-text-3": "Ota yhteyttä",
-    "past-websites": "Sivustot, jotka olen totetuttanut",
   },
 };
 

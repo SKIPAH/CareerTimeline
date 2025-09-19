@@ -14,7 +14,7 @@
 
 p {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   text-align: left;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -24,7 +24,7 @@ a {
   text-decoration: none;
   color: var(--black-color);
   font-family: "Josefin Sans", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   text-align: left;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -515,6 +515,17 @@ a {
   align-items: center;
   gap: 4rem;
   font-size: 1.5em;
+}
+.dev-section .container .tech-used-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  flex-wrap: wrap;
+  padding-bottom: 2em;
+}
+.dev-section .container .tech-used-container img {
+  width: 5%;
 }
 .dev-section a {
   font-family: "Josefin Sans", sans-serif;
