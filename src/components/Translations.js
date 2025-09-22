@@ -15,9 +15,8 @@ const Translations = {
     "homepage-introduction-text-tech":
       "Tekniikat, joita käytän aktiivisesti ja tällä sivulla:",
     "homepage-introduction-text-2":
-      "Olen taitava pelitestaaja tarkalla silmällä esports urani sekä unity kehittäjän taitojen ansiosta. Lisäksi olen kokenut käyttäjä eri sosiaalisen median alustoilla ja sisällöntuottaja. Sivun yläosasta löydät lisää harrastuksiin ja työhön liittyviä asioita, sekä sosiaalisen median linkit.",
-    "timeline-title-text": "Koulutus ja työkokemus",
-    "dev-title": "Ohjelmointiin liittyvät asiat",
+      "Olen taitava pelitestaaja tarkalla silmällä esports urani sekä unity kehittäjän taitojen ansiosta. Lisäksi olen kokenut käyttäjä eri sosiaalisen median alustoilla ja sisällöntuottaja.",
+    "dev-title": "Palvelut, koulutus ja työkokemus",
     "dev-linkedin": "Minun",
     "dev-linkedin-2": "ja",
     "dev-github-3": "profiilit",
@@ -25,6 +24,7 @@ const Translations = {
     "dev-cv-2": "ja",
     "dev-webgl":
       "Minun WebGL 3D tuotekonfiguraattori alla hieman muokattuna. Ylhäällä linkki oikeaan projektiin.",
+    "timeline-title-text": "Koulutus ja työkokemus",
     "dev-webgl-note":
       "HUOM! Ohjelma poissa käytöstä puhelimilla, koska Unity WebGL ei ole tuettu mobiilille. Aktivoi laitteistokiihdytys, jos käytät Google Chromea.",
     "fitness-title": "Urheilu ja fitness",
@@ -62,8 +62,7 @@ const Translations = {
     "unity-start-loading-button": "KOKEILE SIISTIÄ UNITY PROJEKTIA!",
     "game-dev-description":
       "Oma Unity peli projekti, jossa tein pieniä minipelejä ja spritet Unity Muse AI työkalulla.",
-    "contactMe-text":
-      "Tarvitsetko kotisivut? Minä voin tehdä sinulle sellaiset!",
+    "contactMe-text": "Tarvitsetko kotisivut? Minä voin tehdä!",
     "contactMe-text-3": "Ota yhteyttä",
     "past-websites": "Sivustot, jotka olen totetuttanut",
   },

@@ -13,7 +13,7 @@ import reactlogo from "../files/images/techpics/react-logo.png";
 import unitylogo from "../files/images/techpics/unity.webp";
 import nodejslogo from "../files/images/techpics/node.webp";
 import expresslogo from "../files/images/techpics/express-js.webp";
-import React from "react";
+import Timeline from "../components/Timeline";
 
 export default function DevPage() {
   const currentLanguage = useLanguage();
@@ -94,6 +94,7 @@ export default function DevPage() {
             </a>
           </p>
         </div>
+        <Timeline></Timeline>
         <div className="container">
           <p className="center">
             {getTranslation("dev-webgl", currentLanguage)}
@@ -101,6 +102,7 @@ export default function DevPage() {
           <p className="center">
             {getTranslation("dev-webgl-note", currentLanguage)}
           </p>
+
           <UnityWebGL
             config={unityProjects[0]}
             className="unity-webgl"

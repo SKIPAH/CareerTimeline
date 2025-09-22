@@ -16,7 +16,6 @@ import oulunparturilogo from "../files/images/oulunparturilogo1.webp";
 import BackgroundVideo from "../components/BackgroundVideo";
 import WebsiteVideo from "../files/videos/websitevideo.mp4";
 import { useScrollAnimation } from "../components/ScrollAnimation";
-import Timeline from "../components/Timeline";
 import { Button } from "react-bootstrap";
 import ContactMe from "../components/ContactMe";
 
@@ -58,21 +57,6 @@ export default function Home() {
         </div>
         <div className="container">
           <p className="center">
-            {getTranslation("homepage-introduction-text-tech", currentLanguage)}
-          </p>
-          <div className="tech-used-container hidden-icons">
-            <img id="html-logo" src={htmllogo}></img>
-            <img id="css-logo" src={csslogo}></img>
-            <img id="js-logo" src={jslogo}></img>
-            <img id="webflow-logo" src={webflowlogo}></img>
-            <img id="react-logo" src={reactlogo}></img>
-            <img id="nodejs-logo" src={nodejslogo}></img>
-            <img id="express-logo" src={expresslogo}></img>
-            <img id="c#-logo" src={csharplogo}></img>
-            <img id="unity.logo" src={unitylogo}></img>
-            <img id="github-logo" src={githublogo}></img>
-          </div>
-          <p className="center">
             {getTranslation("homepage-introduction-text-2", currentLanguage)}
           </p>
 
@@ -98,7 +82,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <Timeline></Timeline>
+
       <ContactMe></ContactMe>
 
       <Button id="to-top-button-timeline" onClick={toTop}>

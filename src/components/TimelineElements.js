@@ -7,15 +7,24 @@ const TimelineElements = {
   en: [
     {
       id: 1,
-      title: "XPFIRST. Game tester, Esports Admin",
+      title: "Hätälä Oy. Production line worker.",
       location: "Oulu",
       description:
-        "Active game tester in various projects. Worked on projects like My Pet Hooligan, Supermoves and Farcana. Finding problems in games in early development, documenting bugs and contributing to game design ideas. Esports tournament admin.",
-      date: "2023- Current",
+        "Production line work in fish processing factory. Packing fish products and cleaning work.",
+      date: "Septmember 2025- Present",
       icon: work,
     },
     {
       id: 2,
+      title: "XPFIRST. Game tester, Esports Admin",
+      location: "Oulu",
+      description:
+        "Active game tester in various projects. Worked on projects like My Pet Hooligan, Supermoves and Farcana. Finding problems in games in early development, documenting bugs and contributing to game design ideas. Esports tournament admin.",
+      date: "2023- Present",
+      icon: work,
+    },
+    {
+      id: 3,
       title: "WebFlow Developer",
       location: "Oulu",
       description:
@@ -24,7 +33,7 @@ const TimelineElements = {
       icon: work,
     },
     {
-      id: 3,
+      id: 4,
       title: "Nucu Oy. Software developer. Intern/Thesis",
       location: "Oulu",
       description:
@@ -38,7 +47,7 @@ const TimelineElements = {
       buttonLink2: "https://www.nucu.fi/",
     },
     {
-      id: 4,
+      id: 5,
       title: "Oulu University of Applied Sciences.",
       location: "Oulu",
       description:
@@ -49,7 +58,7 @@ const TimelineElements = {
       buttonLink: "https://oamk.fi/",
     },
     {
-      id: 5,
+      id: 6,
       title: "Helsinki REDS, Esports Athlete",
       location: "Oulu, Remote",
       description:
@@ -60,7 +69,7 @@ const TimelineElements = {
       buttonLink: "https://www.vlr.gg/player/3670/skipah",
     },
     {
-      id: 6,
+      id: 7,
       title: "Nyyrikki Esports, Esports Athlete",
       location: "Oulu, Remote",
       description:
@@ -71,7 +80,7 @@ const TimelineElements = {
       buttonLink: "https://liquipedia.net/overwatch/SKIPAH",
     },
     {
-      id: 7,
+      id: 8,
       title: "Entersec Oy, Security guard.",
       location: "Ylivieska, Haapavesi, Oulainen",
       description: "Working as a security guard in various locations.",
@@ -84,6 +93,16 @@ const TimelineElements = {
   fi: [
     {
       id: 1,
+      title: "Hätälä Oy. Tuotantotyöntekijä.",
+      location: "Oulu",
+      description:
+        "Tuotantotyötä kalanjalostustehtaalla. Kalatuotteiden pakkausta ja siivoustyötä.",
+
+      date: "Syyskuu 2025- Nykyinen",
+      icon: work,
+    },
+    {
+      id: 2,
       title: "XPFIRST. Pelitestaaja, E-urheilu Admin",
       location: "Oulu",
       description:
@@ -93,7 +112,7 @@ const TimelineElements = {
       icon: work,
     },
     {
-      id: 2,
+      id: 3,
       title: "WebFlow Kehittäjä",
       location: "Oulu",
       description:
@@ -103,7 +122,7 @@ const TimelineElements = {
       icon: work,
     },
     {
-      id: 3,
+      id: 4,
       title: "Nucu Oy. Ohjelmistokehittäjä. Harjoittelija/Opinnäytetyö",
       location: "Oulu",
       description:
@@ -117,7 +136,7 @@ const TimelineElements = {
       buttonLink2: "https://www.nucu.fi/",
     },
     {
-      id: 4,
+      id: 5,
       title: "Oulun ammattikorkeakoulu",
       location: "Oulu",
       description:
@@ -126,17 +145,6 @@ const TimelineElements = {
       date: "Elokuu 2017-Kesäkuu 2024",
       icon: school,
       buttonLink: "https://oamk.fi/",
-    },
-    {
-      id: 5,
-      title: "Helsinki REDS, E-Urheilija",
-      location: "Oulu, Etätyö",
-      description:
-        "Helsinki REDS joukkueen edustus Valorant videopelissä eri tapahtumissa.",
-      buttonText: "VLR Profiili",
-      date: "Elokuu 2020-Tammikuu 2021",
-      icon: hreds,
-      buttonLink: "https://www.vlr.gg/player/3670/skipah",
     },
     {
       id: 6,
@@ -151,6 +159,17 @@ const TimelineElements = {
     },
     {
       id: 7,
+      title: "Helsinki REDS, E-Urheilija",
+      location: "Oulu, Etätyö",
+      description:
+        "Helsinki REDS joukkueen edustus Valorant videopelissä eri tapahtumissa.",
+      buttonText: "VLR Profiili",
+      date: "Elokuu 2020-Tammikuu 2021",
+      icon: hreds,
+      buttonLink: "https://www.vlr.gg/player/3670/skipah",
+    },
+    {
+      id: 8,
       title: "Entersec Oy, Vartija.",
       location: "Ylivieska, Haapavesi, Oulainen",
       description: "Vartijan työ päivällä ja yöllä eri kohteissa.",
