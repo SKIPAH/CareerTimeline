@@ -80,6 +80,21 @@ export default function Home() {
               ></img>
             </a>
           </div>
+          <div className="padding center">
+            <h2 className="title-text">
+              {getTranslation("past-games", currentLanguage)}
+            </h2>
+          </div>
+          <div className="padding center">
+            <h2 className="title-text">
+              {getTranslation("past-teams", currentLanguage)}
+            </h2>
+          </div>
+          <div className="padding center">
+            <h2 className="title-text">
+              {getTranslation("past-gametests", currentLanguage)}
+            </h2>
+          </div>
         </div>
       </section>
 

@@ -4,14 +4,14 @@ const Translations = {
   fi: {
     "navbar-home": "ETUSIVU",
     "navbar-work": "TYÖ JA KOULUTUS",
-    "navbar-esports": "E-URHEILU",
+    "navbar-esports": "PELIVALMENNUS",
     "navbar-dev": "OHJELMOINTI",
     "navbar-games": "PELIT",
     "navbar-fitness": "FITNESS",
     "navbar-test": "TESTI",
-    "homepage-title": "Kotisivut, pelitestaus ja videoeditointi Oulussa",
+    "homepage-title": "Kotisivut, pelivalmennus ja pelitestaus Oulussa",
     "homepage-introduction-text-short":
-      "Olen Jussi Mehtälä ja toteutan kotisivuja Oulun alueella. Tarjoan palveluita myös pelitestaajana, videoeditoijana ja sosiaalisen median alustojen asiantuntijana.",
+      "Olen Jussi Mehtälä ja toteutan kotisivuja sekä tarjoan pelitestausta ja pelivalmennusta Oulun alueella. Minun tunnetaan myös lempinimellä 'SKIPAH' e-urheilupiireissä.",
     "homepage-introduction-text-tech":
       "Tekniikat, joita käytän aktiivisesti ja tällä sivulla:",
     "homepage-introduction-text-2":
@@ -62,9 +62,12 @@ const Translations = {
     "unity-start-loading-button": "KOKEILE SIISTIÄ UNITY PROJEKTIA!",
     "game-dev-description":
       "Oma Unity peli projekti, jossa tein pieniä minipelejä ja spritet Unity Muse AI työkalulla.",
-    "contactMe-text": "Tarvitsetko kotisivut? Minä voin tehdä!",
+    "contactMe-text": "Tarvitsetko kotisivut tai pelivalmennusta Oulussa?",
     "contactMe-text-3": "Ota yhteyttä",
-    "past-websites": "Sivustot, jotka olen totetuttanut",
+    "past-websites": "Sivustot, jotka olen toteuttanut",
+    "past-games": "Pelit, joissa olen kilpapelannut",
+    "past-teams": "Joukkueet, joita olen edustanut",
+    "past-gametests": "Projektit, joissa olen ollut pelitestaajana",
   },
   en: {
     "navbar-home": "HOME",

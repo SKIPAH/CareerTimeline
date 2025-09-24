@@ -6,9 +6,9 @@ export default function NutritionLabel() {
   const kilogramToLbs = 2.20462;
 
   const [personalBestLifts, setPersonalBestLifts] = useState({
-    squat: 140,
-    bench: 110,
-    deadlift: 200,
+    squat: 150,
+    bench: 120,
+    deadlift: 225,
   });
 
   useEffect(() => {
@@ -32,9 +32,9 @@ export default function NutritionLabel() {
       <div className="calories-info">
         <div className="left-container">
           <h2 className="bold small-text">Amount per serving</h2>
-          <p>Bodyweight</p>
+          <p>Bodyweight Currently</p>
         </div>
-        <span>105kg</span>
+        <span>96kg</span>
       </div>
       <div className="divider medium"></div>
       <div className="daily-value small-text">
@@ -44,7 +44,7 @@ export default function NutritionLabel() {
           <span>
             <span className="bold">Total Age</span>
           </span>{" "}
-          <span className="bold">28 years</span>
+          <span className="bold">29 years</span>
         </p>
 
         <p className="indent no-divider">
