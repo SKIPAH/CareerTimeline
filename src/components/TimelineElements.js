@@ -1,7 +1,7 @@
-import work from "../files/images/work.webp";
-import school from "../files/images/school.webp";
-import hreds from "../files/images/hreds.webp";
-import nyyrikki from "../files/images/nyyrikki.webp";
+import work from "../files/images/work/work.webp";
+import school from "../files/images/work/school.webp";
+import hreds from "../files/images/work/hreds.webp";
+import nyyrikki from "../files/images/work/nyyrikki.webp";
 
 const TimelineElements = {
   en: [

@@ -77,9 +77,9 @@ const Translations = {
     "navbar-games": "GAMES",
     "navbar-fitness": "FITNESS",
     "navbar-test": "TEST PAGE",
-    "homepage-title": "Websites, game testing and video editing in Oulu",
+    "homepage-title": "Websites, esports coaching and game testing in Oulu",
     "homepage-introduction-text-short":
-      "Hi! My name is Jussi Mehtälä, also known as SKIPAH in the esports scene. I am currently looking for a job in the IT and Esports field!",
+      "Hi! My name is Jussi Mehtälä, also known as SKIPAH in the esports scene. I can build you a homepage or provide esports coaching!",
     "homepage-introduction-text-tech":
       "Technologies I use regularly and on this website:",
     "homepage-introduction-text-2":

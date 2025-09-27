@@ -1,7 +1,7 @@
 import React from "react";
 import { useLanguage } from "../hooks/useLanguage";
 import { getTranslation } from "../components/Translations";
-import profilepic from "../files/images/profiilikuva2.webp";
+import profilepic from "../files/images/work/profiilikuva2.webp";
 import htmllogo from "../files/images/techpics/html-logo.webp";
 import csslogo from "../files/images/techpics/css-logo.webp";
 import jslogo from "../files/images/techpics/js-logo.webp";
@@ -12,7 +12,14 @@ import reactlogo from "../files/images/techpics/react-logo.png";
 import unitylogo from "../files/images/techpics/unity.webp";
 import nodejslogo from "../files/images/techpics/node.webp";
 import expresslogo from "../files/images/techpics/express-js.webp";
-import oulunparturilogo from "../files/images/oulunparturilogo1.webp";
+import oulunparturilogo from "../files/images/work/oulunparturilogo1.webp";
+import overwatchlogo from "../files/images/work/overwatch.webp";
+import valorantlogo from "../files/images/work/valorant.webp";
+import nyyrikkilogo from "../files/images/work/nyyrikki.webp";
+import hredslogo from "../files/images/work/hreds.webp";
+import farcanalogo from "../files/images/work/farcana.webp";
+import supermoveslogo from "../files/images/work/supermoves.webp";
+import mypethooliganlogo from "../files/images/work/mph.webp";
 import BackgroundVideo from "../components/BackgroundVideo";
 import WebsiteVideo from "../files/videos/websitevideo.mp4";
 import { useScrollAnimation } from "../components/ScrollAnimation";
@@ -74,7 +81,7 @@ export default function Home() {
             </h2>
             <a href="https://www.oulun-parturi.fi">
               <img
-                id="oulunparturilogo"
+                id="hoverlogos"
                 src={oulunparturilogo}
                 alt="Oulun Parturi logo"
               ></img>
@@ -84,16 +91,53 @@ export default function Home() {
             <h2 className="title-text">
               {getTranslation("past-games", currentLanguage)}
             </h2>
+            <a href="https://overwatch.blizzard.com/en-us/">
+              <img
+                id="hoverlogos"
+                src={overwatchlogo}
+                alt="Overwatch logo"
+              ></img>
+            </a>
+            <a href="https://playvalorant.com/en-gb/">
+              <img id="hoverlogos" src={valorantlogo} alt="Valorant logo"></img>
+            </a>
           </div>
           <div className="padding center">
             <h2 className="title-text">
               {getTranslation("past-teams", currentLanguage)}
             </h2>
+            <a href="https://www.oulun-parturi.fi">
+              <img id="hoverlogos" src={nyyrikkilogo} alt="Nyyrikki logo"></img>
+            </a>
+            <a href="https://www.oulun-parturi.fi">
+              <img
+                id="hoverlogos"
+                src={hredslogo}
+                alt="Helsinki Reds logo"
+              ></img>
+            </a>
           </div>
           <div className="padding center">
             <h2 className="title-text">
               {getTranslation("past-gametests", currentLanguage)}
             </h2>
+            <a href="https://www.oulun-parturi.fi">
+              <img
+                id="hoverlogos"
+                src={mypethooliganlogo}
+                alt="My pet hooligan logo"
+              ></img>
+            </a>
+            <a href="https://www.oulun-parturi.fi">
+              <img
+                id="hoverlogos"
+                src={supermoveslogo}
+                alt="Supermoves logo"
+              ></img>
+            </a>
+            <a href="https://www.oulun-parturi.fi">
+              <img id="hoverlogos" src={farcanalogo} alt=" logo"></img>
+            </a>
           </div>
         </div>
       </section>

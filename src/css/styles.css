@@ -286,10 +286,10 @@ a {
 .section-home .container .CTA-wrapper .white {
   font-size: 2rem;
 }
-.section-home .container #oulunparturilogo {
+.section-home .container #hoverlogos {
   transition: transform 0.3s ease;
 }
-.section-home .container #oulunparturilogo:hover {
+.section-home .container #hoverlogos:hover {
   transform: scale(1.15);
 }
 .section-home .white {

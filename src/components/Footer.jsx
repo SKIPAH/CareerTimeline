@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { getTranslation } from "./Translations";
 import { useLanguage } from "../hooks/useLanguage";
-import skipahlogo from "../files/images/SKIPAHlogo.webp";
+import skipahlogo from "../files/images/work/SKIPAHlogo.webp";
 import { NavLink } from "react-router-dom";
 import Nav from "react-bootstrap/Nav";
 

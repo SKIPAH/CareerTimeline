@@ -9,15 +9,15 @@ import Translations, {
   setLanguage,
 } from "./Translations";
 import { Button } from "react-bootstrap";
-import linkedin from "../files/images/linkedin.webp";
-import github from "../files/images/github.webp";
-import twitter from "../files/images/twitter.webp";
-import instagram from "../files/images/instagram.webp";
-import youtube from "../files/images/youtube.webp";
-import twitch from "../files/images/twitch.webp";
+import linkedin from "../files/images/socialmedia/linkedin.webp";
+import github from "../files/images/socialmedia/github.webp";
+import twitter from "../files/images/socialmedia/twitter.webp";
+import instagram from "../files/images/socialmedia/instagram.webp";
+import youtube from "../files/images/socialmedia/youtube.webp";
+import twitch from "../files/images/socialmedia/twitch.webp";
 import { useEffect, useState } from "react";
-import skipahlogo from "../files/images/SKIPAHlogo.webp";
-import tiktok from "../files/images/tiktok1.webp";
+import skipahlogo from "../files/images/work/SKIPAHlogo.webp";
+import tiktok from "../files/images/socialmedia/tiktok1.webp";
 
 export default function NavBar() {
   const [currentLanguage, setCurrentLanguage] = useState(getCurrentLanguage());
