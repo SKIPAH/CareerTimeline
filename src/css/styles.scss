@@ -196,7 +196,9 @@ a {
 }
 
 .label {
+  font-size: 1.5rem;
   font-weight: bold;
+
   margin-bottom: 0.3rem;
 }
 
@@ -299,6 +301,16 @@ a {
     }
 
     #hoverlogos {
+      padding: 1em;
+      transition: transform 0.3s ease; // Optional: adds smooth hover effect
+
+      &:hover {
+        transform: scale(1.15); // Optional: adds hover effect
+      }
+    }
+    #hoverlogosmaller {
+      padding: 1em;
+      width: 25%;
       transition: transform 0.3s ease; // Optional: adds smooth hover effect
 
       &:hover {
@@ -940,6 +952,9 @@ footer {
 @media (min-width: 769px) and (max-width: 1080px) {
   .section-home {
     .container {
+      #hoverlogosmaller {
+        width: 25%;
+      }
       .CTA-wrapper {
         width: 500px;
         .white {
@@ -1025,6 +1040,12 @@ footer {
       }
     }
     .container {
+      #hoverlogos {
+        padding: 0.2em;
+      }
+      #hoverlogosmaller {
+        width: 55%;
+      }
       .CTA-wrapper {
         width: 100%;
         .white {

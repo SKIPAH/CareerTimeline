@@ -79,7 +79,7 @@ export default function Home() {
             <h2 className="title-text">
               {getTranslation("past-websites", currentLanguage)}
             </h2>
-            <a href="https://www.oulun-parturi.fi">
+            <a href="https://www.oulun-parturi.fi" target="_blank">
               <img
                 id="hoverlogos"
                 src={oulunparturilogo}
@@ -91,27 +91,41 @@ export default function Home() {
             <h2 className="title-text">
               {getTranslation("past-games", currentLanguage)}
             </h2>
-            <a href="https://overwatch.blizzard.com/en-us/">
+            <a href="https://overwatch.blizzard.com/en-us/" target="_blank">
               <img
-                id="hoverlogos"
+                id="hoverlogosmaller"
                 src={overwatchlogo}
                 alt="Overwatch logo"
               ></img>
             </a>
-            <a href="https://playvalorant.com/en-gb/">
-              <img id="hoverlogos" src={valorantlogo} alt="Valorant logo"></img>
+            <a href="https://playvalorant.com/en-gb/" target="_blank">
+              <img
+                id="hoverlogosmaller"
+                src={valorantlogo}
+                alt="Valorant logo"
+              ></img>
             </a>
           </div>
           <div className="padding center">
             <h2 className="title-text">
               {getTranslation("past-teams", currentLanguage)}
             </h2>
-            <a href="https://www.oulun-parturi.fi">
-              <img id="hoverlogos" src={nyyrikkilogo} alt="Nyyrikki logo"></img>
-            </a>
-            <a href="https://www.oulun-parturi.fi">
+            <a
+              href="https://liquipedia.net/overwatch/NYYRIKKI_Esports"
+              target="_blank"
+            >
               <img
-                id="hoverlogos"
+                id="hoverlogosmaller"
+                src={nyyrikkilogo}
+                alt="Nyyrikki logo"
+              ></img>
+            </a>
+            <a
+              href="https://www.is.fi/digitoday/esports/art-2000006704216.html"
+              target="_blank"
+            >
+              <img
+                id="hoverlogosmaller"
                 src={hredslogo}
                 alt="Helsinki Reds logo"
               ></img>
@@ -121,21 +135,24 @@ export default function Home() {
             <h2 className="title-text">
               {getTranslation("past-gametests", currentLanguage)}
             </h2>
-            <a href="https://www.oulun-parturi.fi">
+            <a
+              href="https://store.steampowered.com/app/3574840/My_Pet_Hooligan/"
+              target="_blank"
+            >
               <img
                 id="hoverlogos"
                 src={mypethooliganlogo}
                 alt="My pet hooligan logo"
               ></img>
             </a>
-            <a href="https://www.oulun-parturi.fi">
+            <a href="https://makea.games/games/" target="_blank">
               <img
                 id="hoverlogos"
                 src={supermoveslogo}
                 alt="Supermoves logo"
               ></img>
             </a>
-            <a href="https://www.oulun-parturi.fi">
+            <a href="https://www.playfarcana.com/" target="_blank">
               <img id="hoverlogos" src={farcanalogo} alt=" logo"></img>
             </a>
           </div>
