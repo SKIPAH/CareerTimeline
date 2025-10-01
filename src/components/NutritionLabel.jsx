@@ -32,7 +32,7 @@ export default function NutritionLabel() {
       <div className="calories-info">
         <div className="left-container">
           <h2 className="bold small-text">Amount per serving</h2>
-          <p>Bodyweight Currently</p>
+          <p>BW</p>
         </div>
         <span>96kg</span>
       </div>

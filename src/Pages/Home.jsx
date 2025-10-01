@@ -16,6 +16,7 @@ import oulunparturilogo from "../files/images/work/oulunparturilogo1.webp";
 import overwatchlogo from "../files/images/work/overwatch.webp";
 import valorantlogo from "../files/images/work/valorant.webp";
 import nyyrikkilogo from "../files/images/work/nyyrikki.webp";
+import vastalogo from "../files/images/work/vasta.webp";
 import hredslogo from "../files/images/work/hreds.webp";
 import farcanalogo from "../files/images/work/farcana.webp";
 import supermoveslogo from "../files/images/work/supermoves.webp";
@@ -79,82 +80,135 @@ export default function Home() {
             <h2 className="title-text">
               {getTranslation("past-websites", currentLanguage)}
             </h2>
-            <a href="https://www.oulun-parturi.fi" target="_blank">
-              <img
-                id="hoverlogos"
-                src={oulunparturilogo}
-                alt="Oulun Parturi logo"
-              ></img>
-            </a>
+            <div className="logo-row">
+              <div className="logo-hover-group">
+                <a href="https://www.oulun-parturi.fi" target="_blank">
+                  <h3 className="title-text-smaller">Oulun Parturi</h3>
+                  <img
+                    id="hoverlogos"
+                    src={oulunparturilogo}
+                    alt="Oulun Parturi logo"
+                  ></img>
+                </a>
+              </div>
+            </div>
           </div>
           <div className="padding center">
             <h2 className="title-text">
               {getTranslation("past-games", currentLanguage)}
             </h2>
-            <a href="https://overwatch.blizzard.com/en-us/" target="_blank">
-              <img
-                id="hoverlogosmaller"
-                src={overwatchlogo}
-                alt="Overwatch logo"
-              ></img>
-            </a>
-            <a href="https://playvalorant.com/en-gb/" target="_blank">
-              <img
-                id="hoverlogosmaller"
-                src={valorantlogo}
-                alt="Valorant logo"
-              ></img>
-            </a>
+            <div className="logo-row">
+              <div className="logo-hover-group">
+                
+                <a href="https://overwatch.blizzard.com/en-us/" target="_blank">
+                <h3 className="title-text-smaller">Overwatch</h3>
+                  <img
+                    id="hoverlogosmaller"
+                    src={overwatchlogo}
+                    alt="Overwatch logo"
+                  ></img>
+                </a>
+              </div>
+              <div className="logo-hover-group">
+                
+                <a href="https://playvalorant.com/en-gb/" target="_blank">
+                <h3 className="title-text-smaller">Valorant</h3>
+                  <img
+                    id="hoverlogosmaller"
+                    src={valorantlogo}
+                    alt="Valorant logo"
+                  ></img>
+                </a>
+              </div>
+            </div>
           </div>
           <div className="padding center">
             <h2 className="title-text">
               {getTranslation("past-teams", currentLanguage)}
             </h2>
-            <a
-              href="https://liquipedia.net/overwatch/NYYRIKKI_Esports"
-              target="_blank"
-            >
-              <img
-                id="hoverlogosmaller"
-                src={nyyrikkilogo}
-                alt="Nyyrikki logo"
-              ></img>
-            </a>
-            <a
-              href="https://www.is.fi/digitoday/esports/art-2000006704216.html"
-              target="_blank"
-            >
-              <img
-                id="hoverlogosmaller"
-                src={hredslogo}
-                alt="Helsinki Reds logo"
-              ></img>
-            </a>
+            <div className="logo-row">
+              <div className="logo-hover-group">
+                
+                <a
+                  href="https://liquipedia.net/overwatch/NYYRIKKI_Esports"
+                  target="_blank"
+                >
+                  <h3 className="title-text-smaller">Nyyrikki Esports</h3>
+                  <img
+                    id="hoverlogosmaller"
+                    src={nyyrikkilogo}
+                    alt="Nyyrikki logo"
+                  ></img>
+                </a>
+              </div>
+              <div className="logo-hover-group">
+            
+                <a
+                  href="https://www.youtube.com/watch?v=wUGW7Q3EOv0"
+                  target="_blank"
+                >
+                      <h3 className="title-text-smaller">Vasta Gaming</h3>
+                  <img
+                    id="hoverlogosmaller"
+                    src={vastalogo}
+                    alt="Vasta logo"
+                  ></img>
+                </a>
+              </div>
+              <div className="logo-hover-group">
+                
+                <a
+                  href="https://www.is.fi/digitoday/esports/art-2000006704216.html"
+                  target="_blank"
+                >
+                  <h3 className="title-text-smaller">Helsinki Reds</h3>
+                  <img
+                    id="hoverlogosmaller"
+                    src={hredslogo}
+                    alt="Helsinki Reds logo"
+                  ></img>
+                </a>
+              </div>
+            </div>
           </div>
           <div className="padding center">
             <h2 className="title-text">
               {getTranslation("past-gametests", currentLanguage)}
             </h2>
-            <a
-              href="https://store.steampowered.com/app/3574840/My_Pet_Hooligan/"
-              target="_blank"
-            >
-              <img
-                id="hoverlogos"
-                src={mypethooliganlogo}
-                alt="My pet hooligan logo"
-              ></img>
-            </a>
-            <a href="https://makea.games/games/" target="_blank">
-              <img
-                id="hoverlogos"
-                src={supermoveslogo}
-                alt="Supermoves logo"
-              ></img>
-            </a>
-            <a href="https://www.playfarcana.com/" target="_blank">
-              <img id="hoverlogos" src={farcanalogo} alt=" logo"></img>
-            </a>
+            <div className="logo-row">
+              <div className="logo-hover-group">
+                
+                <a
+                  href="https://store.steampowered.com/app/3574840/My_Pet_Hooligan/"
+                  target="_blank"
+                >
+                  <h3 className="title-text-smaller">My Pet Hooligan</h3>
+                  <img
+                    id="hoverlogos"
+                    src={mypethooliganlogo}
+                    alt="My pet hooligan logo"
+                  ></img>
+                </a>
+              </div>
+              <div className="logo-hover-group">
+               
+                <a href="https://makea.games/games/" target="_blank">
+                 <h3 className="title-text-smaller">Supermoves</h3>
+                  <img
+                    id="hoverlogos"
+                    src={supermoveslogo}
+                    alt="Supermoves logo"
+                  ></img>
+                </a>
+              </div>
+              <div className="logo-hover-group">
+                
+                <a href="https://www.playfarcana.com/" target="_blank">
+                <h3 className="title-text-smaller">Farcana</h3>
+                  <img id="hoverlogos" src={farcanalogo} alt=" logo"></img>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
