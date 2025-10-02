@@ -1015,6 +1015,9 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
+  p {
+    font-size: 1rem;
+  }
   .navbar {
     #languageToggleBtn {
       display: none;
@@ -1112,11 +1115,6 @@ footer {
         font-size: 1rem;
       }
 
-      .tech-used-container {
-        img {
-          width: 15%;
-        }
-      }
       #oulunparturilogo {
         width: 80%;
         margin-left: auto;
@@ -1203,6 +1201,11 @@ footer {
       font-size: 1rem;
     }
     .container {
+      .tech-used-container {
+        img {
+          width: 10%;
+        }
+      }
       .unity-webgl {
         display: none;
       }

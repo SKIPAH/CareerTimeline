@@ -56,26 +56,20 @@ export default function DevPage() {
             <a href="https://github.com/SKIPAH" target="_blank">
               GitHub
             </a>{" "}
-            <p>
-              {getTranslation("dev-download", currentLanguage)}{" "}
-              <a
-                href="/jussi_mehtälä_CV_english.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                CV
-              </a>{" "}
-            </p>
-            <p>
-              {getTranslation("dev-download", currentLanguage)}{" "}
-              <a
-                href="/jussi_mehtälä_PORTFOLIO_english.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Portfolio
-              </a>
-            </p>
+            <a
+              href="/jussi_mehtälä_CV_english.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              CV
+            </a>{" "}
+            <a
+              href="/jussi_mehtälä_PORTFOLIO_english.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Portfolio
+            </a>
           </div>
 
           <p className="center">

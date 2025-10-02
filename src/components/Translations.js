@@ -15,7 +15,7 @@ const Translations = {
     "homepage-introduction-text-tech":
       "Tekniikat, joita käytän aktiivisesti ja tällä sivulla:",
     "homepage-introduction-text-2":
-      "Olen taitava pelitestaaja tarkalla silmällä esports-urani sekä Unity-kehittäjän taitojen ansiosta. Lisäksi olen kokenut käyttäjä eri sosiaalisen median alustoilla ja sisällöntuottaja.",
+      "Olen myös pelitestaaja tarkalla silmällä esports-urani sekä Unity-kehittäjän taitojen ansiosta. Lisäksi olen kokenut käyttäjä eri sosiaalisen median alustoilla ja sisällöntuottaja.",
     "dev-title": "Palvelut, koulutus ja työkokemus",
     "dev-linkedin": "Minun",
     "dev-linkedin-2": "ja",
@@ -32,8 +32,7 @@ const Translations = {
     "dev-itch": "Nucu Oy 3D Tuotekonfiguraattori",
     "dev-download": "Lataa",
     aboutMe: "Tietoa minusta",
-    "aboutMe-text":
-      "Olen Jussi Mehtälä, myös tunnettu nimellä SKIPAH. Tavoitteenani on aloittaa ja luoda ura IT-alalla. Tykkään yleisesti urheilusta, voimailusta, kilpapelaamisesta sekä DragonBall Z:sta.",
+    "aboutMe-text": "",
     followMe: "Sosiaalinen media",
     contactMe: "Ota yhteyttä",
     "esports-title-text": "Urani e-urheilijana!",
@@ -101,8 +100,7 @@ const Translations = {
       "Dynamic 3D simulator and product configurator with Unity game engine",
     "dev-download": "Download",
     aboutMe: "About me",
-    "aboutMe-text":
-      "My name is Jussi Mehtälä, also known as SKIPAH. I am 28 years old and I'm from Oulu, Finland. I am focusing on starting a career in the IT industry. I like strength-related activities, esports, and DragonBall Z.",
+    "aboutMe-text": "",
     followMe: "Social media",
     contactMe: "Contact me",
     "esports-title-text": "My journey as an esports athlete!",

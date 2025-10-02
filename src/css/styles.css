@@ -936,6 +936,9 @@ footer .footer-text {
   }
 }
 @media only screen and (max-width: 768px) {
+  p {
+    font-size: 1rem;
+  }
   .navbar #languageToggleBtn {
     display: none;
   }
@@ -1021,9 +1024,6 @@ footer .footer-text {
     text-align: center;
     font-size: 1rem;
   }
-  .section-home .container .tech-used-container img {
-    width: 15%;
-  }
   .section-home .container #oulunparturilogo {
     width: 80%;
     margin-left: auto;
@@ -1096,6 +1096,9 @@ footer .footer-text {
   }
   .dev-section a {
     font-size: 1rem;
+  }
+  .dev-section .container .tech-used-container img {
+    width: 10%;
   }
   .dev-section .container .unity-webgl {
     display: none;
