@@ -5,11 +5,11 @@ const Translations = {
     "navbar-home": "ETUSIVU",
     "navbar-work": "TYÖ JA KOULUTUS",
     "navbar-esports": "PELIVALMENNUS",
-    "navbar-dev": "OHJELMOINTI",
+    "navbar-dev": "KOULUTUS",
     "navbar-games": "PELIT",
     "navbar-fitness": "FITNESS",
     "navbar-test": "TESTI",
-    "homepage-title": "Kotisivut, pelivalmennus ja pelitestaus Oulussa",
+    "homepage-title": "Kotisivut ja pelivalmennusta Oulussa",
     "homepage-introduction-text-short":
       "Olen Jussi Mehtälä ja toteutan kotisivuja sekä tarjoan pelitestausta ja pelivalmennusta Oulun alueella. Minut tunnetaan myös nimellä 'SKIPAH' e-urheilupiireissä.",
     "homepage-introduction-text-tech":
@@ -24,7 +24,7 @@ const Translations = {
     "dev-cv-2": "ja",
     "dev-webgl":
       "Minun WebGL 3D tuotekonfiguraattori alla hieman muokattuna. Ylhäällä linkki oikeaan projektiin.",
-    "timeline-title-text": "Koulutus ja työkokemus",
+    "timeline-title-text": "Koulutus ja työkokemus aikajana",
     "dev-webgl-note":
       "HUOM! Ohjelma poissa käytöstä puhelimilla, koska Unity WebGL ei ole tuettu mobiilille. Aktivoi laitteistokiihdytys, jos käytät Google Chromea.",
     "fitness-title": "Urheilu ja fitness",

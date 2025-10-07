@@ -691,6 +691,9 @@ footer .footer-text {
   font-size: 1rem;
   text-align: left;
   padding-bottom: 1em;
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
 }
 
 .navbar-home-logo-footer {
@@ -728,6 +731,13 @@ footer .footer-text {
   font-size: 16px;
   color: rgb(53, 53, 53);
   width: 100%;
+}
+.timeline-div .button {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: normal;
+  font-size: 1em;
+  text-align: center;
+  color: var(--primary-color1);
 }
 
 .timeline-title {
@@ -944,6 +954,11 @@ footer .footer-text {
   }
   .navbar #languageToggleBtnNavbar {
     display: none;
+  }
+  .bg-dark .footer-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
   }
   .padding {
     padding-top: 2em;

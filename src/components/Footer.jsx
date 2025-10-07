@@ -22,14 +22,14 @@ export default function Footer() {
               {getTranslation("aboutMe-text", currentLanguage)}
             </p>
           </Col>
-          <Col md={4}>
+          <div>
             <ul className="list-unstyled footer-text">
               <li>
                 <a
                   href="https://www.linkedin.com/in/jussi-mehtala/"
                   className="footer-text text-white"
                 >
-                  Linkedin
+                  LinkedIn
                 </a>
               </li>
               <li>
@@ -81,10 +81,9 @@ export default function Footer() {
                 </a>
               </li>
             </ul>
-          </Col>
+          </div>
           <Col md={4}>
             <address className="footer-text">
-              Email:{" "}
               <a
                 href="mailto:jussi.mehtala96@gmail.com"
                 className="footer-text text-white"

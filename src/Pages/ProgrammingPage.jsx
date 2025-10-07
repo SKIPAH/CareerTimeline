@@ -23,9 +23,7 @@ export default function DevPage() {
     <>
       <section className="dev-section">
         <div className="container">
-          <h1 className="title-text hidden">
-            {getTranslation("dev-title", currentLanguage)}
-          </h1>
+         
           <div>
             <p className="center">
               {getTranslation(

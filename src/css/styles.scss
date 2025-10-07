@@ -745,6 +745,9 @@ footer {
     font-size: 1rem;
     text-align: left;
     padding-bottom: 1em;
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
   }
 }
 .navbar-home-logo-footer {
@@ -783,6 +786,14 @@ footer {
   font-size: 16px;
   color: rgb(53, 53, 53);
   width: 100%;
+
+  .button {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: normal;
+    font-size: 1em;
+    text-align: center;
+    color: var(--primary-color1);
+  }
 }
 .timeline-title {
   font-size: 4rem;
@@ -1026,6 +1037,13 @@ footer {
       display: none;
     }
   }
+  .bg-dark {
+    .footer-text {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+    }
+  }
 
   .padding {
     padding-top: 2em;
@@ -1132,6 +1150,7 @@ footer {
       }
     }
   }
+
   .navbar {
     #languageToggleBtn {
       display: none;
