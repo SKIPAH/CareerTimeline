@@ -1,4 +1,4 @@
-import React, { use } from "react";
+import { Link } from "react-router-dom";
 import { unityProjects } from "../components/UnityProjectConfig";
 import UnityWebGL from "../components/UnityWebGL";
 import { getTranslation } from "../components/Translations";
@@ -15,6 +15,11 @@ function GameDevPage() {
         <p className="game-dev-description">
           {getTranslation("game-dev-description", currentLanguage)}
         </p>
+      </div>
+      <div className="container">
+        <Link to="/deadlockquiz">
+          <button className="button">Go to Deadlock Quiz</button>
+        </Link>
       </div>
       <div className="container">
         <UnityWebGL config={unityProjects[1]}></UnityWebGL>

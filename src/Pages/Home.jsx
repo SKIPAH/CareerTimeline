@@ -52,22 +52,23 @@ export default function Home() {
           <h1 className="title-text hidden">
             JUSSI MEHTÄLÄ
             <br />
-            {getTranslation("homepage-title", currentLanguage)}
+            {/*   {getTranslation("homepage-title", currentLanguage)}*/}
           </h1>
         </div>
         <div className="container">
           <p className="center">
-            {getTranslation(
+            {/*    {getTranslation(
               "homepage-introduction-text-short",
               currentLanguage
-            )}
+            )} */}
           </p>
         </div>
         <div className="container">
+          {/* 
           <p className="center">
             {getTranslation("homepage-introduction-text-2", currentLanguage)}
           </p>
-
+          
           <div className="CTA-wrapper">
             <p className="white">
               {getTranslation("contactMe-text", currentLanguage)}
@@ -76,6 +77,7 @@ export default function Home() {
               {getTranslation("contactMe-text-3", currentLanguage)}
             </Button>
           </div>
+          */}
           <div className="padding center">
             <h2 className="title-text">
               {getTranslation("past-websites", currentLanguage)}
@@ -99,9 +101,8 @@ export default function Home() {
             </h2>
             <div className="logo-row">
               <div className="logo-hover-group">
-                
                 <a href="https://overwatch.blizzard.com/en-us/" target="_blank">
-                <h3 className="title-text-smaller">Overwatch</h3>
+                  <h3 className="title-text-smaller">Overwatch</h3>
                   <img
                     id="hoverlogosmaller"
                     src={overwatchlogo}
@@ -110,9 +111,8 @@ export default function Home() {
                 </a>
               </div>
               <div className="logo-hover-group">
-                
                 <a href="https://playvalorant.com/en-gb/" target="_blank">
-                <h3 className="title-text-smaller">Valorant</h3>
+                  <h3 className="title-text-smaller">Valorant</h3>
                   <img
                     id="hoverlogosmaller"
                     src={valorantlogo}
@@ -128,7 +128,6 @@ export default function Home() {
             </h2>
             <div className="logo-row">
               <div className="logo-hover-group">
-                
                 <a
                   href="https://liquipedia.net/overwatch/NYYRIKKI_Esports"
                   target="_blank"
@@ -142,12 +141,11 @@ export default function Home() {
                 </a>
               </div>
               <div className="logo-hover-group">
-            
                 <a
                   href="https://www.youtube.com/watch?v=wUGW7Q3EOv0"
                   target="_blank"
                 >
-                      <h3 className="title-text-smaller">Vasta Gaming</h3>
+                  <h3 className="title-text-smaller">Vasta Gaming</h3>
                   <img
                     id="hoverlogosmaller"
                     src={vastalogo}
@@ -156,7 +154,6 @@ export default function Home() {
                 </a>
               </div>
               <div className="logo-hover-group">
-                
                 <a
                   href="https://www.is.fi/digitoday/esports/art-2000006704216.html"
                   target="_blank"
@@ -177,7 +174,6 @@ export default function Home() {
             </h2>
             <div className="logo-row">
               <div className="logo-hover-group">
-                
                 <a
                   href="https://store.steampowered.com/app/3574840/My_Pet_Hooligan/"
                   target="_blank"
@@ -191,9 +187,8 @@ export default function Home() {
                 </a>
               </div>
               <div className="logo-hover-group">
-               
                 <a href="https://makea.games/games/" target="_blank">
-                 <h3 className="title-text-smaller">Supermoves</h3>
+                  <h3 className="title-text-smaller">Supermoves</h3>
                   <img
                     id="hoverlogos"
                     src={supermoveslogo}
@@ -202,9 +197,8 @@ export default function Home() {
                 </a>
               </div>
               <div className="logo-hover-group">
-                
                 <a href="https://www.playfarcana.com/" target="_blank">
-                <h3 className="title-text-smaller">Farcana</h3>
+                  <h3 className="title-text-smaller">Farcana</h3>
                   <img id="hoverlogos" src={farcanalogo} alt=" logo"></img>
                 </a>
               </div>

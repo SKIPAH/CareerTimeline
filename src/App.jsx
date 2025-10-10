@@ -9,12 +9,10 @@ import TestPage2 from "./Pages/TestPage2";
 import GameDevPage from "./Pages/GameDevPage";
 import SignUpPage from "./components/authentication/SignUpPage";
 import NotFound from "./Pages/NotFound";
-
+import DeadlockQuizPage from "./Pages/DeadlockQuizPage";
 import ProtectedRoute from "./components/ProtectedRoute";
-
-import React from "react";
-
 import "/src/css/styles.css";
+
 import { Route, Routes } from "react-router-dom";
 
 export default function App() {
@@ -28,6 +26,7 @@ export default function App() {
         <Route path="/gamedevelopment" element={<GameDevPage />}></Route>
         <Route path="/fitness" element={<FitnessPage />}></Route>
         <Route path="/signup" element={<SignUpPage />}></Route>
+        <Route path="/deadlockquiz" element={<DeadlockQuizPage />}></Route>
         <Route
           path="/testsignup"
           element={
