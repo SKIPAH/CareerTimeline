@@ -585,6 +585,9 @@ a {
 
   .container {
     background-color: var(--primary-color1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     .flex-row {
       display: flex;

@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Volume2, Trophy, Play } from "lucide-react";
 
 import "/src/css/tailwind.css";
@@ -7,20 +7,13 @@ import "/src/css/tailwind.css";
 const quizQuestions = [
   {
     id: 1,
-    question: "Which item makes this sound?",
-    audioUrl: "/sounds/item1.mp3", // You'll need to add actual audio files
-    correctAnswer: "Mystic Shot",
-    options: ["Mystic Shot", "Spirit Strike", "Bullet Dance", "Toxic Rounds"],
-  },
-  {
-    id: 2,
     question: "Which character says this voice line?",
     audioUrl: "/sounds/char1.mp3",
     correctAnswer: "Infernus",
     options: ["Infernus", "Wraith", "Haze", "Lash"],
   },
   {
-    id: 3,
+    id: 2,
     question: "What ability makes this sound effect?",
     audioUrl: "/sounds/ability1.mp3",
     correctAnswer: "Ground Strike",
@@ -35,12 +28,12 @@ export default function DeadlockQuiz() {
   const [showResult, setShowResult] = useState(false);
   const [gameOver, setGameOver] = useState(false);
   const [audioPlaying, setAudioPlaying] = useState(false);
+  const [showWelcome, setShowWelcome] = useState(true); // NEW STATE
 
   const question = quizQuestions[currentQuestion];
 
   const playSound = () => {
     setAudioPlaying(true);
-    // In production, use Howler.js or create Audio element
     const audio = new Audio(question.audioUrl);
     audio.play().catch((err) => {
       console.log("Audio playback failed - add real audio files");
@@ -76,7 +69,34 @@ export default function DeadlockQuiz() {
     setSelectedAnswer(null);
     setShowResult(false);
     setGameOver(false);
+    setShowWelcome(true); // Show welcome again on restart
   };
+
+  // --- WELCOME PAGE ---
+  if (showWelcome) {
+    return (
+      <div className="deadlock-quiz-container">
+        <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 flex items-center justify-center p-4">
+          <div className="bg-slate-800 rounded-2xl p-8 max-w-md w-full text-center shadow-2xl">
+            <h1 className="text-4xl font-bold text-white mb-4">
+              Welcome to Deadlock Quiz!
+            </h1>
+            <p className="text-lg text-purple-300 mb-8">
+              Test your knowledge of Deadlock items, characters, and abilities.
+              <br />
+              Click the button below to start the quiz!
+            </p>
+            <button
+              onClick={() => setShowWelcome(false)}
+              className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-lg transition-colors w-full"
+            >
+              Start Quiz
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   if (gameOver) {
     return (

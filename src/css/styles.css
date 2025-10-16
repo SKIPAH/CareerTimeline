@@ -543,6 +543,9 @@ a {
 }
 .dev-section .container {
   background-color: var(--primary-color1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .dev-section .container .flex-row {
   display: flex;
